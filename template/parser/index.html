@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YAML-to-JSON-to-HTML</title>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Paste your YAML code and see results in JSON and HTML.">
+    <meta name="keywords" content="yaml,parser,javascript">
+
+    <!-- Original. HTML display added to: https://nodeca.github.io/js-yaml/ -->
+
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="../../../localsite/css/base.css" id="/localsite/css/base.css" />
+    <script type="text/javascript" src="../../../localsite/js/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
+    <script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
+
+    <script type="text/javascript" src="../../../localsite/js/localsite.js?display=locfilters"></script>
+
+    <!-- titlecell, etc. -->
+    <link rel="stylesheet" href="../../../community/css/community.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.css">
+    <link rel="stylesheet" href="https://nodeca.github.io/js-yaml/codemirror.css">
+    <link rel="stylesheet" href="demo.css">
+
+    <!-- https://nodeca.github.io/js-yaml/demo.js -->
+    <script src="js/demo.js"></script>
+
+
+    <style>
+      .hidden, .dst {
+        display: block !important;
+      }
+      .json_to_html_table {
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+    </style>
+  </head>
+  <body>
+
+    
+    <div class="content">
+      <div class="header">
+        <h1>YAML-to-JSON-to-HTML JavaScript parser</h1>
+        Scroll down to view Output as HTML.<br><br>
+      </div>
+
+      <div class="src">
+        <h4 class="subheader"><a href="#" id="permalink" style="display:none">permalink</a> Edit source here:</h4>
+        <textarea id="source">
+id: ec3yznau
+ref: https://openepd.buildingtransparency.org/api/epds/EC3YZNAU
+doctype: OpenEPD
+version: null
+language: en
+private: false
+declaration_url: cqd.io/e/ec3yznau9d
+program_operator_doc_id: 9BD4F9CB-3584-4D34-90F8-B6E40B69653D
+program_operator_version: null
+third_party_verification_url: null
+date_of_issue: '2019-01-28T00:00:00Z'
+valid_until: '2024-01-28T00:00:00Z'
+declared_unit:
+  qty: 1
+  unit: m3
+kg_per_declared_unit:
+  qty: 2400
+  unit: kg
+kg_C_per_declared_unit: null
+product_name: DM0115CA
+product_sku: null
+product_description: DOT MINOR 3/4" 15FA 3-5SL AIR
+product_image_small: null
+product_image: null
+product_service_life_years: null
+product_classes:
+  io.cqd.ec3: Concrete >> ReadyMix
+applicable_in: null
+product_usage_description: null
+product_usage_image: null
+manufacturing_description: null
+manufacturing_image: null
+impacts: {}
+specs:
+  concrete:
+    strength_28d: 20.684271879505086 MPa
+    slump: 4.0 in
+    strength_other: null
+    strength_other_d: null
+    w_c_ratio: null
+    aci_exposure_classes: null
+    csa_exposure_classes: null
+    en_exposure_classes: null
+    options:
+      lightweight: false
+      scc: false
+      finishable: null
+      air: true
+      co2: false
+      white: false
+      plc: false
+      fiber_reinforced: null
+    cementitious:
+      fly_ash: 0.15
+      slag: 0
+manufacturer:
+  web_domain: centralconcrete.com
+  ref: https://openepd.buildingtransparency.org/api/orgs/centralconcrete.com
+  name: Central Concrete
+  alt_names:
+    - Central Concrete
+    - Monumental Concrete
+    - Centre Concrete
+plants:
+  - id: 849W93CW+79.centralconcrete.com
+    name: Queens Lane (wet)
+    ref: https://openepd.buildingtransparency.org/api/plants/849W93CW+79.centralconcrete.com
+    pluscode: 849W93CW+79
+    address: 457 Queens Lane, San Jose, CA 95112
+program_operator:
+  web_domain: astm.org
+  ref: https://openepd.buildingtransparency.org/api/orgs/astm.org
+  name: ASTM International
+  alt_names:
+    - astm
+    - ASTMInternational
+third_party_verifier:
+  web_domain: iere.org
+  ref: https://openepd.buildingtransparency.org/api/orgs/iere.org
+  name: EarthSure
+  alt_names:
+    - Earthsure
+    - IERE
+    - Institute for Environmental Research and Education
+pcr:
+  id: ec37zjz1
+  name: North American PCR for Concrete
+  ref: https://openepd.buildingtransparency.org/api/pcrs/EC37ZJZ1
+  issuer_doc_id: null
+  short_name: Concrete
+  version: '1.1'
+  date_of_issue: '2013-12-04'
+  valid_until: '2018-12-04'
+  declared_units:
+    - qty: 1
+      unit: m3
+  doc: https://app.box.com/file/292552692203
+compliance: []
+
+</textarea>
+      </div>
+
+      <div class="dst">
+        <h4 class="subheader">Convert to JSON:</h4>
+        <textarea id="result"></textarea>
+      </div>
+
+      <div style="clear:both" class="format_table json_to_html_table">
+        <h4 class="subheader">Output as HTML:</h4>
+        <div id="formatted"></div>
+      </div>
+
+      <div class="gh-ribbon">
+        <a href="https://github.com/modelearth/io" target="_blank" title="Source code for YAML JavaScript parser">Fork me on GitHub</a>
+      </div>
+
+      <div style="clear:both;">
+
+      <div>
+        As a next step, format the JSON as <a href="../">interactive impact profiles</a>.<br><br>
+      </div>
+
+
+    </div>
+
+  </body>
+</html>

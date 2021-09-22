@@ -1,0 +1,15 @@
+build/api/USEEIO/
+build/api/USEEIOv1.2
+build/apidoc/
+node_modules/
+dist/
+.vscode/
+*.pdf
+.DS_Store
+.env
+env/
+env*
+.venv
+.flaskenv
+*.pyc
+*.pyo

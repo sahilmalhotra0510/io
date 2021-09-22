@@ -9,4 +9,5 @@ Learn about the science and principles behind environmentally-extended input-out
 - [IO Charts - Impact Widgets](/io/charts/)  
 - <a href="http://epa.gov/smm" target="_parent">US EPA Sustainable Materials Management (SMM)</a>  
 - [SMM Prioritization Tools](https://www.epa.gov/smm/sustainable-materials-management-prioritization-tools)
-- [Learn about Matrix Algebra](/io/about/matrix/)  
+- [Learn about Input-Output Model Construction](/io/about/matrix/)  
+A course for Dummies (like me) on Matrix Algebra and Factor Preparation

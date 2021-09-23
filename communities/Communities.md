@@ -1,8 +1,6 @@
 # For Local Communities
 
-<!--
-We're looking to bring on board 2-3 local <span style="display:none" class="georgia">Georgia</span> communities. 
--->The US EPA is creating [new input-output tools](../../community/tools/) for communities pursuing projects involving waste-to-energy, bioproducts, green energy innovations, [farm fresh](../../localsite/info/#show=farmfresh) produce, and local environmental projects. Community participants can include a coalition of representatives of diverse interests such as:
+The US EPA is creating [new input-output tools](../../community/tools/) for communities pursuing projects involving waste-to-energy, bioproducts, green energy innovations, [farm fresh](../../localsite/info/#show=farmfresh) produce, and local environmental projects. Community participants can include a coalition of representatives of diverse interests such as:
 
 - local government
 - educational institutions

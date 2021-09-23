@@ -7,7 +7,7 @@ The U.S. Environmental Protection Agency (EPA) is partnering with <span style="d
 
 ## Sample Pages
 
-Starting points for the [2021 Web Challenge](../../).  
+Starting points for the [2021 Sustainable Communities Web Challenge](../../community/).  
 
 - [Community Start Page](../apps/)
 - [Base Page Template](../apps/base/) - Copy to create your community page

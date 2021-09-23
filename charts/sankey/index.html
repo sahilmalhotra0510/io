@@ -25,19 +25,28 @@
 <div class="content contentpadding">
 	<h1>Input-Output Sankey Diagram</h1>
 
-	The data in this chart was prepared using example-I0.py in the current folder. 
+	The data in this dynamic chart was prepared using example-I0.py in the current folder. 
 	<a href="data/IO.js">View json dataset</a><br><br>
 
-	You can experiment by using these <a href="https://github.com/USEPA/USEEIO_API/blob/master/examples/example_use.ipynb">Python USEEIO queries</a> within <a href="https://jupyter.org/install">Jupyter</a>.<br>
-	Then use the <a href="../../build/iochart.html#sectors=333613,335912,336111&page=1&count=10">React iochart.html</a> page to refresh the Sankey chart simultaneously to the inflow-outflow grid changes.<br><br>
+	The json for generating the Sankey will use the React process used for the <a href="../../charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS&sectors=333613,335912,336111">IO Chart</a>.<br>
+	We previously experimented (below) by using these <a href="https://github.com/USEPA/USEEIO_API/blob/master/examples/example_use.ipynb">Python USEEIO queries</a> within <a href="https://jupyter.org/install">Jupyter</a>.<br>
+	<br>
 
-	<b>Project Areas:</b><br>
-	Make all columns of the chart the same height.<br>
-	Generate from NAICS values in the URL:  <a href="../../../localsite/info/#show=parts&naics=336111,336320,336330,336340,336360,336370,336390,333613,336412,336413,335910,335912,339110,333111,325211,325520,326112,326220,331221,332211">parts naics</a> and using <a href="../../../localsite/info/#show=bioeconomy">show=bioeconomy</a><br>
+	The following sectors are used below:<br>
+	sectors=333613,335912,336111<br><br>
 
+	<b>Goals:</b><br>
+	Make all columns of the chart the same height. May need to include an "other" item.<br>
+	If "other" size is massive (more than 75%), toggle to scaled view for the right column.<br>
+	<br>
+
+	<b>For D3 enthusist</b><br>
 	Make the chart scale as browser is resized<br>
-	Add column on left for environmental impact areas of inflow<br>
-	Add column on right for environmental impact areas of outflow
+	<br>
+
+	<b>For later:</b><br>
+	Add column on far left for environmental impact areas of inflow<br>
+	Add column on far right for environmental impact areas of outflow
 </div>
 <div class="content contentpadding contentwide">
 	<div id="chart"></div>

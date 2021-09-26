@@ -84,15 +84,16 @@ summary {
 }
 
 .equ {
-  font-size: 28px;
+  font-size: 24px;
   display: inline-block !important;
   border-left: 5px solid #ddd !important;
   background-color: none !important;
   background: none !important;
-  margin: 30px 0 40px 0 !important;
+  marginX: 30px 0 40px 0 !important;
   padding: 0 0 0 20px !important;
   font-family: inherit !important;
   color: #555;
+  line-height: .5em;
 }
 </style>
 
@@ -288,16 +289,16 @@ The national totals of the Greenhouse Gas (GHG) Emissions by industry must be tr
 </span>
 </span></p>
 <p>In the above equation, <span class="math inline">\(E_I\)</span> is a emission x industry matrix of national totals of each GHG by industy sector in year <span class="math inline">\(s\)</span>, and <span class="math inline">\(x_{s,t}\)</span> is a vector of gross output by industry in year <span class="math inline">\(s\)</span>, given in year <span class="math inline">\(t\)</span> dollars. The industries in the <span class="math inline">\(E\)</span> columns match the industries in <span class="math inline">\(x\)</span>.</p>
+<br>
 
-<hr><br>
-
-<p>For <span class="math inline">\(x_s\)</span> to be in year <span class="math inline">\(t\)</span> USD, <span class="math inline">\(x\)</span> must first be price adjusted in the following equation, 
+<p>For <span class="math inline">\(x_s\)</span> to be in year <span class="math inline">\(t\)</span> USD, <span class="math inline">\(x\)</span> must first be price adjusted in the following equation,<br>
 
 <span class="math display">
 <br><span class="equ">
   $$x_{i,s} = x_{i,a}*\rho_{i,a \rightarrow b}$$
 </span>
 </span></p>
+
 <p>where <span class="math inline">\(x_{i,a}\)</span> is the year industry ouput for industry <span class="math inline">\(i\)</span> in the currency year, <span class="math inline">\(s\)</span>, corresponding to the year of the national GHG totals. <span class="math inline">\(\rho\)</span> is a price adjustment factor for industry <span class="math inline">\(i\)</span> from currency year <span class="math inline">\(s\)</span> to <span class="math inline">\(t\)</span> USD. <span class="math inline">\(\rho\)</span> for industry <span class="math inline">\(i\)</span> is prepared using the following equation, <span class="math display">
 
 <br><br><span class="equ">
@@ -310,10 +311,11 @@ The national totals of the Greenhouse Gas (GHG) Emissions by industry must be tr
 <br><br><span class="equ">
   $$A_C = U\hat{x}^{-1} * V\hat{q}^{-1}$$
 </span>
-</span></p>
-<p><span class="math display">
+</span>
+<br>
 
-<br><br><span class="equ">
+<span class="math display">
+<br><span class="equ">
   $$A_C = U\hat{x}^{-1} * V\hat{q}^{-1}$$
 </span>
 </span></p>
@@ -326,40 +328,39 @@ The national totals of the Greenhouse Gas (GHG) Emissions by industry must be tr
 <p>The items of the <span class="math inline">\(B_c\)</span> matrix represent direct emission factors for commodities.</p>
 <p>The final factors must be calculated by calculating a total requirements matrix. Leontief first showed this could be done by subtracting the <span class="math inline">\(A\)</span> matrix from an identity matrix, and taking its inverse. Supply chain emission factors can be calculated by taking the product of the <span class="math inline">\(B\)</span> matrix of direct emission factors by the total requirements matrix, <span class="math inline">\(L\)</span>, where <span class="math inline">\(L\)</span> is defined as</p>
 <p><span class="math display">
-
-<br><br><span class="equ">
+<span class="equ">
   $$L_C = (I - A_C)^{-1}$$
 </span>
 </span></p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$L_I = (I - A_I)^{-1}$$
 </span>
 </span></p>
 <p>The following two equations show this calculation for the industry and commodity, where</p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$M_{I} = B_I * L_I$$
 </span>
 </span></p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$M_{C} = B_C * L_C$$
 </span>
 </span></p>
 <p>This result in emission x sector matrices, <span class="math inline">\(M\)</span>, of supply chain factors, which include direct and indirect emissions per dollar produced for each sector. The factors in <span class="math inline">\(M\)</span> have to be further transformed into purchaser price using sector-specific marginal cost data. Marginal cost data includes cost for distributions, wholesale and retail of commodity. This can be done by creating a vector or marginal cost ratios, <span class="math inline">\(\Phi_c\)</span>, both for commodities and industries for their respective models, as in the following equations.</p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$\bar{M}_{C} = M_{C}* \hat{\Phi_c}$$
 </span>
 </span></p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$\bar{M}_{I} = M_{I}* \hat{\Phi_I}'$$
 </span>
 </span></p>
@@ -372,7 +373,7 @@ The national totals of the Greenhouse Gas (GHG) Emissions by industry must be tr
 <p>For use in industry models, commodity margin factors, <span class="math inline">\(\Phi_c\)</span>, need to be transformed into industry margin factors. A commodity x industry “commodity mix” matrix <span class="citation">[@miller_blair]</span>, <span class="math inline">\(V\hat{x}^{-1}\)</span>, can be used for this purpose.</p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$\Phi_I = \hat{\Phi_C} * V\hat{x}^{-1}$$
 </span>
 </span></p>
@@ -392,7 +393,7 @@ The national totals of the Greenhouse Gas (GHG) Emissions by industry must be tr
 <p>We also estimate the potential impacts of the margins activities associated with industries and commodities, using the same margin data along with model estimates for supply chain emissions for each sector comprising the margins. We break <span class="math inline">\(\Phi\)</span> down into its margin transportation, <span class="math inline">\(t\)</span>, wholesale, <span class="math inline">\(w\)</span>, and retail, <span class="math inline">\(r\)</span> sectors:</p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$\Phi_C = \Phi_C,t + \Phi_C,w + \Phi_C,r$$
 </span>
 </span></p>
@@ -406,26 +407,26 @@ The national totals of the Greenhouse Gas (GHG) Emissions by industry must be tr
 <p>We derive emission factors for the margins with a multiplication of the original emission factor matrices, <span class="math inline">\(M\)</span> and <span class="math inline">\(U\)</span>, by <span class="math inline">\(Pa,x,y\)</span></p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$M_p = M * A_p$$
 </span>
 </span></p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$U_p = U * A_p$$
 </span>
 </span></p>
 <p>Finally, <span class="math inline">\(M_p\)</span> and <span class="math inline">\(U_p\)</span> are adjusted to be in purchaser prices like what is done with <span class="math inline">\(M\)</span> and <span class="math inline">\(U\)</span> above.</p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$\bar{M}_{p} = M_{p} * \hat{\Phi}$$
 </span>
 </span></p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$\bar{U}_{p} = U_{p} * \hat{\Phi}$$
 </span>
 </span></p>
@@ -453,7 +454,7 @@ The national totals of the Greenhouse Gas (GHG) Emissions by industry must be tr
 <p>This can be simplied in the form of the following equation.</p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$Ei = (M*y)i + E_fi$$
 </span>
 </span></p>
@@ -461,21 +462,21 @@ The national totals of the Greenhouse Gas (GHG) Emissions by industry must be tr
 <p>The issue with the model <span class="math inline">\(M\)</span>, derived from the total requirements matrix, is that it includes foreign input requirements, and that final demand also includes imports. To use the model to estimate US-produced GHGs, then <span class="math inline">\(M\)</span> has to be created with domestic requirements only. This requires a recreation of an <span class="math inline">\(A\)</span> matrix with only domestic requriements. To do this, we modify the original Use table to remove foreign requirements using the Import matrix, <span class="math inline">\(I_m\)</span>.</p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$U_d = U - I_m$$
 </span>
 </span></p>
 <p>and then we subtract the final demand provided in the import matrix, <span class="math inline">\(Y'\)</span>, from the final demand in the original Use table, to get domestic final demand, <span class="math inline">\(Y_d\)</span>.</p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$Y_d = Y - Y_d$$
 </span>
 </span></p>
 <p>Then the <span class="math inline">\(A\)</span> matrix with just domestic direct requirements, <span class="math inline">\(A_d\)</span>, can be created using a similar derviation used for <span class="math inline">\(A\)</span> above. Note that normalized Make table transactions are not the same. The follow equation is demonstrated below for the commodity form of the model.</p>
 <p><span class="math display">
 
-<br><br><span class="equ">
+<span class="equ">
   $$A_{d,C} = U_d\hat{x}^{-1} * V\hat{q}^{-1}$$
 </span>
 </span></p>
@@ -502,6 +503,7 @@ The national totals of the Greenhouse Gas (GHG) Emissions by industry must be tr
       <br><br><span class="equ">
         $$(q_c)*A$$
       </span>
+      <br><br>
     </li>
 
     <li>Commodities: Do not select only the top 20 by default. Subselect indicators were direct impacts are relevant...this will exclude energy use and mineral use for instance. All impacts can be estimated through scaling of the <span class="math inline">\(D\)</span> matrix. 
@@ -509,6 +511,7 @@ The national totals of the Greenhouse Gas (GHG) Emissions by industry must be tr
       <br><br><span class="equ">
         $$(q_c)*D$$
       </span>
+      <br><br>
     </li>
 
     <li>Downstream: Will show total dollar amount of direct uses for all combined commodities. 

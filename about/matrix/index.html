@@ -493,21 +493,40 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
 <section id="regional">
   <h2>Regional Estimate of Commodity Output</h2>
 
-  <p>For the IO chart, rather than use per $, we provide a regional estimate of commodity output: <span>$$q_c$$</span>
+  <p>For the IO chart, rather than use per $, we provide a regional estimate of commodity output <span class="math inline">\(q_c\)</span>.
 
   We show direct dollar amounts and direct impacts. This obviates the complexities of the indirect impact calculations in the IO chart.</p>
 
 <p>
-2.1. Upstream - we show total dollar amount of direct inputs for all combined Commodities. $$(q_c)*A$$
-2.2 . Commodities - Do not select only the top 20 by default. Subselect indicators were direct impacts are relevant...this will exclude energy use and mineral use for instance. The All impacts can be estimated through scaling of the D matrix. $$(q_c)*D$$
-2.3 Downstream - will show total dollar amount of direct uses for all combined Commodities. $$A*(q_c)$$
+  <ul>
+    <li>Upstream: We show total dollar amount of direct inputs for all combined commodities.
+
+      <br><br><span class="equ">
+        $$(q_c)*A$$
+      </span>
+    </li>
+
+    <li>Commodities: Do not select only the top 20 by default. Subselect indicators were direct impacts are relevant...this will exclude energy use and mineral use for instance. All impacts can be estimated through scaling of the <span class="math inline">\(D\)</span> matrix. 
+
+      <br><br><span class="equ">
+        $$(q_c)*D$$
+      </span>
+    </li>
+
+    <li>Downstream: Will show total dollar amount of direct uses for all combined commodities. 
+
+      <br><br><span class="equ">
+        $$A*(q_c)$$
+      </span>
+    </li>
+  </ul>
 </p>
 
   <p>To estimate commodity output for the total, we first estimate industry output, then apply the market shares transformation. The new API version (v1.2) and model v2.0 is used to get the needed data.</p>
 
   <p>We use industry payroll from the Bureau of Labor Statistics (BLS) as a proxy measure of industry output in the following manner:</p>
 
-  <p><span class="equ">$$x_{i,c} = w_{i,c}/w_{i,t} * x_{i,t}$$</span></p>
+  <p><span class="equ">$$x_{i,c} = \frac{w_{i,c}}{w_{i,t}} * x_{i,t}$$</span></p>
 
   <p>where <span class="math inline">\(x_{i,c}\)</span> is industry output for industry i for the community c, <span class="math inline">\(w_{i,c}\)</span> is a community payroll for industry i, <span class="math inline">\(w_{i,t}\)</span> is a payroll for industry i in the IO model region (US for USEEIOv2.0), and <span class="math inline">\(x\)</span> is the model's provided industry output for industry i. This is a single industry formula but the calculation would be best implemented in a vector form using matrix multiplication to do all at once.</p>
 

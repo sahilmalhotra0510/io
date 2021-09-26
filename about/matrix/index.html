@@ -161,68 +161,68 @@ td {
 <td>A list of USEEIO models provided</td>
 </tr>
 <tr>
-<td>A</td>
+<td>\(A\)</td>
 <td>component</td>
 <td>The direct requirements matrix for a given model.<br>
 <img src="img/A.png"></td>
 </tr>
 <tr>
-<td>B</td>
+<td>\(B\)</td>
 <td>component</td>
 <td>The satellite matrix for a given model<br>
 <img src="img/B.png"></td>
 </tr>
 <tr>
-<td>C</td>
+<td>\(C\)</td>
 <td>component</td>
 <td>The characterization factor matrix for a given model<br>
 <img src="img/C.png"></td>
 </tr>
 <tr>
-<td>D</td>
+<td>\(D\)</td>
 <td>component</td>
 <td>The direct impact matrix for a given model</td>
 </tr>
 <tr>
-<td>F</td>
+<td>\(F\)</td>
 <td>component</td>
 <td><br>
 <img src="img/F.png"></td>
 </tr>
 <tr>
-<td>L</td>
+<td>\(L\)</td>
 <td>component</td>
 <td>The Leontief inverse matrix for a given model</td>
 </tr>
 <tr>
-<td>U</td>
+<td>\(U\)</td>
 <td>component</td>
 <td>The total impact matrix for a given model</td>
 </tr>
 <tr>
-<td>V</td>
+<td>\(V\)</td>
 <td>component</td>
 <td>The Make table</td>
 </tr>
 <tr>
-<td>B_dqi</td>
+<td>\(B_{dqi}\)</td>
 <td>component</td>
 <td>Data quality scores for the B matrix for a given model</td>
 </tr>
 <tr>
-<td>D_dqi</td>
+<td>\(D_{dqi}\)</td>
 <td>component</td>
 <td>Data quality scores for the D matrix for a given model</td>
 </tr>
 
 <tr>
-<td>N</td>
+<td>\(N\)</td>
 <td>component</td>
 <td></td>
 </tr>
 
 <tr>
-<td>U_dqi</td>
+<td>\(U_{dqi}\)</td>
 <td>component</td>
 <td>Data quality scores for the U matrix for a given model</td>
 </tr>
@@ -256,13 +256,13 @@ td {
 <a href="https://github.com/USEPA/USEEIO_API">Overview of each matrix (array of numbers)</a> and 
 <a href="https://github.com/USEPA/USEEIO_API/blob/master/doc/data_format.md">Data formats for sectors, flows and LCIA categories</a><br><br>
 
-Technology matrix (A) does not include wages (compensation), taxes, nor gross opperating surplus (profits)  
+Technology matrix (<span class="math inline">\(A\)</span>) does not include wages (compensation), taxes, nor gross opperating surplus (profits)  
 "Value Added" is the sum of wages, taxes and profits.<br><br>
 
-Environmental matrix (B) = Emission per dollar<br>
+Environmental matrix (<span class="math inline">\(B\)</span>) = Emission per dollar<br>
 Total industry (emmission) / output <br><br>
 
-D and U matrices are the results.<br><br>
+<span class="math inline">\(D\)</span> and <span class="math inline">\(U\)</span> matrices are the results.<br><br>
 
 <a href="https://model.earth/community/img/overview/useeio-methodology.png"><img src="../../../community/img/overview/useeio-methodology.png" style="width:100%;max-width:800px"></a><br>
 
@@ -307,7 +307,7 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
 </span>
 </span></p>
 <p>where <span class="math inline">\(\rho\)</span> from currency year <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span> is the ratio of the industry chain price index for year <span class="math inline">\(b\)</span> to that of year <span class="math inline">\(a\)</span>. These equations are used for each industry in the given model.</p>
-<p>The core of an IO model is a direct requirements matrix,<span class="math inline">\(A\)</span>, representing the dollar inputs from other sectors per dollar output. Two <span class="math inline">\(A\)</span> matrices are derived, one in commodity x commodity form, <span class="math inline">\(A_C\)</span>, and the other in industry by industry form, <span class="math inline">\(A_I\)</span>. Both are created using a combination of normalized forms of the Make and Use tables. The Make table is normalized by the commodity output vector, <span class="math inline">\(q\)</span>, and the Use table by the industry output vector, <span class="math inline">\(x\)</span>. The only difference between <span class="math inline">\(A_C\)</span> and <span class="math inline">\(A_I\)</span> is the order of multiplication, as shown in the following two equations. <span class="math display">
+<p>The core of an IO model is a direct requirements matrix, <span class="math inline">\(A\)</span>, representing the dollar inputs from other sectors per dollar output. Two <span class="math inline">\(A\)</span> matrices are derived, one in commodity x commodity form, <span class="math inline">\(A_C\)</span>, and the other in industry by industry form, <span class="math inline">\(A_I\)</span>. Both are created using a combination of normalized forms of the Make and Use tables. The Make table is normalized by the commodity output vector, <span class="math inline">\(q\)</span>, and the Use table by the industry output vector, <span class="math inline">\(x\)</span>. The only difference between <span class="math inline">\(A_C\)</span> and <span class="math inline">\(A_I\)</span> is the order of multiplication, as shown in the following two equations. <span class="math display">
 
 <br><br><span class="equ">
   $$A_C = U\hat{x}^{-1} * V\hat{q}^{-1}$$
@@ -319,14 +319,14 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
   $$A_C = U\hat{x}^{-1} * V\hat{q}^{-1}$$
 </span>
 </span></p>
-<p>Another name for <span class="math inline">\(V\hat{q}^{-1}\\)</span> is the Market Shares matrix. The GHG satellite table for the commodity models must be transformed by this matrix to be in emission x commodity form, using the following equation. <span class="math display">
+<p>Another name for <span class="math inline">\(V\hat{q}^{-1}\)</span> is the Market Shares matrix. The GHG satellite table for the commodity models must be transformed by this matrix to be in emission x commodity form, using the following equation. <span class="math display">
 
 <br><br><span class="equ">
   $$B_C = B_I * V\hat{q}^{-1}$$
 </span>
 </span></p>
 <p>The items of the <span class="math inline">\(B_c\)</span> matrix represent direct emission factors for commodities.</p>
-<p>The final factors must be calculated by calculating a total requirements matrix. Leontief first showed this could be done by subtracting the <span class="math inline">\(A\)</span> matrix from an identity matrix, and taking its inverse. Supply chain emission factors can be calculated by taking the product of the <span class="math inline">\(B\)</span> matrix of direct emission factors by the total requirements matrix, <span class="math inline">\(L\)</span>, where L is defined as</p>
+<p>The final factors must be calculated by calculating a total requirements matrix. Leontief first showed this could be done by subtracting the <span class="math inline">\(A\)</span> matrix from an identity matrix, and taking its inverse. Supply chain emission factors can be calculated by taking the product of the <span class="math inline">\(B\)</span> matrix of direct emission factors by the total requirements matrix, <span class="math inline">\(L\)</span>, where <span class="math inline">\(L\)</span> is defined as</p>
 <p><span class="math display">
 
 <br><br><span class="equ">
@@ -352,7 +352,7 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
   $$M_{C} = B_C * L_C$$
 </span>
 </span></p>
-<p>This result in emission x sector matrices, <span class="math inline">\(M\)</span>, of supply chain factors, which include direct and indirect emissions per dollar produced for each sector. The factors in <span class="math inline">\(M\)</span> have to be further transformed into purchaser price using sector-specific marginal cost data. Marginal cost data includes cost for distributions, wholesale and retail of commodity. This can be done by creating a vector or marginal cost ratios, <span class="math inline">\(\Phi_c\)</span>, both for commodities and industries for their respective models, as i the following equations.</p>
+<p>This result in emission x sector matrices, <span class="math inline">\(M\)</span>, of supply chain factors, which include direct and indirect emissions per dollar produced for each sector. The factors in <span class="math inline">\(M\)</span> have to be further transformed into purchaser price using sector-specific marginal cost data. Marginal cost data includes cost for distributions, wholesale and retail of commodity. This can be done by creating a vector or marginal cost ratios, <span class="math inline">\(\Phi_c\)</span>, both for commodities and industries for their respective models, as in the following equations.</p>
 <p><span class="math display">
 
 <br><br><span class="equ">
@@ -371,7 +371,7 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
   $$\Phi_C = \frac{q_{pur,c}}{q_{pro,c}}$$
 </span>
 </span></p>
-<p>For use in industry models, commodity margin factors, <span class="math inline">\(\Phi_c\)</span>, need to be transformed into industry margin factors. The factors. A commodity x industry “commodity mix” matrix <span class="citation">[@miller_blair]</span>, <span class="math inline">\(V\hat{x}^{-1}\)</span> , can be used for this purpose.</p>
+<p>For use in industry models, commodity margin factors, <span class="math inline">\(\Phi_c\)</span>, need to be transformed into industry margin factors. A commodity x industry “commodity mix” matrix <span class="citation">[@miller_blair]</span>, <span class="math inline">\(V\hat{x}^{-1}\)</span>, can be used for this purpose.</p>
 <p><span class="math display">
 
 <br><br><span class="equ">
@@ -379,32 +379,32 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
 </span>
 </span></p>
 <p>where, commodity mix matrix, a commodity x industry matrix representing the mix of commodities being produced by industries.</p>
-<p>To identify the root sources of emissions for a given supply chain factor in <span class="math inline">\(M\)</span>, we assume $1 million USD in demand for the related sector, and calculate a scaling vector, <span class="math inline">\(s\)</span> , as <span class="math display">
+<p>To identify the root sources of emissions for a given supply chain factor in <span class="math inline">\(M\)</span>, we assume $1 million USD in demand for the related sector, and calculate a scaling vector, <span class="math inline">\(s\)</span>, as <span class="math display">
 
 <br><br><span class="equ">
   $$s = (I - A)^{-1}y$$
 </span>
 </span></p>
-<p>where A is either A_I or A_C, depending on model type, <span class="math inline">\(y\)</span> a vector of the same length as A with zeroes for all sectors except the sector of interest, where the value is set to $1 million USD. This is turn used to calculate a matrix of total emissions by root emitting sector, <span class="math inline">\(M_d\)</span> <span class="math display">
+<p>where <span class="math inline">\(A\)</span> is either <span class="math inline">\(A_I\)</span> or <span class="math inline">\(A_C\)</span>, depending on model type, <span class="math inline">\(y\)</span> a vector of the same length as <span class="math inline">\(A\)</span> with zeroes for all sectors except the sector of interest, where the value is set to $1 million USD. This is turn used to calculate a matrix of total emissions by root emitting sector, <span class="math inline">\(M_d\)</span> <span class="math display">
 
 <br><br><span class="equ">
   $$M_d = B\hat{s}$$
 </span>
 </span></p>
-<p>We also estimate the potential impacts of the margins activities associated with industries and commodities, using the same margin data along with model estimates for supply chain emissions for each sector comprising the margins. We break <span class="math inline">\(\Phi\)</span> down into its margin transportation,<span class="math inline">\(t\)</span>, wholesale,<span class="math inline">\(w\)</span>, and retail,<span class="math inline">\(r\)</span> sectors:</p>
+<p>We also estimate the potential impacts of the margins activities associated with industries and commodities, using the same margin data along with model estimates for supply chain emissions for each sector comprising the margins. We break <span class="math inline">\(\Phi\)</span> down into its margin transportation, <span class="math inline">\(t\)</span>, wholesale, <span class="math inline">\(w\)</span>, and retail, <span class="math inline">\(r\)</span> sectors:</p>
 <p><span class="math display">
 
 <br><br><span class="equ">
   $$\Phi_C = \Phi_C,t + \Phi_C,w + \Phi_C,r$$
 </span>
 </span></p>
-<p>For each margin components, we allocate margin type across all margin sectors associated with that type, for example, for retail we need to allocate the retail margins across model retail sectors. For this We develop a margin allocation matrix,<span class="math inline">\(MA\)</span>, with rows for each of the margin components and columns for all model margin sectors. We allocate across sectors of a given margin type based on relative commodity output of the model sectors for that margin type. Note this procedure does not result in commodity or industry-specific margins types. We assemble the sector-specific margin coefficients into a commmodity by coefficient matrix, <span class="math inline">\(P\)</span>.We then multiply the margin coefficients matrix by the margin allocation matrix <span class="math display">
+<p>For each margin components, we allocate margin type across all margin sectors associated with that type, for example, for retail we need to allocate the retail margins across model retail sectors. For this We develop a margin allocation matrix, <span class="math inline">\(MA\)</span>, with rows for each of the margin components and columns for all model margin sectors. We allocate across sectors of a given margin type based on relative commodity output of the model sectors for that margin type. Note this procedure does not result in commodity or industry-specific margins types. We assemble the sector-specific margin coefficients into a commmodity by coefficient matrix, <span class="math inline">\(P\)</span>. We then multiply the margin coefficients matrix by the margin allocation matrix <span class="math display">
 
 <br><br><span class="equ">
   $$P_a =  P * MA$$
 </span>
 </span></p>
-<p>The result <span class="math inline">\(P_a\)</span> represents $ of margin input per $ producer price for each model sector by margin sector type. We transform the result, <span class="math inline">\(P_a\)</span>, into the shape of the A matrix, to easily match up with the emissions factors, and name the reshaped form <span class="math inline">\(A_p\)</span>.</p>
+<p>The result <span class="math inline">\(P_a\)</span> represents $ of margin input per $ producer price for each model sector by margin sector type. We transform the result, <span class="math inline">\(P_a\)</span>, into the shape of the <span class="math inline">\(A\)</span> matrix, to easily match up with the emissions factors, and name the reshaped form <span class="math inline">\(A_p\)</span>.</p>
 <p>We derive emission factors for the margins with a multiplication of the original emission factor matrices, <span class="math inline">\(M\)</span> and <span class="math inline">\(U\)</span>, by <span class="math inline">\(Pa,x,y\)</span></p>
 <p><span class="math display">
 
@@ -507,17 +507,17 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
 
   <p>We use industry payroll from the Bureau of Labor Statistics (BLS) as a proxy measure of industry output in the following manner:</p>
 
-  <p><span class="equ">$$x_i,c = w_i,c/w_i,t * x_i,c$$</span></p>
+  <p><span class="equ">$$x_{i,c} = w_{i,c}/w_{i,t} * x_{i,t}$$</span></p>
 
-  <p>where x_c,i is industry output for industry i for the community c, w<sub>c</sub> is a community payroll for industry i, w<sub>i</sub>,t is a payroll for industry i in the IO model region (US for USEEIOv2.0), and x is the model's provided industry output for industry i. This is a single industry formula but the calculation would be best implemented in a vector form using matrix multiplication to do all at once.</p>
+  <p>where <span class="math inline">\(x_{i,c}\)</span> is industry output for industry i for the community c, <span class="math inline">\(w_{i,c}\)</span> is a community payroll for industry i, <span class="math inline">\(w_{i,t}\)</span> is a payroll for industry i in the IO model region (US for USEEIOv2.0), and <span class="math inline">\(x\)</span> is the model's provided industry output for industry i. This is a single industry formula but the calculation would be best implemented in a vector form using matrix multiplication to do all at once.</p>
 
   <p>In order to get the index of the payroll vectors to match the IO model industries, we relate the NAICS based payroll data to model sectors using the built-in API crosswalk where we assume the payroll sectors match those in the NAICS column and we aggregate it to model industries using the provided model industries column.</p>
 
-  <p>Once we have a vector x<sub>c</sub> of industry output for the community indexed by the model industries, we use a market shares transformation to derive commodity output for the community, q<sub>c</sub>.</p>
+  <p>Once we have a vector <span class="math inline">\(x_{c}\)</span> of industry output for the community indexed by the model industries, we use a market shares transformation to derive commodity output for the community, <span class="math inline">\(q_{c}\)</span>.</p>
 
   <p><span class="equ">$$q_c = x_c * V\hat{q}^{-1}$$</span></p>
 
-  <p>where V is the Make table and q is the commodity output vector. More details on V<sub>n</sub> found in the <a href="https://github.com/USEPA/useeior/tree/master/format_specs">useeior model format spec</a>.</p>
+  <p>where <span class="math inline">\(V\)</span> is the Make table and <span class="math inline">\(q\)</span> is the commodity output vector. More details on <span class="math inline">\(V_n\)</span> found in the <a href="https://github.com/USEPA/useeior/tree/master/format_specs">useeior model format spec</a>.</p>
 <section>
 
 </div>

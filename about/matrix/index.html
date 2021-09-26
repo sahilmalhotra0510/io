@@ -286,7 +286,7 @@ The national totals of the Greenhouse Gas (GHG) Emissions by industry must be tr
 This is the part where I get really lost. Where did the hat come from?<br><br>
 
 <span class="equ">
-  $$B_{I,t} = E_{I,s}hat{x}^{-1}_{s,t}$$
+  $$B_{I,t} = E_{I,s}\hat{x}^{-1}_{s,t}$$
 </span>
 </span></p>
 <p>In the above equation, <span class="math inline">(E_I)</span> is a emission x industry matrix of national totals of each GHG by industy sector in year <span class="math inline">(s)</span>, and <span class="math inline">(x_{s,t})</span> is a vector of gross output by industry in year <span class="math inline">(s)</span>, given in year <span class="math inline">(t)</span> dollars. The industries in the <span class="math inline">(E)</span> columns match the industries in <span class="math inline">(x)</span>.</p>
@@ -310,19 +310,19 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
 <p>The core of an IO model is a direct requirements matrix,<span class="math inline">(A)</span>, representing the dollar inputs from other sectors per dollar output. Two <span class="math inline">(A)</span> matrices are derived, one in commodity x commodity form, <span class="math inline">(A_C)</span>, and the other in industry by industry form, <span class="math inline">(A_I)</span>. Both are created using a combination of normalized forms of the Make and Use tables. The Make table is normalized by the commodity output vector, <span class="math inline">(q)</span>, and the Use table by the industry output vector, <span class="math inline">(x)</span>. The only difference between <span class="math inline">(A_C)</span> and <span class="math inline">(A_I)</span> is the order of multiplication, as shown in the following two equations. <span class="math display">
 
 <br><br><span class="equ">
-  $$A_C = Uhat{x}^{-1} * Vhat{q}^{-1}$$
+  $$A_C = U\hat{x}^{-1} * V\hat{q}^{-1}$$
 </span>
 </span></p>
 <p><span class="math display">
 
 <br><br><span class="equ">
-  $$A_C = Uhat{x}^{-1} * Vhat{q}^{-1}$$
+  $$A_C = U\hat{x}^{-1} * V\hat{q}^{-1}$$
 </span>
 </span></p>
-<p>Another name for <span class="math inline">(Vhat{q}^{-1})</span> is the Market Shares matrix. The GHG satellite table for the commodity models must be transformed by this matrix to be in emission x commodity form, using the following equation. <span class="math display">
+<p>Another name for <span class="math inline">\(V\hat{q}^{-1}\)</span> is the Market Shares matrix. The GHG satellite table for the commodity models must be transformed by this matrix to be in emission x commodity form, using the following equation. <span class="math display">
 
 <br><br><span class="equ">
-  $$B_C = B_I * Vhat{q}^{-1}$$
+  $$B_C = B_I * V\hat{q}^{-1}$$
 </span>
 </span></p>
 <p>The items of the <span class="math inline">(B_c)</span> matrix represent direct emission factors for commodities.</p>
@@ -356,13 +356,13 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
 <p><span class="math display">
 
 <br><br><span class="equ">
-  $$bar{M}_{C} = M_{C}* hat{Phi_c}$$
+  $$bar{M}_{C} = M_{C}* \hat{Phi_c}$$
 </span>
 </span></p>
 <p><span class="math display">
 
 <br><br><span class="equ">
-  $$bar{M}_{I} = M_{I}* hat{Phi_I}^{prime}$$
+  $$bar{M}_{I} = M_{I}* \hat{Phi_I}^{prime}$$
 </span>
 </span></p>
 <p><span class="math inline">(Phi_c)</span> is a vector of commodity specific purchaser to producer prices. <span class="math display">
@@ -371,11 +371,11 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
   $$Phi_C = frac{q_{pur,c}}{q_{pro,c}}$$
 </span>
 </span></p>
-<p>For use in industry models, commodity margin factors, <span class="math inline">(Phi_c)</span>, need to be transformed into industry margin factors. The factors. A commodity x industry “commodity mix” matrix <span class="citation">[@miller_blair]</span>, <span class="math inline">(Vhat{x}^{-1})</span> , can be used for this purpose.</p>
+<p>For use in industry models, commodity margin factors, <span class="math inline">(Phi_c)</span>, need to be transformed into industry margin factors. The factors. A commodity x industry “commodity mix” matrix <span class="citation">[@miller_blair]</span>, <span class="math inline">(V\hat{x}^{-1})</span> , can be used for this purpose.</p>
 <p><span class="math display">
 
 <br><br><span class="equ">
-  $$Phi_I = hat{Phi_C} * Vhat{x}^{-1}$$
+  $$Phi_I = \hat{Phi_C} * V\hat{x}^{-1}$$
 </span>
 </span></p>
 <p>where, commodity mix matrix, a commodity x industry matrix representing the mix of commodities being produced by industries.</p>
@@ -388,7 +388,7 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
 <p>where A is either A_I or A_C, depending on model type, <span class="math inline">(y)</span> a vector of the same length as A with zeroes for all sectors except the sector of interest, where the value is set to $1 million USD. This is turn used to calculate a matrix of total emissions by root emitting sector, <span class="math inline">(M_d)</span> <span class="math display">
 
 <br><br><span class="equ">
-  $$M_d = Bhat{s}$$
+  $$M_d = B\hat{s}$$
 </span>
 </span></p>
 <p>We also estimate the potential impacts of the margins activities associated with industries and commodities, using the same margin data along with model estimates for supply chain emissions for each sector comprising the margins. We break <span class="math inline">(Phi)</span> down into its margin transportation,<span class="math inline">(t)</span>, wholesale,<span class="math inline">(w)</span>, and retail,<span class="math inline">(r)</span> sectors:</p>
@@ -422,16 +422,16 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
 <p><span class="math display">
 
 <br><br><span class="equ">
-  $$bar{M}_{p} = M_{p} * hat{Phi}$$
+  $$bar{M}_{p} = M_{p} * \hat{Phi}$$
 </span>
 </span></p>
 <p><span class="math display">
 
 <br><br><span class="equ">
-  $$bar{U}_{p} = U_{p} * hat{Phi}$$
+  $$bar{U}_{p} = U_{p} * \hat{Phi}$$
 </span>
 </span></p>
-<p>where <span class="math inline">(hat{Phi})</span> is for industries or commodities depending on the model.</p>
+<p>where <span class="math inline">(\hat{Phi})</span> is for industries or commodities depending on the model.</p>
 </div>
 <div id="data-quality-scores-for-emission-factors" class="section level2">
 <h2>Data quality scores for emission factors</h2>
@@ -478,7 +478,7 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
 <p><span class="math display">
 
 <br><br><span class="equ">
-  $$A_{d,C} = U_dhat{x}^{-1} * Vhat{q}^{-1}$$
+  $$A_{d,C} = U_d\hat{x}^{-1} * V\hat{q}^{-1}$$
 </span>
 </span></p>
 <p>We can follow from the steps to create <span class="math inline">(M)</span> from <span class="math inline">(A)</span> and apply them to create <span class="math inline">(M_d)</span> using the <span class="math inline">(A_d)</span>. This refines the data validation check to compare national GHG totals only to the sum of the supply chain factors based on domestic requirements scaled by the domestic final demand, as in the following equation: <span class="math display">

@@ -455,7 +455,7 @@ function displayImpactBubbles(attempts) {
 
     if(hash.geo){
       if (hash.geo.includes(",")){
-          let geos=geo.split(",");
+          let geos=hash.geo.split(",");
           dataObject1.stateshown=(geos[0].split("US")[1]).slice(0,2)
       }else{
           dataObject1.stateshown=(hash.geo.split("US")[1]).slice(0,2)

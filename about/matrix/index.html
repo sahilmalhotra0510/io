@@ -128,7 +128,7 @@ summary {
 
   <li>An exponent of “-1” represents an inverse.</li>
 
-  <li>A “<span class="math inline">\(\prime\)</span>” (prime) represents the transposed (rows and columns switched) form of a matrix or vector.</li>
+  <li>A “<span class="math inline">\('\)</span>” (prime) represents the transposed (rows and columns switched) form of a matrix or vector.</li>
 </ul>
 
 </p>
@@ -297,13 +297,13 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
 
 <span class="math display">
 <br><span class="equ">
-  $$x_{i,s} = x_{i,a}*\rho_{i,a-&gt;b}$$
+  $$x_{i,s} = x_{i,a}*\rho_{i,a \rightarrow b}$$
 </span>
 </span></p>
 <p>where <span class="math inline">\(x_{i,a}\)</span> is the year industry ouput for industry <span class="math inline">\(i\)</span> in the currency year, <span class="math inline">\(s\)</span>, corresponding to the year of the national GHG totals. <span class="math inline">\(\rho\)</span> is a price adjustment factor for industry <span class="math inline">\(i\)</span> from currency year <span class="math inline">\(s\)</span> to <span class="math inline">\(t\)</span> USD. <span class="math inline">\(\rho\)</span> for industry <span class="math inline">\(i\)</span> is prepared using the following equation, <span class="math display">
 
 <br><br><span class="equ">
-  $$\rho_{i,a-&gt;b} = \frac{cpi_{i,b}}{cpi_{i,a}}$$
+  $$\rho_{i,a \rightarrow b} = \frac{cpi_{i,b}}{cpi_{i,a}}$$
 </span>
 </span></p>
 <p>where <span class="math inline">\(\rho\)</span> from currency year <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span> is the ratio of the industry chain price index for year <span class="math inline">\(b\)</span> to that of year <span class="math inline">\(a\)</span>. These equations are used for each industry in the given model.</p>
@@ -362,7 +362,7 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
 <p><span class="math display">
 
 <br><br><span class="equ">
-  $$\bar{M}_{I} = M_{I}* \hat{\Phi_I}^{\prime}$$
+  $$\bar{M}_{I} = M_{I}* \hat{\Phi_I}'$$
 </span>
 </span></p>
 <p><span class="math inline">\(\Phi_c\)</span> is a vector of commodity specific purchaser to producer prices. <span class="math display">
@@ -467,7 +467,7 @@ This is the part where I get really lost. Where did the hat come from?<br><br>
   $$U_d = U - I_m$$
 </span>
 </span></p>
-<p>and then we subtract the final demand provide in the import matrix, <span class="math inline">\(Y&#39;\)</span> from the final demand in the original Use table, to get domestic final demand, <span class="math inline">\(Y_d\)</span>.</p>
+<p>and then we subtract the final demand provided in the import matrix, <span class="math inline">\(Y'\)</span>, from the final demand in the original Use table, to get domestic final demand, <span class="math inline">\(Y_d\)</span>.</p>
 <p><span class="math display">
 
 <br><br><span class="equ">

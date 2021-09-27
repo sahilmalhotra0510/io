@@ -1,13 +1,13 @@
 # About API
 
-[Instructions on building the USEEIO API](https://github.com/USEPA/USEEIO_API/wiki/Build)
+[Embeddable IO Widgets](../../charts) use the [static JSON files](https://github.com/modelearth/io/tree/main/build/api) output from the USEEIO API.
 
-[USEEIOR](https://github.com/USEPA/USEEIOR) now generates most of the model files for the API. (Replaces the use of IOMB on page above.)  
+[USEEIOR](https://github.com/USEPA/USEEIOR) generates most of the model files for the API. (Replaces the use of IOMB on the following page.)  
 
-Here are [model files](https://www.dropbox.com/sh/af48m0jsusgr3jg/AACzBSJwujR6LU0jZBhAzys6a?dl=0) for testing.
-You can host an unofficial instance of the USEEIO API on your local computer.  
+[Instructions on building the USEEIO API (might be old)](https://github.com/USEPA/USEEIO_API/wiki/Build) - Local Installation for software programmers
 
-Here's the [embeddable IO widget frontend](../../../io/charts/) for interacting with .json files output from the API.  
+
+Here are [old model files](https://www.dropbox.com/sh/af48m0jsusgr3jg/AACzBSJwujR6LU0jZBhAzys6a?dl=0) for testing. (Better to use the newer data in the [static JSON files](https://github.com/modelearth/io/tree/main/build/api)) - [Build locally](../../charts/#build)
 
 
 <h2 id="countymodel"> USEEIO County Model Methodology</h2>

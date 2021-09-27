@@ -91,7 +91,7 @@ Indexes of Machine-Readable APIs and detail files allow for graph analysis and i
 
 **Conclusion**
 
-Basing new inflow-outflow summaries for communities on existing EPD standards developed for product impacts, will simplify the ease with which impacts are compared and mitigated for locations, workforces and schools. Including YAML file links in environmental product directories will allow for easier sharing of metadata for scenario configuration and web services such as impact labels and heatmaps, while providing a human-readable format that works equally well for machine learning analysis. 
+Basing new inflow-outflow summaries for communities and individuals on existing EPD standards, developed intially for product impacts, will simplify the ease with which impacts are compared and mitigated for locations, workforces and schools. Including YAML file links in environmental product directories will allow for easier sharing of metadata for scenario configuration and web services such as impact labels and heatmaps, while providing a human-readable format that works equally well for machine learning analysis. 
 
 A frontend YAML editing interface is being developed by Code for America<sup>8</sup> to update community impact scenario files directly using GitHub Actions. The new work extends the metadata editing interface created by the government of Italy to manage public code repositories. The same process could update individual footprint estimates using a community's unique baseline mix of industries and commute times.
 

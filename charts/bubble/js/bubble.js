@@ -152,36 +152,38 @@ function refreshBubbleWidget() {
 }
 
 
+console.log("Bubble js loaded");
+$(document).ready(function () {
+  console.log("Bubble gets doc ready");
+  //getting the listof indicators and populating the x and y dropdown options
+  let dropdown = $('#graph-picklist-x');
+  dropdown.empty();
+  const url = '/io/build/api/USEEIOv2.0/indicators.json';
+  // Populate dropdown with list of provinces
+  $.getJSON(url, function (data) {
+    $.each(data, function (key, entry) {
+      dropdown.append($('<option></option>').attr('value', entry.code).text(entry.name));
+    })
+  });
 
-//getting the listof indicators and populating the x and y dropdown options
-let dropdown = $('#graph-picklist-x');
-dropdown.empty();
-const url = '/io/build/api/USEEIOv2.0/indicators.json';
-// Populate dropdown with list of provinces
-$.getJSON(url, function (data) {
-  $.each(data, function (key, entry) {
-    dropdown.append($('<option></option>').attr('value', entry.code).text(entry.name));
-  })
+  let dropdown2 = $('#graph-picklist-y');
+  dropdown2.empty();
+  // Populate dropdown with list of provinces
+  $.getJSON(url, function (data) {
+    $.each(data, function (key, entry) {
+      dropdown2.append($('<option></option>').attr('value', entry.code).text(entry.name));
+    })
+  });
+
+  let dropdown3 = $('#graph-picklist-z');
+  dropdown3.empty();
+  // Populate dropdown with list of provinces
+  $.getJSON(url, function (data) {
+    $.each(data, function (key, entry) {
+      dropdown3.append($('<option></option>').attr('value', entry.code).text(entry.name));
+    })
+  });
 });
-
-let dropdown2 = $('#graph-picklist-y');
-dropdown2.empty();
-// Populate dropdown with list of provinces
-$.getJSON(url, function (data) {
-  $.each(data, function (key, entry) {
-    dropdown2.append($('<option></option>').attr('value', entry.code).text(entry.name));
-  })
-});
-
-let dropdown3 = $('#graph-picklist-z');
-dropdown3.empty();
-// Populate dropdown with list of provinces
-$.getJSON(url, function (data) {
-  $.each(data, function (key, entry) {
-    dropdown3.append($('<option></option>').attr('value', entry.code).text(entry.name));
-  })
-});
-
 
 
 var parentId = "#graph-wrapper";

@@ -109,7 +109,7 @@
     <div style="clear:both"></div>
 
 
-    <div class="bubble-graph">
+    <div id="bubble-graph-id" class="bubble-graph">
 
         <div style="clear:both; border-top:1px solid #999; border-bottom:1px solid #999; padding:10px; margin-bottom:10px; overflow: scroll">
 
@@ -177,6 +177,9 @@
 <script>
   if(typeof hiddenhash == 'undefined') {
       var hiddenhash = {};
+  }
+  if(typeof hash == 'undefined') {
+      hash = getHash();
   }
   hiddenhash.naics = "311615,311812,321113,221112,113310,322110,311821,311612,325211,311813,311911,311919,311830,311119,322121,311824,311941,325991,311710,311930";
   $(document).ready(function () {

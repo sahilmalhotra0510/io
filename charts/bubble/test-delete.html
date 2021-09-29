@@ -178,7 +178,7 @@ input:checked + .slider:before {
     <div style="clear:both"></div>
 
 
-    <div class="bubble-graph">
+    <div id="bubble-graph-id" class="bubble-graph">
 
         <div style="clear:both; border-top:1px solid #999; border-bottom:1px solid #999; padding:10px; margin-bottom:10px; overflow: scroll">
 
@@ -262,10 +262,9 @@ input:checked + .slider:before {
 
 <!--div used for its attribute update,instead of using hash-->
 <div id="sector-list" class="sector-list">
-
-  
   
   <script>
+    let hash = getHash();
     var config = useeio.urlConfig();
     var modelID = config.get().model || 'USEEIOv2.0';
     var model = useeio.model({

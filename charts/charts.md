@@ -41,7 +41,7 @@ The io repo includes additional code for integrating widgets.
 - [Sector List IO - Tire manufacturing (older version)](../build/iotables.html#sectors=326210&page=5)  
 -->
 - [Industry Impact Bars with Configuration](../build/impact_chart_config.html)    
-- [More React widgets](../build/) - ([Recent build 1](https://msrocka.github.io/useeio-widget-builds/)) - ([Recent build 2](https://thetisiboth.github.io/useeio-widget-builds/))    
+- [More React widgets](../build/) and <!-- ([Recent build 1](https://msrocka.github.io/useeio-widget-builds/)) --> [Recent developer build (thetisiboth)](https://thetisiboth.github.io/useeio-widget-builds/)  
 
 ## JQuery Widgets 
 

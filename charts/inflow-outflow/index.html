@@ -300,6 +300,9 @@
 
     var config = useeio.urlConfig();
     var modelID = config.get().model || 'USEEIOv1.2';
+    if (param.iomodel) {
+        modelID = param.iomodel;
+    }
 
     var model = useeio.model({
         endpoint: '/io/build/api',

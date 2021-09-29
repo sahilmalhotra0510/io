@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 
-<link rel="stylesheet" type="text/css" href="../../build/slider.css">
+<link rel="stylesheet" type="text/css" href="../../build/iochart.css">
 
 <link type="text/css" href="../../../localsite/css/base.css" rel="stylesheet" />
 <script type="text/javascript" src="../../../localsite/js/d3.v5.min.js"></script>
@@ -288,26 +288,18 @@
 
 <div id="iogrid"></div>
 
-<script src="../../build/lib/d3.min.js"></script>
 <script src="../../build/lib/useeio_widgets.js"></script>
 <script>
 	//var naics = "311615,311812,321113,221112,113310,322110,311821,311612,325211,311813,311911,311919,311830,311119,322121,311824,311941,325991,311710,311930";
 
     //var naicsCodes = naics.split(',');
 
+    var hiddenhash = {
+        indicators: "VADD"
+    };
+
     var config = useeio.urlConfig();
-
-    //var config = {
-    //	page: 1,
-    //    count: 50,
-    //    naics: naicsCodes
-    //};
-
-    // Not working
-    //config.naics = naicsCodes;
-
-    var modelID = config.get().model || 'USEEIOv2.0'; // USEEIOv1.2 currently shows over $300 for agriculture
-    //var modelID = 'USEEIOv1.2';
+    var modelID = config.get().model || 'USEEIOv1.2';
 
     var model = useeio.model({
         endpoint: '/io/build/api',
@@ -318,13 +310,12 @@
         model: model,
         selector: '#iogrid',
     });
-    /*
     config.withDefaults({
-        indicators: ["VADD"],
-        count: 50,
+        count: 10,
+        page:1
     })
-    */
     config.join(ioGrid);
+
 </script>
 <!-- /INFLOW OUTFLOW -->
 

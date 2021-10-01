@@ -7,7 +7,7 @@ Our teaching and research tools use dynamic charts to present over 10 million da
 Learn about the science and principles behind environmentally-extended input-output (EEIO).
 
 - [IO Charts - Impact Widgets](/io/charts/)  
+- [Learn about Input-Output Model Construction](/io/about/matrix/)  
+A course for Dummies (like me) on Matrix Algebra and Factor Preparation  
 - <a href="http://epa.gov/smm" target="_parent">US EPA Sustainable Materials Management (SMM)</a>  
 - [SMM Prioritization Tools](https://www.epa.gov/smm/sustainable-materials-management-prioritization-tools)
-- [Learn about Input-Output Model Construction](/io/about/matrix/)  
-A course for Dummies (like me) on Matrix Algebra and Factor Preparation

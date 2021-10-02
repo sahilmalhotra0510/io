@@ -449,9 +449,7 @@ function displayImpactBubbles(attempts) {
     }
 
 
-
-    // TODO: Activate Georgia option when ready
-    //dataObject1.stateshown=13;
+    //dataObject1.stateshown=13; // Georgia and otehr states when ready
     //let params = loadParams(location.search,location.hash);
     let hash = getHash();
 

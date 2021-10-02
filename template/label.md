@@ -1,8 +1,8 @@
 ## Widgets - Environmental Profile Labels - React and YAML
 
-Design a layout for our <a href="/apps/">mini-labels</a> and new <a href="#cinematic">super-labels</a> using cinematic effects. Coordinate with Abrie and Léo if you have React skills.
+Design a layout for our <a href="../../apps/">mini-labels</a> and new <a href="../../community/projects/#cinematic">super-labels</a> using cinematic effects.
 
-We're building toward interactive label functionality in React. Abrie is leading the React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/">resulting label output</a>.<br>
+We're building toward interactive label functionality in React. Abrie is leading the React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/">resulting label output</a>. Coordinate with Abrie and Léo if you're contributing to React widgets.<br>
 
 We'll be updating a metadata editing process created by Italy to edit any entity profile stored on GitHub. We're combining the best of these two lable styles by placing only the number on the right side.
 

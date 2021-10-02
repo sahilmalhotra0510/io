@@ -1,16 +1,16 @@
 ## Widgets - Environmental Profile Labels - React and YAML
 
-Design a layout for our <a href="../../apps/">mini-labels</a> and new <a href="../../community/projects/#cinematic">super-labels</a> using cinematic effects.
-
-We're building toward interactive label functionality in React. Abrie is leading the React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/">resulting label output</a>. Coordinate with Abrie and Léo if you're contributing to React widgets.<br>
-
-We'll be updating a metadata editing process created by Italy to edit any entity profile stored on GitHub. We're combining the best of these two lable styles by placing only the number on the right side.
+Design a layout for our <a href="../../apps/">mini-labels</a> and new <a href="../../community/projects/#cinematic">super-labels</a> using cinematic effects for our [six impact sets](../../localsite/info/).
 
 <div style="border:1px solid #ccc; padding:15px; display: inline-block; margin-bottom:10px">
 <a href="../../../io/template/"><img src="../../../io/template/img/2-labels.png" style="width:100%; max-width:600px"></a>
 </div>
 
-View our [impact profile summaries inspired by "nutritional labels"](../../../io/template/) for communities, companies, products and individuals.  
+View our [3.0 Mockup](../../../apps/smm/) to see [impact profile templates](../../../io/template/) inspired by "nutritional labels" for communities, companies, products and individuals.  
+
+We're building toward interactive label functionality in React. Abrie is leading the React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/">resulting label output</a>. Coordinate with Abrie and Léo if you're contributing to React widgets.<br>
+
+We'll be updating a metadata editing process created by Italy to edit any entity profile stored on GitHub. We're combining the best of these two lable styles by placing only the number on the right side.
 
 ## Mini and Super Widgets - Layout Design and Mock-Ups
 

@@ -1,6 +1,4 @@
-View additional fields: [OpenEPD spreadsheet](https://docs.google.com/spreadsheets/d/1q2TW0GlLlK7yH3k5TSsWGmXyL94KPI9VUWWv9vid63A/edit) - [How to Get an EPD](https://buildingtransparency.org/ec3/creator-contacts/epds) - [EPD Guide](https://www.oneclicklca.com/simple-epd-guide/)
-
-<br>**Applied Sciences 2021 - Article Draft**
+**Applied Sciences 2021 - Article Draft**
 
 ## International Impact Labels for Communities and Individuals using Environmental Product Declarations (EPD) with YAML
 

@@ -5,9 +5,8 @@
 Implement a new standard sized [environmental label](../../io/template/) and design a layout for our <a href="../../apps/">mini-labels</a> and new <a href="../../community/projects/#cinematic">super-labels</a> using cinematic effects for our [six impact sets](../../localsite/info/).
 
 We're building toward interactive label functionality in React.
-Abrie has started React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/">resulting label output</a>.<br>
-
-
+Abrie has started React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/">resulting label output</a>.
+TODO: Show how industry level is determined. Shorten numbers similar to layout to the right. Drive location filters by URL hash [param values](../../localsite/).
 
 
 View our [3.0 Mockup](../../../apps/smm/) to see [impact profile templates](../../../io/template/) inspired by "nutritional labels" for communities, companies, products and individuals.  

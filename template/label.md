@@ -7,6 +7,7 @@ Implement a new standard sized [environmental label](../../io/template/) and des
 We're building toward interactive label functionality in React.
 Abrie has started React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/">resulting label output</a>.
 TODO: Show how industry level is determined. Shorten numbers similar to layout to the right. Drive location filters by URL hash [param values](../../localsite/).
+Compare location to national average and add red and green to the right to indicated hotspots.
 
 
 View our [3.0 Mockup](../../../apps/smm/) to see [impact profile templates](../../../io/template/) inspired by "nutritional labels" for communities, companies, products and individuals.  

@@ -100,7 +100,7 @@ Possible next steps: Set up GitHub Actions using [Futura's scenario analysis too
 
 ## References:
 1. Janowicz, K.; Krisnadhi, A.A.; Hu, Y.; Suh, S.; Weidema, P.; Rivela, B.; Tiv, J.; Meyer, D.E.; Hitzler, P.; Ingwersen, W.; Kuczenski, B. [A minimal ontology pattern for life cycle assessment data](https://www.researchgate.net/publication/281685710_A_Minimal_Ontology_Pattern_for_Life_Cycle_Assessment_Data). Proceedings of the Workshop on Ontology and Semantic Web Patterns (6th edition) **2015**, WOP2015.
-2. USEEIO citation.
+2. Yang Y, Ingwersen WW, Hawkins TR, Srocka M, Meyer DE (2017) USEEIO: A New and Transparent United States Environmentally-Extended Input-Output Model. Journal of Cleaner Production 158:308-318. DOI:[10.1016/j.jclepro.2017.04.150 Open access version from PubMed](https://pubmed.ncbi.nlm.nih.gov/30344374/)
 3. Ecoinvent citation.
 4. Ghose, A., Hose, K.; Lissandrini, M.; Weidema, B.P. [An open source dataset and ontology for product footprinting](https://people.cs.aau.dk/~matteo/pdf/eswc19-bonsai.pdf). In European Semantic Web Conference (pp. 75-79). Springer, Cham. **2019**, June
 5. Simonen, K.; Droguett, B.R.; Strain, L.; McDade, E. [Embodied carbon benchmark study: LCA for low carbon construction](https://digital.lib.washington.edu/researchworks/handle/1773/38017). University of Washington. **2017**

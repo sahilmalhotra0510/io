@@ -1,8 +1,8 @@
-# About API
+# About API Data Sources
 
 [Embeddable IO Widgets](../../charts) use the [static JSON files](https://github.com/modelearth/io/tree/main/build/api) output from the USEEIO API.
 
-[USEEIOR](https://github.com/USEPA/USEEIOR) generates most of the model files for the API. (It replaces the use of [IOMB](https://github.com/USEPA/USEEIO_API/wiki/Build))
+[USEEIOR](https://github.com/USEPA/USEEIOR) generates most of the model files for the USEEIO API. (It replaces the use of [IOMB](https://github.com/USEPA/USEEIO_API/wiki/Build))
 <!--
 Here are [old model files](https://www.dropbox.com/sh/af48m0jsusgr3jg/AACzBSJwujR6LU0jZBhAzys6a?dl=0) for testing. (Better to use the newer data in the [static JSON files](https://github.com/modelearth/io/tree/main/build/api)) - [Build locally](../../charts/#build)
 -->
@@ -17,8 +17,7 @@ Also see our [Display Data](../../../localsite/info/data/) and [Industries by Zi
 <a href="https://github.com/modelearth/machine-learning">Our upcoming pre-processed NAICS data</a> - State county files for 2, 4 and 6 digit NAICS industries
 [Our current pre-processed NAICS data](https://github.com/modelearth/community-data/tree/master/us/state)
 
-Via [Flowsa Flow-By-Activity Datasets](https://github.com/USEPA/flowsa/wiki/Available-Data#flow-by-activity-datasets)
-County Quarterly Census of Employment and Wages
+County Quarterly Census of Employment and Wages ([Via Flowsa Flow-By-Activity Datasets](https://github.com/USEPA/flowsa/wiki/Available-Data#flow-by-activity-datasets))
 
 ### US Census - Quarterly Workforce Indicators (QWI)
 

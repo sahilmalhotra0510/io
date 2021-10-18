@@ -22,6 +22,8 @@ County Quarterly Census of Employment and Wages
 
 ### US Census - Quarterly Workforce Indicators (QWI)
 
+We may combine QWI data with BLS data to estimate 6-digit naics employment and payroll based on the number of firms in a county and additional county attributes. Related [Machine Learning Repo](https://github.com/modelearth/machine-learning)
+
 <a href="https://www.census.gov/data/developers/data-sets/qwi.html">Quarterly Workforce Indicators (QWI)</a> - Used by Drawdown Georgia for 3-digit NAICS
 [QWI provides 2, 3 and 4 digit NAICS Industries](https://lehd.ces.census.gov/data/schema/latest/lehd_public_use_schema.html#_industry)
 
@@ -50,5 +52,7 @@ GDP Gross Output, Make Before Redefinitions, Use Before Redefinitions
 * [Inventory of U.S. Greenhouse Gas Emissions and Sinks](https://www.epa.gov/ghgemissions/inventory-us-greenhouse-gas-emissions-and-sinks)
 
 * [Environmental Protection Agency National Emissions Inventory](https://www.epa.gov/air-emissions-inventories/national-emissions-inventory-nei)
+
+* [More Flowsa data sources...](https://github.com/USEPA/flowsa/wiki/Available-Data#flow-by-activity-datasets) 
 
 

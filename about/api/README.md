@@ -6,7 +6,7 @@
 <!--
 Here are [old model files](https://www.dropbox.com/sh/af48m0jsusgr3jg/AACzBSJwujR6LU0jZBhAzys6a?dl=0) for testing. (Better to use the newer data in the [static JSON files](https://github.com/modelearth/io/tree/main/build/api)) - [Build locally](../../charts/#build)
 -->
-Also see our [Display Datasets](../../../localsite/info/data/) and [Industries by Zip](../../../community/industries/) pages.  
+Also see our [Display Data](../../../localsite/info/data/) and [Industries by Zip](../../../community/industries/) pages.  
 
 
 
@@ -14,8 +14,8 @@ Also see our [Display Datasets](../../../localsite/info/data/) and [Industries b
 
 ### US Bureau of Labor Statistics (BLS)
 
-<a href="https://github.com/modelearth/machine-learning">Our pre-processed NAICS</a> - Machine Learning repo currently outputting 2, 4 and 6 digit NAICS industries
-[Our current preprocessed NAICS data](https://github.com/modelearth/community-data/tree/master/us/state) - Being replaced by the process above  
+<a href="https://github.com/modelearth/machine-learning">Our upcoming pre-processed NAICS data</a> - State county files for 2, 4 and 6 digit NAICS industries
+[Our current pre-processed NAICS data](https://github.com/modelearth/community-data/tree/master/us/state)
 
 Via [Flowsa Flow-By-Activity Datasets](https://github.com/USEPA/flowsa/wiki/Available-Data#flow-by-activity-datasets)
 County Quarterly Census of Employment and Wages

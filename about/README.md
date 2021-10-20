@@ -20,4 +20,4 @@ Learn about [the USEEIO API](api/)
 - Fall 2021: [Sustainable Communities Web Challenge](../../community/challenge/)
 <br>
 
-[USEEIO Versions](https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-technical-content) - [Collaborative Project Areas](../../community/projects/) - [Intern Projects](../../io/projects/) - [App Starter Samples](../../apps/)  
+[USEEIO Versions](https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-technical-content) - [Collaborative Project Areas](../../community/projects/) - [Intern Projects](../../io/projects/) - [Starter Samples](../../apps/)  

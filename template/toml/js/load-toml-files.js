@@ -34,6 +34,13 @@ function loadTomlFiles(pagePath,divID) {
     }
     //document.getElementById(divID).innerHTML = html; // Overwrites
 
+    //data = data.replace(*\[*?)(?:\n)(*?\]*,[]) // Not working for replacing all line returns between brackets
+    data = data.replace(/\[\n/g, '[') // Replace line return after bracket
+    data = data.replace(/\[[ ]*"/g, '["') // Replace [ then arbitrary amount of spaces then a quote
+    data = data.replace(/,\n[ ]*/g, ',') // Replace comma following by line return and any amount of space
+    data = data.replace(/\n\]/g, ']') // Replace line return before bracket
+    // Posted issue: https://github.com/JonAbrams/tomljs/issues/2
+
     var thediv = document.getElementById(divID);
     //loadIntoDiv(pageFolder,divID,thediv,html,0,callback);
     thediv.innerHTML = data;

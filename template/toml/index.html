@@ -17,12 +17,16 @@
 
 <script>
   if(typeof param=='undefined'){ var param={}; }
-  if (location.host.indexOf('codeforamerica') >= 0) {
+  //if (location.host.indexOf('codeforamerica') >= 0) {
     param.titleArray = ["code","for","america"]
     param.startTitle = "Code for America"
-  }
+  //}
 
   $(document).ready(function () {
+
+    // 
+    // https://github.com/codeforamerica/brigade-project-index/tree/index/v1/projects
+
     let pagePath = "https://raw.githubusercontent.com/codeforamerica/brigade-project-index/index/v1/projects/Hack%20for%20LA%20Brigade/civic-tech-structure.toml";
     
     loadTomlFiles(pagePath,"input"); // Calls convertTomlToHtml()

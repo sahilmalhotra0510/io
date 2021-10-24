@@ -1,12 +1,13 @@
 # About API Data Sources
 
-[Embeddable IO Widgets](../../charts) use the [static JSON files](https://github.com/modelearth/io/tree/main/build/api) output from the USEEIO API.
+[Embeddable IO Widgets](../../charts) use the [static JSON files](https://github.com/modelearth/io/tree/main/build/api) output from the [USEEIO API](https://github.com/USEPA/USEEIO_API/wiki).
+We recommend that you work in [USEEIO-widgets repo](../../charts) if you are interested in interacting with the API data.
 
 [USEEIOR](https://github.com/USEPA/USEEIOR) generates most of the model files for the USEEIO API. (It replaces the use of [IOMB](https://github.com/USEPA/USEEIO_API/wiki/Build))
 <!--
 Here are [old model files](https://www.dropbox.com/sh/af48m0jsusgr3jg/AACzBSJwujR6LU0jZBhAzys6a?dl=0) for testing. (Better to use the newer data in the [static JSON files](https://github.com/modelearth/io/tree/main/build/api)) - [Build locally](../../charts/#build)
 -->
-Also see our [Display Data](../../../localsite/info/data/) and [Industries by Zip](../../../community/industries/) pages.  
+Also see our [Display Datasets](../../../localsite/info/data/) page and [Industries by Zip](../../../community/industries/).  
 
 
 

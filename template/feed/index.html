@@ -186,6 +186,8 @@ $(document).ready(function () {
 	// You can also use d3 fetch 
 	// https://stackoverflow.com/questions/59307256/fetch-json-data-using-authorization-header-in-d3-v5
 
+	let count = 0;
+	let maxcount = 10;
   d3.json(url, {
   headers: new Headers({
     'Authorization' : 'Bearer 204ad15687571d9c62bdfa780526b1514c090f68'
@@ -194,28 +196,33 @@ $(document).ready(function () {
     	var fullHtml = '';
     	if (Array.isArray(json)) { // Other than DifBot - NASA when count included
     		for (a in json) {
-    			fullHtml += "<div class='level1'><b>Product ID:</b> " + json[a].id + "</div>\n";
+    			count++;
+    			fullHtml += "<div class='level1'><b>Product ID " + count + ":</b> " + json[a].id + "</div>\n";
     			for (b in json[a]) {
+    				fullHtml += "<div class='level1children' style='display:none'>"
     				fullHtml += formatRow(b,json[a][b],1); // Resides in localsite.js
+    				fullHtml += "</div>"
     			}
     		}
     	} else {
     		if (!json.data) {
     			json.data = json; // For NASA
     		}
-			for (a in json.data) { // An object. a key is 0,1,2,3,..
+				for (a in json.data) { // An object. a key is 0,1,2,3,..
+					count++;
+					if (count <= maxcount) {
+		          fullHtml += "<div class='level1'>" + count + ". " + json.data[a].name + "</div>\n";
+		          for (b in json.data[a]) {//b is value like allNames: ["AirWatch"], so b is key for  ["AirWatch"]
 
-	          fullHtml += "<div class='level1'>" + json.data[a].name + "</div>\n";
-	          for (b in json.data[a]) {//b is value like allNames: ["AirWatch"], so b is key for  ["AirWatch"]
-
-	          	addHtml = "";
-	          	
-	          	addHtml += formatRow(b,json.data[a][b],1); // Resides in localsite.js
-	         
-	      		//resultFull.innerHTML = resultFull.innerHTML + addHtml;
-	      		fullHtml += addHtml;
-	          }
-	      	}
+		          	addHtml = "";
+		          	
+		          	addHtml += formatRow(b,json.data[a][b],1); // Resides in localsite.js
+		         
+		      		//resultFull.innerHTML = resultFull.innerHTML + addHtml;
+		      		fullHtml += addHtml;
+		          }
+		      	}
+		      }
 	    }
       	resultFull.innerHTML = fullHtml;
       	result.innerHTML = '';

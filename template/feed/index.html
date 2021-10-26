@@ -39,9 +39,9 @@ p {
  margin: 20px 0; 
 }
 
-
-.level2 {
-	
+.level1details {
+	background-color: none;
+	color: #333;
 }
 .level3 {
 	paddingX:20px;
@@ -201,8 +201,9 @@ $(document).ready(function () {
     	if (Array.isArray(json)) { // Other than DifBot - NASA when count included
     		for (a in json) {
     			count++;
-    			fullHtml += "<div class='level1' onclick='expandListLevel()'><b>" + count + ": " + json[a]["manufacturer"]["name"] + " " + json[a]["category"]["name"] + " " + json[a]["name"] + "</b><br>Description: " + json[a]["description"] + "<br>\n";
+    			fullHtml += "<div class='level1' onclick='expandListLevel()'><b>" + count + ": " + json[a]["manufacturer"]["name"] + " " + json[a]["category"]["name"] + " " + json[a]["name"] + "</b></div><br>\n";
 
+    			fullHtml += "<div style='padding:0 0 10px 0'>" + json[a]["description"] + "</div>"
     			if (json[a]["concrete_compressive_strength_28d"]) {
     				fullHtml += "Concrete compressive strength: " + json[a]["concrete_compressive_strength_28d"] + "<br>\n";
     			} else if (json[a]["concrete_compressive_strength_other"]) {
@@ -211,9 +212,9 @@ $(document).ready(function () {
     			fullHtml += "ID: " + json[a][barName] + "<br>\n";
 
     			fullHtml += "Address: " + json[a]["manufacturer"]["name"]  + ", " + json[a]["manufacturer"]["address"] + "<br>\n";
-    			fullHtml += "Website: <a href='//" + json[a]["manufacturer"]["website"] + "' style='color:#fff'>" + json[a]["manufacturer"]["website"] + "</a><br>\n";
+    			fullHtml += "Website: <a href='//" + json[a]["manufacturer"]["website"] + "'>" + json[a]["manufacturer"]["website"] + "</a><br>\n";
 
-    			fullHtml += "</div>\n";
+    			//fullHtml += "</div>\n";
 
     				/*
     				fullHtml += "<div class='level1children' style='displayX:none'>"

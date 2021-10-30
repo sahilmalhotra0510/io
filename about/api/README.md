@@ -15,14 +15,21 @@ Also see our [Display Datasets](../../../localsite/info/data/) page and [Industr
 
 ### US Bureau of Labor Statistics (BLS)
 
-<a href="https://github.com/modelearth/machine-learning">Our upcoming pre-processed NAICS data</a> - State county files for 2, 4 and 6 digit NAICS industries
+<a href="https://github.com/modelearth/machine-learning">Our upcoming pre-processed NAICS data</a> - State county files for 2 to 6 digit NAICS industries
 [Our current pre-processed NAICS data](https://github.com/modelearth/community-data/tree/master/us/state)
 
 County Quarterly Census of Employment and Wages ([Via Flowsa Flow-By-Activity Datasets](https://github.com/USEPA/flowsa/wiki/Available-Data#flow-by-activity-datasets))
 
+TO ADD: [Imputed industry data](http://www.fpeckert.me/cbp/) - Imputed County Business Patterns (CBP) data by [Fabian Ecker, et al.](http://fpeckert.me/cbp/efsy.pdf) - Authors are planning to apply to zip codes.
+<!--
+Expands upon the Isserman and Westervelt (2006) work using a linear objective function.   The authors write: "After 1994, the CBP files contain tabulations at the zip code level. We plan to apply our imputation method to this geographic unit in a future draft."
+-->
+
+We may combine QWI data with BLS data to estimate 6-digit naics employment and payroll based on the number of firms in a county and additional county attributes. Our related [Machine Learning Repo](https://github.com/modelearth/machine-learning)
+
+
 ### US Census - Quarterly Workforce Indicators (QWI)
 
-We may combine QWI data with BLS data to estimate 6-digit naics employment and payroll based on the number of firms in a county and additional county attributes. Related [Machine Learning Repo](https://github.com/modelearth/machine-learning)
 
 <a href="https://www.census.gov/data/developers/data-sets/qwi.html">Quarterly Workforce Indicators (QWI)</a> - Used by Drawdown Georgia for 3-digit NAICS
 [QWI provides 2, 3 and 4 digit NAICS Industries](https://lehd.ces.census.gov/data/schema/latest/lehd_public_use_schema.html#_industry)

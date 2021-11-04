@@ -174,7 +174,7 @@ $(document).ready(function () {
 	//  	zip = param["zip"]
 	//}
 
-	url = "https://buildingtransparency.org/api/materials?page_number=1&page_size=4&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=US-GA&epd__date_validity_ends__gt=2021-08-24";
+	url = "https://buildingtransparency.org/api/materials?page_number=1&page_size=4&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=US-GA&epd__date_validity_ends__gt=2021-08-24&fields=manufacturer.name,description,concrete_compressive_strength_28d,concrete_compressive_strength_other,id,manufacturer.address,manufacturer.website";
 
 	// selected_array[] Declared in /localsite/js/localsite.js
 	// Might not yet be fully applied to all levels of display
@@ -185,7 +185,7 @@ $(document).ready(function () {
 	*/
 
 	//console.log(url)
-	$("#urlDisplay").html("<b>API URL:</b> " + url + "<br><br>");
+	$("#urlDisplay").html("<b>API URL (fields param is not implemented):</b> " + url + "<br><br>");
 
 	//  D3 v5 uses the Fetch API, the following is the same as calling fetch(url) 
 	// https://stackoverflow.com/questions/59307256/fetch-json-data-using-authorization-header-in-d3-v5
@@ -201,7 +201,7 @@ $(document).ready(function () {
     	if (Array.isArray(json)) { // Other than DifBot - NASA when count included
     		for (a in json) {
     			count++;
-    			fullHtml += "<div class='level1' onclick='expandListLevel()'><b>" + count + ": " + json[a]["manufacturer"]["name"] + " " + json[a]["category"]["name"] + " " + json[a]["name"] + "</b></div><br>\n";
+    			fullHtml += "<div class='level1' onclick='expandListLevel()'><i id='hideLocations' class='material-icons expand-item' style='float:right; font-size: 24px; cursor: pointer; display: block;'></i><b>" + count + ": " + json[a]["manufacturer"]["name"] + " " + json[a]["category"]["name"] + " " + json[a]["name"] + "</b></div><br>\n";
 
     			fullHtml += "<div style='padding:0 0 10px 0'>" + json[a]["description"] + "</div>"
     			if (json[a]["concrete_compressive_strength_28d"]) {
@@ -262,7 +262,8 @@ $(document).ready(function () {
 
                 	//alert("clicked")
 
-                	$(".level1children").show(); // TEMP - SHow all
+                	$(".level1children").show(); // TEMP - Show all
+                	$(".expand-item").hide(); // TEMP - Hide all
 
                   // These need to be revised to open only current section
 
@@ -313,11 +314,11 @@ $(document).ready(function () {
 	<br><br>
 
 	<div style="font-size: 16px;">
-		<b>TO DO:</b> Modify the API URL used in this page to return only the interesting fields, including the company and product names. Add a toggle to load all values (as currently displayed below).<br><br>
+		<b>TO DO:</b> Modify the API URL used in this page to return only the interesting fields, including the company and product names. Add a toggle to load all values.<br><br>
 
 		<b>TO DO:</b> Generate an <a href="../">Impact Profile</a> from the BuildingTransparency.org feed and local industry data. You could build on <a href="../../../community/projects/#widgets">Abrie's React work</a><br><br>
 
-		<div id="urlDisplay"></div>
+		<div id="urlDisplay" style="overflow-wrap: break-word;"></div>
 
 		Click to expand
 	</div>

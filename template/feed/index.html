@@ -164,17 +164,26 @@ and (max-device-width : 480px) {
 
 <script type="text/javascript">
 
+document.addEventListener('hashChangeEvent', function (elem) {
+	console.log("template/feed detects URL hashChangeEvent");
+ 	displayFeed();
+}, false);
+
 $(document).ready(function () {
-	//var zip = param["zip"] || "30318";
-	var zip = param.zip;
+	displayFeed();
+	
+});
+
+function displayFeed() {
+	let hash = getHash();
+	var zip = hash.zip;
 	var barName = "id"
 	var quantity = 20;
-	$('.ziptext').text(zip);
-	//if(param["zip"]){
-	//  	zip = param["zip"]
-	//}
-
-	url = "https://buildingtransparency.org/api/materials?page_number=1&page_size=4&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=US-GA&epd__date_validity_ends__gt=2021-08-24&fields=manufacturer.name,description,concrete_compressive_strength_28d,concrete_compressive_strength_other,id,manufacturer.address,manufacturer.website";
+	let jurisdiction = "US"
+	if (hash.state) {
+		jurisdiction = "US-" + hash.state
+	}
+	let url = "https://buildingtransparency.org/api/materials?page_number=1&page_size=4&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=" + jurisdiction + "&epd__date_validity_ends__gt=2021-08-24&fields=manufacturer.name,description,concrete_compressive_strength_28d,concrete_compressive_strength_other,id,manufacturer.address,manufacturer.website";
 
 	// selected_array[] Declared in /localsite/js/localsite.js
 	// Might not yet be fully applied to all levels of display
@@ -251,7 +260,8 @@ $(document).ready(function () {
 		      }
 	    }
       	resultFull.innerHTML = fullHtml;
-      	result.innerHTML = '';
+      	$("#resultLoading").hide();
+      	$("#clickToExpand").show();
 
       	// After results added to innerHTML
 	  	var anchors = document.getElementsByClassName('level1');
@@ -264,6 +274,7 @@ $(document).ready(function () {
 
                 	$(".level1children").show(); // TEMP - Show all
                 	$(".expand-item").hide(); // TEMP - Hide all
+                	$("#clickToExpand").hide();
 
                   // These need to be revised to open only current section
 
@@ -296,7 +307,7 @@ $(document).ready(function () {
         if (error) throw error;
         console.log(json);
     });
-});
+}
 </script>
 
 </head>
@@ -320,14 +331,14 @@ $(document).ready(function () {
 
 		<div id="urlDisplay" style="overflow-wrap: break-word;"></div>
 
-		Click to expand
+		<div id="clickToExpand" style="display:none">Click to expand</div>
 	</div>
 
 	
 	<!--
 	Displays json hierarchy containing arrays and objects. &nbsp;Click to expand.<br><br>
 	-->
-	<div id="result">Loading...<br></div>
+	<div id="resultLoading">Loading...<br></div>
 	<div id="resultFull"></div>
 
 </div>

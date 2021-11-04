@@ -27,6 +27,7 @@ We've created an [app starter repo](../../apps/) with samples for community fron
 [View industries by county](../../localsite/info/#state=GA&view=counties)  
 -->
 
+<!--
 ## Participation Requirements
 - Communities must be interested in economic development and sustainability
 - Communities must commit to participation throughout the [project timeline](../about/index.html#Timeline)
@@ -39,4 +40,4 @@ We've created an [app starter repo](../../apps/) with samples for community fron
 - Activate the application tools for your community and provide training
 - Provide an educational module for your schools 
 - All partners will highlight your community project in national communications
-
+-->

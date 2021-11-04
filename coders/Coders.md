@@ -16,7 +16,7 @@ We're using React to create tools for editing YAML environmental profile files d
 <!--- 1st and 3rd Tuesday of the month at 7 PM ET<br>-->
 
 **Saturday, November 20, 2021 - 11:30AM to 8PM ET**
-[Hack To Give Thanks](https://democracylab.org/events/2021-hack-to-give-thanks) - presented by Democracy Lab 
+[Hack To Give Thanks](https://democracylab.org/events/2021-hack-to-give-thanks) - Presented by Democracy Lab 
 
 <b>Wednesdays, Nov and Dec, 2021 - 3PM ET</b>
 DJango/React - <a href="https://www.democracylab.org/">Democracy Lab's</a> weekly developer meeting is Wednesdays at 12pm PT

@@ -12,11 +12,11 @@ Learn about [the USEEIO API](api/)
 
 ## Timeline
 
-- Spring 2020: Develop application concepts, [on-board interested communities](../../io/communities/)
+- Spring 2020: [Develop application concepts](../../io/projects/), [on-board interested communities](../../io/communities/)
 - Summer 2020: [Modeling and component development](../../localsite/info/)
 - Fall 2020: [Develop prototype applications](../../apps/)
-- Spring 2021: [Electric Vehicle Ecosystem](../../community/projects/mobility/)
-- Summer 2021: Bureau of Labor Statistics, [Machine Learning for Industry Imputation](../../localsite/info/data/)
+- Spring 2021: [Electric Vehicle Ecosystem](../../community/projects/mobility/), [Coastal Recycling Activated Carbon Feedstocks](../../apps/coastal/)
+- Summer 2021: [Bureau of Labor Statistics](../../io/about/api/), [Machine Learning for Industry Imputation](../../localsite/info/data/)
 - Fall 2021: [Sustainable Communities Web Challenge](../../community/challenge/)
 - Spring and Fall 2022: [Beyond Carbon](../../apps/) - [Environmental Product Pages](../../io/template/)
 <br>

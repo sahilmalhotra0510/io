@@ -1,4 +1,4 @@
-# Javascript with Python - <span style='white-space:nowrap'>Machine Learning Tools for PUMA</span> 
+# Javascript with Python - <span style='white-space:nowrap'>Machine Learning Tools for Industry Estimates</span> 
 
 ### Environmentally-Extended Impact Evaluator
 

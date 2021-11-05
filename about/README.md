@@ -12,12 +12,13 @@ Learn about [the USEEIO API](api/)
 
 ## Timeline
 
-- Spring 2020: Develop application concepts, on-board interested communities
-- Summer 2020: Modeling and component development
-- Fall 2020: Develop prototype applications
-- Spring 2021: Electric Vehicle Ecosystem
-- Summer 2021: Google Data Commons - Bureau of Labor Statistics, Commute Time, Solar and Recycling Data
+- Spring 2020: Develop application concepts, [on-board interested communities](../../io/communities/)
+- Summer 2020: [Modeling and component development](../../localsite/info/)
+- Fall 2020: [Develop prototype applications](../../apps/)
+- Spring 2021: [Electric Vehicle Ecosystem](../../community/projects/mobility/)
+- Summer 2021: Bureau of Labor Statistics, [Machine Learning for Industry Imputation](../../localsite/info/data/)
 - Fall 2021: [Sustainable Communities Web Challenge](../../community/challenge/)
+- Spring and Fall 2022: [Beyond Carbon](../../apps/) - [Environmental Product Pages](../../io/template/)
 <br>
 
-[USEEIO Versions](https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-technical-content) - [Collaborative Project Areas](../../community/projects/) - [Intern Projects](../../io/projects/) - [Starter Samples](../../apps/)  
+[USEEIO Versions](https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-technical-content) - [Project Areas](../../community/projects/) - [Intern Projects](../../io/projects/) - [Starter Samples](../../community/start/)  

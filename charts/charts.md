@@ -259,6 +259,4 @@ In some cases there is no final demand for the respective commodity and the prod
 The `.editorconfig` file contains the formatting settings. Modern editors have plugins for checking EditorConfig settings. This maintains consistency so we can see in the diffs what changed. There is also a ESLint configuration in the project for other settings like semicolon rules etc.
 
 
-## Sustainable Communities Web Challenge
-
-[Get involved with our Sustainable Communities Web Challenge](https://model.earth/community/challenge) - $10,000&nbsp;in&nbsp;awards!  
+[Project Areas](../../community/projects/) 

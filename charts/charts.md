@@ -261,4 +261,4 @@ The `.editorconfig` file contains the formatting settings. Modern editors have p
 
 ## Sustainable Communities Web Challenge
 
-[Get involved with our 2021 Sustainable Communities Web Challenge](https://model.earth/community/challenge) - $10,000&nbsp;in&nbsp;awards!  
+[Get involved with our Sustainable Communities Web Challenge](https://model.earth/community/challenge) - $10,000&nbsp;in&nbsp;awards!  

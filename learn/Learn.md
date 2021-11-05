@@ -17,3 +17,4 @@ Learn about the science and principles behind environmentally-extended input-out
 A Course for Dummies on Matrix Algebra and Factor Preparation  
 - <a href="http://epa.gov/smm" target="_parent">US EPA Sustainable Materials Management (SMM)</a>  
 - [SMM Prioritization Tools](https://www.epa.gov/smm/sustainable-materials-management-prioritization-tools)
+- [Prior Student Research Projects](/io/projects/)

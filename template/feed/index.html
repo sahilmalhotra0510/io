@@ -185,6 +185,10 @@ function displayFeed() {
 	}
 	let url = "https://buildingtransparency.org/api/materials?page_number=1&page_size=4&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=" + jurisdiction + "&epd__date_validity_ends__gt=2021-08-24&fields=manufacturer.name,description,concrete_compressive_strength_28d,concrete_compressive_strength_other,id,manufacturer.address,manufacturer.website";
 
+
+	url = "https://buildingtransparency.org/api/epds?page_number=1&page_size=4&soft_search_terms=false&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=" + jurisdiction + "&epd__date_validity_ends__gt=2021-08-24&fields=manufacturer.name,description,concrete_compressive_strength_28d,concrete_compressive_strength_other,id,manufacturer.address,manufacturer.website";
+
+
 	// selected_array[] Declared in /localsite/js/localsite.js
 	// Might not yet be fully applied to all levels of display
 	// Better to filter with url above instead
@@ -201,11 +205,16 @@ function displayFeed() {
 
 	let count = 0;
 	let maxcount = 10;
+	const start = Date.now();
   d3.json(url, {
   headers: new Headers({
     'Authorization' : 'Bearer 204ad15687571d9c62bdfa780526b1514c090f68'
   }),
 	}).then(function(json,error) {
+			const millis = Date.now() - start;
+			//console.log("API fetch - seconds elapsed " + Math.floor(millis / 1000));
+			console.log("API fetch - seconds elapsed " + millis / 1000);
+
     	var fullHtml = '';
     	if (Array.isArray(json)) { // Other than DifBot - NASA when count included
     		for (a in json) {
@@ -320,7 +329,7 @@ function displayFeed() {
 	<img style="float:right" src="https://www.buildingtransparency.org/static/assets/svg/logo.svg">
 
 	<h1 id="pageTitle"><span class="ziptext"></span> Environmental Product Declarations (EPD)</h1>
-	<a href="https://BuildingTransparency.org">Building Transparency OpenEPD</a> - 
+	<a href="https://buildingtransparency.org/ec3/material-search">Building Transparency OpenEPD Material Search</a> - 
 	<a href="../../products/">View Feed on Map</a> (allow 8 seconds)
 	<br><br>
 

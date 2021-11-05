@@ -8,8 +8,8 @@ We encourage you to attend from any location!
 <a href="https://blitzjs.com/">React Blitz.js for full stack Next.js</a> - <a href="https://codebase.show/projects/realworld?category=fullstack">More fullstack combinations</a> - Start with [Prisma in NestJS sample](https://github.com/lujakob/nestjs-realworld-example-app/tree/prisma) to create RealWorld sample
 
 <b>Saturday, November 6, 2021, 9AM to 5PM ET</b>
-<a href="https://www.democracylab.org/events/59">Hack for a Blue Economy</a> - Participate with our <a href="https://www.democracylab.org/projects/834">Neighborhood.org Democracy Lab Team</a>. 
-We're using React to create tools for editing YAML environmental profile files directly on GitHub. We’ll be adding to the Italian PublicCode-editor with Code for Amerca through <a href="https://github.com/modelearth/profile-editor">our profile-editor fork</a>.
+<a href="https://www.democracylab.org/events/59">Hack for a Blue Economy</a> - Participate with our <a href="https://www.democracylab.org/projects/834">Neighborhood.org Democracy Lab Team</a> and [Learn more about event](https://coastalreview.org/2021/10/all-blue-week-aims-to-hook-wilmington-on-a-blue-economy/). 
+We're using React to create tools for editing YAML environmental profile files directly on GitHub. We’ll be updating the Italian PublicCode-editor to add code devloped by Code for Amerca. <a href="../../community/projects/#profile-editor">Project Details</a>.
 
 <b>Tuesday, November 9 and December 14, 2021, 7PM ET</b>
 <a href="https://www.meetup.com/codeforatlanta">Code for Atlanta</a> - Focusing on our <a href="../../../io/template/feed/">Building Transparency API Display</a> for <a href="../../../io/template/">Impact Labels</a>

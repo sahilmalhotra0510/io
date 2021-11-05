@@ -2,18 +2,18 @@
 
 <a href="../../../io/template/"><img src="../../../io/template/img/label-sample.png" style="float:right; width:100%; max-width:300px; margin-left:30px; margin-bottom:30px"></a>
 
-Implement a new standard sized [environmental label](../../io/template/) and design a layout for our <a href="../../apps/">mini-labels</a> and cinematic <a href="../../community/projects/#cinematic">super-labels</a> by creating an API-driven theme for our six impact sets: Air, Water, Land, Energy, Health and Prosperity.
+Implement a new standard sized [environmental label](../../io/template/) inspired by "nutritional labels" and design a layout for our <a href="../../apps/">mini-labels</a> and cinematic <a href="../../community/projects/#cinematic">super-labels</a> by creating an API-driven theme for our six impact sets: Air, Water, Land, Energy, Health and Prosperity.
 
 We're building toward interactive label functionality in React.
-Abrie has started React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/#zip=30318">resulting label output</a>.
+Abrie has started React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/#zip=30318">resulting label output</a>. Check out [React 18 with Blitz.js](https://blitzjs.com) for data layer abstraction that eliminates the need for REST/GraphQL.
 
-TODO: Show how industry level is determined. Shorten numbers similar to layout to the right. Drive location filters by URL hash [param values](../../localsite/) like #zip=30318 and #geo=US13121,US1308 for counties. Compare location to national average and add red and green to the right to indicated hotspots.
-
-
-View our [3.0 Mockup](../../../apps/smm/) to see [impact profile templates](../../../io/template/) inspired by "nutritional labels" for communities, companies, products and individuals.  
+TODO: Format Abrie's work to match our [HTML template](../../io/template/) (right column). Shorten numbers. Drive location filters by URL hash [param values](../../localsite/) like #zip=30318 and #geo=US13121,US1308 for counties. Compare location to national average and add red and green to the right to indicated hotspots.
 
 
-We'll be updating a metadata editing process created by Italy to edit any entity profile stored on GitHub.
+Update our [3.0 Mockup](../../../apps/smm/) to apply labels for communities, companies, products and individuals.  
+
+
+[Expand the YAML metadata editing process](../../community/projects/#profile-editor) created by Italy to edit any entity profile stored on GitHub.
 
 ## Mini and Super Widgets - Layout Design and Mock-Ups
 

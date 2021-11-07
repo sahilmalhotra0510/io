@@ -15,14 +15,18 @@ You can attend from any location!
 
 Please get one of the following REACT builds running on your local machine before we meet. Help update any missing set-up documentation.
 
-1. Copy how the [EPA widgets](../../io/charts/) load API data from static JSON files and apply to json copied from our <a href="../../../io/template/feed/">Building Transparency API Display</a>
+1. **Pull an API to static JSON files**  
+Copy how the [EPA widgets](../../io/charts/) save static JSON files using <code>npm run download</code> and apply to the Building Transparency API.  You might need a bearer token - see our [openEPD pull notes](../../io/template/feed/).  Change from [toy json](../template/feed/toy100.json) to the new static files to speed up <a href="../../../io/template/feed/">Building Transparency API Display</a>
 <!--- 1st and 3rd Tuesday of the month at 7 PM ET<br>-->
 
-2. We’re updating the Italian PublicCode-editor to add code devloped by Code to edit YAML files directly on GitHub. <a href="../../community/projects/#profile-editor">Project Details</a>
+2. **Save an edit in an HTML form directly to GitHub**  
+We’re updating the Italian PublicCode-editor to add code devloped by Code for America to edit YAML files directly on GitHub. <a href="../../community/projects/#profile-editor">Project Details</a>
 
-3. For our <a href="../../../io/template/">Impact Labels</a> we could use the TypeScript display process used in <a href="https://blitzjs.com/">React Blitz.js for full stack Next.js</a> 
+3. **Use TypeScript with Blitz.js to format a nutritional label**
+For our <a href="../../../io/template/">Impact Labels</a> use the TypeScript display process used in <a href="https://blitzjs.com/">React Blitz.js for full stack Next.js</a> 
 
-4. We are creating a RealWorld sample <a href="https://codebase.show/projects/realworld?category=fullstack">More fullstack combinations</a> - Start with [Prisma in NestJS sample](https://github.com/lujakob/nestjs-realworld-example-app/tree/prisma) to create RealWorld sample
+4. **Help create a Blitz RealWorld starter site**
+We are creating a <a href="https://codebase.show/projects/realworld?category=fullstack">RealWorld sample </a> for Blitz.js - Copy Prisma table structure file from [Prisma in NestJS sample](https://github.com/lujakob/nestjs-realworld-example-app/tree/prisma) when creating Blitz RealWorld sample in [blitz-realworld-example](https://github.com/blitz-js/blitz-realworld-example) repo.
 
 
 <b>Wednesdays, Nov and Dec, 2021 - 3PM ET</b>

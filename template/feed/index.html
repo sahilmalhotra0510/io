@@ -185,8 +185,11 @@ function displayFeed() {
 	}
 	let url = "https://buildingtransparency.org/api/materials?page_number=1&page_size=4&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=" + jurisdiction + "&epd__date_validity_ends__gt=2021-08-24&fields=manufacturer.name,description,concrete_compressive_strength_28d,concrete_compressive_strength_other,id,manufacturer.address,manufacturer.website";
 
+	// soft_search_terms=false&
 
-	url = "https://buildingtransparency.org/api/epds?page_number=1&page_size=4&soft_search_terms=false&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=" + jurisdiction + "&epd__date_validity_ends__gt=2021-08-24&fields=manufacturer.name,description,concrete_compressive_strength_28d,concrete_compressive_strength_other,id,manufacturer.address,manufacturer.website";
+	url = "https://buildingtransparency.org/api/epds?page_number=1&page_size=4&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=" + jurisdiction 
+
+	//+ "&epd__date_validity_ends__gt=2021-08-24";
 
 
 	// selected_array[] Declared in /localsite/js/localsite.js
@@ -352,6 +355,8 @@ function displayFeed() {
 		Field documentation: <a href="https://docs.google.com/spreadsheets/d/1q2TW0GlLlK7yH3k5TSsWGmXyL94KPI9VUWWv9vid63A/edit">OpenEPD spreadsheet</a> - <a href="https://buildingtransparency.org/ec3/creator-contacts/epds">How to Get an EPD</a> - <a href="https://www.oneclicklca.com/simple-epd-guide/">EPD Guide</a><br><br>
 
 		<!--
+		Phil wrote: Soft search terms is a feature where we *delete* search terms if there are zero returns.  It's not really what you want in an API. 
+
 		Modify the API URL used in this page to return only the interesting fields, including the company and product names. Add a toggle to load all values.<br><br>
 		-->
 		<b>TO DO:</b> Generate an <a href="../">Impact Profile</a> from the BuildingTransparency.org feed and local industry data. You could build on <a href="../../../community/projects/#widgets">Abrie's React work</a><br><br>

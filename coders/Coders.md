@@ -20,10 +20,10 @@ Copy how the [EPA widgets](../../io/charts/) save static JSON files using <code>
 <!--- 1st and 3rd Tuesday of the month at 7 PM ET<br>-->
 
 2. **Save an edit in an HTML form directly to GitHub**  
-We’re updating the Italian PublicCode-editor to add code devloped by Code for America to edit YAML files directly on GitHub. <a href="../../community/projects/#profile-editor">Project Details</a>
+We’re updating the Italian PublicCode-editor to add code devloped by Code for America to edit YAML files directly on GitHub. <a href="../../community/projects/#profile-editor">Project Details</a>  
 
 3. **Use TypeScript with Blitz.js to format a nutritional label**
-For our <a href="../../../io/template/">Impact Labels</a> use the TypeScript display process used in <a href="https://blitzjs.com/">React Blitz.js for full stack Next.js</a> 
+For our <a href="../../../io/template/">Impact Labels</a> create a TypeScript display process with <a href="https://blitzjs.com/">React Blitz.js for full stack Next.js</a>.&nbsp;  Here's a [Blank starter project for building TypeScript apps](https://stackblitz.com/edit/typescript) within [stackblitz.com](https://stackblitz.com)
 
 4. **Help create a Blitz RealWorld starter site**
 We are creating a <a href="https://codebase.show/projects/realworld?category=fullstack">RealWorld sample </a> for Blitz.js - Copy Prisma table structure file from [Prisma in NestJS sample](https://github.com/lujakob/nestjs-realworld-example-app/tree/prisma) when creating Blitz RealWorld sample in [blitz-realworld-example](https://github.com/blitz-js/blitz-realworld-example) repo.

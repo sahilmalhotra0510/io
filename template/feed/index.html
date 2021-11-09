@@ -346,13 +346,13 @@ function displayFeed() {
 
 		Get your bearer token from logging into the <a href="https://openepd.buildingtransparency.org/#/epds/get_epds_id">Swagger OpenEPD API</a>, then you can paste in in the following to run from a console:<br><br>
 
-		<pre>
+		<pre><code style="padding:0px">
    curl -X 'GET' \
     'https://openepd.buildingtransparency.org/api/epds?page_number=1&page_size=100' \
     -H 'accept: application/json' \
     -H 'filter: {"epds.name":"ASTM International"}' \
     -H 'Authorization: Bearer [Your Bearer Token]'
-		</pre>
+		</code></pre>
 
 		Field documentation: <a href="https://docs.google.com/spreadsheets/d/1q2TW0GlLlK7yH3k5TSsWGmXyL94KPI9VUWWv9vid63A/edit">OpenEPD spreadsheet</a> - <a href="https://buildingtransparency.org/ec3/creator-contacts/epds">How to Get an EPD</a> - <a href="https://www.oneclicklca.com/simple-epd-guide/">EPD Guide</a><br><br>
 

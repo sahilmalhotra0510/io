@@ -1,6 +1,6 @@
-,EmployeeCount,NAICS
-Quarterly Workforce Indicators (QWI),Jobs,
-Quarterly Census of Employment and Wages (QCEW),Jobs,
-Current Population Survey (CPS),Employed Workers,
-Bureau of Economic Analysis (BEA),,2-6
-Bureau of Labor Statistics (BLS),,
+,EmployeeCount,NAICS,GDP by industry
+Quarterly Workforce Indicators (QWI),Jobs,,
+Quarterly Census of Employment and Wages (QCEW),Jobs,,
+Current Population Survey (CPS),Employed Workers,,
+Bureau of Economic Analysis (BEA),,,Yes - states | counties have 10-20% NAs
+Bureau of Labor Statistics (BLS),,2-6,

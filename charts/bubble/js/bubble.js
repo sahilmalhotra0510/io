@@ -151,40 +151,35 @@ function refreshBubbleWidget() {
     priorHash_bubble = getHash();
 }
 
+const indicatorsUrl = "/io/build/api/USEEIOv2.0/indicators.json";
+let indicators = new Set();
+let dropdownX = $("#graph-picklist-x");
+let dropdownY = $("#graph-picklist-y");
+let dropdownZ = $("#graph-picklist-z");
 
-console.log("Bubble js loaded");
+/** Main entry point to load the bubble chart. */
 $(document).ready(function () {
-  console.log("Bubble gets doc ready");
-  //getting the listof indicators and populating the x and y dropdown options
-  let dropdown = $('#graph-picklist-x');
-  dropdown.empty();
-  const url = '/io/build/api/USEEIOv2.0/indicators.json';
-  // Populate dropdown with list of provinces
-  $.getJSON(url, function (data) {
-    $.each(data, function (key, entry) {
-      dropdown.append($('<option></option>').attr('value', entry.code).text(entry.name));
-    })
-  });
+  let {x, y, z} = getHash();
+  dropdownX.empty();
+  dropdownY.empty();
+  dropdownZ.empty();
 
-  let dropdown2 = $('#graph-picklist-y');
-  dropdown2.empty();
-  // Populate dropdown with list of provinces
-  $.getJSON(url, function (data) {
-    $.each(data, function (key, entry) {
-      dropdown2.append($('<option></option>').attr('value', entry.code).text(entry.name));
-    })
-  });
+  fetch(indicatorsUrl)
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(d => {
+        dropdownX.append($("<option></option>").attr("value", d.code).text(d.name));
+        dropdownY.append($("<option></option>").attr("value", d.code).text(d.name));
+        dropdownZ.append($("<option></option>").attr("value", d.code).text(d.name));
+        indicators.add(d.code);
+      });
 
-  let dropdown3 = $('#graph-picklist-z');
-  dropdown3.empty();
-  // Populate dropdown with list of provinces
-  $.getJSON(url, function (data) {
-    $.each(data, function (key, entry) {
-      dropdown3.append($('<option></option>').attr('value', entry.code).text(entry.name));
+      dropdownX.val(x ? x : "ENRG");
+      dropdownY.val(y ? y : "WATR");
+      dropdownZ.val(z ? z : "JOBS");
     })
-  });
+    .then(refreshBubbleWidget);
 });
-
 
 var parentId = "#graph-wrapper";
 var animDuration = 1200;
@@ -204,11 +199,7 @@ function getDimensions(x,y,z){
   var returnPairs = [];
   if (allData) {
     allData.forEach(function(d){
-      var pair = {x: d[x],y: d[y],z:d[z],industry_detail:d["industry_detail"],industry_code:d["industry_code"],ACID:d["ACID"],
-      ENRG:d["ENRG"],ETOX:d["ETOX"],EUTR:d["EUTR"],FOOD:d["FOOD"],GCC:d["GCC"],HAPS:d["HAPS"],
-      HAZW:d["HAZW"],HC:d["HC"],HNC:d["HNC"],HRSP:d["HRSP"],HTOX:d["HTOX"],JOBS:d["JOBS"],
-      LAND:d["LAND"],METL:d["METL"],MINE:d["MINE"],MSW:d["MSW"],NREN:d["NREN"],OZON:d["OZON"],
-      PEST:d["PEST"],REN:d["REN"],SMOG:d["SMOG"],VADD:d["VADD"],WATR:d["WATR"],GHG:d["GHG"]}; // CUSTOM, appended year for chart, the rest for popup
+      var pair = {x: d[x], y: d[y], z: d[z], ...d}; // CUSTOM, appended year for chart, the rest for popup
       returnPairs.push(pair);
       returnX.push(d[x]);
       returnY.push(d[y]);
@@ -477,38 +468,10 @@ function displayImpactBubbles(attempts) {
     //let sectorCSV = local_app.localsite_root() + "../io/charts/bubble/data/indicators_sectors"+model+".csv";
     //alert(sectorCSV);
     d3.csv(sectorCSV ).then(function(data){
-      data.forEach(function(d) {
-        d.ACID=+d.ACID
-        d.ENRG=+d.ENRG
-        d.ETOX=+d.ETOX
-        d.EUTR=+d.EUTR
-        d.FOOD=+d.FOOD
-        d.GCC=+d.GCC
-        d.HAPS=+d.HAPS
-        d.HAZW=+d.HAZW
-        d.HC=+d.HC
-        d.HNC=+d.HNC
-        d.HRSP=+d.HRSP
-        d.HTOX=+d.HTOX
-        d.JOBS=+d.JOBS
-        d.LAND=+d.LAND
-        d.METL=+d.METL
-        d.MINE=+d.MINE
-        d.MSW=+d.MSW
-        d.NREN=+d.NREN
-        d.OZON=+d.OZON
-        d.PEST=+d.PEST
-        d.REN=+d.REN
-        d.SMOG=+d.SMOG
-        d.VADD=+d.VADD
-        d.WATR=+d.WATR
-        d.GHG=+d.GHG
-      });
-
+      data.forEach(d => indicators.forEach(indicator => d[indicator] = +d[indicator]));
       allData = data;
 
       applyToBubbleHTML(hash,1);
-
     });
 
   } else if (attempts<100) { // Wait a milisecond and try again
@@ -528,35 +491,26 @@ function applyToBubbleHTML(hash,attempts) {
     $('#bubble-graph-id').show();
     
     if (hash.x && hash.y && hash.z) {
-      $("#graph-picklist-x").val(hash.x);
-      $("#graph-picklist-y").val(hash.y);
-      $("#graph-picklist-z").val(hash.z);
+      dropdownX.val(hash.x);
+      dropdownY.val(hash.y);
+      dropdownZ.val(hash.z);
     } else { // Same as below
-      $("#graph-picklist-x").val('ENRG');
-      $("#graph-picklist-y").val('WATR');
-      $("#graph-picklist-z").val('JOBS');
+      dropdownX.val('ENRG');
+      dropdownY.val('WATR');
+      dropdownZ.val('JOBS');
     }
-
     // Initial load
     // To do: invoke the following when something like param load=true reside in embed
     
-    if(document.getElementById("mySelect").checked){
-      midFunc(d3.select("#graph-picklist-x").node().value,
-      d3.select("#graph-picklist-y").node().value,
-      d3.select("#graph-picklist-z").node().value,
-      hash,"region");
-      //document.querySelector('#sector-list').setAttribute('area', 'GAUSEEIO');
-    }else{
-      midFunc(d3.select("#graph-picklist-x").node().value,
-      d3.select("#graph-picklist-y").node().value,
-      d3.select("#graph-picklist-z").node().value,
-      hash,"all");
-      //document.querySelector('#sector-list').setAttribute('area', 'USEEIO');
+    if(document.getElementById("mySelect").checked) {
+      midFunc(dropdownX.val(), dropdownY.val(), dropdownZ.val(), hash, "region");
+    } else {
+      midFunc(dropdownX.val(), dropdownY.val(), dropdownZ.val(), hash, "all");
     }
     
     d3.selectAll(".graph-picklist").on("change",function(){
       // Update hash and trigger hashChange event. Resides in localsite.js
-      goHash({"x":$("#graph-picklist-x").val(),"y":$("#graph-picklist-y").val(),"z":$("#graph-picklist-z").val()});
+      goHash({ "x": dropdownX.val(), "y": dropdownY.val(), "z": dropdownZ.val()});
       //updateChart(d3.select("#graph-picklist-x").node().value,
       ///  d3.select("#graph-picklist-y").node().value,
       //  d3.select("#graph-picklist-z").node().value);
@@ -650,12 +604,6 @@ function updateChart(x,y,z,useeioList,boundry){
   var low = Math.round(l * 0.010);
   var high = l - low;
   records.x = (records.x).slice(low,high);
-
-  (records.pairs).sort(function(a,b){return a-b});
-  var l = (records.pairs).length;
-  var low = Math.round(l * 0.010);
-  var high = l - low;
-  records.pairs = (records.pairs).slice(low,high);
   
   yScale.domain(d3.extent(records.y));
   xScale.domain(d3.extent(records.x));

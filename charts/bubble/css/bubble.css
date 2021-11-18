@@ -10,9 +10,7 @@ bodyX {
 .bubble-graph select {
   max-width:250px;
 }
-.bubble-graph svg {
-    pointer-events: none;
-}
+
 #imp {
   background-color: #888;
   padding-right: 40px;

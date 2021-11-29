@@ -6,9 +6,23 @@ Participate with our <a href="https://www.democracylab.org/projects/834">Neighbo
 You can attend from any location!
 
 <!--
-<b>Saturday, November 6, 2021, 9AM to 5PM ET</b>
-<a href="https://www.democracylab.org/events/59">Hack for a Blue Economy</a> -  and [Learn more about event](https://coastalreview.org/2021/10/all-blue-week-aims-to-hook-wilmington-on-a-blue-economy/). 
+<b>Wednesdays, Nov and Dec, 2021 - 3PM ET</b>
+DJango/React - <a href="https://www.democracylab.org/">Democracy Lab's</a> weekly developer meeting is Wednesdays at 12pm PT
+Focusing on integration with <a href="../../../community/resources/diffbot/">Civic Tech Category API</a> and <a href="../../../io/template/toml">Github Repo Data (from TOML)</a>
+
+**Saturday, November 20, 2021 - 11:30AM to 8PM ET**
+[Hack To Give Thanks](https://democracylab.org/events/2021-hack-to-give-thanks) - Presented by Democracy Lab 
 -->
+
+<b>Tuesday, December 14, 2021, 7PM ET</b>
+<a href="https://www.meetup.com/codeforatlanta">Neighborhood.org at Code for Atlanta</a> - We're hacking our way through React to become better UX/UI designers!  Also focused on managing neighborhood projects with Distributed Autonomous Organizations (DOAs).
+
+<b>Thursday, December 16, 2021 - 9:30 PM ET</b>
+<a href="https://openseattle.org/events/">Open Seattle</a> - Every 4th Thursday of the month at 6:30 PM PT
+Focusing on building Better Civic Sites with mobile surveys using modular GitHub forks.<br>
+
+
+## Development Environment
 
 You'll want to get one of our REACT builds running on your local machine:
 
@@ -24,22 +38,6 @@ We’re updating the Italian PublicCode-editor to add code devloped by Code for 
 
 4. **Use TypeScript with Blitz.js to format a nutritional label**
 For our <a href="../../../io/template/">Impact Labels</a> create a TypeScript display process with <a href="https://blitzjs.com/">React Blitz.js for full stack Next.js</a>.&nbsp;  Here's a [Blank starter project for building TypeScript apps](https://stackblitz.com/edit/typescript) within [stackblitz.com](https://stackblitz.com)
-
-
-<b>Wednesdays, Nov and Dec, 2021 - 3PM ET</b>
-DJango/React - <a href="https://www.democracylab.org/">Democracy Lab's</a> weekly developer meeting is Wednesdays at 12pm PT
-Focusing on integration with <a href="../../../community/resources/diffbot/">Civic Tech Category API</a> and <a href="../../../io/template/toml">Github Repo Data (from TOML)</a>
-
-**Saturday, November 20, 2021 - 11:30AM to 8PM ET**
-[Hack To Give Thanks](https://democracylab.org/events/2021-hack-to-give-thanks) - Presented by Democracy Lab 
-
-<b>Thursday, November 18, 2021 - 9:30 PM ET</b>
-<a href="https://openseattle.org/events/">Open Seattle</a> - Every 4th Thursday of the month at 6:30 PM PT
-Focusing on building Better Civic Sites with mobile surveys using modular GitHub forks.<br>
-
-<b>Tuesday, December 14, 2021, 7PM ET</b>
-<a href="https://www.meetup.com/codeforatlanta">Neighborhood.org at Code for Atlanta</a> - We're hacking our way through React to become better UX/UI designers!  Also focused on managing neighborhood projects with Distributed Autonomous Organizations (DOAs).
-
 
 ## Slack and Discord
 

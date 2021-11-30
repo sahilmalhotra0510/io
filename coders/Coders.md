@@ -2,8 +2,7 @@
 
 ## Meetups
 
-Participate with our <a href="https://www.democracylab.org/projects/834">Neighborhood.org Democracy Lab Team</a>
-You can attend from any location!
+Join our <a href="https://www.democracylab.org/projects/834">Neighborhood.org Team</a>. You can attend from any location!
 
 <!--
 <b>Wednesdays, Nov and Dec, 2021 - 3PM ET</b>

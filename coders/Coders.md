@@ -2,7 +2,7 @@
 
 ## Meetups
 
-Join our <a href="https://www.democracylab.org/projects/834">Neighborhood.org Team</a>. You can attend from any location!
+
 
 <!--
 <b>Wednesdays, Nov and Dec, 2021 - 3PM ET</b>
@@ -13,12 +13,18 @@ Focusing on integration with <a href="../../../community/resources/diffbot/">Civ
 [Hack To Give Thanks](https://democracylab.org/events/2021-hack-to-give-thanks) - Presented by Democracy Lab 
 -->
 
-<b>Tuesday, December 14, 2021, 7PM ET</b>
-<a href="https://www.meetup.com/codeforatlanta">Neighborhood.org at Code for Atlanta</a> - We're hacking our way through React to become better UX/UI designers!  Also focused on managing neighborhood projects with Distributed Autonomous Organizations (DOAs).
+<b>Saturday, January 15, 2022 - 11:30 AM to 8:00 PM EST</b>  
+Join our <a href="https://www.democracylab.org/projects/834">Neighborhood.org Team</a> to help create local Carbon Footprint tools with the EPA. You can attend from any location!<br>
 
-<b>Thursday, December 16, 2021 - 9:30 PM ET</b>
+<b>Tuesday, January 18, 2022 - 7 PM to 9 PM EST</b>
+<a href="https://www.meetup.com/codeforatlanta">Neighborhood.org at Code for Atlanta</a> - Join us virtually to work on Carbon Footprint tools.
+
+
+
+<!--
 <a href="https://openseattle.org/events/">Open Seattle</a> - Every 4th Thursday of the month at 6:30 PM PT
 Focusing on building Better Civic Sites with mobile surveys using modular GitHub forks.<br>
+-->
 
 
 ## Development Environment

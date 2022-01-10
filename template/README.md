@@ -1,4 +1,4 @@
-**Applied Sciences 2021 - Article Draft**
+**Applied Sciences - LCA Edition - Article Draft**
 
 ## International Impact Labels for Communities and Individuals using Environmental Product Declarations (EPD) with YAML
 

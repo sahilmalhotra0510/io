@@ -100,6 +100,10 @@ loadMarkdown("README.md", "readmeDiv", "_parent");
       background-color: #ddd;
       margin-bottom: 20px;
     }
+
+    ol > li:before {
+        border-radius:20px;
+    }
   </style>
 
   <div class="columnRight hideMobile">
@@ -151,7 +155,14 @@ loadMarkdown("README.md", "readmeDiv", "_parent");
   </div>
 
   <div style="overflow:auto">
-    <h1 class="h1-home">Impact Profiles</h1>
+    <h1 class="h1-home">Environmental Impact Profiles</h1>
+
+    <div id="readmeDiv"></div>
+
+    <div style="clear:both"></div>
+
+    <h1>Common Syntax</h1>
+
     <h2>For Communities, Companies, Products and Individuals</h2>
 
     <!--
@@ -187,7 +198,7 @@ Field documentation: <a href="https://docs.google.com/spreadsheets/d/1q2TW0GlLlK
   <img src="img/2-labels.png" style="width:100%; max-width:600px">
 </div><br><br>
 
-  <div id="readmeDiv"></div>
+  
 
 <!--
   - description: public safety access point

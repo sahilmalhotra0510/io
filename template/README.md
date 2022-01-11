@@ -1,8 +1,8 @@
-**Applied Sciences - LCA Edition - Article Draft**
+**Applied Sciences - LCA Edition - 2022 Article Draft**
 
 ## International Impact Labels for Communities and Individuals using Environmental Product Declarations (EPD) with YAML
 
-Environmental Impact Profiles published using the user-friendly [YMAL syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html) allow scenarios and entity profiles to be easily shared and compared for communities, companies and individuals when combined with international standards created for Environmental Product Declarations (EPDs) by organizations like the Smart Built Environment Innovation Program in Europe and <a href="https://buildingtransparency.org" target="_blank">Building&nbsp;Transparency</a> in the United States.
+Environmental Impact Profiles published using JSON and the easily-readable [YMAL syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html) allow scenarios and entity profiles to be easily shared and compared for communities, companies and individuals when combined with international standards created for Environmental Product Declarations (EPDs) by organizations like the Smart Built Environment Innovation Program in Europe and <a href="https://buildingtransparency.org" target="_blank">Building&nbsp;Transparency</a> in the United States.
 
 Standardized international data practices have emerged for Life Cycle Assessment (LCA) interoperability based on common units of flow when measuring the activities of agents within a comparable range of time.<sup>1</sup>  Large backend databases like USEEIO<sup>2</sup>, Ecoinvent<sup>3</sup> and Bonsai<sup>4</sup> now make the output of flow analysis broadly accessible through API calls which aggregate results into small, pre-processed files that can be output to CSV, JSON or YAML for use in fast-loading, static website displays &ndash; which are increasingly hosted for free using Content Delivery Networks (CDN) in conjunction with collaborative editing sites like GitHub.
 

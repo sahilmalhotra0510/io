@@ -43,5 +43,3 @@ We’re updating the Italian PublicCode-editor to add code devloped by Code for 
 
 Join us in creating web applications using the [US EPA's Embeddable Input-Output Widgets (USEEIO)](../../io/charts)  
 -->
-
-## Project Areas

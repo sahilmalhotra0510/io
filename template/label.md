@@ -28,14 +28,5 @@ Update our [3.0 Mockup](../../../apps/smm/) to apply labels for communities, com
 
 [Expand the YAML metadata editing process](../../community/projects/#profile-editor) created by Italy to edit any entity profile stored on GitHub.
 
-## Mini and Super Widgets - Layout Design and Mock-Ups
-
-### Mini-Labels
-
-The mini-label will provide a very brief summary of a location's score (for countries, states, counties and zips). Adjacent to each score will be a real-time data point - like air quality, water quality, energy use, land proposals, avoidable daily deaths, new jobs created.  [View&nbsp;starter&nbsp;pages](../../apps/)
-
-### Super-Labels
-
-This is where it gets exciting! We're creating expanded cinematic labels around themes like Marvel comics, The Last Airbender and [National&nbsp;Parks](../../apps/land/).
 
 

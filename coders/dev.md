@@ -14,13 +14,14 @@ See [NextJS with Prisma example](https://github.com/prisma/prisma-examples/tree/
 1. **Impact Labels using NextJS with Typescript and Tailwind CSS**
 Fork our [NextJS, Typescript, Tailwind](https://github.com/modelearth/nextjs-typescript-tailwind) starter.  
 Create processes to display [impact label widgets](../../community/projects/#widgets).
-Here's a [Blank starter project for building TypeScript apps](https://stackblitz.com/edit/typescript) within [stackblitz.com](https://stackblitz.com)
+Create a [mini-label score layout](../../community/projects/#miniwidget) for video games and a [cinematic label](../../community/projects/#cinematic) for large screens.  
+Here's a [blank starter for building TypeScript apps](https://stackblitz.com/edit/typescript) within [stackblitz.com](https://stackblitz.com)
 
 2. **React for Pulling API data into static JSON files**  
-Copy how our [EPA widgets](../../io/charts/) save static JSON files by using <code>npm run download</code> and apply to the Building Transparency API.  You might need a bearer token - see our [openEPD pull notes](../../io/template/feed/).  Change from [toy json](../template/feed/toy100.json) to the new static files to speed up <a href="../../../io/template/feed/">Building Transparency API Display</a>
+Copy how our [EPA widgets](../../io/charts/) save static JSON files by using <code>npm run download</code> and apply to the openEPD Building Transparency API.  You may need a bearer token - see our [openEPD pull notes](../../io/template/feed/).  Change from [toy json](../template/feed/toy100.json) to the new static files to speed up <a href="../../../io/template/feed/">Building Transparency API Display</a>
 <!--- 1st and 3rd Tuesday of the month at 7 PM ET<br>-->
 
-3. **Save an edit in an HTML form directly to GitHub**  
+3. **React form for saving profile edits directly to GitHub**  
 We’re updating the Italian PublicCode-editor to add code devloped by Code for America to edit YAML files directly on GitHub. <a href="../../community/projects/#profile-editor">Project Details</a>  
 
 

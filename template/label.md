@@ -9,9 +9,11 @@
 </ol>
 -->
 
-The interactive labels will be featured in our [Applied Sciences article](../../io/template/).
+Our interactive labels will be featured in our upcoming [Applied Sciences article](../../io/template/).
 
-Review the [Top 7 Environmental impact footprints](https://footprinthero.com/best-carbon-footprint-calculators).  
+Review the [Top 7 Environmental impact footprints](https://footprinthero.com/best-carbon-footprint-calculators).
+  
+Get started contributing to the design process in React:
 
 1. Start by forking and cloning [nextjs-typescript-tailwind](https://github.com/modelearth/nextjs-typescript-tailwind)
 

@@ -8,7 +8,12 @@
 </li>
 </ol>
 -->
-1. Start by forking the following repo: [nextjs-typescript-tailwind](https://github.com/modelearth/nextjs-typescript-tailwind)
+
+The interactive labels will be featured in our [Applied Sciences article](../../io/template/).
+
+Review the [Top 7 Environmental impact footprints](https://footprinthero.com/best-carbon-footprint-calculators).  
+
+1. Start by forking and cloning [nextjs-typescript-tailwind](https://github.com/modelearth/nextjs-typescript-tailwind)
 
 2. Create HTML outout that matches our [environmental impact label](../../io/template/) mockup using EPD data from [toy json](../template/feed/toy100.json)
 
@@ -17,7 +22,6 @@
 4. Toggle to a cinematic <a href="../../community/projects/#cinematic">super-labels</a> using the six impact sets:  
 Air, Water, Land, Energy, Health and Prosperity. [Samples](../../apps/)
 
-We're building toward interactive label functionality in React.
 Abrie has started React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/#zip=30318">resulting label output</a>. Check out [React 18 with Blitz.js](https://blitzjs.com) for data layer abstraction that eliminates the need for REST/GraphQL.
 
 TODO: Format Abrie's work to match our [HTML template](../../io/template/) (right column). Shorten numbers. Drive location filters by URL hash [param values](../../localsite/) like #zip=30318 and #geo=US13121,US1308 for counties. Compare location to national average and add red and green to the right to indicated hotspots.

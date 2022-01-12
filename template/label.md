@@ -1,4 +1,4 @@
-## Widgets - Environmental Profile Labels - React and YAML
+## Impact Label Widgets
 
 <a href="../../../io/template/"><img src="../../../io/template/img/label-sample.png" style="float:right; width:100%; max-width:300px; margin-left:30px; margin-bottom:30px"></a>
 
@@ -8,11 +8,14 @@
 </li>
 </ol>
 -->
-1. Start with the following [nextjs-typescript-tailwind repo](https://github.com/modelearth/nextjs-typescript-tailwind)
+1. Start by forking the following repo: [nextjs-typescript-tailwind](https://github.com/modelearth/nextjs-typescript-tailwind)
 
-2. Implement a new standard-sized [environmental label](../../io/template/) inspired by "nutritional labels" 
+2. Create HTML outout that matches our [environmental impact label](../../io/template/) mockup using EPD data from [toy json](../template/feed/toy100.json)
 
-3. Design an interactive layout for our <a href="../../apps/">mini-labels</a> and cinematic <a href="../../community/projects/#cinematic">super-labels</a> using the six impact sets: Air, Water, Land, Energy, Health and Prosperity. [Samples](../../apps/)
+3. Toggle to a <a href="../../apps/">mini-labels (upper right)</a>
+
+4. Toggle to a cinematic <a href="../../community/projects/#cinematic">super-labels</a> using the six impact sets:  
+Air, Water, Land, Energy, Health and Prosperity. [Samples](../../apps/)
 
 We're building toward interactive label functionality in React.
 Abrie has started React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/#zip=30318">resulting label output</a>. Check out [React 18 with Blitz.js](https://blitzjs.com) for data layer abstraction that eliminates the need for REST/GraphQL.

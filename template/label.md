@@ -15,7 +15,7 @@ Review the [Top 7 Environmental impact footprints](https://footprinthero.com/bes
   
 Get started contributing to the design process in React:
 
-1. Start by forking and cloning [nextjs-typescript-tailwind](https://github.com/modelearth/nextjs-typescript-tailwind)
+1. Start by forking and cloning [codersDiv](https://github.com/modelearth/impact-scoreboard)
 
 2. Create HTML outout that matches our [environmental impact label](../../io/template/) mockup using EPD data from [toy json](../template/feed/toy100.json)
 

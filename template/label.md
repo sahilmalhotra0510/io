@@ -12,10 +12,10 @@
 Our interactive labels will be featured in our upcoming [Applied Sciences article](../../io/template/).
 
 Review the [Top 7 Environmental impact footprints](https://footprinthero.com/best-carbon-footprint-calculators).
-  
+
 Get started contributing to the design process in React:
 
-1. Start by forking and cloning [codersDiv](https://github.com/modelearth/impact-scoreboard)
+1. Start by forking and cloning our [ModelEarth Engine](https://github.com/modelearth/engine) repo.
 
 2. Create HTML outout that matches our [environmental impact label](../../io/template/) mockup using EPD data from [toy json](../template/feed/toy100.json)
 

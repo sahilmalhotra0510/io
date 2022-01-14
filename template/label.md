@@ -17,7 +17,7 @@ Get started contributing to the design process in React:
 
 1. Start by forking and cloning our [Engine-Storybook](https://github.com/localsite/engine-storybook) repo.
 
-2. Create HTML outout that matches our [environmental impact label](../../io/template/) mockup using EPD data from [toy json](../template/feed/toy100.json)
+2. Create HTML outout that matches our [environmental impact label](../../io/template/) mockup using EPD data from [Cement Toy Json](../template/feed/toy100.json) and [CoolClimate Family](https://github.com/localsite/engine-storybook/blob/master/public/static/json/coolclimate-family.json).
 
 3. Toggle to a <a href="../../apps/">mini-label (see size in upper right)</a>
 

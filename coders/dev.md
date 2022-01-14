@@ -12,10 +12,13 @@ See [NextJS with Prisma example](https://github.com/prisma/prisma-examples/tree/
 -->
 
 1. **Impact Labels using NextJS with Typescript and Tailwind CSS**
-Fork and clone our [ModelEarth Engine](https://github.com/modelearth/engine) repo.  
+Fork and clone our [Engine-Storybook](https://github.com/localsite/engine-storybook) repo.  
 Create processes to display [impact label widgets](../../community/projects/#widgets).
-Create a [mini-label score layout](../../community/projects/#miniwidget) for video games and a [cinematic label](../../community/projects/#cinematic) for large screens.  
-Here's a [blank starter for building TypeScript apps](https://stackblitz.com/edit/typescript) within [stackblitz.com](https://stackblitz.com)
+Create a [mini-label score layout](../../community/projects/#miniwidget) that expands into a [cinematic label](../../community/projects/#cinematic) for large screens.  
+<!--
+Didn't use, but the steps are worth reviewing:
+https://telmo.is/writing/create-a-nextjs-typescript-and-tailwindcss-project
+-->
 
 2. **React for Pulling API data into static JSON files**  
 Copy how our [EPA widgets](../../io/charts/) save static JSON files by using <code>npm run download</code> and apply to the openEPD Building Transparency API.  You may need a bearer token - see our [openEPD pull notes](../../io/template/feed/).  Change from [toy json](../template/feed/toy100.json) to the new static files to speed up <a href="../../../io/template/feed/">Building Transparency API Display</a>

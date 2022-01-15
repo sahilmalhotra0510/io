@@ -1,3 +1,15 @@
+## Quick Dive
+
+We're creating a real-time environmental **impact score widget** suitable for every avatar and every website.  
+
+1. Learn about the [7 top footprint tools](https://footprinthero.com/best-carbon-footprint-calculators) including the [CoolCarbon Calculator](https://coolclimate.berkeley.edu/calculator) and [EPA Calculator](https://www3.epa.gov/carbon-footprint-calculator/)
+2. View Environmental [Product EPDs](https://buildingtransparency.org/ec3/epds) and the [BuildingTransparency.org API](../../io/template/feed/)
+3. Explore [NextJS](https://nextjs.org/) using our [Engine-Storybook](https://github.com/localsite/engine-storybook) repo.  
+4. Design an [interface in Figma](https://www.figma.com/file/mVZUSQCMBsIMu9bp7Y8qsS/Neighborhood-Impact-Footprint?node-id=0%3A1) for showing everyone's real-time score for 24 impact areas.
+
+A child is born with a positive carbon capture score.  How many days before the average US child's score becomes negative?
+
+
 ## Development Environment
 
 Start by adding one of our REACT builds to your local machine:
@@ -23,11 +35,11 @@ https://telmo.is/writing/create-a-nextjs-typescript-and-tailwindcss-project
 -->
 
 2. **React for Pulling API data into static JSON files**  
-Copy how our [EPA widgets](../../io/charts/) save static JSON files by using <code>npm run download</code> and apply to the openEPD Building Transparency API.  You may need a bearer token - see our [openEPD pull notes](../../io/template/feed/).  Change from [toy json](../template/feed/toy100.json) to the new static files to speed up <a href="../../../io/template/feed/">Building Transparency API Display</a>
+Copy how our [EPA widgets](../../io/charts/) save static JSON files by using <code>npm run download</code> and apply to the openEPD Building Transparency API.  Register in the BuildingTransparency.org site to get a bearer token - see our [openEPD pull notes](../../io/template/feed/).  Change from [toy json](../template/feed/toy100.json) to the new static files to speed up <a href="../../../io/template/feed/">Building Transparency API Display</a>
 <!--- 1st and 3rd Tuesday of the month at 7 PM ET<br>-->
 
 3. **React form for saving profile edits directly to GitHub**  
-We’re updating the Italian PublicCode-editor to add code devloped by Code for America to edit YAML files directly on GitHub. <a href="../../community/projects/#profile-editor">Project Details</a>  
+We’re updating the Italian PublicCode-editor to add code devloped by Code for America to edit YAML files directly on GitHub. <a href="../../community/projects/#profile-editor">Project Details</a>  Are there any good starting points for forms that update [.mdx](https://mdxjs.com/) files directly on GitHub? MDX is used in our [Engine-Storybook](https://github.com/localsite/engine-storybook) repo.
 
 
 

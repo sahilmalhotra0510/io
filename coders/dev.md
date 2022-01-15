@@ -13,8 +13,10 @@ See [NextJS with Prisma example](https://github.com/prisma/prisma-examples/tree/
 
 1. **Impact Labels using NextJS with Typescript and Tailwind CSS**
 Fork and clone our [Engine-Storybook](https://github.com/localsite/engine-storybook) repo.  
+To use typescript, the Engine-Storybook repo has a [typescript branch](https://github.com/localsite/engine-storybook/tree/typescript). Here are the [steps to add Storybook](https://model.earth/engine/) to the typescript branch.  
 Create processes to display [impact label widgets](../../community/projects/#widgets).
 Create a [mini-label score layout](../../community/projects/#miniwidget) that expands into a [cinematic label](../../community/projects/#cinematic) for large screens.  
+
 <!--
 Didn't use, but the steps are worth reviewing:
 https://telmo.is/writing/create-a-nextjs-typescript-and-tailwindcss-project

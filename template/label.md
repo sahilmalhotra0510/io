@@ -7,6 +7,8 @@
 </ol>
 -->
 
+<a href="https://www.figma.com/file/mVZUSQCMBsIMu9bp7Y8qsS/Impact-Footprint?node-id=0%3A1" target="fig">Contribute to Figma Mockup</a>
+
 Our interactive labels will be featured in our upcoming [Applied Sciences article](../../io/template/).
 
 Review the [Top 7 Environmental impact footprints](https://footprinthero.com/best-carbon-footprint-calculators).
@@ -22,8 +24,6 @@ Variables definitions in [CoolClimate Excel](https://api-central.berkeley.edu/ap
 
 4. Toggle to a cinematic <a href="../../community/projects/#cinematic">super-labels</a> using the six impact sets:  
 Air, Water, Land, Energy, Health and Prosperity. [Samples](../../apps/)
-
-To use typescript, the Engine-Storybook repo has a [typescript branch](https://github.com/localsite/engine-storybook/tree/typescript). Here are the [steps to add Storybook](https://model.earth/engine/) to the typescript branch.
 
 <!--
 Here's a [blank starter for building TypeScript apps](https://stackblitz.com/edit/typescript) within [stackblitz.com](https://stackblitz.com)

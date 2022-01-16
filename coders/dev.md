@@ -1,11 +1,14 @@
 ## Quick Dive
 
+On Tuesday we'll be generating a list of map points for Court.bot.  
+
 We're creating a real-time environmental **impact score widget** suitable for every avatar and every website.  
 
 1. Learn about the [7 top footprint tools](https://footprinthero.com/best-carbon-footprint-calculators) including the [CoolCarbon Calculator](https://coolclimate.berkeley.edu/calculator) and [EPA Calculator](https://www3.epa.gov/carbon-footprint-calculator/)
 2. View Environmental [Product EPDs](https://buildingtransparency.org/ec3/epds) and the [BuildingTransparency.org API](../../io/template/feed/)
-3. Explore [NextJS](https://nextjs.org/) using our [Engine-Storybook](https://github.com/localsite/engine-storybook) repo.  
-4. Design an [interface in Figma](https://www.figma.com/file/mVZUSQCMBsIMu9bp7Y8qsS/Neighborhood-Impact-Footprint?node-id=0%3A1) for showing everyone's real-time score for 24 impact areas.
+3. Add to our [interface in Figma](https://www.figma.com/file/mVZUSQCMBsIMu9bp7Y8qsS/Neighborhood-Impact-Footprint?node-id=18%3A6) for showing everyone's real-time score for 24 impact areas. Install [Figma Unity](https://www.figma.com/community/plugin/1009866256233241860/Unify%3A-Figma-to-React%2C-React-Native-and-HTML%2FCSS) to convert Figma components into clean React.  
+4. Explore [NextJS](https://nextjs.org/) using our [Engine-Storybook](https://github.com/localsite/engine-storybook) repo.  
+
 
 A child is born with a positive carbon capture score.  How many days before the average US child's score becomes negative?
 

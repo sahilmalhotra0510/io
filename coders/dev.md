@@ -1,8 +1,6 @@
 ## Quick Dive
 
-On Tuesday we'll be generating a list of map points for Court.bot.  
-
-We're creating a real-time environmental **impact score widget** suitable for every avatar and every website.  
+We're creating environmental impact scoring tools with US EPA industry data.
 
 1. Learn about the [7 top footprint tools](https://footprinthero.com/best-carbon-footprint-calculators) including the [CoolCarbon Calculator](https://coolclimate.berkeley.edu/calculator) and [EPA Calculator](https://www3.epa.gov/carbon-footprint-calculator/)
 2. View Environmental [Product EPDs](https://buildingtransparency.org/ec3/epds) and the [BuildingTransparency.org API](../../io/template/feed/)

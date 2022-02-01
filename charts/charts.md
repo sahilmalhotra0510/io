@@ -20,8 +20,15 @@ library(devtools)
 Rstudio has devtools intalled already, so maybe just library(devtools) to call in the package
 -->
 
-<style>
-</style>
+The static json files used here are generated from the EPA API which uses their [USEEIOR](https://github.com/USEPA/USEEIOR) R-Language data pipeline. 
+
+
+<!--(It replaces the use of [IOMB](https://github.com/USEPA/USEEIO_API/wiki/Build))-->
+
+<!--
+Here are [old model files](https://www.dropbox.com/sh/af48m0jsusgr3jg/AACzBSJwujR6LU0jZBhAzys6a?dl=0) for testing. (Better to use the newer data in the [static JSON files](https://github.com/modelearth/io/tree/main/build/api)) - [Build locally](../../charts/#build)
+-->
+
 
 
 ## USEEIO React Widgets

@@ -1,4 +1,4 @@
-# For Coders & Designers 
+# Life Cycle Tools for Coders & Designers 
 
 <!--
 ## Meetups

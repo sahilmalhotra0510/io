@@ -1,9 +1,9 @@
-# Life Cycle Tools for Coders & Designers 
+<h1 style="margin-bottom:0px; font-size:38px">48 Hours of Earth Day!</h1>
+<h3 style="margin-top:4px; font-size:24px">Friday, April 22, 2022</h3>
 
+Join us for 5 or more hours during the 48 HOUR EARTH DAY on April 22nd. The event will begin when Earth Day starts in New Zealand (UTC+12), and conclude 48 hours later when the day ends on Howland Island (UTC-12). Project teams will participate from all around the world! &nbsp;<a href="https://www.democracylab.org/projects/834">Join our project team</a><br><br>
 
-## 48 Hours of Earth Day! &ndash; April 22, 2022
-
-Join us for 5 or more hours during the 48 HOUR EARTH DAY on April 22nd. The event will begin when Earth Day starts in New Zealand (UTC+12), and conclude 48 hours later when the day ends on Howland Island (UTC-12). Project teams will participate from all around the world!
+# Life Cycle Tools for Coders & Designers
 
 <!--
 ## Meetups

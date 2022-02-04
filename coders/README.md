@@ -1,5 +1,10 @@
 # Life Cycle Tools for Coders & Designers 
 
+
+## 48 Hours of Earth Day! &ndash; April 22, 2022
+
+Join us for 5 or more hours during the 48 HOUR EARTH DAY on April 22nd. The event will begin when Earth Day starts in New Zealand (UTC+12), and conclude 48 hours later when the day ends on Howland Island (UTC-12). Project teams will participate from all around the world!
+
 <!--
 ## Meetups
 

@@ -8,7 +8,7 @@ We're creating environmental impact scoring tools with US EPA industry data.
 4. Explore [NextJS](https://nextjs.org/) using our [Engine-Storybook](https://github.com/localsite/engine-storybook) repo.  
 
 
-A child is born with a positive carbon capture score.  How many days before the average US child's score becomes negative?
+A child is born with a positive carbon capture score.  How many days before the average US child's score becomes negative? How does this compare to other countires? Participate in [our next event](../../io/coders/).
 
 
 ## Development Environment

@@ -46,7 +46,7 @@ We’re updating the Italian PublicCode-editor to add code devloped by Code for 
 
 ## Join Us on Slack
 
-<a href="https://codeforatlanta.slack.com" target="_blank">CodeForAtlanta.slack.com</a> &nbsp; <b>Slack Channel: #neighborhood</b>
+<a href="https://codeforatlanta.slack.com" target="_blank">CodeForAtlanta.slack.com</a> &nbsp; <b>Slack Channel: #neighborhood</b> - Get your [Slack Invite](http://slack.codeforatlanta.org)
 [Join our Democracy Lab Team](https://www.democracylab.org/projects/834)  
 <!--
 <a href="https://join.slack.com/t/openseattle/shared_invite/enQtNzczMjg5MzYyNzg4LTgwZDExYmE2MWQ4N2ZiN2VmNDllMmU3ODI0YWFkMTQ5ODY4MGMwNDBhOTQwNTU3OGJmYTI5ZTE3YWQ2NTdjYWY">Open Seattle Slack</a> &nbsp; <b>Slack Channel: #neighborhood</b> 

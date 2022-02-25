@@ -19,7 +19,7 @@ PROJECTS
 
 1. Mockup updates for Footprint interface using existing APIs.  
 
-2. Create HTML outout that matches our [environmental impact label](../../io/template/) mockup using EPD data from [Cement Toy Json](../template/feed/toy100.json)
+2. Create HTML output that matches our [environmental impact label](../../io/template/) mockup using EPD data from [Cement Toy Json](../template/feed/toy100.json)
 
 3. Toggle to a <a href="../../apps/">mini-label (see size in upper right)</a>
 
@@ -38,15 +38,15 @@ TODO: Format Abrie's work to match our [HTML template](../../io/template/) (righ
 
 [Expand the YAML metadata editing process](../../community/projects/#profile-editor) created by Italy to edit any entity profile stored on GitHub.
 
-<span style="display:none" class="local">
+<div style="display:none" class="local">
 
-Update our [3.0 Mockup](../../../apps/smm/) to apply labels for communities, companies, products and individuals.  
+Update our [3.0 Mockup](../../../apps/smm/) to apply labels for communities, companies, products and individuals.<br><br> 
 
 <a href="https://www.figma.com/file/mVZUSQCMBsIMu9bp7Y8qsS/Impact-Footprint?node-id=0%3A1" target="fig">Contribute to Figma Mockup</a>
-Get started contributing to the design process in React:
+Get started contributing to the design process in React:<br><br>
 
 Start by forking and cloning our [Engine-Storybook](https://github.com/localsite/engine-storybook) repo.
-</span>
+</div>
 
 
 

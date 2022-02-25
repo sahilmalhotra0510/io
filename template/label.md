@@ -13,18 +13,16 @@ Review the [Top 7 Environmental impact footprints](https://footprinthero.com/bes
 
 Details on our [Environmental Impact Profiles](../../io/template/).
 
-We're using [CoolClimate json](https://github.com/localsite/engine-storybook/blob/master/public/static/json/coolclimate-family.json) as our standard for sharing profile footprint data. View a sample [footprint.mdx](../../community/projects/cinematic/) file which uses variable names from [CoolClimate's Excel sheet](https://api-central.berkeley.edu/api/11).
+We're using [CoolClimate json](https://github.com/localsite/engine-storybook/blob/master/public/static/json/coolclimate-family.json) as our standard for sharing profile footprint data. View a sample [footprint.mdx](../../community/projects/cinematic/) file which uses parameter names from [CoolClimate's Excel sheet](https://api-central.berkeley.edu/api/11).
 
 PROJECTS
 
 1. Mockup updates for Footprint interface using existing APIs.  
 
-2. Create HTML output that matches our [environmental impact label](../../io/template/) mockup using EPD data from [Cement Toy Json](../template/feed/toy100.json)
+2. Create HTML output that matches our [environmental impact label](../../io/template/) mockup using OpenEPD data from [Cement Toy Json](../template/feed/toy100.json)
 
-3. Toggle to a <a href="../../apps/">mini-label (see size in upper right)</a>
-
-4. Toggle to a cinematic <a href="../../community/projects/#cinematic">super-labels</a> using the six impact sets:  
-Air, Water, Land, Energy, Health and Prosperity. [Samples](../../apps/)
+3. Toggle to a <a href="../../apps/">mini-label (see size in upper right)</a> over a <a href="../../community/projects/#cinematic">cinematic background</a> using the six impact sets:  
+Air, Water, Land, Energy, Health and Prosperity.
 
 <!--
 Here's a [blank starter for building TypeScript apps](https://stackblitz.com/edit/typescript) within [stackblitz.com](https://stackblitz.com)

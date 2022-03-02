@@ -8,27 +8,8 @@ topics:
 
 The [Central Concrete EPD data](https://github.com/modelearth/io/blob/master/template/product/product-concrete.yaml) was pulled from the BuildingTransparency.org API using:  
 
-~~~
-curl -X 'GET' \
-  'https://openepd.buildingtransparency.org/api/epds?page_number=1&page_size=1' \
-  -H 'accept: application/json' \
-  -H "Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-~~~
-
 Get your bearer key here: [https://openepd.buildingtransparency.org](https://openepd.buildingtransparency.org)  
 
-To convert to yaml, the json can be pasted in either: [json2yaml.com](https://www.json2yaml.com/) or [editor.swagger.io](https://editor.swagger.io)
-
-
-# For Postman
-
-## For io/template OpenEPD swagger
-
-https://etl-api.cqd.io/
-
-https://openepd.buildingtransparency.org/#/epds/get_epds_id  
-
-Inside Postman, you can load the YAML file https://etl-api.cqd.io/swagger.yaml which will import all the schemas.
 
 
 ### In your command terminal, get the "Bearer" secret key for your username
@@ -65,5 +46,37 @@ Georgia Mass Timber:
 ~~~
 https://buildingtransparency.org/api/materials?page_number=1&page_size=25&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=US-FL&epd__date_validity_ends__gt=2021-08-24
 ~~~
+
+
+
+
+
+~~~
+curl -X 'GET' \
+  'https://openepd.buildingtransparency.org/api/epds?page_number=1&page_size=1' \
+  -H 'accept: application/json' \
+  -H "Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+~~~
+
+
+
+To convert to yaml, the json can be pasted in either: [json2yaml.com](https://www.json2yaml.com/) or [editor.swagger.io](https://editor.swagger.io)
+
+
+# For Postman
+
+Click on "import" tab on the upper left side.
+Select the Raw Text option and paste your cURL command.
+Hit import and you will have the command in your Postman builder!
+Click Send to post the command.
+
+
+## For io/template OpenEPD swagger
+
+https://etl-api.cqd.io/
+
+https://openepd.buildingtransparency.org/#/epds/get_epds_id  
+
+Inside Postman, you can load the YAML file https://etl-api.cqd.io/swagger.yaml which will import all the schemas.
 
 

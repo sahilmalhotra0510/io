@@ -1,10 +1,3 @@
----
-title: International Impact Labels using openEPD with YAML
-topics:
- - Trend toward standards for readability and machine learning
- - Compliments use of PDF files for product profiles
----
-
 The [Central Concrete EPD data](https://github.com/modelearth/io/blob/master/template/product/product-concrete.yaml) was pulled from the BuildingTransparency.org API using:  
 
 
@@ -12,7 +5,7 @@ The [Central Concrete EPD data](https://github.com/modelearth/io/blob/master/tem
 STEP 1: Get your password at [buildingtransparency.org/](https://www.buildingtransparency.org/)
 
 
-STEP 2: Get your bearer key here: [https://openepd.buildingtransparency.org](https://openepd.buildingtransparency.org)  
+STEP 2: Get your bearer "key" here: [https://openepd.buildingtransparency.org](https://openepd.buildingtransparency.org)  
 
 
 ### In your command terminal, get the "Bearer" secret key for your username

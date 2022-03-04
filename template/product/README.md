@@ -61,10 +61,10 @@ To convert to yaml, the json can be pasted in either: [json2yaml.com](https://ww
 
 # For Postman
 
-Click on "import" tab on the upper left side.
-Select the Raw Text option and paste your cURL command.
-Hit import and you will have the command in your Postman builder!
-Click Send to post the command.
+1. Click on "import" tab on the upper left side.
+2. Select the Raw Text option and paste your cURL command.
+3. Hit import and you will have the command in your Postman builder!
+4. Click Send to post the command.
 
 
 ## For io/template OpenEPD swagger

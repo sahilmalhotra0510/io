@@ -106,7 +106,7 @@ Possible next steps: Set up GitHub Actions using [Futura's scenario analysis too
 5. Simonen, K.; Droguett, B.R.; Strain, L.; McDade, E. [Embodied carbon benchmark study: LCA for low carbon construction](https://digital.lib.washington.edu/researchworks/handle/1773/38017). University of Washington. **2017**
 6. [Increased availability of machine-readable EPDs in the ILCD+EPD+ format](https://www.diva-portal.org/smash/get/diva2:1549561/FULLTEXT01.pdf)  
 7. [OpenEPD](https://www.buildingtransparency.org/openepd/) by Building Transparency
-8. Code for America project citation.
+8. [Code for America](https://CodeForAmerica.org) is contributing to the [public code YAML editor](https://github.com/italia/publiccode.yml-docs) using metadata description standards initially developed by the Government of Italy.
 9. Joyce, P.J.; Björklund, A. [Futura: A new tool for transparent and shareable scenario analysis in prospective life cycle assessment](https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.13115). Journal of Industrial Ecology. **2021**
 
 

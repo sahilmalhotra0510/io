@@ -2,7 +2,7 @@
 
 The U.S. Environmental Protection Agency (EPA) is partnering with <span style="display:none" class="georgia">the Georgia Center for Innovation for Energy Technology and Georgia Tech to work with</span> local <span style="display:none" class="georgia">Georgia</span> communities to apply web tools that report the environmental and economic impact of industries in both local communities, state regions and the entire US using 24 indicators, including jobs, value-added, air quality, climate impact, energy use, water use and land use. Using an economy-wide input-output model of industries, households and the environment, the new online tools help communities identify opportunities for both economic growth and environmental sustainability.  
 
-[View presentation](../community/tools/), read more [about the model](about), review [current project areas](../../community/projects/) and join in our [upcoming&nbsp;web&nbsp;challenge](../../community/challenge/).
+[View presentation](../community/tools/), read more [about the model](about), review [current project areas](../../community/projects/) and join in our [upcoming&nbsp;meetups](../../io/coders/).
 
 
 Collaborate with us in adding [Goodr.co](https://Goodr.co) Food Waste solutions to state and local [Destination Marketing Directories](/inspire/).  

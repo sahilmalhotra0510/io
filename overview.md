@@ -5,6 +5,9 @@ The U.S. Environmental Protection Agency (EPA) is partnering with <span style="d
 [View presentation](../community/tools/), read more [about the model](about), review [current project areas](../../community/projects/) and join in our [upcoming&nbsp;web&nbsp;challenge](../../community/challenge/).
 
 
+Collaborate with us in adding [Goodr.co](https://Goodr.co) Food Waste solutions to state and local [Destination Marketing Directories](https://Planet.Live).  
+
+
 ## Community Pages
 
 Starting points for creating a website with lifecycle tools:  

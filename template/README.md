@@ -11,7 +11,7 @@ Currently, most EPD reporting is still done via <a href="https://www.nrmca.org/a
 A Ready Mix USA cement PDF example is downloadable at <a href="https://www.nrmca.org/association-resources/sustainability/epd-program/epd-ready-mix-usa-materials-lookup/">nrmca.org</a>.
 </div>
 
-An opportunity exists to improve entity data sharing by extending machine readable Environmental Product Declaration (EPD) formats to also describe community impacts and individual footprints.  Using YAML (an easy-to-read superset of JSON), entity reports can be compared visually or formatted as summaries for a variety of entities, with layouts similar to nutritional labels. (Figure 1)
+An opportunity exists to improve entity data sharing by extending machine readable Environmental Product Declaration (EPD) formats to also describe community impacts and individual footprints.  Using YAML, an easy-to-read superset of JSON, entity reports can be compared visually or formatted as summaries for a variety of entities, with layouts similar to nutritional labels. (Figure 1)
 
 Expanding research by the Carbon Leadership Forum to align analysis methods around a common standard for conveying estimates of embodied carbon in construction from extracting, manufacturing and installing materials<sup>5</sup> strategies are being developed to document sources and overcome uncertainty.
 

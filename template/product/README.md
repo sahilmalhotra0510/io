@@ -1,5 +1,6 @@
 The [Central Concrete EPD data](https://github.com/modelearth/io/blob/master/template/product/product-concrete.yaml) was pulled from the BuildingTransparency.org API using:  
 
+[How to use Curl with Postman](https://www.google.com/search?q=how+to+use+Curl+with+Postman&oq=how+to+use+Curl+with+Postman&aqs=chrome..69i57.18359j0j9&sourceid=chrome&ie=UTF-8)
 
 
 STEP 1: Get your password at [buildingtransparency.org/](https://www.buildingtransparency.org/)
@@ -66,7 +67,7 @@ To convert to yaml, the json can be pasted in either: [json2yaml.com](https://ww
 3. Hit import and you will have the command in your Postman builder!
 4. Click Send to post the command.
 
-
+[How to use Curl with Postman](https://www.google.com/search?q=how+to+use+Curl+with+Postman&oq=how+to+use+Curl+with+Postman&aqs=chrome..69i57.18359j0j9&sourceid=chrome&ie=UTF-8) - [YouTube](https://www.google.com/search?q=how+to+use+Curl+with+Postman&sxsrf=APq-WBtPCQSW52ZIvoJZxIvspDVdEJ_G0g:1648670885549&source=lnms&tbm=vid&sa=X&ved=2ahUKEwio-u_T0e72AhXWmGoFHSTLB6sQ_AUoAXoECAEQAw&biw=1513&bih=819&dpr=1)
 ## For io/template OpenEPD swagger
 
 https://etl-api.cqd.io/

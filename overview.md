@@ -5,7 +5,7 @@ The U.S. Environmental Protection Agency (EPA) is partnering with <span style="d
 [View presentation](../community/tools/), read more [about the model](about), review [current project areas](../../community/projects/) and join in our [upcoming&nbsp;meetups](../../io/coders/).
 
 
-Collaborate with us in adding [Goodr.co](https://Goodr.co) Food Waste solutions to state and local [Destination Marketing Directories](/inspire/).  
+Collaborate with us in adding [Goodr.co](https://Goodr.co) Food Waste solutions to state and local [Collaborative Partner Tools](https://componentcore.com/inspire/).  
 
 
 ## Community Pages

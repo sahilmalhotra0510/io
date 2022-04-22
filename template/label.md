@@ -7,13 +7,13 @@
 </ol>
 -->
 
+The [CoolClimate Footprint Calculator](https://coolclimate.org/calculator) from Berkeley ranked first out of the [Top 7 Environmental impact footprints](https://footprinthero.com/best-carbon-footprint-calculators).  It loads with avearges, so you see helpful impact info immediately.
 
+Details on our [Environmental Impact Profiles](../../io/template/).  We're working on loading impacts based on locations - states, counties and zip codes.  
 
-Review the [Top 7 Environmental impact footprints](https://footprinthero.com/best-carbon-footprint-calculators).
+We'll be integrationg with [Global Goals Marks](https://globalgoalsmarks.org/app/) spearheaded by Jan Ainali.  
 
-Details on our [Environmental Impact Profiles](../../io/template/).
-
-We're using [CoolClimate json](https://github.com/localsite/engine-storybook/blob/master/public/static/json/coolclimate-family.json) as our standard for sharing profile footprint data. View a sample [footprint.mdx](../../community/projects/cinematic/) file which uses parameter names from [CoolClimate's Excel sheet](https://api-central.berkeley.edu/api/11).
+Here's the [CoolClimate json](https://github.com/localsite/engine-storybook/blob/master/public/static/json/coolclimate-family.json) as our standard for sharing profile footprint data. View a sample [footprint.mdx](../../localsite/impact/) file which uses parameter names from [CoolClimate's Excel sheet](https://api-central.berkeley.edu/api/11).
 
 PROJECTS
 

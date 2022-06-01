@@ -19,7 +19,7 @@
 
 Join in our upcoming work sessions for an overview of the web challenge and to start working on your community app entry.<br>
 
-<div class="floatRight" style="border:1px solid #ccc; max-width:400px; float:right; margin-bottom:20px">
+<div class="floatright" style="border:1px solid #ccc; max-width:400px; float:right; margin-bottom:20px">
   <div>
     <a href="../../community/challenge/" target="_parent" ><img src="https://model.earth/community/img/overview/code-for-america-square.jpg" style="width:100%; max-width:400px;"></a>
   </div>

@@ -44,12 +44,16 @@ We’re updating the Italian PublicCode-editor to add code devloped by Code for 
 
 [Use requirements.in to generate requirements.txt](https://medium.com/@ramalhodevitor/abandon-requirements-txt-for-managing-dependencies-in-python-immediately-50b1c45b824a)  
 
+<!--
 ## Get Involved
+
+[Join our Democracy Lab Team](https://www.democracylab.org/projects/834)  
+-->
 
 <!--
 <b>Slack Channel: <a href="https://codeforatlanta.slack.com" target="_blank">#neighborhood</a></b> - Get your [Slack Invite](http://slack.codeforatlanta.org)
 -->
-[Join our Democracy Lab Team](https://www.democracylab.org/projects/834)  
+
 <!--
 <a href="https://join.slack.com/t/openseattle/shared_invite/enQtNzczMjg5MzYyNzg4LTgwZDExYmE2MWQ4N2ZiN2VmNDllMmU3ODI0YWFkMTQ5ODY4MGMwNDBhOTQwNTU3OGJmYTI5ZTE3YWQ2NTdjYWY">Open Seattle Slack</a> &nbsp; <b>Slack Channel: #neighborhood</b> 
 [React Blitz.js Discord group](https://discord.com/invite/blitzjs)

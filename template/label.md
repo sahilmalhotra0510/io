@@ -36,12 +36,12 @@ TODO: Format Abrie's work to match our [HTML template](../../io/template/) (righ
 
 <div style="display:none" class="local">
 
-Update our [3.0 Mockup](../../../apps/smm/) to apply labels for communities, companies, products and individuals.<br><br> 
+Our <a href="../../../apps/smm/">3.0 Mockup</a><br><br> 
 
+<!--
 <a href="https://www.figma.com/file/mVZUSQCMBsIMu9bp7Y8qsS/Impact-Footprint?node-id=0%3A1" target="fig">Contribute to Figma Mockup</a>
-Get started contributing to the design process in React:<br><br>
+-->
 
-Start by forking and cloning our [Engine-Storybook](https://github.com/localsite/engine-storybook) repo.
 </div>
 
 

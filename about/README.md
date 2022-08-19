@@ -15,9 +15,10 @@ Learn about [the USEEIO API](api/)
 - Summer 2020: [Modeling and component development](../../localsite/info/)
 - Fall 2020: [Develop prototype applications](../../apps/)
 - Spring 2021: [Electric Vehicle Ecosystem](../../community/projects/mobility/), [Coastal Recycling Activated Carbon Feedstocks](../../apps/coastal/)
-- Summer 2021: [Bureau of Labor Statistics](../../io/about/api/), [Machine Learning for Industry Imputation](../../localsite/info/data/)
+- Summer 2021: [Machine Learning for Industry Imputation](../../localsite/info/data/)
 - Fall 2021: [Sustainable Communities Web Challenge](../../community/challenge/)
-- Spring and Fall 2022: [Beyond Carbon](../../apps/) - [Environmental Impact Profiles](../../io/template/)
+- Spring 2022: [Beyond Carbon](../../apps/beyondcarbon/) - [Environmental Impact Profiles](../../io/template/)
+- Summer and Fall 2022: [B2B Recycling Directory](../../localsite/map/#show=recyclers&state=GA)
 <br>
 
 [USEEIO Versions](https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-technical-content) - [Project Areas](../../community/projects/) - [Intern Projects](../../io/projects/) - [Starter Samples](../../community/start/)  

@@ -14,14 +14,14 @@
 <script src="../../localsite/js/leaflet.js" id="/localsite/js/leaflet.js"></script>
 <script type="text/javascript" src="../../localsite/js/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
 <!-- https://github.com/ilyankou/Leaflet.IconMaterial -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <link href="../../localsite/css/leaflet.icon-material.css" rel="stylesheet">
 <script src="../../localsite/js/leaflet.icon-material.js" id="/localsite/js/leaflet.icon-material.js"></script>
 
 
 <script type="text/javascript" src="../../localsite/js/localsite.js" id="/localsite/js/localsite.js"></script>
 <script type="text/javascript" src="../../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
-<script type="text/javascript" src="../../localsite/js/navigation.js"></script>
+<script type="text/javascript" src="../../localsite/js/navigation.js" id="/localsite/js/navigation.js"></script>
 
 
 <!-- For Facebook -->
@@ -125,20 +125,9 @@ h2 { font-size: 18px; }
 
 <link rel="stylesheet" href="../../localsite/css/map.css" />
 
-
-
 </head>
 
 <body>
-
-
-<div id="rightcolumn" class="hideMobile" style="float:right; max-width: 400px;">
-    <div style="display:none" class="georgia">
-      <a class="twitter-timeline" data-tweet-limit="2" href="https://twitter.com/gdecd"></a> 
-      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-</div>
-
 
 <div class="content contentpadding" style="overflow:auto; margin-bottom:0px; padding-bottom:0px;">
 
@@ -152,7 +141,7 @@ h2 { font-size: 18px; }
   <br>
 
 
-<div class="floatright" style="border:1px solid #ccc; width:400px; float:right; margin-bottom:20px">
+<div class="floatright" style="border:1px solid #ccc; width:350px; float:right; margin-bottom:20px">
  
   <div style="padding:30px; padding-top:10px; padding-bottom:20px">
 
@@ -160,8 +149,8 @@ h2 { font-size: 18px; }
     <img class="logoImg" src="../../community/img/logo/epa.png" style="width:180px;">
     <br>
 
-    <div style="font-weight:800; margin-top:15px">How are states using product lifecycle tools?</div>
-    Data on local industry input-output levels helps inform recycling, reductions in greenhouse gas&nbsp;emissions, electric vehicle transitions, advanced biofuels and more.
+    <div style="font-weight:800; margin-top:15px">How are states using lifecycle tools?</div>
+    Data on local industry input-output levels helps inform <a href="../../localsite/map/#show=recyclers&state=GA">B2B recycling</a>, reductions in greenhouse gas&nbsp;emissions, electric vehicle transitions, advanced biofuels and more.
 
     <h4 style="margin-bottom:0px"><a href="../../community/challenge/" target="_parent">Project Areas</a></h4>
     Contribute updates for your state
@@ -176,6 +165,7 @@ h2 { font-size: 18px; }
 
 <h2>Georgia Community Interest</h2>
 Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at 404.923.4033 or <a href="mailto:csimoglou@georgia.org">csimoglou@georgia.org</a> if you have a group interested in participating.
+
 </span>
 
 
@@ -186,16 +176,6 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
 <a href="../../community/challenge/" target="_parent">Participate in our Web Challenge</a>  
 </p>
 <br>
-
-<!--
-<div style="display:none;" class="georgia">
-  <div style="clear:both">
-    <img src="../img/logo/epa.png" style="width:60px; float:left; margin-right: 20px">
-    <img src="../img/logo/georgia.png" style="width:80px; float:left; margin-top: -4px; margin-left:3px; margin-right:-5px">
-    <img src="../img/logo/gatech.png" style="width:120px; margin-top: 10px; float:left;">
-  </div>
-</div>
--->
 
 </div>
 
@@ -345,7 +325,7 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
           <div id="hublist-padding">
             <h1 style="padding-bottom:0px; margin-bottom:0px">Data-Driven Decision&nbsp;Making</h1>
 
-            <h3>In 2021, Georgia became the first state to implement the <span style="white-space: nowrap">U.S. EPA's new USEEIO</span> input-output model.</h3>
+            <h3>Georgia is the first state to implement the <span style="white-space: nowrap">U.S. EPA's new USEEIO</span> input-output model.</h3>
             
             
             <!--
@@ -356,7 +336,7 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
             <a href="../start/feed" class="button">Add your data feeds</a>
             -->
 
-            Developed with the assistance of <a href="../../io/team/">Georgia graduate students</a> in the <a href="https://smartcities.gatech.edu/georgia-smart">Georgia&nbsp;Smart</a> community program which uses data to transform city infrastructure and transportation.<br>
+            Our interfaces are developed with the assistance of <a href="../../io/team/">Georgia graduate students</a> in the <a href="https://smartcities.gatech.edu/georgia-smart">Georgia&nbsp;Smart</a> community program which uses data to transform  infrastructure and transportation.<br>
 
             <input type="button" onclick="location.href='../../community/start/feed/';" 
             value="Add your Data Feeds" style="margin-top:20px; padding:10px" />
@@ -480,7 +460,7 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
               4. Clean Water<br>
               5. Clean Energy<br>
               6. Local Suppliers<br>
-              7. Green Materials<br>
+              7. <a href="https://buildingtransparency.org/ec3/epds" target="_blank">Green Materials</a> (EPDs)<br>
               8. Inclusive Design<br>
               9. Improves Health<br>
               10. Creates Beauty<br><br>
@@ -760,7 +740,7 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
-<script type="text/javascript" src="../../localsite/js/map.js?show=smart"></script>
+<script type="text/javascript" src="../../localsite/js/map.js?show=smart" id="/localsite/js/map.js"></script>
 <script>
 
     // MAP 1
@@ -773,6 +753,7 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
     dp2.zoom = 7;
     dp2.dataset = "/community/tools/map.csv";
     //dp2.name = "Smart Data Projects";
+    dp2.colorColumn = "name"; // Invokes color as alternative to valueColumn
     dp2.dataTitle = "Smart Data Projects";
     dp2.markerType = "google";
     dp2.listLocation = false;

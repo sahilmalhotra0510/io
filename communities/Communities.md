@@ -1,6 +1,6 @@
 # For Local Communities
 
-The US EPA is creating [new input-output tools](../../community/tools/) for communities pursuing projects involving waste-to-energy, bioproducts, green energy innovations, [farm fresh](../../localsite/info/#show=farmfresh) produce, and local environmental projects. Community participants can include a coalition of representatives of diverse interests such as:
+The US EPA is creating [input-output tools](../../community/tools/) for communities pursuing projects involving waste-to-energy, bioproducts, green energy innovations, [farm fresh produce](../../localsite/info/#show=farmfresh&state=GA), and local environmental projects. Community participants can include a coalition of representatives of diverse interests such as:
 
 - local government
 - educational institutions
@@ -18,7 +18,6 @@ We've created an [app starter repo](../../apps/) with samples for community fron
 <a href="../../apps/beyondcarbon/">Beyond Carbon</a>
 <a href="../../apps/coastal/">Coastal Recycling</a>
 <a href="../../apps/ev/">EV Manufacturing</a>
-<a href="../../apps/brigades/">Code for America Cities</a>
 
 <!--
 [West Central Georgia](../../localsite/info/#state=GA&regiontitle=West+Central+Georgia&geo=US13045,US13077,US13143,US13145,US13149,US13199,US13223,US13233,US13263,US13285,US01111,US01017&lat=33.0362&lon=-85.0322&show=parts) - Automotive Parts Industry -  Transformations for Electric Vehicle Production  

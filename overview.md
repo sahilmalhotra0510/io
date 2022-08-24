@@ -6,7 +6,7 @@ The U.S. Environmental Protection Agency (EPA) is partnering with <span style="d
 
 Starting points for creating a website with lifecycle tools:  
 
-- [Community Start Page](../apps/)
+- [Community Start Pages](../apps/)
 - [Base Page Template](../apps/base/) - Copy to create your community page
 - [Beyond Carbon - Initiatives and Rankings](../apps/beyondcarbon/)  
 - [Coastal Recycling - Activated Carbon - Inflow Sources](../apps/coastal/)  

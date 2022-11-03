@@ -486,46 +486,59 @@ function displayImpactBubbles(attempts) {
 
 function applyToBubbleHTML(hash,attempts) {
 
-  if($('#bubble-graph-id').length > 0) {
-    console.log("#bubble-graph-id found")
-    $('#bubble-graph-id').show();
-    
-    if (hash.x && hash.y && hash.z) {
-      dropdownX.val(hash.x);
-      dropdownY.val(hash.y);
-      dropdownZ.val(hash.z);
-    } else { // Same as below
-      dropdownX.val('ENRG');
-      dropdownY.val('WATR');
-      dropdownZ.val('JOBS');
-    }
-    // Initial load
-    // To do: invoke the following when something like param load=true reside in embed
-    
-    if(document.getElementById("mySelect").checked) {
-      midFunc(dropdownX.val(), dropdownY.val(), dropdownZ.val(), hash, "region");
+  console.log("wait for #bubble-graph-id");
+  waitForElm('#bubble-graph-id').then((elm) => {
+    console.log("#bubble-graph-id found");
+
+    //if($('#bubble-graph-id').length > 0) {
+
+
+      console.log("#bubble-graph-id found")
+      $('#bubble-graph-id').show();
+      
+      if (hash.x && hash.y && hash.z) {
+        dropdownX.val(hash.x);
+        dropdownY.val(hash.y);
+        dropdownZ.val(hash.z);
+      } else { // Same as below
+        dropdownX.val('ENRG');
+        dropdownY.val('WATR');
+        dropdownZ.val('JOBS');
+      }
+      // Initial load
+      // To do: invoke the following when something like param load=true reside in embed
+      
+      if(document.getElementById("mySelect").checked) {
+        midFunc(dropdownX.val(), dropdownY.val(), dropdownZ.val(), hash, "region");
+      } else {
+        midFunc(dropdownX.val(), dropdownY.val(), dropdownZ.val(), hash, "all");
+      }
+      
+      d3.selectAll(".graph-picklist").on("change",function(){
+        // Update hash and trigger hashChange event. Resides in localsite.js
+        goHash({ "x": dropdownX.val(), "y": dropdownY.val(), "z": dropdownZ.val()});
+        //updateChart(d3.select("#graph-picklist-x").node().value,
+        ///  d3.select("#graph-picklist-y").node().value,
+        //  d3.select("#graph-picklist-z").node().value);
+      }) 
+
+    /*
+    } else if (attempts <= 100) {
+
+      //alert("Bubble HTML #bubble-graph-id not available yet.");
+      setTimeout( function() {
+        consoleLog("try applyToBubbleHTML again")
+        applyToBubbleHTML(hash,attempts+1);
+      }, 20 );
+
     } else {
-      midFunc(dropdownX.val(), dropdownY.val(), dropdownZ.val(), hash, "all");
+      consoleLog("applyToBubbleHTML failed");
+      consoleLog("applyToBubbleHTML failed. Attempts: " + attempts);
     }
-    
-    d3.selectAll(".graph-picklist").on("change",function(){
-      // Update hash and trigger hashChange event. Resides in localsite.js
-      goHash({ "x": dropdownX.val(), "y": dropdownY.val(), "z": dropdownZ.val()});
-      //updateChart(d3.select("#graph-picklist-x").node().value,
-      ///  d3.select("#graph-picklist-y").node().value,
-      //  d3.select("#graph-picklist-z").node().value);
-    }) 
-  } else if (attempts <= 100) {
+    */
 
-    //alert("Bubble HTML #bubble-graph-id not available yet.");
-    setTimeout( function() {
-      consoleLog("try applyToBubbleHTML again")
-      applyToBubbleHTML(hash,attempts+1);
-    }, 20 );
+  });
 
-  } else {
-    consoleLog("applyToBubbleHTML failed. Attempts: " + attempts);
-  }
 }
 
 

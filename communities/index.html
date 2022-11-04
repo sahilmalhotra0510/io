@@ -324,66 +324,8 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
   <div style="clear:both"></div>
 
 
-  <section id="data" class="litePanel">
-    <div class="content contentpadding">
-      <div id="flexwrapper">
-        <div id="hublist">
-          <div id="hublist-padding">
-            <h1 style="padding-bottom:0px; margin-bottom:0px">Data-Driven Decision&nbsp;Making</h1>
 
-            <h3>Georgia is the first state to implement the <span style="white-space: nowrap">U.S. EPA's new USEEIO</span> input-output model.</h3>
-            
-            
-            <!--
-            Learn more at [Georgia Smart Communities Projects](http://smartcities.ipat.gatech.edu/georgia-smart) and participate 
-            -->
-
-            <!--
-            <a href="../start/feed" class="button">Add your data feeds</a>
-            -->
-
-            Our interfaces are developed with the assistance of <a href="../../io/team/">Georgia graduate students</a> in the <a href="https://smartcities.gatech.edu/georgia-smart">Georgia&nbsp;Smart</a> community program which uses data to transform  infrastructure and transportation.<br>
-
-            <input type="button" onclick="location.href='../../community/start/feed/';" 
-            value="Add your Data Feeds" style="margin-top:20px; padding:10px" />
-            <br><br>
-
-            <!--
-  Southeast Georgia - Bioproducts and Energy Innovation
-
-  A six county coalition focused on the production of sustainable fuels and chemicals from biomass, including plastics from plants, hydrogen infrastructure development, carbon capture, and transformative forestry and hydrology. Members of Appling, Bacon, Glynn, Jeff Davis, Pierce and Wayne counties are collaborating with the Georgia Center of Innovation to implement analysis using the US EPA's Environmentally-Extended Input Output model under the guidance of Dr. Wesley Ingwersen of the EPA, and Dr. Valerie Thomas of the Georgia Institute of Technology​​ schools of Industrial/Systems Engineering and Public Policy.
-
-            -->
-            <div id="detaillist"></div>
-            <div id="narrowlist" style="display:none"></div>
-          </div>
-        </div>
-
-      <a name="gomap"></a>
-      <div id="mapHolder">
-        <div class="mapHolderInner">
-          <div id="sidemapCard" class="mapHolderCard card">
-            <div id="sidemapbar" class="widgetbar">
-              <div id="sidemapName" style="position:absolute; left:0; padding:4px 4px 4px 10px">
-              </div>
-            </div>
-            <div style="clear:both">  
-              <div id="map2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div><!-- flexwrapper -->
-
-    <!--
-    <hr>
-    To add and update listings, download the <a href="map.csv">map.csv</a> file and edit within a spreadsheet.  
-      Copy using a text editor and click the pencil icon <a href="https://github.com/modelearth/community/blob/master/map/map.csv">here</a> to paste into GitHub for review. 
-      <span style="white-space: nowrap;">Or you can fork</span> the <a href="https://github.com/modelearth/community">GitHub Repo</a> and commit using <a href="https://desktop.github.com/">GitHub Desktop</a>.
-    -->
-  </div>  
-
-  </section>
+  <div id="bodyFile"></div>
 
   
       
@@ -746,9 +688,7 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
-<!--
-<script type="text/javascript" src="../../localsite/js/map.js?show=smart" id="/localsite/js/map.js"></script>
--->
+
 <script>
 
     // MAP 1
@@ -762,11 +702,12 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
     dp2.dataset = "/community/tools/map.csv";
     //dp2.name = "Smart Data Projects";
     dp2.colorColumn = "name"; // Invokes color as alternative to valueColumn
+    dp2.listTitle = "Smart Data Projects in Georgia";
     dp2.dataTitle = "Smart Data Projects";
     dp2.markerType = "google";
     dp2.listLocation = false;
 
-    //param.show = "smart"; // Used by loadFromCSV which is called by loadMap1
+    //param.show = "smart"; // No longer needed. Was used by loadFromCSV which is called by loadMap1
     loadScript('../../localsite/js/map.js', function(results) {
       loadMap1("community/tools", "smart", dp2);
     });

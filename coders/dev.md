@@ -1,3 +1,5 @@
+Join us at a <a href="https://www.meetup.com/codeforatlanta/" target="_blank">Code for Atlanta Meetup</a>  
+
 ## Quick Dive
 
 We're creating environmental impact scoring tools with US EPA industry indicators and international trade data. [About Data](../../localsite/info/data/).

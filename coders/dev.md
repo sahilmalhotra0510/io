@@ -2,7 +2,9 @@ Join us at a <a href="https://www.meetup.com/codeforatlanta/" target="_blank">Co
 
 ## Quick Dive
 
-We're creating environmental impact scoring tools with US EPA industry indicators and international trade data. [About Data](../../localsite/info/data/).
+Get involved with maps using Leaflet and MapBox with OpenStreetMaps.  
+
+We're also creating environmental impact scoring tools with US EPA industry indicators and international trade data. [About Data](../../localsite/info/data/).
 
 1. Learn about the [7 top footprint tools](https://footprinthero.com/best-carbon-footprint-calculators) including the [CoolCarbon Calculator](https://coolclimate.berkeley.edu/calculator) and the [US EPA Carbon Footprint Calculator](https://www3.epa.gov/carbon-footprint-calculator/)
 2. View Environmental [impact templates](https://model.earth/community/projects/#widgets) for [Product EPDs](https://buildingtransparency.org/ec3/epds) and the [BuildingTransparency.org API](../../io/template/feed/)

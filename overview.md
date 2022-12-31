@@ -27,15 +27,13 @@ Starting points for creating a website with lifecycle tools:
 - Evaluating prospective industries and the potential jobs they could directly 
  and indirectly create, and looking at their potential environmental performance
  
-- Determining how technological improvements in your community's industries, utilities, or
-consumption patterns could reduce its footprint
+- Determining how technological improvements in your community's industries, utilities, or consumption patterns could reduce its footprint
 
 Learn more about [community participation](communities). 
 
 ## Other resources include
 
-- [Teachers&nbsp;and&nbsp;Students](./learn) may use the applications to learn about the connections
-between industries, households, and the environment in communities.  
+- [Teachers&nbsp;and&nbsp;Students](./learn) may use the applications to learn about the connections between industries, households, and the environment in communities.  
 
 - [The Innovation Economy](https://hbr.org/podcast/2019/04/the-innovation-economy) - Economist Mariana Mazzucato talks about Entrepreneurial Ecosystems
 

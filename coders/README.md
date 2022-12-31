@@ -4,7 +4,16 @@
 
 Join us for 5 or more hours during Democracy Lab's 48 HOUR EARTH DAY on April 22nd. The event will begin when Earth Day starts in New Zealand (UTC+12), and conclude 48 hours later when the day ends on Howland Island (UTC-12). Project teams will participate from all around the world!&nbsp; <a href="https://www.democracylab.org/projects/834">Join&nbsp;our project team</a><br><br>
 -->
-# Data Visualization Tools for Coders & Designers
+# For Coders & Designers
+
+**Our next event:**
+[Hacky New Year! - Democracy Lab](https://democracylab.org/events/hackynewyear2023)
+
+*Starts:*
+Friday, January 27th 2023 10:00 pm EST
+
+*Ends:*
+Saturday, January 28th 2023 8:00 pm EST
 
 <!--
 
@@ -12,6 +21,8 @@ CSE 6242
 https://app.slack.com/client/T8L2KN1AP/C8L4VC44A/thread/C8L4VC44A-1602167484.023000?cdn_fallback=1
 
 ## Meetups
+
+Join us at a <a href="https://www.meetup.com/codeforatlanta/" target="_blank">Code for Atlanta Meetup</a>  
 
 <b>Wednesdays, Nov and Dec, 2021 - 3PM ET</b>
 DJango/React - <a href="https://www.democracylab.org/">Democracy Lab's</a> weekly developer meeting is Wednesdays at 12pm PT

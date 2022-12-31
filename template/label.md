@@ -1,12 +1,5 @@
 ## Impact Label Widgets
 
-<!--
-<ol>
-<li>
-</li>
-</ol>
--->
-
 The [CoolClimate Footprint Calculator](https://coolclimate.org/calculator) from Berkeley ranked first out of the [Top 7 Environmental impact footprints](https://footprinthero.com/best-carbon-footprint-calculators).  It loads with avearges, so you see helpful impact info immediately.
 
 Details on our [Environmental Impact Profiles](../../io/template/).  We're working on loading impacts based on locations - states, counties and zip codes.  

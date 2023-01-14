@@ -123,7 +123,7 @@ h2 { font-size: 18px; }
 
 </style>
 
-<link rel="stylesheet" href="../../localsite/css/map.css" />
+<link rel="stylesheet" href="../../localsite/css/map.css" id="/localsite/css/map.css" />
 
 </head>
 
@@ -151,7 +151,7 @@ h2 { font-size: 18px; }
       <br>
     </div>
 
-    <div style="text-align: justify;text-justify: inter-word;">
+    <div>
       <!--
       <div style="font-weight:800; margin-top:15px">How are states using Life Cycle Tools?</div>
       -->
@@ -700,6 +700,7 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
     dp2.lonColumn = "longitude";
     dp2.zoom = 7;
     dp2.dataset = "/community/tools/map.csv";
+    dp2.listInfo = "<a href='https://github.com/modelearth/community/blob/master/tools/map.csv' target='_blank'>Add and update listing </a>"
     //dp2.name = "Smart Data Projects";
     dp2.colorColumn = "name"; // Invokes color as alternative to valueColumn
     dp2.listTitle = "Smart Data Projects in Georgia";

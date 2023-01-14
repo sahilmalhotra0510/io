@@ -4,7 +4,7 @@ Possible technologies and commodities to evaluate:
 
 - Fuels (gasoline, diesel, aviation fuel) produced using biomass (forest residues, MSW, corn stover and/or other types of waste)
 - Restore, protect and expand forests to capture carbon
-- [Biomass - Plastics and Chemicals](../../../../community/projects/biomass/)
+- [Biomass - Plastics and Chemicals](../../../../community/biotech/)
 
 - [Fast Growth Forestry](../../../../community/projects/#forestry), [Mass Timber](../../../../community/projects/wood/), [Super Wood](../../../../community/projects/#wood)
 - [Biofuels Technology Summary (BETO TEA)](https://bioenergykdf.net/content/beto-biofuels-tea-database) 

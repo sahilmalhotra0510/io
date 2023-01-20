@@ -6,6 +6,8 @@ Join us for 5 or more hours during Democracy Lab's 48 HOUR EARTH DAY on April 22
 -->
 # For Coders & Designers
 
+We're contributing to decentralized, real-time job creation using API mashups.  
+
 **Our next event:**
 [Hacky New Year! - Democracy Lab](https://democracylab.org/events/hackynewyear2023)
 

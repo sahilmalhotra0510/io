@@ -2,7 +2,7 @@
 
 Get started beforehand.  We need help in the following areas:  
 
-1. Create a Stable Diffusion image generating app using <a href="https://replicate.com/docs/get-started/nextjs">Replicate.com NextJS</a>
+1. Create a Stable Diffusion image-generating app using <a href="https://replicate.com/docs/get-started/nextjs">Replicate.com NextJS</a>
 
 2. Find and embed/fork existing [United Nations Comtrade data visualizations](https://comtradeplus.un.org/Visualization/Labs). 
 

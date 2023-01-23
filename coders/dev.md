@@ -4,7 +4,7 @@ Get started beforehand.  We need help in the following areas:
 
 1. Create a Stable Diffusion image-generating app using <a href="https://replicate.com/docs/get-started/nextjs">Replicate.com NextJS</a> with OpenJourney and [Dreamlike](https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0)<!-- or the [Midjourney API](https://tokenizedhq.com/midjourney-api/)-->.
 
-2. Save images GitHub using to Github Actions and/or a CoLab script.
+2. Save images on GitHub using Github Actions and/or a CoLab script.
 
 3. Automate pulling UN Comtrade input-output data using GitHub Actions to create static files to use with our global search filters. Our <a href="/data-pipeline/international/">International data prep</a> page  
 

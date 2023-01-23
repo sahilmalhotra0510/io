@@ -19,11 +19,11 @@ Get started beforehand.  We need help in the following areas:
 
 Our modeled images approximate reality as a tool for understanding international commerce. By combining UN import-export data with datasets trained using millions of international photos and illustrations. Midjourney prompts used are below images.
 
-<img src="img/DreamStudio_NAICS_111339_-_Other_Noncitrus_Fruit_Farming_closeu_2d1ab81d-6281-44bf-8fb5-efd584f0461a.png" style="width:100%">
+<img src="/io/coders/img/DreamStudio_NAICS_111339_-_Other_Noncitrus_Fruit_Farming_closeu_2d1ab81d-6281-44bf-8fb5-efd584f0461a.png" style="width:100%">
 NAICS 111339 - Other Noncitrus Fruit Farming closeup, Ecuador landscape
 <br>
 
-<img src="img/DreamStudio_NAICS_111339_Other_Noncitrus_Fruit_Farming_closeup__4bb46868-c345-423c-b291-34f636f9c9d9.png" style="width:100%">
+<img src="/io/coders/img/DreamStudio_NAICS_111339_Other_Noncitrus_Fruit_Farming_closeup__4bb46868-c345-423c-b291-34f636f9c9d9.png" style="width:100%">
 NAICS 111339 "Other Noncitrus Fruit Farming" closeup in Ecuador
 
 Transending language barriers, A.I. video is being integrated with real-time job training to create instant employment without markup by middlemen.

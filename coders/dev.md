@@ -2,7 +2,7 @@
 
 Get started beforehand.  We need help in the following areas:  
 
-1. Create a Stable Diffusion image-generating app using <a href="https://replicate.com/docs/get-started/nextjs">Replicate.com NextJS or the Midjouney API</a>
+1. Create a Stable Diffusion image-generating app using <a href="https://replicate.com/docs/get-started/nextjs">Replicate.com NextJS</a> with OpenJourney and [Dreamlike](https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0)<!-- or the [Midjourney API](https://tokenizedhq.com/midjourney-api/)-->.
 
 2. Save images to Github Actions and/or a CoLab script.
 

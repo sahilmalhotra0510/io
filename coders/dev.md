@@ -12,7 +12,7 @@ Get started beforehand.  We need help in the following areas:
 
 5. Update timeline slider in OpenStreetMaps so earthquakes change as slider moves on <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a>. Here's a version with [changing country boundaries](/mbgl-timeslider/demo/).
 
-6. Integrate environmental impact scoring tools like [CoolClimate at Berkeley](https://coolclimate.berkeley.edu/calculator) with [Impact Labels](/community/projects/#widgets) and [international trade data](/data-pipeline/). 
+6. Integrate environmental impact scoring tools like [CoolClimate at Berkeley](https://coolclimate.berkeley.edu/calculator) with [Impact Labels](/community/projects/#widgets) and [international trade data](/data-pipeline/).  Also see [NYT article (paywall)](https://www.nytimes.com/interactive/2022/12/13/climate/climate-footprint-map-neighborhood.html) about CoolClimate spinoff.
 
 
 ## Open Source Generative Images for Job Creation

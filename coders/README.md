@@ -11,7 +11,7 @@ We're contributing to decentralized, real-time job creation using API mashups.
 **Our next event:**
 [Code for Africa - Democracy Lab](https://democracylab.org/events/hackynewyear2023)
 
-Saturday, February 4, 2023 - Join in from 8am to 11am EST
+Saturday, February 11, 2023 - Join in from 8am to 11am EST
 (Starts 8:00 AM UTC | 9:00 AM WAT)
 
 <!--

@@ -9,13 +9,10 @@ Join us for 5 or more hours during Democracy Lab's 48 HOUR EARTH DAY on April 22
 We're contributing to decentralized, real-time job creation using API mashups.  
 
 **Our next event:**
-[Hacky New Year! - Democracy Lab](https://democracylab.org/events/hackynewyear2023)
+[Code for Africa - Democracy Lab](https://democracylab.org/events/hackynewyear2023)
 
-*Starts:*
-Friday, January 27th 2023 10:00 pm EST
-
-*Ends:*
-Saturday, January 28th 2023 8:00 pm EST
+Saturday, February 4, 2023 - Join in from 8am to 11am EST
+(Starts 8:00 AM UTC | 9:00 AM WAT)
 
 <!--
 

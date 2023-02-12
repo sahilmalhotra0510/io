@@ -10,7 +10,7 @@ Get started beforehand.  We need help in the following areas:
 
 4. Find and embed/fork existing [United Nations Comtrade data visualizations](https://comtradeplus.un.org/Visualization/Labs). 
 
-5. Update timeline slider in OpenStreetMaps so earthquakes change as slider moves on <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a>. Here's a version with [changing country boundaries](/mbgl-timeslider/demo/).
+5. [Apache ECharts 3D Globe](https://echarts.apache.org/examples/en/editor.html?c=globe-layers&gl=1). Could also update timeline slider in OpenStreetMaps so earthquakes change as slider moves on <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a>. Here's a version with [changing country boundaries](/mbgl-timeslider/demo/).
 
 6. Integrate environmental impact scoring tools like [CoolClimate at Berkeley](https://coolclimate.berkeley.edu/calculator) with [Impact Labels](/community/projects/#widgets) and [international trade data](/data-pipeline/).  Also see [NYT article (paywall)](https://www.nytimes.com/interactive/2022/12/13/climate/climate-footprint-map-neighborhood.html) about CoolClimate spinoff.
 

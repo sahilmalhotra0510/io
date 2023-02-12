@@ -6,13 +6,9 @@ Join us for 5 or more hours during Democracy Lab's 48 HOUR EARTH DAY on April 22
 -->
 # For Coders & Designers
 
-We're contributing to decentralized, real-time job creation using API mashups.  
+Join us in collaborating on decentralized, real-time modeling using API mashups for job creation, impact tracking and reward gamification.  
 
-**Our next event:**
-[Code for Africa - Democracy Lab](https://democracylab.org/events/hackynewyear2023)
-
-Saturday, February 11, 2023 - Join in from 8am to 11am EST
-(Starts 8:00 AM UTC | 9:00 AM WAT)
+[Apache ECharts - 3D Maps](https://echarts.apache.org/examples/en/index.html#chart-type-globe)
 
 <!--
 

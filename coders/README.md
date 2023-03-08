@@ -8,7 +8,10 @@ Join us for 5 or more hours during Democracy Lab's 48 HOUR EARTH DAY on April 22
 
 Join us in collaborating on decentralized, real-time modeling using API mashups for job creation, impact tracking and reward gamification.  
 
-[Apache ECharts - 3D Maps](https://echarts.apache.org/examples/en/index.html#chart-type-globe)
+[Collaborate with us at Democracy Lab](https://www.democracylab.org/projects/834)
+[Apache ECharts 3D Globes and Lines for Input-Output](https://echarts.apache.org/examples/en/index.html#chart-type-lines3D)  
+[Open Footprint at Open Collective](https://opencollective.com/openfootprint)
+[New: Georgia Recycling Directories](/localsite/map/recycling/ga/)  
 
 <!--
 

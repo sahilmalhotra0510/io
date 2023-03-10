@@ -34,9 +34,9 @@ PROJECT:
 Create HTML output that matches our [environmental impact label](../../io/template/) mockup from [Cement Json](../template/feed/toy100.json) and other OpenEPD data pulls.  
 
 
-### Labels and Mini-widgets Impact Scores
+### Labels and Mini-Widget Impact Scores
 
-The mini-label will provide a quick overview of the impact score (footprint) for individuals, communities and products. Scores will be displayed for impacts on air quality, water quality, energy use, land use, health and jobs created.  View a mini-label starter in the upper right on our [Apps&nbsp;Page](../../../apps/)
+The mini-widget label will provide a quick overview of the impact score footprint for individuals, communities and products. Scores will be displayed for impacts on air quality, water quality, energy use, land use, health and jobs created.  View a mini-widget example in the upper right on our [Apps&nbsp;Page](../../../apps/)
 
 
 

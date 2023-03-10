@@ -1,6 +1,6 @@
 ## Open Footprint
 
-### Environmental Profiles for Individuals, Organizations, Products and Communities.
+### Environmental Profiles for Individuals, Organizations, Products and Communities
 
 [Open Footprint Forum](https://www.opengroup.org/openfootprint-forum)  
 [US EPA Carbon Footprint Calculator](https://www3.epa.gov/carbon-footprint-calculator/)
@@ -17,7 +17,7 @@ Side navigation is not yet active.
 [7 top footprint tools](https://footprinthero.com/best-carbon-footprint-calculators) 
 
 <!-- https://coolclimate.berkeley.edu/calculator Same as the following, but maybe slower -->
-The [CoolClimate Footprint Calculator](https://coolclimate.org/calculator) from Berkeley ranked first out of the [Top 7 Environmental impact footprints](https://footprinthero.com/best-carbon-footprint-calculators).  It loads with avearges, so you see helpful impact info immediately.
+The [CoolClimate Footprint Calculator](https://coolclimate.org/calculator) from Berkeley ranked first out of the [Top 7 Environmental impact footprints](https://footprinthero.com/best-carbon-footprint-calculators).  It loads with averages, so you see helpful impact info immediately. [NYT article (paywall)](https://www.nytimes.com/interactive/2022/12/13/climate/climate-footprint-map-neighborhood.html) about CoolClimate spinoff.
 
 Here's a [CoolClimate profile json](https://github.com/localsite/engine-storybook/blob/master/public/static/json/coolclimate-family.json) sample for sharing profile footprint data. View a sample [footprint.mdx](../../localsite/impact/) file which uses parameter names from [CoolClimate's Excel sheet](https://api-central.berkeley.edu/api/11).
 
@@ -46,7 +46,7 @@ Our <a href="../../../apps/smm/">3.0 Mockup</a><br><br>
 <a href="https://www.figma.com/file/mVZUSQCMBsIMu9bp7Y8qsS/Impact-Footprint?node-id=0%3A1" target="fig">Contribute to Figma Mockup</a>
 -->
 
-### Labela and Mini-widgets Impact Scores
+### Labels and Mini-widgets Impact Scores
 
 The mini-label will provide a quick overview of the impact score (footprint) for individuals, communities and products. Adjacent to each score will be a real-time data point - like air quality, water quality, energy use, land use, new jobs created.  View placeholder in upper right of our [community&nbsp;starter&nbsp;pages](../../../apps/)
 

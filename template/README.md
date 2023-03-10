@@ -1,3 +1,5 @@
+EXPLORE IMPACTS: Select a location (state and/or counties) above and click GO.<br><br>
+
 **Applied Sciences - LCA Edition - Article Draft**
 
 ## International Impact Labels for Communities and Individuals using Environmental Product Declarations (EPD) with YAML

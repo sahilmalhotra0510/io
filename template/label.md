@@ -16,8 +16,7 @@ Here's our [stand-alone version](../../localsite/info/page/) for developers.
 
 ---
 ### Building Transparency
-[Product EPDs](https://buildingtransparency.org/ec3/epds) and our
-[BuildingTransparency.org API Notes](../../io/template/feed/)
+[Environmental Product Declaration (EPD)](https://buildingtransparency.org/ec3/epds) reports and our [BuildingTransparency.org API Notes](../../io/template/feed/)
 
 ---
 
@@ -31,7 +30,7 @@ Here's a [CoolClimate profile json](https://github.com/localsite/engine-storyboo
 
 PROJECT:
 
-Create HTML output that matches our [environmental impact label](../../io/template/) mockup from [Cement Json](../template/feed/toy100.json) and other OpenEPD data pulls.  
+Create HTML output that matches our [environmental impact label](../../io/template/) mockup using [Cement Json](../template/feed/toy100.json) and other [OpenEPD data pulls](../../io/template/feed/).  
 
 
 ### Labels and Mini-Widget Impact Scores

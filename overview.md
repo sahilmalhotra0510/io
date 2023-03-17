@@ -6,15 +6,19 @@ The U.S. Environmental Protection Agency (EPA) is partnering with <span style="d
 
 Starting points for creating a website with lifecycle tools:  
 
-- [Community Start Pages](../apps/)
-- [Base Page Template](../apps/base/) - Copy to create your community page
-- [Beyond Carbon - Initiatives and Rankings](../apps/beyondcarbon/)  
-- [Coastal Recycling - Activated Carbon - Inflow Sources](../apps/coastal/)  
-- [Transition to Electric Vehicle Manufacturing](../apps/ev/) - [Automotive NAICS Data](../community/projects/mobility/)  
-- [Code for America Brigade Map](../apps/brigades/)  
-- [Compare Industries](../localsite/info/)  
+- [Community Start Pages](../apps/#state=GA)
+- [Georgia Recycling Directories](../localsite/map/recycling/ga/)  
+- [Georgia B2B Recyclers](../localsite/map/#show=recyclers&state=GA)  
+- [Georgia Wastewater Facilities](../localsite/map/#show=wastewater&state=GA)  
+- [Georgia Solid Waste Map](../localsite/map/#show=solidwaste&state=GA&cat=Operating)  
+- [Georgia Vehicle Parts Manufacturing](../apps/ev/)  
+- [Georgia Industry Impact Comparison](../localsite/info/#state=GA)  
+
+<!--
 - [Environmental Impact Profile "Nutritional Labels"](../io/template/)  
 - [Mockup of SMM/LCA 3.0](../apps/smm/)  
+- [Coastal Recycling - Activated Carbon - Inflow Sources](../apps/coastal/) 
+-->
 
 ## Opportunities for communities include
 

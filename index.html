@@ -30,7 +30,9 @@ https://github.com/WesIngwersen/USEEIO_team
 <meta name="twitter:image" content="https://model.earth/community/img/overview/code-for-america-rect.jpg" />
 
   <script type="text/javascript">
-  loadMarkdown("overview.md", "topicsDiv", "_parent");
+  setTimeout( function() {
+    loadMarkdown("overview.md", "topicsDiv", "_parent");
+  }, 1000);
   </script>
 
   <style>
@@ -56,7 +58,7 @@ https://github.com/WesIngwersen/USEEIO_team
 
 <!-- Twitter loads in an iFrame. CSS changes can not be applied.
 In this case, images in hidden divs are not loaded until the divs are displayed.
- -->
+-->
 <div id="rightcolumn" class="hideMobile" style="float:right; max-width: 500px; width:100%">
     <div style="display:none" class="georgia">
       <a class="twitter-timeline" data-tweet-limit="2" href="https://twitter.com/gdecd"></a> 

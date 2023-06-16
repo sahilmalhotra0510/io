@@ -5,7 +5,7 @@
 [Open Footprint Forum](https://www.opengroup.org/openfootprint-forum)  
 [US EPA Carbon Footprint Calculator](https://www3.epa.gov/carbon-footprint-calculator/)
 
-Join us in developing widgets and ecolabeling based on [Environmental Impact Profiles](../../io/template/) that display 24 impact areas for top industries for states and counties, organizations and individuals based on open standards.  
+Join us in developing label widgets based on [Environmental Impact Profiles](../../io/template/) to display 24 impact areas for products and industries, states and counties, plus organizations and individuals.  
 
 Side navigation is not yet active.  
 Here's our [stand-alone version](../../localsite/info/page/) for developers.

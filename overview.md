@@ -1,6 +1,6 @@
-# Innovative Web Applications for&nbsp;Local&nbsp;Communities 
+# Innovative Web Applications for&nbsp;States&nbsp;and&nbsp;Communities 
 
-The U.S. Environmental Protection Agency (EPA) is partnering with <span style="display:none" class="georgia">the Georgia Center for Innovation for Energy Technology and Georgia Tech to work with</span> local <span style="display:none" class="georgia">Georgia</span> communities to apply web tools that report the environmental and economic impact of industries in both local communities, state regions and the entire US using 24 indicators, including jobs, value-added, air quality, climate impact, energy use, water use and land use. Using an economy-wide input-output model of industries, households and the environment, the new online tools help communities identify opportunities for both economic growth and environmental improvements.  
+The U.S. Environmental Protection Agency (EPA) is partnered with <span style="display:none" class="georgia">the Georgia Center for Innovation for Energy Technology and Georgia Tech to work with</span> local <span style="display:none" class="georgia">Georgia</span> communities to apply web tools that report the environmental and economic impact of industries in both local communities, state regions and the entire US using 24 indicators, including jobs, value-added, air quality, climate impact, energy use, water use and land use. Using an economy-wide input-output model of industries, households and the environment, the new online tools help communities identify opportunities for both economic growth and environmental improvements.  
 
 ## Community Pages
 

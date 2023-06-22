@@ -18,7 +18,7 @@ Learn about [the USEEIO API](api/)
 - Spring 2021: [Electric Vehicle Ecosystem](../../community/projects/mobility/), [Coastal Recycling Activated Carbon Feedstocks](../../apps/coastal/)
 - Summer 2021: [Machine Learning for Industry Imputation](../../localsite/info/data/)
 - Fall 2021: [Sustainable Communities Web Challenge](../../community/challenge/)
-- Spring 2022: [Beyond Carbon](../../apps/beyondcarbon/) - [Environmental Impact Profiles](../../io/template/)
+- Spring 2022: [Beyond Carbon](../../apps/carbon/) - [Environmental Impact Profiles](../../io/template/)
 - Summer and Fall 2022: [B2B Recycling Directory](../../localsite/map/#show=recyclers&state=GA)
 <br>
 

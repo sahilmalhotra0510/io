@@ -15,7 +15,7 @@ The US EPA is creating [input-output tools](../../community/tools/) for communit
 
 We've created an [app starter repo](../../apps/) with samples for community front-end pages:
 
-<a href="../../apps/beyondcarbon/">Beyond Carbon</a>
+<a href="../../apps/carbon/">Carbon Cycle</a>
 <a href="../../apps/coastal/">Coastal Recycling</a>
 <a href="../../apps/ev/">EV Manufacturing</a>
 

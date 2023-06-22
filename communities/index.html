@@ -18,7 +18,6 @@
 <link href="../../localsite/css/leaflet.icon-material.css" rel="stylesheet">
 <script src="../../localsite/js/leaflet.icon-material.js" id="/localsite/js/leaflet.icon-material.js"></script>
 
-
 <script type="text/javascript" src="../../localsite/js/localsite.js?showheader=true&showsearch=true"></script>
 <script type="text/javascript" src="../../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
 
@@ -39,6 +38,26 @@
 
 
 <script type="text/javascript">
+if(typeof param=='undefined'){ var param={}; }
+param.show = "smart";
+param.state = "GA";
+//param.latitude = 32.9;
+//param.longitude = -83.4;
+//param.latColumn = "latitude";
+//param.lonColumn = "longitude";
+//param.zoom = 7;
+//param.dataset = "/community/tools/map.csv";
+//param.listInfo = "<a href='https://github.com/modelearth/community/blob/master/tools/map.csv' target='_blank'>Add and update listing </a>"
+
+// To activate
+param.name = "Smart Data Projects";
+//param.colorColumn = "name"; // Invokes color as alternative to valueColumn
+//param.listTitle = "Smart Data Projects in Georgia";
+//param.dataTitle = "Smart Data Projects";
+//param.markerType = "google";
+//param.listLocation = false;
+
+
 loadMarkdown("Communities.md", "topicsDiv", "_parent");
 </script>
 
@@ -135,8 +154,8 @@ h2 { font-size: 18px; }
     <a href="../">Web Applications</a> |
     <b>For Communities</b> |
     <a href="../coders/" style="white-space:nowrap;">For Coders & Designers</a> |
-    <a href="../learn/" style="white-space:nowrap" style="white-space:nowrap;">For Research Projects</a> | 
-    <a href="../about/" style="white-space:nowrap;">About the Model</a>
+    <span style="white-space:nowrap;"><a href="../learn/">For Research Projects</a> | 
+    <a href="../about/">About the Model</a></span>
   </div>
   <br>
 
@@ -314,12 +333,14 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
 
     </div>
 
+    <!--
     <div style="position:relative;">
-      <div id="map1"></div>
+      <div id="map1XX"></div>
       <div id="legendHolder" style="min-width: 270px">
         <div id="allLegends"></div>
       </div>
     </div>
+    -->
   </section>
   <div style="clear:both"></div>
 
@@ -687,41 +708,7 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
-
-<script>
-
-    // MAP 1
-    let dp2 = {};
-    // Georgia
-    dp2.latitude = 32.9;
-    dp2.longitude = -83.4;
-    dp2.latColumn = "latitude";
-    dp2.lonColumn = "longitude";
-    dp2.zoom = 7;
-    dp2.dataset = "/community/tools/map.csv";
-    dp2.listInfo = "<a href='https://github.com/modelearth/community/blob/master/tools/map.csv' target='_blank'>Add and update listing </a>"
-    //dp2.name = "Smart Data Projects";
-    dp2.colorColumn = "name"; // Invokes color as alternative to valueColumn
-    dp2.listTitle = "Smart Data Projects in Georgia";
-    dp2.dataTitle = "Smart Data Projects";
-    dp2.markerType = "google";
-    dp2.listLocation = false;
-    dp2.description = "Georgia is the first state to use the EPA's new Environmentally-Extended Input Output (USEEIO) model for  local industry product lifecycle tools.";
-
-    //param.show = "smart"; // No longer needed. Was used by loadFromCSV which is called by loadMap1
-    loadScript('../../localsite/js/map.js', function(results) {
-      loadMap1("community/tools", "smart", dp2);
-    });
-
-    /*
-    loadFromCSV('map1','map2', dp2, 0, function(results) {
-      layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
-    });
-    */
-</script>
 
 
-<link rel="stylesheet" href="/localsite/css/fonts/materialicons/icon.css" id="/localsite/css/fonts/materialicons/icon.css" />
 </body>
 </html>

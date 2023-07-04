@@ -2,6 +2,7 @@
 
 ### Environmental Profiles for Individuals, Organizations, Products and Communities
 
+[USEEIO widget development](../../io/charts/)  
 [Open Footprint Forum](https://www.opengroup.org/openfootprint-forum)  
 [US EPA Carbon Footprint Calculator](https://www3.epa.gov/carbon-footprint-calculator/)
 

@@ -83,9 +83,9 @@ You can set parameters in the URL or javascript to control the display of the wi
 
 [Github.com/modelearth/io](https://github.com/modelearth/io/) contains a built copy of the "[build](../build)" folder from [useeio-widgets](https://github.com/usepa/useeio-widgets), plus extra JQuery widgets.  
 
-[Clone or fork](https://github.com/modelearth/localsite/) our [localsite framework](../../localsite/) for maps and navigation.  
+[Clone or fork](https://github.com/modelearth/localsite/) our [localsite repo](../../localsite/) for maps, navigation and impact visualization.  
 
-You can create pages in the [apps repo](https://github.com/modelearth/apps/).
+You can create pages in [our apps repo](/apps/). - [Fork it on Github](https://github.com/modelearth/apps/).
 
 
 ## Option 2: Build and Edit React Widgets Locally
@@ -93,12 +93,7 @@ You can create pages in the [apps repo](https://github.com/modelearth/apps/).
 You can build the USEEIO React widgets locally.  
 Start with the following repo: [USEEIO-widgets repo](https://github.com/USEPA/useeio-widgets/) which contains only React widgets   
 
-
-
-
 If you use the "io" repo, also clone the [https://github.com/localsite/localsite](https://github.com/localsite/localsite) repo and place it adjacent to the "io" repo.  Here's more info on [hosting the Localsite Framework on your computer](../../localsite/start/).
-
-
 
 <!--
 <span style="background:red; padding:3px; color:#fff">NOTE:</span> The code in the useeio-widgets repo currently causes a runaway processor in the browser when used with the "localsite" repo. To avoid, the "localsite/build" folder contains the recent code from [Recent build 2](https://thetisiboth.github.io/useeio-widget-builds/).
@@ -106,13 +101,21 @@ If you use the "io" repo, also clone the [https://github.com/localsite/localsite
 
 ---
 ### Steps for Building React Widgets
-To build the React widgets locally you'll need a current version of
-[Node.js](https://nodejs.org) installed. Make sure that the `node` and `npm`
-commands are available in your systems path (you can test this via `node -v` and
-`npm -v` on the command line which should give you the respective version of
-these tools). 
+To build the React widgets locally you'll need a current version of [Node.js](https://nodejs.org) installed. 
 
-Open a terminal or VS Code:     
+Make sure that the `node` and `npm` commands are available in your systems path.
+You can test this by running `node -v` and `npm -v` on the command line.
+
+#### Install Node Version Manager
+
+Here are 2 options for installing node if the version commands above find nothing.  
+
+[NPMjs.com](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) recommends installing a Node Version Manager like [nvm](https://github.com/nvm-sh/nvm) to avoid permission errors when you run npm packages globally.
+
+Or [Install node/npm](https://nodejs.org/en/download) locally. The installer includes the Node.js package manager (npm) within it, so you won't need to install npm separately.
+
+
+#### Open a terminal or use VS Code:     
 
 A. You can right-click the repo folder and choose "New Terminal at Folder" on a Mac.  
 

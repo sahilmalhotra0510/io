@@ -1,5 +1,3 @@
-# For Local Communities
-
 The US EPA is creating [input-output tools](../../community/tools/) for communities pursuing projects involving waste-to-energy, bioproducts, green energy innovations, [farm fresh produce](../../localsite/info/#show=farmfresh&state=GA), and local environmental projects. Community participants can include a coalition of representatives of diverse interests such as:
 
 - local government

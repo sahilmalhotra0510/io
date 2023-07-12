@@ -40,7 +40,9 @@
 <script type="text/javascript">
 if(typeof param=='undefined'){ var param={}; }
 param.show = "smart";
-param.state = "GA";
+if (param.startTitle == "Georgia.org" || location.host.indexOf("georgia") >= 0) {
+  param.state = "GA";
+}
 //param.latitude = 32.9;
 //param.longitude = -83.4;
 //param.latColumn = "latitude";
@@ -159,8 +161,9 @@ h2 { font-size: 18px; }
   </div>
   <br>
 
+<h1>For Local Communities</h1>
 
-<div class="floatright" style="border:1px solid #ccc; width:345px; margin-bottom:20px">
+<div class="floatright" style="border:1px solid #ccc; margin-bottom:20px">
  
   <div style="padding:30px; padding-top:10px; padding-bottom:20px">
 
@@ -345,9 +348,9 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
   <div style="clear:both"></div>
 
 
-
-  <div id="bodyFile"></div>
-
+  <div id="bodyFileHolder" style="border:1px solid #ccc; background-color: #fcfcfc">
+    <div id="bodyFile" style="overflow:auto"></div>
+  </div>
   
       
 

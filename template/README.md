@@ -17,7 +17,7 @@ An opportunity exists to improve entity data sharing by extending machine readab
 
 Expanding research by the Carbon Leadership Forum to align analysis methods around a common standard for conveying estimates of embodied carbon in construction from extracting, manufacturing and installing materials<sup>5</sup> strategies are being developed to document sources and overcome uncertainty.
 
-An EPD file is a short version of an entity's Life Cycle Assessment (LCA) report. An LCA report must be performed before an EPD can be created. The LCA report can be stored privately to protect sensitive info. The EPD format avoids sensitive details and can therefore be shared without exposing company secrets.  
+An EPD file is a short version of an entity's Life Cycle Assessment (LCA) report. The LCA report can be stored privately to protect sensitive data. The EPD format allows a public-facing summary to shared without exposing company secrets.  
 
 Storing editable scenario configuration files as YAML allows for faster editing by humans since YAML uses a simple outline format. Subsequently there are fewer opportunities for errors. YAML is also less intimidating than JSON to new editors. 
 

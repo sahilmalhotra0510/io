@@ -295,9 +295,9 @@ function calculateLineData(leastSquares,xRange,iterations){
 $(document).on("click", "#mySelect", function(event) {
 //document.getElementById("mySelect").onchange = function() { // "mySelect" comes from info-template, which might not be loaded into DOM yet.
   $("#mySelect").toggle(this.checked);
-  myFunction();
+  toggleBubbleHighlights();
 });
-function myFunction() {
+function toggleBubbleHighlights() {
   if(document.getElementById("mySelect").checked){
     console.log("mySelect checked");
     // Show for region
@@ -536,6 +536,7 @@ function applyToBubbleHTML(hash,attempts) {
       consoleLog("applyToBubbleHTML failed. Attempts: " + attempts);
     }
     */
+    
 
   });
 

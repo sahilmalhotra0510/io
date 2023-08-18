@@ -96,6 +96,7 @@ document.addEventListener('hiddenhashChangeEvent', function (elem) {
   refreshBubbleWidget();
 }, false);
 
+
 function refreshBubbleWidget() {
     let hash = getHash(); // Includes hiddenhash
     //params = loadParams(location.search,location.hash); // Also used by loadIndustryData()
@@ -147,7 +148,11 @@ function refreshBubbleWidget() {
         displayImpactBubbles(1);
     } else if (priorHash_bubble.x != hash.x || priorHash_bubble.y != hash.y || priorHash_bubble.z != hash.z) {
         displayImpactBubbles(1);
+    } else {
+      // No state, so there won't be red bubbles showing top industries.
+      displayImpactBubbles(1);
     }
+
     priorHash_bubble = getHash();
 }
 
@@ -317,9 +322,6 @@ let geo_list={};
 counter=0;
 
 function displayImpactBubbles(attempts) {
-  //console.log("displayImpactBubbles");
-
-
   if (typeof customD3loaded !== 'undefined') {
 
     //if (typeof customD3loaded === 'undefined') {

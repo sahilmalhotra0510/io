@@ -1,5 +1,7 @@
 /*
   Impact Bubble Chart
+  allData contains industries and 24+ impact indicator value for each.
+  A subset is highlighted.
 */
 
 var iBubble = iBubble || (function(){
@@ -196,24 +198,27 @@ var myTickFormat, xAxis, yAxis;
 var rolloverDiv;
 var bubbleSvg, bubbleGradient;
 
-function getDimensions(x,y,z){
-
+function getDimensions(x,y,z, callback) {
   var returnX=[];
   var returnY=[];
   var returnZ=[];
   var returnPairs = [];
-  if (allData) {
-    allData.forEach(function(d){
-      var pair = {x: d[x], y: d[y], z: d[z], ...d}; // CUSTOM, appended year for chart, the rest for popup
-      returnPairs.push(pair);
-      returnX.push(d[x]);
-      returnY.push(d[y]);
-      returnZ.push(d[z]);
-    });
-    return {x:returnX,y:returnY,z:returnZ,pairs:returnPairs};
-  } else {
-    console.log("ERROR: Bubble.js allData undefined.")
-  }
+  waitForVariable('allData', function() {
+    if (allData) {
+      allData.forEach(function(d){
+        var pair = {x: d[x], y: d[y], z: d[z], ...d}; // CUSTOM, appended year for chart, the rest for popup
+        returnPairs.push(pair);
+        returnX.push(d[x]);
+        returnY.push(d[y]);
+        returnZ.push(d[z]);
+      });
+      console.log("Return after getting allData in getDimensions: " + allData);
+      //return {x:returnX,y:returnY,z:returnZ,pairs:returnPairs};
+      callback({x:returnX,y:returnY,z:returnZ,pairs:returnPairs});
+    } else {
+      console.log("ERROR: Bubble.js allData undefined.");
+    }
+  });
 }
 
 function updateTitle(x,y,z) {
@@ -446,13 +451,16 @@ function displayImpactBubbles(attempts) {
     //let params = loadParams(location.search,location.hash);
     let hash = getHash();
 
-    if(hash.geo){
+    if (hash.geo) {
       if (hash.geo.includes(",")){
           let geos=hash.geo.split(",");
           dataObject1.stateshown=(geos[0].split("US")[1]).slice(0,2)
       }else{
           dataObject1.stateshown=(hash.geo.split("US")[1]).slice(0,2)
       }
+    }
+    if (!hash.geo && hash.state == "GA") { // Only Georgia was in EPA's initial models.
+      dataObject1.stateshown = "13";
     }
     if(dataObject1.stateshown=='13'){
       model='_GA'
@@ -468,7 +476,8 @@ function displayImpactBubbles(attempts) {
     
     // Not working with the new file Wes provided
     //let sectorCSV = local_app.localsite_root() + "../io/charts/bubble/data/indicators_sectors"+model+".csv";
-    //alert(sectorCSV);
+    
+    console.log("Load model for US or GA: " + sectorCSV);
     d3.csv(sectorCSV ).then(function(data){
       data.forEach(d => indicators.forEach(indicator => d[indicator] = +d[indicator]));
       allData = data;
@@ -510,12 +519,14 @@ function applyToBubbleHTML(hash,attempts) {
       // Initial load
       // To do: invoke the following when something like param load=true reside in embed
       
+      /*
       if(document.getElementById("mySelect").checked) {
         midFunc(dropdownX.val(), dropdownY.val(), dropdownZ.val(), hash, "region");
       } else {
         midFunc(dropdownX.val(), dropdownY.val(), dropdownZ.val(), hash, "all");
       }
-      
+      */
+
       d3.selectAll(".graph-picklist").on("change",function(){
         // Update hash and trigger hashChange event. Resides in localsite.js
         goHash({ "x": dropdownX.val(), "y": dropdownY.val(), "z": dropdownZ.val()});
@@ -553,8 +564,8 @@ var ordinal = d3.scaleOrdinal() // Becomes scaleOrdinal in v4
   .range(["blue","#7479BC","#BDE7AE","#ECF809","orange","magenta"]); // Not in use here, from wind/js/regression.js
 */
 
-function midFunc(x,y,z,hash,boundry){
-
+function midFunc(x,y,z,hash,boundry) {
+  console.log("midFunc boundry: " + boundry);
   //let hash = getHash(); // includes hiddenhash
 
   if (hash.naics) {
@@ -564,6 +575,9 @@ function midFunc(x,y,z,hash,boundry){
   }
   //alert("hash.x " + hash.x + " midFunc hiddenhash.naics in bubble.js: " + hiddenhash.naics);
   //alert("iBubble.priorHash.x " + iBubble.priorHash.x);
+
+  // TEMP! Remove this line.
+  //hash.naics = "541512,622110,551114,541330,541611,621111,541511,541712,522110,722511,517110,561320,541110,441110,541513,445110,518210,511210,541211,541519,722513";
 
   // BUG - This prevented toggle - Moved to hashchange above
   //if (hash.naics != iBubble.priorHash.naics || hash.x != iBubble.priorHash.x || hash.y != iBubble.priorHash.y || hash.z != iBubble.priorHash.z) {
@@ -588,205 +602,138 @@ function midFunc(x,y,z,hash,boundry){
       updateChart(x,y,z,[],boundry);
     }
   //}
-  iBubble.priorHash = jQuery.extend(true, {}, hash); // Make a detached copy of hadh object
+  iBubble.priorHash = jQuery.extend(true, {}, hash); // Make a detached copy of hash object
 }
 
-function updateChart(x,y,z,useeioList,boundry){
+function updateChart(x,y,z,useeioList,boundry) {
+  waitForVariable('allData', function() {
+    //alert("Got allData in updateChart: " + allData);
+    console.log("Got allData in updateChart...");
+    console.log(allData); // 301 Industries
+    if (!(x && y && z)) { // Same as above
+      x = 'ENRG';
+      y = 'WATR';
+      z = 'JOBS';
+    }
 
-  if (!(x && y && z)) { // Same as above
-    x = 'ENRG';
-    y = 'WATR';
-    z = 'JOBS';
-  }
+    //alert("updateChart " + x + " hiddenhash.naics in bubble.js: " + hiddenhash.naics);
 
-  //alert("updateChart " + x + " hiddenhash.naics in bubble.js: " + hiddenhash.naics);
+    //Fetch data
+    //var records = getDimensions(x,y,z);
+    updateTitle(x,y,z);
+    x1=x;
+    y1=y;
+    z1=z;
+    boundry1=boundry;
+    useeioList1=useeioList;
 
-  //Fetch data
-  var records = getDimensions(x,y,z);
-  updateTitle(x,y,z);
-  x1=x;
-  y1=y;
-  z1=z;
-  boundry1=boundry;
-  useeioList1=useeioList;
-  (records.y).sort(function(a,b){return a-b});
-  var l = (records.y).length;
-  var low = Math.round(l * 0.010);
-  var high = l - low;
-  records.y = (records.y).slice(low,high);
+    //if (records) {
+    //waitForVariable('records', function() {
+    getDimensions(x,y,z, function(records) {
+      //console.log("ERROR bubble.js no records ");
+      //return;
+      
+      (records.y).sort(function(a,b){return a-b});
+      var l = (records.y).length;
+      var low = Math.round(l * 0.010);
+      var high = l - low;
+      records.y = (records.y).slice(low,high);
 
-  (records.x).sort(function(a,b){return a-b});
-  var l = (records.x).length;
-  var low = Math.round(l * 0.010);
-  var high = l - low;
-  records.x = (records.x).slice(low,high);
-  
-  yScale.domain(d3.extent(records.y));
-  xScale.domain(d3.extent(records.x));
-  zScale.domain(d3.extent(records.z));
-  //re-assign data (or assign new data)
+      (records.x).sort(function(a,b){return a-b});
+      var l = (records.x).length;
+      var low = Math.round(l * 0.010);
+      var high = l - low;
+      records.x = (records.x).slice(low,high);
+      
+      yScale.domain(d3.extent(records.y));
+      xScale.domain(d3.extent(records.x));
+      zScale.domain(d3.extent(records.z));
+      //re-assign data (or assign new data)
+      
 
-  var selectedCircles = d3.select("#graph-plane")
-    .selectAll(".circles")
-    .data(records.pairs)
-    .attr('pointer-events', 'auto')
+      var selectedCircles = d3.select("#graph-plane")
+        .selectAll(".circles")
+        .data(records.pairs)
+        .attr('pointer-events', 'auto');
 
-  //give a transition on the existing elements
-  selectedCircles
-    .transition().duration(animDuration)
+      //give a transition on the existing elements
+      selectedCircles
+        .transition().duration(animDuration)
 
-    .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
-    .attr("r",function(d){
-      return zScale(d.z)+2
-    })
-    .style('fill', function (d) { 
-      if(boundry1=="region"){
-        if(useeioList1.length>0){
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            if (useeioList1.includes( d.industry_code) ) {
-              return "url(#gradient)";
-            } else {
-              return "#aaa";
-            }
-          } else { return colors[d3.select(this).attr("class").split("circles selected")[1]]}
-        } else {
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-              //return "#303030";
-              return "#aaa";
-          } else { return colors[d3.select(this).attr("class").split("circles selected")[1]]}
-        }
-      } else {
-        if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-          //return "url(#gradient)";
-          return "#ccc";
-        }else{
-          //return colors[d3.select(this).attr("class").split("circles selected")[1]]
-          return "#ccc";
-        }
-      }
-    })
-    .style("stroke","black")
-    .attr("stroke-width", function (d) { 
-      if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-        return 1
-      }else{return 6}
-    })
-    .attr("stroke-opacity", function (d) { 
-      if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-        return 0.7
-      }else{
-          return 1
-      }
-    })
-    .style("fill-opacity" , function (d) { 
-      if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-        return 0.5
-      }else{
-          return 1
-      }
-    })
-    
-    //Append any new elements and transition them as well
-
-    // BUGBUG - load occurs initially, but none of the following until the second time called.
-    selectedCircles.enter()
-      .append("circle")
-      .style('fill', function (d) { 
-        if(boundry1=="region"){
-          if(useeioList1.length>0){
-            if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-              if (useeioList1.includes( d.industry_code) ) {
-
-                return "url(#gradient)";
-              } else {
-                return "#303030";
-              }
-            }else{return colors[d3.select(this).attr("class").split("circles selected")[1]]}
-          }else{
-            if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-              return "#303030";
-            }else{
-              return colors[d3.select(this).attr("class").split("circles selected")[1]]
-            }
-          }
-        }else{
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return "url(#gradient)";
-          }else{
-            return colors[d3.select(this).attr("class").split("circles selected")[1]]
-          }
-        }
-      })
-      .attr("stroke-width", function (d) { 
-        if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-          return 1
-        }else{
-          return 6
-        }
-      })
-      .attr("stroke-opacity", function (d) { 
-        if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-          return 0.7
-        }else{
-          return 1
-        }
-      })
-      .style("fill-opacity" , function (d) { 
-        if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-          return 0.5
-        }else{
-          return 1
-        }
-      })
-
-      .on("mouseover", function(d) {
-        //alert("mouse")
-        if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-          d3.select(this)
-          .transition()
-          .style("fill-opacity",1)
-          .attr('stroke-width', 4)
-          .attr("stroke-opacity", 1)
-        }
-        rolloverDiv.transition()
-          .duration(200)
-          .style("opacity", .9);               
-        rolloverDiv.html('<span style="color: black" >'+"<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/><b> " +x1+":</b> "+d.x+ "<br/><b> " +y1+":</b> "+ d.y + "<br/><b>" +z1+":</b> "+ d.z+'</span >')
-          .style("left", (d3.event.pageX) + "px")
-          .style("top", (d3.event.pageY - 28) + "px");                     
-      })
-
-
-      .on("click", function(d,i) {
-        //alert("click")
-        clickCount+=1;
-        //d3.selectAll(".circles").classed("selected", false);
-        d3.selectAll(".circles").style('fill', function (d) { 
-
+        .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
+        .attr("r",function(d){
+          return zScale(d.z)+2
+        })
+        .style('fill', function (d) { 
           if(boundry1=="region"){
-
             if(useeioList1.length>0){
-              console.log("usseeee")
-              console.log("class"+d3.select(this).attr("class"))
               if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-
                 if (useeioList1.includes( d.industry_code) ) {
-                  console.log("nullllll")
+                  return "url(#gradient)";
+                } else {
+                  return "#aaa";
+                }
+              } else { return colors[d3.select(this).attr("class").split("circles selected")[1]]}
+            } else {
+              if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+                  //return "#303030";
+                  return "#aaa";
+              } else { return colors[d3.select(this).attr("class").split("circles selected")[1]]}
+            }
+          } else {
+            if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+              //return "url(#gradient)";
+              return "#ccc";
+            }else{
+              //return colors[d3.select(this).attr("class").split("circles selected")[1]]
+              return "#ccc";
+            }
+          }
+        })
+        .style("stroke","black")
+        .attr("stroke-width", function (d) { 
+          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+            return 1
+          }else{return 6}
+        })
+        .attr("stroke-opacity", function (d) { 
+          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+            return 0.7
+          }else{
+              return 1
+          }
+        })
+        .style("fill-opacity" , function (d) { 
+          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+            return 0.5
+          }else{
+              return 1
+          }
+        })
+      
+        //Append any new elements and transition them as well
+
+        // BUGBUG - load occurs initially, but none of the following until the second time called.
+        selectedCircles.enter()
+        .append("circle")
+        .style('fill', function (d) { 
+          if(boundry1=="region"){
+            if(useeioList1.length>0){
+              if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+                if (useeioList1.includes( d.industry_code) ) {
+
                   return "url(#gradient)";
                 } else {
                   return "#303030";
                 }
-              }else{
-                return colors[d3.select(this).attr("class").split("circles selected")[1]]
-                console.log(colors[d3.select(this).attr("class").split("circles selected")[1]])
-              }
+              }else{return colors[d3.select(this).attr("class").split("circles selected")[1]]}
             }else{
-              if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null) {
+              if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
                 return "#303030";
               }else{
                 return colors[d3.select(this).attr("class").split("circles selected")[1]]
               }
-           }
+            }
           }else{
             if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
               return "url(#gradient)";
@@ -806,110 +753,190 @@ function updateChart(x,y,z,useeioList,boundry){
           if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             return 0.7
           }else{
-              return 1
+            return 1
           }
         })
         .style("fill-opacity" , function (d) { 
           if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             return 0.5
           }else{
-              return 1
+            return 1
           }
         })
 
-        d3.select(this)
-          .transition()
-          .style("fill",colors[clickCount])
-          .style("fill-opacity",1)
-          .attr('stroke-width', 6)
-          .attr("stroke-opacity", 1)
-        d3.select(this).classed("selected"+clickCount, true)
-        $("#impactTextIntro").hide();
-        $("#impactText").html($("#impactText").html() + "<br>"+ '<font size="5">'+d.industry_detail+"</font>"+"<br>"+z1 +":"+d.z+ "<br>" + y1 +":"+d.y+ "<br>" + x1+":"+d.x + "<br>");
-        $("#impact-chart").show();
-        create_bar(d,x,y,z,x1,y1,z1);
-        sect_list.push(d.industry_code.toUpperCase())
-        console.log("sects"+sect_list)
-        console.log(typeof sect_list[0])
-        //document.querySelector('#sector-list').setAttribute('sector', sect_list);
-      })
+        .on("mouseover", function(d) {
+          //alert("mouse")
+          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+            d3.select(this)
+            .transition()
+            .style("fill-opacity",1)
+            .attr('stroke-width', 4)
+            .attr("stroke-opacity", 1)
+          }
+          rolloverDiv.transition()
+            .duration(200)
+            .style("opacity", .9);               
+          rolloverDiv.html('<span style="color: black" >'+"<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/><b> " +x1+":</b> "+d.x+ "<br/><b> " +y1+":</b> "+ d.y + "<br/><b>" +z1+":</b> "+ d.z+'</span >')
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY - 28) + "px");                     
+        })
 
-      .on("mouseout", function(d) {
-        if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+        .on("click", function(d,i) {
+          //alert("click")
+          clickCount+=1;
+          //d3.selectAll(".circles").classed("selected", false);
+          d3.selectAll(".circles").style('fill', function (d) { 
+
+            if(boundry1=="region"){
+
+              if(useeioList1.length>0){
+                console.log("usseeee")
+                console.log("class"+d3.select(this).attr("class"))
+                if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+
+                  if (useeioList1.includes( d.industry_code) ) {
+                    console.log("nullllll")
+                    return "url(#gradient)";
+                  } else {
+                    return "#303030";
+                  }
+                }else{
+                  return colors[d3.select(this).attr("class").split("circles selected")[1]]
+                  console.log(colors[d3.select(this).attr("class").split("circles selected")[1]])
+                }
+              }else{
+                if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null) {
+                  return "#303030";
+                }else{
+                  return colors[d3.select(this).attr("class").split("circles selected")[1]]
+                }
+             }
+            }else{
+              if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+                return "url(#gradient)";
+              }else{
+                return colors[d3.select(this).attr("class").split("circles selected")[1]]
+              }
+            }
+          })
+          .attr("stroke-width", function (d) { 
+            if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+              return 1
+            }else{
+              return 6
+            }
+          })
+          .attr("stroke-opacity", function (d) { 
+            if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+              return 0.7
+            }else{
+                return 1
+            }
+          })
+          .style("fill-opacity" , function (d) { 
+            if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+              return 0.5
+            }else{
+                return 1
+            }
+          })
+
           d3.select(this)
-          .transition()
-          .attr("stroke-width", 1)
-          .attr("stroke-opacity", 0.7)
-          .style("fill-opacity" , 0.5)
-        } 
-        rolloverDiv.transition()
-          .duration(500)
-          .style("opacity", 0);
-                        
-      })
+            .transition()
+            .style("fill",colors[clickCount])
+            .style("fill-opacity",1)
+            .attr('stroke-width', 6)
+            .attr("stroke-opacity", 1)
+          d3.select(this).classed("selected"+clickCount, true)
+          $("#impactTextIntro").hide();
+          $("#impactText").html($("#impactText").html() + "<br>"+ '<font size="5">'+d.industry_detail+"</font>"+"<br>"+z1 +":"+d.z+ "<br>" + y1 +":"+d.y+ "<br>" + x1+":"+d.x + "<br>");
+          $("#impact-chart").show();
+          create_bar(d,x,y,z,x1,y1,z1);
+          sect_list.push(d.industry_code.toUpperCase())
+          console.log("sects"+sect_list)
+          console.log(typeof sect_list[0])
+          //document.querySelector('#sector-list').setAttribute('sector', sect_list);
+        })
 
-      .attr("class","circles")
-      .attr("r",function(d){
-        return zScale(d.z)+2
-      })
-      .style("stroke","black")
-      .attr("stroke-opacity", 0.7)
-      .style("fill-opacity" , 0.5)
-      .transition().duration(animDuration)
-      .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";});
+        .on("mouseout", function(d) {
+          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+            d3.select(this)
+            .transition()
+            .attr("stroke-width", 1)
+            .attr("stroke-opacity", 0.7)
+            .style("fill-opacity" , 0.5)
+          } 
+          rolloverDiv.transition()
+            .duration(500)
+            .style("opacity", 0);
+                          
+        })
 
-      //Remove any dom elements which are no longer data bound
-      selectedCircles.exit().remove();
-                  
-      //Update Axes
-      d3.select(parentId).select(".x.axis").transition().duration(animDuration).call(xAxis.ticks(8,myTickFormat))
-        .selectAll("text").attr("y", 0)
-        .attr("x", 9)
-        .attr("dy", ".35em")
-        .attr("transform", "rotate(90)").style("text-anchor", "start");
-      d3.select(parentId).select(".y.axis").transition().duration(animDuration).call(yAxis.ticks(5,myTickFormat));
-    }
+        .attr("class","circles")
+        .attr("r",function(d){
+          return zScale(d.z)+2
+        })
+        .style("stroke","black")
+        .attr("stroke-opacity", 0.7)
+        .style("fill-opacity" , 0.5)
+        .transition().duration(animDuration)
+        .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";});
 
-    //create the costum vertical 3 line barchart
-    function create_bar(d,x,y,z,x1,y1,z1){
-      d3.select("#selected_bar").remove();
-      var svg3 = d3.select("#barchart")
-        .append("svg")
-        .attr("width", width)
-        .attr("height", 380)
-        .attr("class", "bar-chart")
-        .attr('id', 'selected_bar');
-      maxim=Math.max(d.x,d.y,d.z)      
-      var rect_scale = d3.scaleLinear().range([300,0]).domain([maxim,0]);
-      var axis_scale = d3.scaleLinear().range([300,0]).domain([0,maxim]);
-      var other_scale = d3.scaleBand().range([0, 300]).domain([x1,y1,z1]);
-      var chart_2 = svg3.append('g').attr('class', 'y axis')
-        .attr('transform', 'translate(325, 60)').call(d3.axisLeft(axis_scale));
+        //Remove any dom elements which are no longer data bound
+        selectedCircles.exit().remove();
+                    
+        //Update Axes
+        d3.select(parentId).select(".x.axis").transition().duration(animDuration).call(xAxis.ticks(8,myTickFormat))
+          .selectAll("text").attr("y", 0)
+          .attr("x", 9)
+          .attr("dy", ".35em")
+          .attr("transform", "rotate(90)").style("text-anchor", "start");
+        d3.select(parentId).select(".y.axis").transition().duration(animDuration).call(yAxis.ticks(5,myTickFormat));
 
-      chart_2.append('g')
-        .attr('class', 'x axis')
-        .attr('transform', 'translate(0,300)').call(d3.axisBottom(other_scale));
+      }); // End waitForVariable('records')
+    }); // End waitForVariable('allData')
+  } // End updateChart()
 
-      chart_2.append("text")
-        .attr('class', 'label')
-        .attr("transform", "translate(150, 350)")
-        .text("Attr").attr("fill", "black").style("font-size", "25px");
+  //create the costum vertical 3 line barchart
+  function create_bar(d,x,y,z,x1,y1,z1){
+    d3.select("#selected_bar").remove();
+    var svg3 = d3.select("#barchart")
+      .append("svg")
+      .attr("width", width)
+      .attr("height", 380)
+      .attr("class", "bar-chart")
+      .attr('id', 'selected_bar');
+    maxim=Math.max(d.x,d.y,d.z)      
+    var rect_scale = d3.scaleLinear().range([300,0]).domain([maxim,0]);
+    var axis_scale = d3.scaleLinear().range([300,0]).domain([0,maxim]);
+    var other_scale = d3.scaleBand().range([0, 300]).domain([x1,y1,z1]);
+    var chart_2 = svg3.append('g').attr('class', 'y axis')
+      .attr('transform', 'translate(325, 60)').call(d3.axisLeft(axis_scale));
 
-      chart_2.append("text")
-        .attr('class', 'title')
-        .style('text-anchor','middle')
-        .attr('transform', 'translate(130,-30)')
-        .text( d.industry_detail)
-        .attr("fill", "black").style("font-size", "20px");
+    chart_2.append('g')
+      .attr('class', 'x axis')
+      .attr('transform', 'translate(0,300)').call(d3.axisBottom(other_scale));
 
-      svg3.append("rect").attr("y", 360 - rect_scale(d.x)).attr("x", 355)
-        .attr("width", 50).attr("height", rect_scale(d.x)).attr("fill", "red");
+    chart_2.append("text")
+      .attr('class', 'label')
+      .attr("transform", "translate(150, 350)")
+      .text("Attr").attr("fill", "black").style("font-size", "25px");
 
-      svg3.append("rect").attr("y", 360 - rect_scale(d.y)).attr("x", 450)
-        .attr("width", 50).attr("height", rect_scale(d.y)).attr("fill", "green");
+    chart_2.append("text")
+      .attr('class', 'title')
+      .style('text-anchor','middle')
+      .attr('transform', 'translate(130,-30)')
+      .text( d.industry_detail)
+      .attr("fill", "black").style("font-size", "20px");
 
-      svg3.append("rect").attr("y", 360 - rect_scale(d.z)).attr("x", 550)
-        .attr("width", 50).attr("height", rect_scale(d.z)).attr("fill", "blue");
+    svg3.append("rect").attr("y", 360 - rect_scale(d.x)).attr("x", 355)
+      .attr("width", 50).attr("height", rect_scale(d.x)).attr("fill", "red");
+
+    svg3.append("rect").attr("y", 360 - rect_scale(d.y)).attr("x", 450)
+      .attr("width", 50).attr("height", rect_scale(d.y)).attr("fill", "green");
+
+    svg3.append("rect").attr("y", 360 - rect_scale(d.z)).attr("x", 550)
+      .attr("width", 50).attr("height", rect_scale(d.z)).attr("fill", "blue");
 
 }
 

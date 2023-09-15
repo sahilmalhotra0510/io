@@ -12,6 +12,21 @@ Join us in collaborating on decentralized, real-time modeling using API mashups 
 [Open Footprint at Open Collective](https://opencollective.com/openfootprint)
 [New: Georgia Recycling Directories](../../localsite/map/recycling/ga/)  
 
+
+### Art of Code - Under Consideration
+<!--Grant Proposal, Review and Recommendation-->
+
+Judging Criteria:
+
+- Immediately plugs into a government service
+- Creates Jobs
+- Encourages Human Expression
+- Saves time
+- Provides easy access and training for new users
+- Free or low cost, opportunities for comps
+
+Seeking sponsors to make Art of Code a reality as grants or events.
+
 <!--
 
 CSE 6242

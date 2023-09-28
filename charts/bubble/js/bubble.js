@@ -212,7 +212,8 @@ function getDimensions(x,y,z, callback) {
         returnY.push(d[y]);
         returnZ.push(d[z]);
       });
-      console.log("Return after getting allData in getDimensions: " + allData);
+      console.log("getDimensions in io/charts/bubble/js/bubble.js returns x,y,z");
+      //console.log(allData);
       //return {x:returnX,y:returnY,z:returnZ,pairs:returnPairs};
       callback({x:returnX,y:returnY,z:returnZ,pairs:returnPairs});
     } else {

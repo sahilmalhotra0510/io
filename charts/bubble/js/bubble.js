@@ -92,14 +92,17 @@ var observer = new MutationObserver(function(mutations) {
 let priorHash_bubble = {};
 //refreshBubbleWidget();
 document.addEventListener('hashChangeEvent', function (elem) {
+  console.log("refreshBubbleWidget from hashChangeEvent")
   refreshBubbleWidget();
 }, false);
 document.addEventListener('hiddenhashChangeEvent', function (elem) {
-  refreshBubbleWidget();
+  //alert("refreshBubbleWidget 2")
+  //refreshBubbleWidget();
 }, false);
 
 
 function refreshBubbleWidget() {
+    console.log("refreshBubbleWidget 3")
     let hash = getHash(); // Includes hiddenhash
     //params = loadParams(location.search,location.hash); // Also used by loadIndustryData()
 
@@ -164,7 +167,7 @@ let dropdownX = $("#graph-picklist-x");
 let dropdownY = $("#graph-picklist-y");
 let dropdownZ = $("#graph-picklist-z");
 
-/** Main entry point to load the bubble chart. */
+/** Main entry point to load the bubble chart. Loads refreshBubbleWidget() */
 $(document).ready(function () {
   let {x, y, z} = getHash();
   dropdownX.empty();
@@ -175,10 +178,13 @@ $(document).ready(function () {
     .then(response => response.json())
     .then(data => {
       data.forEach(d => {
-        dropdownX.append($("<option></option>").attr("value", d.code).text(d.name));
-        dropdownY.append($("<option></option>").attr("value", d.code).text(d.name));
-        dropdownZ.append($("<option></option>").attr("value", d.code).text(d.name));
-        indicators.add(d.code);
+        // BUGBUG - Try removing this line once 2023 data is added.
+        if (d.code != "HCAN" && d.code != "HNCN" && d.code != "GHG") { // Try removing in 2023 when new USEEIO data is available.
+          dropdownX.append($("<option></option>").attr("value", d.code).text(d.name));
+          dropdownY.append($("<option></option>").attr("value", d.code).text(d.name));
+          dropdownZ.append($("<option></option>").attr("value", d.code).text(d.name));
+          indicators.add(d.code); // Applied to bubbles
+        }
       });
 
       dropdownX.val(x ? x : "ENRG");
@@ -308,7 +314,10 @@ $(document).on("click", "#mySelect", function(event) {
   $("#mySelect").toggle(this.checked);
   toggleBubbleHighlights();
 });
+
+// Called from localsite naics.js
 function toggleBubbleHighlights() {
+  //alert("toggleBubbleHighlights")
   if(document.getElementById("mySelect").checked){
     console.log("mySelect checked");
     // Show for region
@@ -329,7 +338,6 @@ counter=0;
 
 function displayImpactBubbles(attempts) {
   if (typeof customD3loaded !== 'undefined') {
-
     //if (typeof customD3loaded === 'undefined') {
     //  console.log("BUGBUG: D3 not yet available"); // Could loop again if/when this occurs
     //}
@@ -475,10 +483,11 @@ function displayImpactBubbles(attempts) {
 
     let sectorCSV = community_data_root + "/community-data/us/indicators/indicators_sectors"+model+".csv";
     
+    //alert("sectorCSV " + sectorCSV);
     // Not working with the new file Wes provided
     //let sectorCSV = local_app.localsite_root() + "../io/charts/bubble/data/indicators_sectors"+model+".csv";
     
-    console.log("Load model for US or GA: " + sectorCSV);
+    console.log("Bubble.js Load model for US or GA: " + sectorCSV);
     d3.csv(sectorCSV ).then(function(data){
       data.forEach(d => indicators.forEach(indicator => d[indicator] = +d[indicator]));
       allData = data;
@@ -500,12 +509,10 @@ function applyToBubbleHTML(hash,attempts) {
 
   console.log("wait for #bubble-graph-id");
   waitForElm('#bubble-graph-id').then((elm) => {
-    console.log("#bubble-graph-id found");
 
     //if($('#bubble-graph-id').length > 0) {
 
-
-      console.log("#bubble-graph-id found")
+      console.log("#bubble-graph-id found " + attempts)
       $('#bubble-graph-id').show();
       
       if (hash.x && hash.y && hash.z) {

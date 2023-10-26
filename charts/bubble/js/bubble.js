@@ -41,10 +41,10 @@ $(window).load(drop_down_list);
 // Drop down code from: https://www.bitrepository.com/dynamic-dependant-dropdown-list-us-states-counties.html
 function drop_down_list(){
   var state = $('#state').val();
-  if(state == 'AK' || state == 'DC') // Alaska and District Columbia have no counties{
+  if (state == 'AK' || state == 'DC') // Alaska and District Columbia have no counties{
     $('#county_drop_down').hide();
     $('#no_county_drop_down').show();
-  }else{
+  } else {
     $('#loading_county_drop_down').show(); // Show the Loading...
     $('#county_drop_down').hide(); // Hide the drop down
     $('#no_county_drop_down').hide(); // Hide the "no counties" message (if it's the case)
@@ -71,10 +71,10 @@ var observer = new MutationObserver(function(mutations) {
     if (mutation.type == "attributes") {
       par.naics=document.getElementById('industry-list').getAttribute('data-naics').slice(0,10)
       console.log("parrrr"+par.naics)
-      if(document.getElementById("mySelect").checked){
+      if (document.getElementById("mySelect").checked){
           midFunc(params.x,params.y,params.z,par,"region");
           document.querySelector('#sector-list').setAttribute('area', 'GAUSEEIO');
-      }else{
+      } else {
           midFunc(params.x,params.y,params.z,par,"all");
           document.querySelector('#sector-list').setAttribute('area', 'USEEIO');
       }
@@ -112,33 +112,33 @@ function refreshBubbleWidget() {
     // GET US
 
         geo_list[0]=params.geo
-    if(geo_list[1]){
+    if (geo_list[1]){
       lastgeo=geo_list[1]
       currgeo=geo_list[0]
-      if(typeof lastgeo!='undefined'){
+      if (typeof lastgeo!='undefined'){
         if (lastgeo.includes(",")){
             lastgeo=lastgeo.split(",")
             lastgeo=(lastgeo[0].split("US")[1]).slice(0,2)
-        }else{
+        } else {
             lastgeo=(lastgeo.split("US")[1]).slice(0,2)
         }
       }
-      if(typeof currgeo!='undefined'){
+      if (typeof currgeo!='undefined'){
         if (currgeo.includes(",")){
           currgeo=currgeo.split(",")
           currgeo=(currgeo[0].split("US")[1]).slice(0,2)
-        }else{
+        } else {
           currgeo=(currgeo.split("US")[1]).slice(0,2)
         }
       }
-    }else{
+    } else {
       lastgeo=[]
       currgeo=geo_list[0]
-      if(typeof currgeo!='undefined'){
+      if (typeof currgeo!='undefined'){
         if (currgeo.includes(",")){
           currgeo=currgeo.split(",")
           currgeo=(currgeo[0].split("US")[1]).slice(0,2)
-        }else{
+        } else {
           currgeo=(currgeo.split("US")[1]).slice(0,2)
         }
       }
@@ -178,8 +178,8 @@ $(document).ready(function () {
     .then(response => response.json())
     .then(data => {
       data.forEach(d => {
-        // BUGBUG - Try removing this line once 2023 data is added.
-        if (d.code != "HCAN" && d.code != "HNCN" && d.code != "GHG") { // Try removing in 2023 when new USEEIO data is available.
+        // BUGBUG - Try removing this line once 2023 data is added. Omitted impacts, perhaps some data is blank.
+        if (d.code != "HCAN" && d.code != "HNCN" && d.code != "GHG" && d.code != "CRHW" && d.code != "CCDD") { // Try removing in 2023 when new USEEIO data is available.
           dropdownX.append($("<option></option>").attr("value", d.code).text(d.name));
           dropdownY.append($("<option></option>").attr("value", d.code).text(d.name));
           dropdownZ.append($("<option></option>").attr("value", d.code).text(d.name));
@@ -237,20 +237,20 @@ function updateTitle(x,y,z) {
   d3.json("/io/build/api/USEEIOv2.0/indicators.json").then(function(consdata){
     console.log("attempt");
     var filteredData = consdata.filter(function(d) {
-      if(d["id"]==x) {
+      if (d["id"]==x) {
         unitx=d["unit"]
       }
-      if(d["id"]==y) {
+      if (d["id"]==y) {
         unity=d["unit"]
       }
-      if(d["id"]==z) {
+      if (d["id"]==z) {
         unitz=d["unit"]
       }
     })
     $(document).ready(function () { 
-      if(dataObject1.stateshown==13){
+      if (dataObject1.stateshown==13){
         document.getElementById("bubble-graph-title").innerHTML = "Comparison of 3 indicators for Georgia Industries - X: " + hash.x + " &nbsp;Y: " + hash.y + " &nbsp;Z: " + hash.z;
-      }else{
+      } else {
         document.getElementById("bubble-graph-title").innerHTML = "US Industries"
       }
       //$("#impactText").html(z + "<br>" + y + "<br>" + x);
@@ -289,7 +289,7 @@ function leastSquares(xSeries, ySeries) {
 
 //http://snipplr.com/view/37687/random-number-float-generator/
 function randomFloatBetween(minValue,maxValue,precision){
-    if(typeof(precision) == 'undefined'){
+    if (typeof(precision) == 'undefined'){
         precision = 2;
     }
     return parseFloat(Math.min(minValue + (Math.random() * (maxValue - minValue)),maxValue).toFixed(precision));
@@ -319,12 +319,12 @@ $(document).on("click", "#mySelect", function(event) {
 // Called from localsite naics.js
 function toggleBubbleHighlights(hash) {
   //alert("toggleBubbleHighlights")
-  if(document.getElementById("mySelect").checked){
+  if (document.getElementById("mySelect").checked){
     console.log("mySelect checked");
     // Show for region
     midFunc(d3.select("#graph-picklist-x").node().value,d3.select("#graph-picklist-y").node().value,d3.select("#graph-picklist-z").node().value, hash,"region")
     //document.querySelector('#sector-list').setAttribute('area', 'GAUSEEIO');
-  }else{
+  } else {
     console.log("mySelect unchecked");
     // Show for all
     midFunc(d3.select("#graph-picklist-x").node().value,d3.select("#graph-picklist-y").node().value,d3.select("#graph-picklist-z").node().value, hash,"all")
@@ -364,17 +364,17 @@ function displayImpactBubbles(attempts) {
         var f = d3.format(".1f");
         var limits = [1000000000, 1000000, 1000];
         var shorteners = ['B','M','K'];
-        if(d>=1000){
+        if (d>=1000){
           for(var i in limits) {
-            if(d > limits[i]) {
+            if (d > limits[i]) {
               d=(d/limits[i]).toFixed(2) + shorteners[i];
             }
           }
-        }else if(d>=0.000001 && d<1000){
+        }else if (d>=0.000001 && d<1000){
           d=parseFloat((d).toFixed(7).toString())
-        }else{
+        } else {
           for(j=-6;j>=-24;j--){
-            if(d>=Math.pow(10,j-1) && d<Math.pow(10,j)){
+            if (d>=Math.pow(10,j-1) && d<Math.pow(10,j)){
               d=(d*Math.pow(10,1-j)).toFixed(1)+"*10^-"+(1-j)
             }
           }
@@ -465,16 +465,16 @@ function displayImpactBubbles(attempts) {
       if (hash.geo.includes(",")){
           let geos=hash.geo.split(",");
           dataObject1.stateshown=(geos[0].split("US")[1]).slice(0,2)
-      }else{
+      } else {
           dataObject1.stateshown=(hash.geo.split("US")[1]).slice(0,2)
       }
     }
     if (!hash.geo && hash.state == "GA") { // Only Georgia was in EPA's initial models.
       dataObject1.stateshown = "13";
     }
-    if(dataObject1.stateshown=='13'){
+    if (dataObject1.stateshown=='13'){
       model='_GA'
-    }else{
+    } else {
       model=''
     }
     var community_data_root = "https://model.earth";
@@ -496,11 +496,11 @@ function displayImpactBubbles(attempts) {
       applyToBubbleHTML(hash,1);
     });
 
-  } else if (attempts<100) { // Wait a milisecond and try again
+  } else if (attempts<100) { // Wait 10th of a second and try again.
     setTimeout( function() {
       consoleLog("try displayImpactBubbles again")
       displayImpactBubbles(attempts+1);
-    }, 10 );
+    }, 100 );
   } else {
     consoleLog("ERROR: displayImpactBubbles exceeded 100 attempts.");
   }
@@ -511,7 +511,7 @@ function applyToBubbleHTML(hash,attempts) {
   console.log("wait for #bubble-graph-id");
   waitForElm('#bubble-graph-id').then((elm) => {
 
-    //if($('#bubble-graph-id').length > 0) {
+    //if ($('#bubble-graph-id').length > 0) {
 
       console.log("#bubble-graph-id found " + attempts)
       $('#bubble-graph-id').show();
@@ -529,7 +529,7 @@ function applyToBubbleHTML(hash,attempts) {
       // To do: invoke the following when something like param load=true reside in embed
       
       /*
-      if(document.getElementById("mySelect").checked) {
+      if (document.getElementById("mySelect").checked) {
         midFunc(dropdownX.val(), dropdownY.val(), dropdownZ.val(), hash, "region");
       } else {
         midFunc(dropdownX.val(), dropdownY.val(), dropdownZ.val(), hash, "all");
@@ -599,7 +599,7 @@ function midFunc(x,y,z,hash,boundry) {
       d3.csv("/io/charts/bubble/data/Crosswalk_MasterCrosswalk.csv").then( function(consdata) {
         var filteredData = consdata.filter(function(d) {
           for(i=0;i<naicsList.length;i++){
-            if(d["2012_NAICS_Code"]==naicsList[i]) {
+            if (d["2012_NAICS_Code"]==naicsList[i]) {
                 useeioList.push(d["USEEIO1_Code"])
                 useeiodetail.push(d["USEEIO1_Commodity"])
             }
@@ -674,9 +674,9 @@ function updateChart(x,y,z,useeioList,boundry) {
           return zScale(d.z)+2
         })
         .style('fill', function (d) { 
-          if(boundry1=="region"){
-            if(useeioList1.length>0){
-              if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+          if (boundry1=="region"){
+            if (useeioList1.length>0){
+              if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
                 if (useeioList1.includes( d.industry_code) ) {
                   return "url(#gradient)";
                 } else {
@@ -684,16 +684,16 @@ function updateChart(x,y,z,useeioList,boundry) {
                 }
               } else { return colors[d3.select(this).attr("class").split("circles selected")[1]]}
             } else {
-              if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+              if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
                   //return "#303030";
                   return "#aaa";
               } else { return colors[d3.select(this).attr("class").split("circles selected")[1]]}
             }
           } else {
-            if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+            if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
               //return "url(#gradient)";
               return "#ccc";
-            }else{
+            } else {
               //return colors[d3.select(this).attr("class").split("circles selected")[1]]
               return "#ccc";
             }
@@ -701,21 +701,21 @@ function updateChart(x,y,z,useeioList,boundry) {
         })
         .style("stroke","black")
         .attr("stroke-width", function (d) { 
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+          if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             return 1
-          }else{return 6}
+          } else {return 6}
         })
         .attr("stroke-opacity", function (d) { 
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+          if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             return 0.7
-          }else{
+          } else {
               return 1
           }
         })
         .style("fill-opacity" , function (d) { 
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+          if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             return 0.5
-          }else{
+          } else {
               return 1
           }
         })
@@ -726,56 +726,56 @@ function updateChart(x,y,z,useeioList,boundry) {
         selectedCircles.enter()
         .append("circle")
         .style('fill', function (d) { 
-          if(boundry1=="region"){
-            if(useeioList1.length>0){
-              if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+          if (boundry1=="region"){
+            if (useeioList1.length>0){
+              if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
                 if (useeioList1.includes( d.industry_code) ) {
 
                   return "url(#gradient)";
                 } else {
                   return "#303030";
                 }
-              }else{return colors[d3.select(this).attr("class").split("circles selected")[1]]}
-            }else{
-              if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+              } else {return colors[d3.select(this).attr("class").split("circles selected")[1]]}
+            } else {
+              if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
                 return "#303030";
-              }else{
+              } else {
                 return colors[d3.select(this).attr("class").split("circles selected")[1]]
               }
             }
-          }else{
-            if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+          } else {
+            if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
               return "url(#gradient)";
-            }else{
+            } else {
               return colors[d3.select(this).attr("class").split("circles selected")[1]]
             }
           }
         })
         .attr("stroke-width", function (d) { 
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+          if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             return 1
-          }else{
+          } else {
             return 6
           }
         })
         .attr("stroke-opacity", function (d) { 
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+          if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             return 0.7
-          }else{
+          } else {
             return 1
           }
         })
         .style("fill-opacity" , function (d) { 
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+          if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             return 0.5
-          }else{
+          } else {
             return 1
           }
         })
 
         .on("mouseover", function(d) {
           //alert("mouse")
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+          if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             d3.select(this)
             .transition()
             .style("fill-opacity",1)
@@ -796,12 +796,12 @@ function updateChart(x,y,z,useeioList,boundry) {
           //d3.selectAll(".circles").classed("selected", false);
           d3.selectAll(".circles").style('fill', function (d) { 
 
-            if(boundry1=="region"){
+            if (boundry1=="region"){
 
-              if(useeioList1.length>0){
+              if (useeioList1.length>0){
                 console.log("usseeee")
                 console.log("class"+d3.select(this).attr("class"))
-                if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+                if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
 
                   if (useeioList1.includes( d.industry_code) ) {
                     console.log("nullllll")
@@ -809,43 +809,43 @@ function updateChart(x,y,z,useeioList,boundry) {
                   } else {
                     return "#303030";
                   }
-                }else{
+                } else {
                   return colors[d3.select(this).attr("class").split("circles selected")[1]]
                   console.log(colors[d3.select(this).attr("class").split("circles selected")[1]])
                 }
-              }else{
-                if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null) {
+              } else {
+                if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null) {
                   return "#303030";
-                }else{
+                } else {
                   return colors[d3.select(this).attr("class").split("circles selected")[1]]
                 }
              }
-            }else{
-              if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+            } else {
+              if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
                 return "url(#gradient)";
-              }else{
+              } else {
                 return colors[d3.select(this).attr("class").split("circles selected")[1]]
               }
             }
           })
           .attr("stroke-width", function (d) { 
-            if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+            if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
               return 1
-            }else{
+            } else {
               return 6
             }
           })
           .attr("stroke-opacity", function (d) { 
-            if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+            if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
               return 0.7
-            }else{
+            } else {
                 return 1
             }
           })
           .style("fill-opacity" , function (d) { 
-            if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+            if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
               return 0.5
-            }else{
+            } else {
                 return 1
             }
           })
@@ -868,7 +868,7 @@ function updateChart(x,y,z,useeioList,boundry) {
         })
 
         .on("mouseout", function(d) {
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+          if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             d3.select(this)
             .transition()
             .attr("stroke-width", 1)
@@ -957,46 +957,46 @@ function clearBubbleSelection(){
   
   clickCount=-1
     d3.selectAll(".circles").style('fill', function (d) { 
-      if(boundry1=="region"){
-        if(useeioList.length>0){
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+      if (boundry1=="region"){
+        if (useeioList.length>0){
+          if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             if (useeioList.includes( d.industry_code) ) {
               return "url(#gradient)";
             } else {
               return "#303030";
             }
-          }else{return colors[clickCount]}
-        }else{
-          if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+          } else {return colors[clickCount]}
+        } else {
+          if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             return "#303030";
-          }else{return colors[clickCount]}
+          } else {return colors[clickCount]}
         }
-      }else{
-        if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+      } else {
+        if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
           return "url(#gradient)";
-        }else{
+        } else {
           return colors[clickCount]
         }
       }
     })
     .attr("stroke-width", function (d) { 
-      if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+      if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
         return 1
-      }else{
+      } else {
         return 6
       }
     })
     .attr("stroke-opacity", function (d) { 
-      if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+      if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
         return 0.7
-      }else{
+      } else {
         return 1
       }
     })
     .style("fill-opacity" , function (d) { 
-      if(d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
+      if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
         return 0.5
-      }else{
+      } else {
         return 1
       }
     })

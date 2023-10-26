@@ -312,11 +312,12 @@ function calculateLineData(leastSquares,xRange,iterations){
 $(document).on("click", "#mySelect", function(event) {
 //document.getElementById("mySelect").onchange = function() { // "mySelect" comes from info-template, which might not be loaded into DOM yet.
   $("#mySelect").toggle(this.checked);
-  toggleBubbleHighlights();
+  let hash = getHash();
+  toggleBubbleHighlights(hash);
 });
 
 // Called from localsite naics.js
-function toggleBubbleHighlights() {
+function toggleBubbleHighlights(hash) {
   //alert("toggleBubbleHighlights")
   if(document.getElementById("mySelect").checked){
     console.log("mySelect checked");

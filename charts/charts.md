@@ -165,6 +165,10 @@ This will create or update the `build` folder and a `lib` sub-folder containing 
 
 Once built, the `build` folder contains [example HTML files](https://model.earth/io/build/) that demonstrate the usage of these widgets.  
 
+Note: After building, remove   a { color: #555; } in widget.css.
+
+To Do: Surround all USEEIO widgets with a class called .ioWidget and update widget.css to limit to .ioWidget.
+
 ### Generate Local JSON files from API
 
 You can skip this step since we've already populated the **io/build/api folder** for you by generating static .json files from the staging API.

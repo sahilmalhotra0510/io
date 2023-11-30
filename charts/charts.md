@@ -88,11 +88,11 @@ If your local widgets reference the "useeio" folder, they may need to be updated
 	git clone https://github.com/ModelEarth/io io &&  
 	git clone https://github.com/ModelEarth/apps apps
 
-Optional to include, this is a larger 1.6 GB folder which the navigation links to:
+Optional: This large 1.6 GB folder is linked to in the localsite side-navigation:
 
 	git clone https://github.com/ModelEarth/community community
 
-If you'll be contributing changes, fork first and clone from your forks. [Turn on GitHub Pages](/localsite/start/steps/#github-pages) so we can review your changes.
+If you'll be contributing changes, fork first the repo you're editing and clone from your fork. [Turn on GitHub Pages](/localsite/start/steps/#github-pages) so we can review your changes.
 
 Run the following occasionally to refresh your local clones:
 
@@ -110,8 +110,8 @@ Run the following occasionally to refresh your local clones:
 
 [http://localhost:8887/apps](http://localhost:8887/apps)
 [http://localhost:8887/localsite/info](http://localhost:8887/localsite/info)
-
 <br>
+
 
 # About Local Folders
 
@@ -124,43 +124,50 @@ The current [io folder](https://github.com/modelearth/io/) contains a built copy
 You can create new pages in [our apps repo](/apps/). To share your work, [Fork the apps repo](https://github.com/modelearth/apps/) before you clone it.
 
 
-## Option 2: Build and Edit React Widgets Locally
 
-You can build the USEEIO React widgets locally.  
-Start with the following repo: [USEEIO-widgets repo](https://github.com/USEPA/useeio-widgets/) which contains only React widgets   
+<br>
 
-If you use the "io" repo, also clone the [https://github.com/localsite/localsite](https://github.com/localsite/localsite) repo and place it adjacent to the "io" repo.  Here's more info on [hosting the Localsite Framework on your computer](../../localsite/start/).
+# Build a fresh instance of the model
+
+You can skip this section since [io/build](../build/) already contains a built instance.
+
+You'll use these step if you are editing the USEEIO React Widgets locally. 
+
+Fork and clone the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets/) repo into your webroot. The USEEIO-widgets repo contains only React widgets. It doesn't contain any JQuery.
+
+	git clone https://github.com/USEPA/useeio-widgets useeio-widgets
 
 <!--
 <span style="background:red; padding:3px; color:#fff">NOTE:</span> The code in the useeio-widgets repo currently causes a runaway processor in the browser when used with the "localsite" repo. To avoid, the "localsite/build" folder contains the recent code from [Recent build 2](https://thetisiboth.github.io/useeio-widget-builds/).
 -->
 
----
-<br>
-
-# Build a new local instance of the model
-
-You can skip this since io/build already contains a built instance.
+#### Node Version Manager
 
 You'll need a current version of [Node.js](https://nodejs.org) installed. 
 
-Make sure that the `node` and `npm` commands are available in your systems path.
+Check that the `node` and `npm` commands are available in your systems path.
 You can test this by running `node -v` and `npm -v` on the command line.
 
-#### Install Node Version Manager
-
-Here are 2 options for installing node if the version commands above find nothing.  
+Here are options for installing node if the version commands above find nothing.  
 
 [NPMjs.com](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) recommends installing a Node Version Manager like [nvm](https://github.com/nvm-sh/nvm) to avoid permission errors when you run npm packages globally.
 
 Or [Install node/npm](https://nodejs.org/en/download) locally. The installer includes the Node.js package manager (npm) within it, so you won't need to install npm separately.
 
+Or update to the latest stable version of NodeJS
+<!-- https://askubuntu.com/questions/426750/how-can-i-update-my-nodejs-to-the-latest-version-->
+
+	npm install -g n
+	sudo n stable
+
 
 #### Open a terminal or use VS Code:     
 
-A. You can right-click the repo folder and choose "New Terminal at Folder" on a Mac.  
+A. You can right-click the repo folder and choose "New Terminal at Folder" on a Mac. &nbsp; [Sublime Text](https://www.sublimetext.com/) is a nice simple code editor.
 
-B. Or you can open the folder from VS Code.  (Shortcut for opening VS Code: Open a command prompt in the repo folder and type `code .`  (This may be necessary if your build does not run when opening with File > Open.) You may need to [Configure your VS Code Editor](https://code.visualstudio.com/docs/setup/setup-overview) so running `code .` launches the editor.  Avoid running in the parent folder containing your repo(s) or your VS Code editor may not allow you to run subsequent commands inside its terminal.  
+B. Or you can open the folder from VS Code.  Shortcut for opening VS Code: Open a command prompt in the repo folder and type `code .` or `code `  This may be necessary if your build does not run when opening with File > Open in VS Code.
+
+You may need to [Configure your VS Code Editor](https://code.visualstudio.com/docs/setup/setup-overview) so running `code .` launches the editor.  Avoid running in the parent folder containing your repo(s) or your VS Code editor may not allow you to run subsequent commands inside its terminal.
 
 To open a command shell window within VS Code by typing (Ctrl + \` backtick) or go to the "View > Terminal". 
 
@@ -177,9 +184,8 @@ Or use <code>cd useeio-widgets</code> if you are just using the source repo.
 
 The following will add a node_modules folder containing javascript source libraries (dependencies) that will be used to output code for the widgets.  
 
-```
-npm install
-```
+	cd useeio-widgets
+	npm install
 
 <!--
 You can ignore errors (about 11), including "Error: `gyp` failed with exit code: 1".  
@@ -198,48 +204,51 @@ Then build the widget libraries. If you are using the "io" repo you'll already h
 <span style="background:red; padding:3px; color:#fff">NOTE:</span> We recommend avoiding running the following build command. The code in the useeio-widgets repo currently causes a runaway processor in the browser when used with the "localsite" repo. To avoid, the "localsite/build" folder contains the recent code from [Recent build 2](https://thetisiboth.github.io/useeio-widget-builds/).
 -->
 
+We switched from recent node-v20.10.0 to older 12.22.6 to avoid this error:
+error:0308010C:digital envelope routines::unsupported
+
 ```
+nvm install 12.22.6
+nvm use 12.22.6
+
 npm run build
 ```
 
 This will create or update the `build` folder and a `lib` sub-folder containing small JavaScript libraries used by the USEEIO widgets.  
 
 Once built, the `build` folder contains [example HTML files](https://model.earth/io/build/) that demonstrate the usage of these widgets.  
-
+<!--
 Note: After building, remove   a { color: #555; } in widget.css.
 
 To Do: Surround all USEEIO widgets with a class called .ioWidget and update widget.css to limit to .ioWidget.
+-->
+<br>
 
-### Generate Local JSON files from API
+# Local JSON files were generated from API
 
-You can skip this step since we've already populated the **io/build/api folder** for you by generating static .json files from the staging API.
+You can skip this step since we've already populated the **io/build/api folder** for you.
 
-To provide data for the hosted widgets, we've download from the Staging instance of the
-[USEEIO API](https://github.com/USEPA/USEEIO_API) via the following:
+We generated static .json files from the USEEIO API so pages load faster, and you can work locally when not online, like on an airplane.
 
-```
-npm run download -- --endpoint https://smmtool.app.cloud.gov/api
-```
-Running the above mirrors data API into the static json files in the `build/api` folder. There are two subfolders for each model: national USEEIO and state GAUSEEIO for Georgia (and a third for upcoming v2 data).  
+<span class="local-block" style="display:none;">
+The production API requires an API key which we store in a [private Google Doc](https://docs.google.com/document/d/1FsIATg3XS-ZlyrNabZBIR9mdhSTWv22-yp0ZCyF80rg/edit?pli=1)
+</span>
 
-Sometimes we have to run the command above a second time to populate build/api/GAUSEEIO/demands table. (Aug 2020)  
+There is also a staging instance of the [USEEIO API](https://github.com/USEPA/USEEIO_API). However this server is often shutdown and will return a 404 error at <a href="https://smmtool.app.cloud.gov/" target="_blank">endpoint overview</a>. Every 90 days the staging server requires a reboot. You can email the [contact person](https://github.com/USEPA/USEEIO_API/wiki/People#Contact) to restart.
 
-Note: Every 90 days the staging server requires a reboot, email the [contact person](https://github.com/USEPA/USEEIO_API/wiki/People#Contact) to restart.  
-If the '/api' address returns 404, you can use the staging 
-<a href="https://smmtool.app.cloud.gov/" target="_blank">endpoint overview</a> to see if it is online.  
+Again, you don't need to run this since we're using a json instance of the API.
 
-You may optionall [request the key](https://github.com/USEPA/USEEIO_API/wiki/Use-the-API) to the production API to run the following (Interns may use the key in our Google Sheet):  
+	npm run download -- --endpoint https://smmtool.app.cloud.gov/api
+
+Running the above mirrors API data into the static json files in the `build/api` folder. 
+
+You may optionally [request the key](https://github.com/USEPA/USEEIO_API/wiki/Use-the-API) to the production API to run the following (Interns may use the key in our Google Sheet):  
 
 ```
 npm run download -- --endpoint https://api.edap-cluster.com/useeio/api --apikey [Add API key here]
 ```
-<div class="local" style="display:none;">
-The production API requires an API key<!-- there is probably not a URL format-->
-<a href="https://api.edap-cluster.com/?x-api-key=" target="_blank">endpoint overview</a>
-</div>
-Learn more about [using the USEEIO API](https://github.com/USEPA/USEEIO_API/wiki/Use-the-API)
 
-Important: After generating build/api folder from the production API:  
+Important: After generating build/api folder from the production API we:  
 <!--
 1. Duplicate USEEIOv1.2 to USEEIO for existing script in non-React widgets.  
 2. Duplicate USEEIOv1.2 to GAUSEEIO since GA data currently only resides on the staging server.  
@@ -249,14 +258,22 @@ Manually copy the GAUSEEIO to a new folder called USEEIOv1.2 for Inflow-Outflow 
 
 Replace USEEIOv1.2 with USEEIOv2.0 (in sector_list.html)
 
+Learn more about [using the USEEIO API](https://github.com/USEPA/USEEIO_API/wiki/Use-the-API)
+
+
+# View widgets
+
 You now have two options for viewing the widgets locally.
 
-<b>Option 1:</b> Start a server using the command <code>npm run server</code>. 
-Then open the default port (8080) at http://localhost:8080 in your browser to see the widgets.  Your command window will become inoperable since it is running a server.  Open a new command window (by clicking plus) to issue further commands.  
-
-<b>Option 2:</b> View at the following URL if the "io" folder resides in your webroot. (Your port number may differ.) 
+<b>Option 1:</b> View at the following URL if the "io" folder resides in your webroot. (Your port number may differ.) 
 
 [http://localhost:8887/io/build](http://localhost:8887/io/build)  
+
+<b>Option 2:</b> Start a server using the command <code>npm run server</code>.
+
+Then open the default port (8080) at http://localhost:8080 in your browser to see the widgets.  Your command window will become inoperable since it is running a server.  Open a new command window (by clicking plus) to issue further commands.  
+
+
 
 If you are working in a direct fork of the "useeio-widgets" repo, view here:  
 
@@ -301,8 +318,9 @@ if you don't see it, be sure to right-click in the file folder when opening and 
 3. insert this at the end of the line, before the end-quote: :$HOME/.local/bin
 
 -->
+<br>
 
-## FAQs
+# FAQs
 
 ### Why are some values in the demand vector $0 (blank)?
 

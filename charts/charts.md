@@ -224,7 +224,7 @@ To Do: Surround all USEEIO widgets with a class called .ioWidget and update widg
 -->
 <br>
 
-# Local JSON files were generated from API
+# JSON files from API
 
 You can skip this step since we've already populated the **io/build/api folder** for you.
 
@@ -248,7 +248,8 @@ You may optionally [request the key](https://github.com/USEPA/USEEIO_API/wiki/Us
 npm run download -- --endpoint https://api.edap-cluster.com/useeio/api --apikey [Add API key here]
 ```
 
-Important: After generating build/api folder from the production API we:  
+Important: We copied and renamed the folder USEEIOv2.0.1-411 to USEEIOv2.0 when placing in io/build/api so existing paths to USEEIOv2.0 in code do not need to be changed.
+
 <!--
 1. Duplicate USEEIOv1.2 to USEEIO for existing script in non-React widgets.  
 2. Duplicate USEEIOv1.2 to GAUSEEIO since GA data currently only resides on the staging server.  
@@ -256,7 +257,7 @@ Important: After generating build/api folder from the production API we:
 Manually copy the GAUSEEIO to a new folder called USEEIOv1.2 for Inflow-Outflow Chart  
 -->
 
-Replace USEEIOv1.2 with USEEIOv2.0 (in sector_list.html)
+
 
 Learn more about [using the USEEIO API](https://github.com/USEPA/USEEIO_API/wiki/Use-the-API)
 

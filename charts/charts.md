@@ -75,7 +75,36 @@ If your local widgets reference the "useeio" folder, they may need to be updated
 <br>
 
 
-# Add or Edit Widgets
+# Run Widgets locally for Development
+
+1.) Create a folder for your webroot at Documents/Web or wherever you prefer.
+2.) Right click to open a terminal command prompt and paste the following to create folders.
+
+	mkdir localsite && mkdir io && mkdir community && mkdir apps
+
+3.) Run the following to pull down repos from Github.
+
+	git clone https://github.com/ModelEarth/localsite localsite &&  
+	git clone https://github.com/ModelEarth/io io &&  
+	git clone https://github.com/ModelEarth/apps apps
+
+Optional to include, this is a larger 1.6 GB folder which the navigation links to:
+
+	git clone https://github.com/ModelEarth/community community
+
+Run the following occasionally to refresh your local clones:
+
+	cd localsite &&  
+	git pull https://github.com/ModelEarth/localsite main &&  
+	cd ../io &&  
+	git pull https://github.com/ModelEarth/io main &&  
+	cd ../apps &&  
+	git pull https://github.com/ModelEarth/apps main &&  
+	cd ../community &&  
+	git pull https://github.com/ModelEarth/community master &&  
+	cd ../
+
+<br>
 
 ## Option 1: Embed Widgets, Edit Javascript
 
@@ -100,8 +129,13 @@ If you use the "io" repo, also clone the [https://github.com/localsite/localsite
 -->
 
 ---
-### Steps for Building React Widgets
-To build the React widgets locally you'll need a current version of [Node.js](https://nodejs.org) installed. 
+<br>
+
+# Build a new local instance of the model
+
+You can skip this since io/build already contains a built instance.
+
+You'll need a current version of [Node.js](https://nodejs.org) installed. 
 
 Make sure that the `node` and `npm` commands are available in your systems path.
 You can test this by running `node -v` and `npm -v` on the command line.

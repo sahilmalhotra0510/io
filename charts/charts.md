@@ -78,11 +78,11 @@ If your local widgets reference the "useeio" folder, they may need to be updated
 # Run Widgets locally for Development
 
 1.) Create a folder for your webroot at Documents/Web or wherever you prefer.
-2.) Right click to open a terminal command prompt and paste the following to create folders.
+2.) Start a local web server by right clicking your web folder and open a terminal command prompt.  Paste the following and hit return to run. This terminal will be locked from further commands since it is running your local server.
 
-	mkdir localsite && mkdir io && mkdir community && mkdir apps
+	python -m http.server 8887
 
-3.) Run the following to pull down repos from Github.
+3.) Open a new terminal and pull down these repos from Github. Hit return to run.
 
 	git clone https://github.com/ModelEarth/localsite localsite &&  
 	git clone https://github.com/ModelEarth/io io &&  
@@ -104,15 +104,21 @@ Run the following occasionally to refresh your local clones:
 	git pull https://github.com/ModelEarth/community master &&  
 	cd ../
 
+4.) View and update content at the following
+
+[http://localhost:8887/apps](http://localhost:8887/apps)
+[http://localhost:8887/localsite/info](http://localhost:8887/localsite/info)
+
 <br>
 
-## Option 1: Embed Widgets, Edit Javascript
+# About Local Folders
 
-You can set parameters in the URL or javascript to control the display of the widgets.  [View examples](../../apps/).
+The [localsite repo](../../localsite/) contains maps, navigation and impact visualization.  
+
+You can set parameters in the URL or javascript to control the display of the widgets.  [View examples in apps repo](../../apps/).
 
 [Github.com/modelearth/io](https://github.com/modelearth/io/) contains a built copy of the "[build](../build)" folder from [useeio-widgets](https://github.com/usepa/useeio-widgets), plus extra JQuery widgets.  
 
-[Clone or fork](https://github.com/modelearth/localsite/) our [localsite repo](../../localsite/) for maps, navigation and impact visualization.  
 
 You can create pages in [our apps repo](/apps/). - [Fork it on Github](https://github.com/modelearth/apps/).
 

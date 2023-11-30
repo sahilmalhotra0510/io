@@ -92,6 +92,8 @@ Optional to include, this is a larger 1.6 GB folder which the navigation links t
 
 	git clone https://github.com/ModelEarth/community community
 
+If you'll be contributing changes, fork first and clone from your forks. [Turn on GitHub Pages](/localsite/start/steps/#github-pages) so we can review your changes.
+
 Run the following occasionally to refresh your local clones:
 
 	cd localsite &&  
@@ -117,10 +119,9 @@ The [localsite repo](../../localsite/) contains maps, navigation and impact visu
 
 You can set parameters in the URL or javascript to control the display of the widgets.  [View examples in apps repo](../../apps/).
 
-[Github.com/modelearth/io](https://github.com/modelearth/io/) contains a built copy of the "[build](../build)" folder from [useeio-widgets](https://github.com/usepa/useeio-widgets), plus extra JQuery widgets.  
+The current [io folder](https://github.com/modelearth/io/) contains a built copy of the "[build](../build)" folder from [useeio-widgets](https://github.com/usepa/useeio-widgets), plus extra JQuery widgets.  
 
-
-You can create pages in [our apps repo](/apps/). - [Fork it on Github](https://github.com/modelearth/apps/).
+You can create new pages in [our apps repo](/apps/). To share your work, [Fork the apps repo](https://github.com/modelearth/apps/) before you clone it.
 
 
 ## Option 2: Build and Edit React Widgets Locally

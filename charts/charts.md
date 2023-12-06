@@ -323,7 +323,7 @@ if you don't see it, be sure to right-click in the file folder when opening and 
 
 # React Update Requests
 
-Here are two items for the near-term React wishlist. These will allow positive jobs and value-added to be compared with negative impacts. And will show the total amounts by default, with a toggle to per-dollar.
+Here are two items for the near-term React wishlist. These will allow positive jobs and value-added to be compared with negative impacts. Total Amounts would be displayed, with a toggle to Per-Dollar Spent.
 
 1.) When clicking on the [Sector List](/io/build/sector_list.html?view=mosaic&count=100&indicators=ACID,ETOX,EUTR) column headers:
 
@@ -335,7 +335,7 @@ Here are two items for the near-term React wishlist. These will allow positive j
 
 <a href="inflow-outflow/img/mockup-checkboxes.png"><img src="inflow-outflow/img/mockup-checkboxes.png" style="width:100%"></a><br>
 
-2.) Add total amounts to the [Inflow-Outflow Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) and show total amounts by default. See [React sample](/localsite/info/data/totals/).  Update values displayed when hash value changes from vtype=total to vtype=perdollar and back. (Pre-calculate both, so entire chart does not need to reload.)
+2.) Add total amounts to the [Inflow-Outflow Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) and show total amounts by default. See [React sample](/localsite/info/data/totals/).  Update values displayed when the hash value changes from vtype=total to vtype=perdollar and back. (Pre-calculate both, so chart does not need to reload.)
 
 <br>
 

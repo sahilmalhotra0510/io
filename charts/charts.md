@@ -329,13 +329,13 @@ Here are two items for the near-term React wishlist. These will allow positive j
 
 1a. Invert the arrows, so a high impact filter is indicated by an upward arrow.
 
-1b. Add checkboxes to indicate which columns are current filters. When unchecking, retain the other selected columns. (screenshot attached)
+1b. Add checkboxes to indicate which columns are current filters. When unchecking, retain the other selected columns. (mockup below)
 
 1c. When clicking a column title or arrow, retain the other selected columns. Their checked boxes will remain checked.
 
 <a href="inflow-outflow/img/mockup-checkboxes.png"><img src="inflow-outflow/img/mockup-checkboxes.png" style="width:100%"></a><br>
 
-2.) Add Total Amounts to the [Inflow-Outflow Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) and show total amounts by default. See [React sample](/localsite/info/data/totals/).  Update values displayed when the hash value changes from vtype=total to vtype=perdollar and back. (Pre-calculate both, so the chart does not need to reload.)
+2.) Add Total Amounts to the [Inflow-Outflow Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) and show total amounts by default. See [Total Amounts React example](/localsite/info/data/totals/).  Update values displayed when the hash value changes from vtype=total to vtype=perdollar and back. (Pre-calculate both, so the chart does not need to reload.)
 
 <br>
 
@@ -348,7 +348,7 @@ In some cases there is no final demand for the respective commodity and the prod
 
 ### How is code formatting enforced?
 
-The `.editorconfig` file contains the formatting settings. Modern editors have plugins for checking EditorConfig settings. This maintains consistency so we can see in the diffs what changed. There is also a ESLint configuration in the project for other settings like semicolon rules etc.
+The `.editorconfig` file contains the formatting settings. Modern editors have plugins for checking EditorConfig settings. This maintains consistency so we can see in the diffs what changed. There is also a ESLint configuration in the project for other settings like semicolon rules, etc.
 
 
 [Project Areas](../../community/projects/) 

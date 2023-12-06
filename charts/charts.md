@@ -321,6 +321,14 @@ if you don't see it, be sure to right-click in the file folder when opening and 
 -->
 <br>
 
+# React Update Requests
+
+1. When clicking a [heatmap column header](http://localhost:8887/localsite/info/), first sort by largest impact. (Currently users have to click 3 times.)  Have the second click invert to show the least impact first. Have the third click turnoff filtering for the column.
+
+2. Add total amounts to React [Inflow-Outflow Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) and show total amounts by default. See [React sample](/localsite/info/data/totals/). 
+Toggle to per-dollar when hash vtype=totals to vtype=perdol.
+<br>
+
 # FAQs
 
 ### Why are some values in the demand vector $0 (blank)?

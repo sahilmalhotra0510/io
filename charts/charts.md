@@ -323,10 +323,20 @@ if you don't see it, be sure to right-click in the file folder when opening and 
 
 # React Update Requests
 
-1. When clicking a [heatmap column header](http://localhost:8887/localsite/info/), first sort by largest impact. (Currently users have to click 3 times.)  Have the second click invert to show the least impact first. Have the third click turnoff filtering for the column.
+Here are two items for the near-term React wishlist. These will allow positive jobs and value-added to be compared with negative impacts. And will show the total amounts by default, with a toggle to per-dollar.
 
-2. Add total amounts to React [Inflow-Outflow Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) and show total amounts by default. See [React sample](/localsite/info/data/totals/). 
-Toggle to per-dollar when hash vtype=totals to vtype=perdol.
+1.) When clicking on the [Sector List](/io/build/sector_list.html?view=mosaic&count=100&indicators=ACID,ETOX,EUTR) column headers:
+
+1a. Invert the arrows, so a high impact filter is indicated by an upward arrow.
+
+1b. Add checkboxes to indicate which columns are current filters. When unchecking, retain the other selected columns. (screenshot attached)
+
+1c. When clicking a column title or arrow, retain the other selected columns. Their checked boxes will remain checked.
+
+<a href="inflow-outflow/img/mockup-checkboxes.png"><img src="inflow-outflow/img/mockup-checkboxes.png" style="width:100%"></a><br>
+
+2.) Add total amounts to the [Inflow-Outflow Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) and show total amounts by default. See [React sample](/localsite/info/data/totals/).  Toggle to per-dollar when hash vtype=totals to vtype=perdol.
+
 <br>
 
 # FAQs

@@ -335,7 +335,7 @@ Here are two items for the near-term React wishlist. These will allow positive j
 
 <a href="inflow-outflow/img/mockup-checkboxes.png"><img src="inflow-outflow/img/mockup-checkboxes.png" style="width:100%"></a><br>
 
-2.) Add total amounts to the [Inflow-Outflow Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) and show total amounts by default. See [React sample](/localsite/info/data/totals/).  Toggle to per-dollar when hash vtype=totals to vtype=perdol.
+2.) Add total amounts to the [Inflow-Outflow Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) and show total amounts by default. See [React sample](/localsite/info/data/totals/).  Update values displayed when hash value changes from vtype=total to vtype=perdollar and back. (Pre-calculate both, so entire chart does not need to reload.)
 
 <br>
 

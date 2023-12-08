@@ -3,7 +3,6 @@
   allData contains industries and 24+ impact indicator value for each.
   A subset is highlighted.
 */
-
 var iBubble = iBubble || (function(){
     var _args = {}; // private
 
@@ -513,9 +512,14 @@ function applyToBubbleHTML(hash,attempts) {
 
     //if ($('#bubble-graph-id').length > 0) {
 
-      console.log("#bubble-graph-id found " + attempts)
-      $('#bubble-graph-id').show();
-      
+      console.log("#bubble-graph-id found. Attempts: " + attempts)
+      if(hash.state) {
+        $('#bubble-graph-id').show();
+      } else {
+        // We are probably missing a list of all the naics when there is no state.
+        // Prior to changes in localsite/js/naics.html, we were able to load a bubble chart with no red bubbles highlighted.
+        // Swithcing to 73 sectors next.
+      }
       if (hash.x && hash.y && hash.z) {
         dropdownX.val(hash.x);
         dropdownY.val(hash.y);

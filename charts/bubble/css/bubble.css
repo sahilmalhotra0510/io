@@ -89,11 +89,11 @@ div.tooltip {
   position: absolute;
   text-align: center;
   width: 170px;
-  height: 106px;
+  min-height: fit-content;
+  height: 100px;
   overflow: auto;
-  padding: 2px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 3px;
+  padding-block: 8px;
   font: 10px sans-serif;
   background: lightsteelblue;
   border: 0px;

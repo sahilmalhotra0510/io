@@ -790,8 +790,8 @@ function updateChart(x,y,z,useeioList,boundry) {
             .duration(200)
             .style("opacity", .9);               
           rolloverDiv.html('<span style="color: black" >'+"<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/><b> " +x1+":</b> "+d.x+ "<br/><b> " +y1+":</b> "+ d.y + "<br/><b>" +z1+":</b> "+ d.z+'</span >')
-            .style("left", (d3.event.pageX) + "px")
-            .style("top", (d3.event.pageY - 28) + "px");                     
+            .style("left", (d3.event.pageX + 6) + "px")
+            .style("top", (d3.event.pageY + 6) + "px");                     
         })
 
         .on("click", function(d,i) {

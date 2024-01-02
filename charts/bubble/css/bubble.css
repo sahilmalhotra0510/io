@@ -1,10 +1,10 @@
-bodyX {
+body {
   font-family: Helvetica;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .bubble-graph {
-  max-widthX:1000px;
+  max-width:1000px;
   /* position: relative; */ /* Bug: Popup misalign */
 }
 .bubble-graph select {
@@ -23,7 +23,7 @@ bodyX {
 #bubble-graph-title {
   font-size: 16px;
   text-align: left;
-  border-bottomX: 2px solid black;
+  border-bottom: 2px solid black;
   margin-bottom: 25px;
 }
 
@@ -57,7 +57,7 @@ h4{
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
-  floatX:left;
+  float:left;
 }
 #graph-wrapper-y {
   text-align: center;

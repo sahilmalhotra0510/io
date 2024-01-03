@@ -1,8 +1,3 @@
-body {
-  font-family: Helvetica;
-  font-size: 12px;
-}
-
 .bubble-graph {
   max-width:1000px;
   /* position: relative; */ /* Bug: Popup misalign */
@@ -23,7 +18,6 @@ body {
 #bubble-graph-title {
   font-size: 16px;
   text-align: left;
-  border-bottom: 2px solid black;
   margin-bottom: 25px;
 }
 
@@ -57,7 +51,6 @@ h4{
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
-  float:left;
 }
 #graph-wrapper-y {
   text-align: center;

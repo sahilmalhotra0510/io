@@ -387,15 +387,13 @@ function displayImpactBubbles(attempts) {
         .scale(xScale)
         .tickSize(-height)
         .tickPadding(8)
-
-        
-        .ticks(8,myTickFormat)
+        .ticks(8,myTickFormat);
 
       yAxis = d3.axisLeft()
         .scale(yScale)
         .tickSize(-width)
         .tickPadding(8)
-        .ticks(5,myTickFormat)
+        .ticks(5,myTickFormat);
 
       // For rollover popup
       rolloverDiv = d3.select(parentId).append("div")
@@ -416,7 +414,6 @@ function displayImpactBubbles(attempts) {
       bubbleSvg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + (height) + ")")
-
         .call(xAxis.ticks(8,myTickFormat))
         .selectAll("text")
         .attr("y", 0)

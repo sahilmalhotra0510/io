@@ -368,6 +368,7 @@ function displayImpactBubbles(attempts) {
           for(var i in limits) {
             if (d > limits[i]) {
               d=(d/limits[i]).toFixed(2) + shorteners[i];
+              break;
             }
           }
         }else if (d>=0.000001 && d<1000){

@@ -360,7 +360,6 @@ function displayImpactBubbles(attempts) {
       line = d3.line();
 
       myTickFormat = function (d) {//Logic to reduce big numbers
-        //TODO: Fix logic for setting d in for loop or fix limits & shortners list order
         var f = d3.format(".1f");
         var limits = [1000000000, 1000000, 1000];
         var shorteners = ['B','M','K'];

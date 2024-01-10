@@ -735,7 +735,7 @@ function updateChart(x,y,z,useeioList,boundry) {
 
                   return "url(#gradient)";
                 } else {
-                  return "#303030";
+                  return "#aaa";
                 }
               } else {return colors[d3.select(this).attr("class").split("circles selected")[1]]}
             } else {

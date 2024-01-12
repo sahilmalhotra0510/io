@@ -360,7 +360,6 @@ function displayImpactBubbles(attempts) {
       line = d3.line();
 
       myTickFormat = function (d) {//Logic to reduce big numbers
-        //TODO: Fix logic for setting d in for loop or fix limits & shortners list order
         var f = d3.format(".1f");
         var limits = [1000000000, 1000000, 1000];
         var shorteners = ['B','M','K'];
@@ -368,6 +367,7 @@ function displayImpactBubbles(attempts) {
           for(var i in limits) {
             if (d > limits[i]) {
               d=(d/limits[i]).toFixed(2) + shorteners[i];
+              break;
             }
           }
         }else if (d>=0.000001 && d<1000){
@@ -387,15 +387,13 @@ function displayImpactBubbles(attempts) {
         .scale(xScale)
         .tickSize(-height)
         .tickPadding(8)
-
-        
-        .ticks(8,myTickFormat)
+        .ticks(8,myTickFormat);
 
       yAxis = d3.axisLeft()
         .scale(yScale)
         .tickSize(-width)
         .tickPadding(8)
-        .ticks(5,myTickFormat)
+        .ticks(5,myTickFormat);
 
       // For rollover popup
       rolloverDiv = d3.select(parentId).append("div")
@@ -416,7 +414,6 @@ function displayImpactBubbles(attempts) {
       bubbleSvg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + (height) + ")")
-
         .call(xAxis.ticks(8,myTickFormat))
         .selectAll("text")
         .attr("y", 0)
@@ -738,7 +735,7 @@ function updateChart(x,y,z,useeioList,boundry) {
 
                   return "url(#gradient)";
                 } else {
-                  return "#303030";
+                  return "#aaa";
                 }
               } else {return colors[d3.select(this).attr("class").split("circles selected")[1]]}
             } else {

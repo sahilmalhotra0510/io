@@ -632,6 +632,18 @@ function midFunc(x,y,z,hash,boundry) {
 }
 
 function updateChart(x,y,z,useeioList,boundry) {
+  /*
+  Inputs:
+    x,y,z: parameters for the x, y & z axis of the bubble chart (z axis is the radius of the bubbles)
+    useeioList: List created from parsed hash.naics in the midFunc function
+    boundry: string input for boundry
+  Action:
+    Assigns x, y, z to parameters if they are not already defined
+    Does several checks to determine chart details 
+    (many checks result in hard coded colors & css properties which may vary depending on the situation)
+    (currently the hard coded colors are consistent on all runs --> this might change need to keep a lookout fot this)
+    updates the bubble chart
+  */
   waitForVariable('allData', function() {
     //alert("Got allData in updateChart: " + allData);
     console.log("Got allData in updateChart...");
@@ -685,7 +697,6 @@ function updateChart(x,y,z,useeioList,boundry) {
       //give a transition on the existing elements
       selectedCircles
         .transition().duration(animDuration)
-
         .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
         .attr("r",function(d){
           return zScale(d.z)+2

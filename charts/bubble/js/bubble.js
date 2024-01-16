@@ -585,6 +585,12 @@ var ordinal = d3.scaleOrdinal() // Becomes scaleOrdinal in v4
 */
 
 function midFunc(x,y,z,hash,boundry) {
+  /*
+  checks hash.naics
+  parses hash.naics into a list
+  creates useeioList & useeiodetail from naics list
+  updates the bubble chart
+  */
   console.log("midFunc boundry: " + boundry);
   //let hash = getHash(); // includes hiddenhash
 

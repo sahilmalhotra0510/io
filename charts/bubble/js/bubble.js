@@ -3,6 +3,8 @@
   allData contains industries and 24+ impact indicator value for each.
   A subset is highlighted.
 */
+
+//TODO: Check if called in the script
 var iBubble = iBubble || (function(){
     var _args = {}; // private
 
@@ -101,6 +103,11 @@ document.addEventListener('hiddenhashChangeEvent', function (elem) {
 
 
 function refreshBubbleWidget() {
+  /*
+  gets hash using the getHash function
+  displays bubble chart using displayImpactBubbles function
+  based on conditions from hash
+  */
     console.log("refreshBubbleWidget 3")
     let hash = getHash(); // Includes hiddenhash
     //params = loadParams(location.search,location.hash); // Also used by loadIndustryData()
@@ -193,6 +200,7 @@ $(document).ready(function () {
     .then(refreshBubbleWidget);
 });
 
+//initialising variables for bubble chart
 var parentId = "#graph-wrapper";
 var animDuration = 1200;
 var margin = {top: 40, right: 50, bottom: 68, left: 95};
@@ -227,6 +235,7 @@ function getDimensions(x,y,z, callback) {
   });
 }
 
+//TODO: Check if the function is required
 function updateTitle(x,y,z) {
   return; // Not currently adding extra title
 
@@ -337,6 +346,9 @@ let geo_list={};
 counter=0;
 
 function displayImpactBubbles(attempts) {
+  /*
+  Function to display the bubble chart
+  */
   if (typeof customD3loaded !== 'undefined') {
     //if (typeof customD3loaded === 'undefined') {
     //  console.log("BUGBUG: D3 not yet available"); // Could loop again if/when this occurs
@@ -359,6 +371,7 @@ function displayImpactBubbles(attempts) {
 
       line = d3.line();
 
+      //Formating the Ticks on Axes
       myTickFormat = function (d) {//Logic to reduce big numbers
         var f = d3.format(".1f");
         var limits = [1000000000, 1000000, 1000];
@@ -400,8 +413,6 @@ function displayImpactBubbles(attempts) {
         .attr("class", "tooltip")
         .style("opacity", 0);
 
-
-
       bubbleSvg = d3.select(parentId).append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
@@ -409,7 +420,6 @@ function displayImpactBubbles(attempts) {
         .append("g")
         .attr("id","graph-plane")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
 
       bubbleSvg.append("g")
         .attr("class", "x axis")
@@ -449,7 +459,6 @@ function displayImpactBubbles(attempts) {
         .attr("offset", "100%")
         .attr("stop-color", "red")
         .attr("stop-opacity", 1);
-
 
     }
 

@@ -930,7 +930,8 @@ function updateChart(x,y,z,useeioList,boundry) {
     }); // End waitForVariable('allData')
   } // End updateChart()
 
-  //create the costum vertical 3 line barchart
+  //create the custom vertical 3 line barchart
+  //TODO: check if the bar chart is disabled in the website
   function create_bar(d,x,y,z,x1,y1,z1){
     d3.select("#selected_bar").remove();
     var svg3 = d3.select("#barchart")
@@ -973,7 +974,7 @@ function updateChart(x,y,z,useeioList,boundry) {
 
 }
 
-
+//TODO: check if implemented anywhere
 function clearBubbleSelection(){
   for(l=0;l<=clickCount;l++){
     d3.selectAll(".circles").classed("selected"+l, false);
@@ -984,7 +985,7 @@ function clearBubbleSelection(){
       if (boundry1=="region"){
         if (useeioList.length>0){
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            if (useeioList.includes( d.industry_code) ) {
+            if (useeioList.includes(d.industry_code)) {
               return "url(#gradient)";
             } else {
               return "#303030";
@@ -999,29 +1000,29 @@ function clearBubbleSelection(){
         if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
           return "url(#gradient)";
         } else {
-          return colors[clickCount]
+          return colors[clickCount];
         }
       }
     })
     .attr("stroke-width", function (d) { 
       if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-        return 1
+        return 1;
       } else {
-        return 6
+        return 6;
       }
     })
     .attr("stroke-opacity", function (d) { 
       if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-        return 0.7
+        return 0.7;
       } else {
-        return 1
+        return 1;
       }
     })
     .style("fill-opacity" , function (d) { 
       if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-        return 0.5
+        return 0.5;
       } else {
-        return 1
+        return 1;
       }
     })
 

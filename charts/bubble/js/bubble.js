@@ -695,6 +695,7 @@ function updateChart(x,y,z,useeioList,boundry) {
         .attr('pointer-events', 'auto');
 
       //give a transition on the existing elements
+      //set css styles based on data & select conditions
       selectedCircles
         .transition().duration(animDuration)
         .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
@@ -705,7 +706,7 @@ function updateChart(x,y,z,useeioList,boundry) {
           if (boundry1=="region"){
             if (useeioList1.length>0){
               if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-                if (useeioList1.includes( d.industry_code) ) {
+                if (useeioList1.includes(d.industry_code)) {
                   return "url(#gradient)";
                 } else {
                   return "#aaa";
@@ -730,26 +731,25 @@ function updateChart(x,y,z,useeioList,boundry) {
         .style("stroke","black")
         .attr("stroke-width", function (d) { 
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return 1
+            return 1;
           } else {return 6}
         })
         .attr("stroke-opacity", function (d) { 
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return 0.7
+            return 0.7;
           } else {
-              return 1
+              return 1;
           }
         })
         .style("fill-opacity" , function (d) { 
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return 0.5
+            return 0.5;
           } else {
-              return 1
+              return 1;
           }
         })
       
         //Append any new elements and transition them as well
-
         // BUGBUG - load occurs initially, but none of the following until the second time called.
         selectedCircles.enter()
         .append("circle")
@@ -758,7 +758,6 @@ function updateChart(x,y,z,useeioList,boundry) {
             if (useeioList1.length>0){
               if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
                 if (useeioList1.includes( d.industry_code) ) {
-
                   return "url(#gradient)";
                 } else {
                   return "#aaa";
@@ -768,39 +767,38 @@ function updateChart(x,y,z,useeioList,boundry) {
               if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
                 return "#303030";
               } else {
-                return colors[d3.select(this).attr("class").split("circles selected")[1]]
+                return colors[d3.select(this).attr("class").split("circles selected")[1]];
               }
             }
           } else {
             if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
               return "url(#gradient)";
             } else {
-              return colors[d3.select(this).attr("class").split("circles selected")[1]]
+              return colors[d3.select(this).attr("class").split("circles selected")[1]];
             }
           }
         })
         .attr("stroke-width", function (d) { 
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return 1
+            return 1;
           } else {
-            return 6
+            return 6;
           }
         })
         .attr("stroke-opacity", function (d) { 
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return 0.7
+            return 0.7;
           } else {
-            return 1
+            return 1;
           }
         })
         .style("fill-opacity" , function (d) { 
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return 0.5
+            return 0.5;
           } else {
-            return 1
+            return 1;
           }
         })
-
         .on("mouseover", function(d) {
           //alert("mouse")
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
@@ -817,7 +815,6 @@ function updateChart(x,y,z,useeioList,boundry) {
             .style("left", (d3.event.pageX + 6) + "px")
             .style("top", (d3.event.pageY + 6) + "px");                     
         })
-
         .on("click", function(d,i) {
           //alert("click")
           clickCount+=1;
@@ -838,43 +835,43 @@ function updateChart(x,y,z,useeioList,boundry) {
                     return "#303030";
                   }
                 } else {
-                  return colors[d3.select(this).attr("class").split("circles selected")[1]]
+                  return colors[d3.select(this).attr("class").split("circles selected")[1]];
                   console.log(colors[d3.select(this).attr("class").split("circles selected")[1]])
                 }
               } else {
                 if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null) {
                   return "#303030";
                 } else {
-                  return colors[d3.select(this).attr("class").split("circles selected")[1]]
+                  return colors[d3.select(this).attr("class").split("circles selected")[1]];
                 }
              }
             } else {
               if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
                 return "url(#gradient)";
               } else {
-                return colors[d3.select(this).attr("class").split("circles selected")[1]]
+                return colors[d3.select(this).attr("class").split("circles selected")[1]];
               }
             }
           })
           .attr("stroke-width", function (d) { 
             if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-              return 1
+              return 1;
             } else {
-              return 6
+              return 6;
             }
           })
           .attr("stroke-opacity", function (d) { 
             if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-              return 0.7
+              return 0.7;
             } else {
-                return 1
+                return 1;
             }
           })
           .style("fill-opacity" , function (d) { 
             if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-              return 0.5
+              return 0.5;
             } else {
-                return 1
+                return 1;
             }
           })
 
@@ -894,7 +891,6 @@ function updateChart(x,y,z,useeioList,boundry) {
           console.log(typeof sect_list[0])
           //document.querySelector('#sector-list').setAttribute('sector', sect_list);
         })
-
         .on("mouseout", function(d) {
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             d3.select(this)

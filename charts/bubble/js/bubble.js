@@ -3,6 +3,8 @@
   allData contains industries and 24+ impact indicator value for each.
   A subset is highlighted.
 */
+
+//TODO: Check if called in the script
 var iBubble = iBubble || (function(){
     var _args = {}; // private
 
@@ -101,6 +103,11 @@ document.addEventListener('hiddenhashChangeEvent', function (elem) {
 
 
 function refreshBubbleWidget() {
+  /*
+  gets hash using the getHash function
+  displays bubble chart using displayImpactBubbles function
+  based on conditions from hash
+  */
     console.log("refreshBubbleWidget 3")
     let hash = getHash(); // Includes hiddenhash
     //params = loadParams(location.search,location.hash); // Also used by loadIndustryData()
@@ -193,6 +200,7 @@ $(document).ready(function () {
     .then(refreshBubbleWidget);
 });
 
+//initialising variables for bubble chart
 var parentId = "#graph-wrapper";
 var animDuration = 1200;
 var margin = {top: 40, right: 50, bottom: 68, left: 95};
@@ -227,6 +235,7 @@ function getDimensions(x,y,z, callback) {
   });
 }
 
+//TODO: Check if the function is required
 function updateTitle(x,y,z) {
   return; // Not currently adding extra title
 
@@ -337,6 +346,9 @@ let geo_list={};
 counter=0;
 
 function displayImpactBubbles(attempts) {
+  /*
+  Function to display the bubble chart
+  */
   if (typeof customD3loaded !== 'undefined') {
     //if (typeof customD3loaded === 'undefined') {
     //  console.log("BUGBUG: D3 not yet available"); // Could loop again if/when this occurs
@@ -359,6 +371,7 @@ function displayImpactBubbles(attempts) {
 
       line = d3.line();
 
+      //Formating the Ticks on Axes
       myTickFormat = function (d) {//Logic to reduce big numbers
         var f = d3.format(".1f");
         var limits = [1000000000, 1000000, 1000];
@@ -400,8 +413,6 @@ function displayImpactBubbles(attempts) {
         .attr("class", "tooltip")
         .style("opacity", 0);
 
-
-
       bubbleSvg = d3.select(parentId).append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
@@ -409,7 +420,6 @@ function displayImpactBubbles(attempts) {
         .append("g")
         .attr("id","graph-plane")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
 
       bubbleSvg.append("g")
         .attr("class", "x axis")
@@ -449,7 +459,6 @@ function displayImpactBubbles(attempts) {
         .attr("offset", "100%")
         .attr("stop-color", "red")
         .attr("stop-opacity", 1);
-
 
     }
 
@@ -576,6 +585,17 @@ var ordinal = d3.scaleOrdinal() // Becomes scaleOrdinal in v4
 */
 
 function midFunc(x,y,z,hash,boundry) {
+  /*
+  Inputs:
+    x,y,z: parameters for the x, y & z axis of the bubble chart (z axis is the radius of the bubbles)
+    hash: data hash fetched from getHash function
+    boundry: string input for boundry
+  Action:
+    checks hash.naics
+    parses hash.naics into a list
+    creates useeioList & useeiodetail from naics list
+    updates the bubble chart
+  */
   console.log("midFunc boundry: " + boundry);
   //let hash = getHash(); // includes hiddenhash
 
@@ -617,6 +637,18 @@ function midFunc(x,y,z,hash,boundry) {
 }
 
 function updateChart(x,y,z,useeioList,boundry) {
+  /*
+  Inputs:
+    x,y,z: parameters for the x, y & z axis of the bubble chart (z axis is the radius of the bubbles)
+    useeioList: List created from parsed hash.naics in the midFunc function
+    boundry: string input for boundry
+  Action:
+    Assigns x, y, z to parameters if they are not already defined
+    Does several checks to determine chart details 
+    (many checks result in hard coded colors & css properties which may vary depending on the situation)
+    (currently the hard coded colors are consistent on all runs --> this might change need to keep a lookout fot this)
+    updates the bubble chart
+  */
   waitForVariable('allData', function() {
     //alert("Got allData in updateChart: " + allData);
     console.log("Got allData in updateChart...");
@@ -668,9 +700,9 @@ function updateChart(x,y,z,useeioList,boundry) {
         .attr('pointer-events', 'auto');
 
       //give a transition on the existing elements
+      //set css styles based on data & select conditions
       selectedCircles
         .transition().duration(animDuration)
-
         .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
         .attr("r",function(d){
           return zScale(d.z)+2
@@ -679,7 +711,7 @@ function updateChart(x,y,z,useeioList,boundry) {
           if (boundry1=="region"){
             if (useeioList1.length>0){
               if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-                if (useeioList1.includes( d.industry_code) ) {
+                if (useeioList1.includes(d.industry_code)) {
                   return "url(#gradient)";
                 } else {
                   return "#aaa";
@@ -704,26 +736,25 @@ function updateChart(x,y,z,useeioList,boundry) {
         .style("stroke","black")
         .attr("stroke-width", function (d) { 
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return 1
+            return 1;
           } else {return 6}
         })
         .attr("stroke-opacity", function (d) { 
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return 0.7
+            return 0.7;
           } else {
-              return 1
+              return 1;
           }
         })
         .style("fill-opacity" , function (d) { 
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return 0.5
+            return 0.5;
           } else {
-              return 1
+              return 1;
           }
         })
       
         //Append any new elements and transition them as well
-
         // BUGBUG - load occurs initially, but none of the following until the second time called.
         selectedCircles.enter()
         .append("circle")
@@ -732,7 +763,6 @@ function updateChart(x,y,z,useeioList,boundry) {
             if (useeioList1.length>0){
               if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
                 if (useeioList1.includes( d.industry_code) ) {
-
                   return "url(#gradient)";
                 } else {
                   return "#aaa";
@@ -742,39 +772,38 @@ function updateChart(x,y,z,useeioList,boundry) {
               if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
                 return "#303030";
               } else {
-                return colors[d3.select(this).attr("class").split("circles selected")[1]]
+                return colors[d3.select(this).attr("class").split("circles selected")[1]];
               }
             }
           } else {
             if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
               return "url(#gradient)";
             } else {
-              return colors[d3.select(this).attr("class").split("circles selected")[1]]
+              return colors[d3.select(this).attr("class").split("circles selected")[1]];
             }
           }
         })
         .attr("stroke-width", function (d) { 
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return 1
+            return 1;
           } else {
-            return 6
+            return 6;
           }
         })
         .attr("stroke-opacity", function (d) { 
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return 0.7
+            return 0.7;
           } else {
-            return 1
+            return 1;
           }
         })
         .style("fill-opacity" , function (d) { 
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            return 0.5
+            return 0.5;
           } else {
-            return 1
+            return 1;
           }
         })
-
         .on("mouseover", function(d) {
           //alert("mouse")
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
@@ -791,7 +820,6 @@ function updateChart(x,y,z,useeioList,boundry) {
             .style("left", (d3.event.pageX + 6) + "px")
             .style("top", (d3.event.pageY + 6) + "px");                     
         })
-
         .on("click", function(d,i) {
           //alert("click")
           clickCount+=1;
@@ -812,43 +840,43 @@ function updateChart(x,y,z,useeioList,boundry) {
                     return "#303030";
                   }
                 } else {
-                  return colors[d3.select(this).attr("class").split("circles selected")[1]]
+                  return colors[d3.select(this).attr("class").split("circles selected")[1]];
                   console.log(colors[d3.select(this).attr("class").split("circles selected")[1]])
                 }
               } else {
                 if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null) {
                   return "#303030";
                 } else {
-                  return colors[d3.select(this).attr("class").split("circles selected")[1]]
+                  return colors[d3.select(this).attr("class").split("circles selected")[1]];
                 }
              }
             } else {
               if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
                 return "url(#gradient)";
               } else {
-                return colors[d3.select(this).attr("class").split("circles selected")[1]]
+                return colors[d3.select(this).attr("class").split("circles selected")[1]];
               }
             }
           })
           .attr("stroke-width", function (d) { 
             if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-              return 1
+              return 1;
             } else {
-              return 6
+              return 6;
             }
           })
           .attr("stroke-opacity", function (d) { 
             if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-              return 0.7
+              return 0.7;
             } else {
-                return 1
+                return 1;
             }
           })
           .style("fill-opacity" , function (d) { 
             if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-              return 0.5
+              return 0.5;
             } else {
-                return 1
+                return 1;
             }
           })
 
@@ -868,7 +896,6 @@ function updateChart(x,y,z,useeioList,boundry) {
           console.log(typeof sect_list[0])
           //document.querySelector('#sector-list').setAttribute('sector', sect_list);
         })
-
         .on("mouseout", function(d) {
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
             d3.select(this)
@@ -908,7 +935,8 @@ function updateChart(x,y,z,useeioList,boundry) {
     }); // End waitForVariable('allData')
   } // End updateChart()
 
-  //create the costum vertical 3 line barchart
+  //create the custom vertical 3 line barchart
+  //TODO: check if the bar chart is disabled in the website
   function create_bar(d,x,y,z,x1,y1,z1){
     d3.select("#selected_bar").remove();
     var svg3 = d3.select("#barchart")
@@ -951,7 +979,7 @@ function updateChart(x,y,z,useeioList,boundry) {
 
 }
 
-
+//TODO: check if implemented anywhere
 function clearBubbleSelection(){
   for(l=0;l<=clickCount;l++){
     d3.selectAll(".circles").classed("selected"+l, false);
@@ -962,7 +990,7 @@ function clearBubbleSelection(){
       if (boundry1=="region"){
         if (useeioList.length>0){
           if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-            if (useeioList.includes( d.industry_code) ) {
+            if (useeioList.includes(d.industry_code)) {
               return "url(#gradient)";
             } else {
               return "#303030";
@@ -977,29 +1005,29 @@ function clearBubbleSelection(){
         if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
           return "url(#gradient)";
         } else {
-          return colors[clickCount]
+          return colors[clickCount];
         }
       }
     })
     .attr("stroke-width", function (d) { 
       if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-        return 1
+        return 1;
       } else {
-        return 6
+        return 6;
       }
     })
     .attr("stroke-opacity", function (d) { 
       if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-        return 0.7
+        return 0.7;
       } else {
-        return 1
+        return 1;
       }
     })
     .style("fill-opacity" , function (d) { 
       if (d3.select(this).attr("class")=="circles" || d3.select(this).attr("class")==null){
-        return 0.5
+        return 0.5;
       } else {
-        return 1
+        return 1;
       }
     })
 

@@ -5,18 +5,17 @@
 Join us for 5 or more hours during Democracy Lab's 48 HOUR EARTH DAY on April 22nd. The event will begin when Earth Day starts in New Zealand (UTC+12), and conclude 48 hours later when the day ends on Howland Island (UTC-12). Project teams will participate from all around the world!&nbsp; <a href="https://www.democracylab.org/projects/834">Join&nbsp;our project team</a><br><br>
 -->
 
-Join us in our Google Meetups twice weekly (Eastern Time)
-[Thursdays, Noon to 1 PM ET](https://meet.google.com/pcv-xrdh-bat)
-[Sundays, 11 PM to Midnight ET](https://meet.google.com/pcv-xrdh-bat)
-
-Join our [ModelEarth group on Facebook](https://www.facebook.com/groups/modelearth) for the latest updates.
+Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) twice weekly (Eastern Time)
+- [Thursdays, Noon to 1 PM ET](https://meet.google.com/pcv-xrdh-bat)
+- [Sundays, 11 PM to Midnight ET](https://meet.google.com/pcv-xrdh-bat)
 
 Collaborate on decentralized, real-time modeling using API mashups for job creation, impact tracking and reward gamification.  
 
-[Collaborate with us at Democracy Lab](https://www.democracylab.org/projects/834)
-[Join our ModelEarth Slack in Democracy Lab](https://democracylab-org.slack.com/archives/C06F73YKEQN)
-[Apache ECharts 3D Globes and Lines for Input-Output](https://echarts.apache.org/examples/en/index.html#chart-type-lines3D)<!--  
-[Open Footprint at Open Collective](https://opencollective.com/openfootprint)-->
+- [Join our ModelEarth Facebook group](https://www.facebook.com/groups/modelearth) for the latest updates.
+- [Collaborate with us at Democracy Lab](https://www.democracylab.org/projects/834)
+- [Join our ModelEarth Slack in Democracy Lab](https://democracylab-org.slack.com/archives/C06F73YKEQN)
+- [Deploy Apache ECharts 3D Globes and Lines for Input-Output](https://echarts.apache.org/examples/en/index.html#chart-type-lines3D)
+- [Starter Samples](../../community/start/)
 
 ### Art of Code: Ai Integration for States and Communities
 

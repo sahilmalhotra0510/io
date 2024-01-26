@@ -20,7 +20,7 @@ library(devtools)
 Rstudio has devtools intalled already, so maybe just library(devtools) to call in the package
 -->
 
-The static json files used here are generated from the EPA API which uses the US Environmentally-Extended Input-Output R-Language data&nbsp;pipeline [USEEIOR](https://github.com/USEPA/USEEIOR). 
+[The static json files](../build/api/note.txt) used here are generated from the EPA API which uses the US Environmentally-Extended Input-Output R-Language data&nbsp;pipeline [USEEIOR](https://github.com/USEPA/USEEIOR). 
 
 
 <!--(It replaces the use of [IOMB](https://github.com/USEPA/USEEIO_API/wiki/Build))-->

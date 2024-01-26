@@ -16,15 +16,18 @@ Collaborate on decentralized, real-time modeling using API mashups for job creat
 - [Join our ModelEarth Slack in Democracy Lab](https://democracylab-org.slack.com/archives/C06F73YKEQN)
 - [Deploy Apache ECharts 3D Globes and Lines for Input-Output](https://echarts.apache.org/examples/en/index.html#chart-type-lines3D)
 - [Starter Samples](../../community/start/)
+<br>
 
-### Earthathon @ DemocracyLab
+### Earthathon 2024 - Online with DemocracyLab
+#### Saturday, April 20, 2024
 
-Mark your calendar for Saturday, April 20, 2024.
+Mark your calendar for this likely event on Saturday, April 20, 2024.
 We'll add more details as DemocracyLab sets times.
+<br>
 
 ### Art of Code: Ai Integration for States and Communities
 
-Date to be determined.
+#### Date to be determined.
 <!--Grant Proposal, Review and Recommendation-->
 
 Judging Criteria:

@@ -17,6 +17,11 @@ Collaborate on decentralized, real-time modeling using API mashups for job creat
 - [Deploy Apache ECharts 3D Globes and Lines for Input-Output](https://echarts.apache.org/examples/en/index.html#chart-type-lines3D)
 - [Starter Samples](../../community/start/)
 
+### Earthathon @ DemocracyLab
+
+Mark your calendar for Saturday, April 20, 2024.
+We'll add more details as DemocracyLab sets times.
+
 ### Art of Code: Ai Integration for States and Communities
 
 Date to be determined.

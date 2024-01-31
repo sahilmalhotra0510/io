@@ -18,6 +18,14 @@ Collaborate on decentralized, real-time modeling using API mashups for job creat
 - [Starter Samples](../../community/start/)
 <br>
 
+<!--
+Hackathons
+https://devpost.com/hackathons
+
+DLT Climate Hackathon
+https://dlt-climate-hackathon.devpost.com/details/dates
+-->
+
 ### Earthathon 2024 - Online with DemocracyLab
 #### Saturday, April 20, 2024
 
@@ -25,10 +33,12 @@ Mark your calendar for this likely event on Saturday, April 20, 2024.
 We'll add more details as DemocracyLab sets times.
 <br>
 
+<!--Grant Proposal, Review and Recommendation-->
+<!--
 ### Art of Code: Ai Integration for States and Communities
 
 #### Date to be determined.
-<!--Grant Proposal, Review and Recommendation-->
+
 
 Judging Criteria:
 
@@ -40,6 +50,7 @@ Judging Criteria:
 - Free or low cost
 
 We're seeking sponsors to make Art of Code a reality.
+-->
 
 <!--
 

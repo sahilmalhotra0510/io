@@ -93,7 +93,6 @@ var observer = new MutationObserver(function(mutations) {
 let priorHash_bubble = {};
 //refreshBubbleWidget();
 document.addEventListener('hashChangeEvent', function (elem) {
-  console.log("refreshBubbleWidget from hashChangeEvent")
   refreshBubbleWidget();
 }, false);
 document.addEventListener('hiddenhashChangeEvent', function (elem) {
@@ -108,7 +107,6 @@ function refreshBubbleWidget() {
   displays bubble chart using displayImpactBubbles function
   based on conditions from hash
   */
-    console.log("refreshBubbleWidget 3")
     let hash = getHash(); // Includes hiddenhash
     //params = loadParams(location.search,location.hash); // Also used by loadIndustryData()
 
@@ -150,7 +148,7 @@ function refreshBubbleWidget() {
       }
     }
     */
-  
+
     if (priorHash_bubble.state != hash.state) {
         displayImpactBubbles(1); // Occurs on INIT
     } else if (priorHash_bubble.geo != hash.geo) {
@@ -160,8 +158,9 @@ function refreshBubbleWidget() {
     } else if (priorHash_bubble.x != hash.x || priorHash_bubble.y != hash.y || priorHash_bubble.z != hash.z) {
         displayImpactBubbles(1);
     } else {
+      //alert("bubble change")
       // No state, so there won't be red bubbles showing top industries.
-      displayImpactBubbles(1);
+      //displayImpactBubbles(1);
     }
 
     priorHash_bubble = getHash();
@@ -353,7 +352,8 @@ function displayImpactBubbles(attempts) {
     //if (typeof customD3loaded === 'undefined') {
     //  console.log("BUGBUG: D3 not yet available"); // Could loop again if/when this occurs
     //}
-
+    console.log("displayImpactBubbles - io repo");
+    
     if (typeof bubbleGradient === 'undefined') {
       // Avoid calling declarations twise. Loading other twice so rollover works.
 

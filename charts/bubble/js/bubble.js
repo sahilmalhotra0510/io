@@ -315,7 +315,6 @@ function calculateLineData(leastSquares,xRange,iterations){
   return returnData;
 }
 
-
 $(document).on("click", "#mySelect", function(event) {
 //document.getElementById("mySelect").onchange = function() { // "mySelect" comes from info-template, which might not be loaded into DOM yet.
   $("#mySelect").toggle(this.checked);
@@ -649,6 +648,7 @@ function updateChart(x,y,z,useeioList,boundry) {
     (currently the hard coded colors are consistent on all runs --> this might change need to keep a lookout fot this)
     updates the bubble chart
   */
+  consoleLog("updateChart " + x + " hiddenhash.naics in bubble.js: " + hiddenhash.naics);
   waitForVariable('allData', function() {
     //alert("Got allData in updateChart: " + allData);
     console.log("Got allData in updateChart...");
@@ -658,8 +658,6 @@ function updateChart(x,y,z,useeioList,boundry) {
       y = 'WATR';
       z = 'JOBS';
     }
-
-    //alert("updateChart " + x + " hiddenhash.naics in bubble.js: " + hiddenhash.naics);
 
     //Fetch data
     //var records = getDimensions(x,y,z);

@@ -1,10 +1,10 @@
 <img style="float:right" src="https://www.buildingtransparency.org/static/assets/svg/logo.svg">
 
 <h1 id="pageTitle"><span class="ziptext"></span> Environmental Product Declarations (EPD)</h1>
-<a href="https://buildingtransparency.org/ec3/material-search">Building Transparency OpenEPD Material Search</a> - 
-<a href="../../products/">View Feed on Map</a> (allow 8 seconds)
+<a href="https://buildingtransparency.org/ec3/material-search">Building Transparency OpenEPD Material Search</a> - Google signin works   
 
 Check out how much faster the list displays when <a href="../../../community/resources/diffbot/#feed=epd">loaded from a static json file</a>.  
+<a href="../../products/">View Feed on Map</a> (allow 8 seconds)
 
 View our [Product YAML notes](../product/) for steps on using Postman.  
 

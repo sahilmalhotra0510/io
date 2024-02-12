@@ -8,7 +8,7 @@
 [OpenEPD API](https://openepd.buildingtransparency.org/) - Swagger
 
 
-<b>TO DO:</b> Automate saving API as .csv or json files using <code>npm run download</code> technique from <a href="../../charts/">EPA widgets</a>.<br>
+<b>TO DO:</b> Automate saving API as .json or .csv files using <code>npm run download</code> technique from <a href="../../charts/">EPA widgets</a>.<br>
 
 View our [Product YAML notes](../product/) for steps on using Postman.  
 

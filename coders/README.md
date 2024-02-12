@@ -36,6 +36,7 @@ Many hackthons have money prizes. Would be great to have someone register us and
 
 For example, the [DLT Climate Hackathon](https://dlt-climate-hackathon.devpost.com/details/dates) focuses on integration with their carbon reporting tool - so we'd need someone interested in becoming an expert and sharing with us ways to extend the DLT tool. Perhaps we could intergrate with BuildingTransparency.org product [impact profiles](/io/template/).<br>
 
+[Cesium Grants (Gifts)](https://cesium.com/cesium-ecosystem-grants/) - 3D Map Ecosystem Grants re-open April 1, 2024
 
 <!--Grant Proposal, Review and Recommendation-->
 <!--

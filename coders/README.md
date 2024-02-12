@@ -2,7 +2,10 @@
 <h1 style="margin-bottom:0px; font-size:38px">48 Hours of Earth Day!</h1>
 <h3 style="margin-top:4px; font-size:24px">Friday, April 22, 2022</h3>
 
-Join us for 5 or more hours during Democracy Lab's 48 HOUR EARTH DAY on April 22nd. The event will begin when Earth Day starts in New Zealand (UTC+12), and conclude 48 hours later when the day ends on Howland Island (UTC-12). Project teams will participate from all around the world!&nbsp; <a href="https://www.democracylab.org/projects/834">Join&nbsp;our project team</a><br><br>
+Join us during Democracy Lab's 48 HOUR EARTH DAY on April 22nd. The event will begin when Earth Day starts in New Zealand (UTC+12), and conclude 48 hours later when the day ends on Howland Island (UTC-12). Project teams will participate from all around the world!&nbsp; <a href="https://www.democracylab.org/projects/834">Join&nbsp;our project team</a><br><br>
+
+For use during a future Web Challenge
+[WebStorm Notes](https://docs.google.com/document/d/1BKxx5Q5rtNgZ9cD-Hsgdi_nEL1YPCfPhKjbnIqMgCRI/edit?usp=sharing) - Add info on using [GitHub Copilot by OpenAI](https://github.com/features/copilot) or other AI codex.
 -->
 
 Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) twice weekly (Eastern Time)
@@ -32,6 +35,14 @@ https://dlt-climate-hackathon.devpost.com/details/dates
 Mark your calendar for this likely event on Saturday, April 20, 2024.
 We'll add more details as DemocracyLab sets times.
 <br>
+
+
+### Upcoming Hackathons at DevPost.com
+
+Many hackthons have money prizes. Would be great to have someone register us and spearhead our involvement. Check out [Devpost.com/hackathons](https://devpost.com/hackathons)
+
+For example, the [DLT Climate Hackathon](https://dlt-climate-hackathon.devpost.com/details/dates) focuses on integration with their carbon reporting tool - so we'd need someone interested in becoming an expert and sharing with us ways to extend the DLT tool. Perhaps we could intergrate with BuildingTransparency.org product [impact profiles](/io/template/).<br>
+
 
 <!--Grant Proposal, Review and Recommendation-->
 <!--

@@ -21,13 +21,6 @@ Collaborate on decentralized, real-time modeling using API mashups for job creat
 - [Starter Samples](../../community/start/)
 <br>
 
-<!--
-Hackathons
-https://devpost.com/hackathons
-
-DLT Climate Hackathon
-https://dlt-climate-hackathon.devpost.com/details/dates
--->
 
 ### Earthathon 2024 - Online with DemocracyLab
 #### Saturday, April 20, 2024

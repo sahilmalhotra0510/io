@@ -1,17 +1,37 @@
-<img style="float:right" src="https://www.buildingtransparency.org/static/assets/svg/logo.svg">
+<a href="https://www.buildingtransparency.org" target="bt"><img style="float:right" src="https://www.buildingtransparency.org/static/assets/svg/logo.svg"></a>
 
 <h1 id="pageTitle"><span class="ziptext"></span> Environmental Product Declarations (EPD)</h1>
-<a href="https://buildingtransparency.org/ec3/material-search">Building Transparency OpenEPD Material Search</a> - Google signin works   
 
-Check out how much faster the list displays when <a href="../../../community/resources/diffbot/#feed=epd">loaded from a static json file</a>.  
-<a href="../../products/">View Feed on Map</a> (allow 8 seconds)
+**Building Transparency**
+[About OpenEPD](https://www.buildingtransparency.org/programs/openepd/)
+[Material Search](https://buildingtransparency.org/ec3/material-search) - Google Login works. 
+[OpenEPD API](https://openepd.buildingtransparency.org/) - Swagger
+
+
+<b>TO DO:</b> Automate saving API as .csv or json files using <code>npm run download</code> technique from <a href="../../charts/">EPA widgets</a>.<br>
 
 View our [Product YAML notes](../product/) for steps on using Postman.  
 
-<b>TO DO:</b> Automate saving API as JSON files using <code>npm run download</code> technique from <a href="../../charts/">EPA widgets</a>.<br>
-By using a static json file, we'll load 30,000+ records (775K) in a quarter of a second, similar to the <a href="https://publictreemap.org">Santa Monica tree inventory</a>.
+<div class="local" style="display:none">
+Loren has a desktop swagger file which might compliment the YAML notes. Coordinate with Loren to debug below.<br><br>
+</div>
 
-<!-- ALSO SEE: desktop/swagger -->
+<hr>
+
+Check out how faster the EPD product list displays when <a href="../../../community/resources/diffbot/#feed=epd">loaded from a static json file</a>. 
+
+Feb 2024 - The BuildingTransparency.org API or our Javascript is displaying a 401 (Unauthorized) error below.
+
+ 
+<!--
+<a href="../../products/#show=openepd">View Feed on Map</a> (allow 8 seconds) - also now 401 (Unauthorized) 
+-->
+
+
+
+<!--
+By using a static json file, we'll load 30,000+ records (775K) in a quarter of a second, similar to the <a href="https://publictreemap.org">Santa Monica tree inventory</a>.
+-->
 
 Get your bearer token from logging into the <a href="https://openepd.buildingtransparency.org/#/epds/get_epds_id">Swagger OpenEPD API</a>, then you can paste in in the following to run from a console:
 
@@ -32,12 +52,13 @@ Modify the API URL used in this page to return only the interesting fields, incl
 Generate an <a href="../">Impact Profile</a> from the BuildingTransparency.org feed and local industry data. 
 
 
-You could build on <a href="../../../community/projects/#widgets">Abrie's React work</a>:<br><br>
+You could build on <a href="../../../community/projects/#widgets">Abrie's React work</a> - Abrie has started React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/#zip=30318">resulting label output</a>. 
 
-Abrie has started React work in this <a href="https://github.com/abrie/zctaimpacts">ZCTA Impacts repo</a>. Here's the <a href="https://zctaimpacts.abrie.dev/#zip=30318">resulting label output</a>. Check out [React 18 with Blitz.js](https://blitzjs.com) for data layer abstraction that eliminates the need for REST/GraphQL.
+Check out [React with Blitz.js](https://blitzjs.com) for data layer abstraction that eliminates the need for REST/GraphQL.
 
-TO DO:
-Format Abrie's work to match our [HTML template](../../io/template/) (right column). Shorten numbers. Drive location filters by URL hash [param values](../../localsite/) like #zip=30318 and #geo=US13121,US1308 for counties. Compare location to national average and add red and green to the right to indicated hotspots.
+TO INVESTIGATE:
+
+Abrie's work could be formatted to match our [HTML template](../../io/template/) (right column). Shorten numbers. Drive location filters by URL hash [param values](../../localsite/) like #zip=30318 and #geo=US13121,US1308 for counties. Compare location to national average and add red and green to the right to indicated hotspots.
 
 Here's a [blank starter for building TypeScript apps](https://stackblitz.com/edit/typescript) within [stackblitz.com](https://stackblitz.com)
 

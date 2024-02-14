@@ -6,7 +6,8 @@ Our site uses the US Environmentally-Extended Input Output (USEEIO) model of goo
 View the [Input-Output Tools](../../localsite/info/)  
 Learn about [USEEIO](/community/about/useeio/)  
 Meet our [Contributors](../team)  
-Learn about [the USEEIO API](api/)  
+Learn about [the USEEIO API](api/)
+Enter [The Matrix](matrix/)
 
 [View our Online Presentaion](../../community/tools/) and [Webinar Video](https://youtu.be/GRJSvyUx0t4) <!--and [slide presentation](https://smartcities.ipat.gatech.edu/sites/default/files/Smarter_Together_Webinar_Industry-Comparison-Tools_10-15-2020.pdf) -->from our [Smarter Together Presentation](https://smartcities.ipat.gatech.edu/smarter-together).  
 

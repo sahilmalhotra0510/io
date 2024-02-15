@@ -6,6 +6,13 @@ The U.S. Environmental Protection Agency (EPA) is partnering with <span style="d
 
 Starting points for creating a website with lifecycle tools:  
 
+<!--
+[Carbon Cycle](carbon/) - Combining Wikipedia, Bloomberg and EPA data  
+[Coastal Recycling](coastal/) - Southeast Georgia - Activated Carbon  
+[EV Manufacturing](ev/) - LaGrange Georgia - Automotive Industries 
+[Lifecycle Tools 3.0](smm/) - Concepts for upcoming USEEIO widgets
+-->
+
 - [Community Start Pages](../apps/#state=GA)
 - [Georgia Recycling Directories](../localsite/map/recycling/ga/)  
 - [Georgia B2B Recyclers](../localsite/map/#show=recyclers&state=GA)  

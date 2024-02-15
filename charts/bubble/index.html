@@ -189,9 +189,12 @@ loadScript(theroot + '../localsite/js/d3.v5.min.js', function(results) {
                 }
                 hash.naics = "311615,311812,321113,221112,113310,322110,311821,311612,325211,311813,311911,311919,311830,311119,322121,311824,311941,325991,311710,311930";
 
+                displayImpactBubbles(1); // Occurs on INIT
+
                 // This may run before naics is available.
                 //hash.naics = naicshash;
-                toggleBubbleHighlights(hash);
+
+                toggleBubbleHighlights(hash); // Shows the bubbles
 
             //},3000);
         });

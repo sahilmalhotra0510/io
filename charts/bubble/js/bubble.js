@@ -497,7 +497,7 @@ function displayImpactBubbles(attempts) {
     d3.csv(sectorCSV ).then(function(data){
       data.forEach(d => indicators.forEach(indicator => d[indicator] = +d[indicator]));
       allData = data;
-
+      //alert("allData type: " + typeof allData);
       applyToBubbleHTML(hash,1);
     });
 

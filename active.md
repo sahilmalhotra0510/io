@@ -2,7 +2,8 @@
 
 Pre-processed data for local industry levels (including employment, establishments and payroll).
 
-Files for Timelines and Observable: [industries/naics/US/counties](industries/naics/US/counties/)
+<!-- /community-data/industries/naics/US/counties -->
+Files for Timelines and Observable: [https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties](industries/naics/US/counties/)
 
 - [Process Industries by State and County](/community-data/process/python/bea) - Gaurav
 - [Process Industries by Zip](/community-data/process/naics/) - Gaurav

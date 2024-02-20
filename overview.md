@@ -4,7 +4,8 @@ The U.S. Environmental Protection Agency (EPA) is partnering with <span style="d
 
 ## Community Pages
 
-Starting points for creating a website with lifecycle tools:  
+Starting points for creating a website with lifecycle tools.
+[Let our team know](/io/team/) how we can facilitate data updates for your state!  
 
 <!--
 [Carbon Cycle](carbon/) - Combining Wikipedia, Bloomberg and EPA data  
@@ -13,13 +14,17 @@ Starting points for creating a website with lifecycle tools:
 [Lifecycle Tools 3.0](smm/) - Concepts for upcoming USEEIO widgets
 -->
 
-- [Community Start Pages](../apps/#state=GA)
-- [Georgia Recycling Directories](../localsite/map/recycling/ga/)  
+- [Community Start Pages](../apps/)
+- [New York Farmers Markets](../localsite/map/#state=NY&show=farmfresh)  
+- [Georgia Recycling Directories](../recycling/georgia/)  
+- [Colorado Industry Impact Comparison](../localsite/info/#state=CO)  
+<!--
 - [Georgia B2B Recyclers](../localsite/map/#show=recyclers&state=GA)  
 - [Georgia Wastewater Facilities](../localsite/map/#show=wastewater&state=GA)  
 - [Georgia Solid Waste Map](../localsite/map/#show=solidwaste&state=GA&cat=Operating)  
 - [Georgia Vehicle Parts Manufacturing](../apps/ev/)  
-- [Georgia Industry Impact Comparison](../localsite/info/#state=GA)  
+-->
+
 
 <!--
 - [Environmental Impact Profile "Nutritional Labels"](../io/template/)  

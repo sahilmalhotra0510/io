@@ -157,7 +157,7 @@ Or [Install node/npm](https://nodejs.org/en/download) locally. The installer inc
 Or update to the latest stable version of NodeJS
 <!-- https://askubuntu.com/questions/426750/how-can-i-update-my-nodejs-to-the-latest-version-->
 
-	npm install -g n
+	npm install -g n &&
 	sudo n stable
 
 
@@ -237,6 +237,8 @@ The production API requires an API key which we store in a [private Google Doc](
 There is also a staging instance of the [USEEIO API](https://github.com/USEPA/USEEIO_API). However this server is often shutdown and will return a 404 error at <a href="https://smmtool.app.cloud.gov/" target="_blank">endpoint overview</a>. Every 90 days the staging server requires a reboot. You can email the [contact person](https://github.com/USEPA/USEEIO_API/wiki/People#Contact) to restart.
 
 Again, you don't need to run this since we're using a json instance of the API.
+
+If you do run it, run in the "io" folder.
 
 	npm run download -- --endpoint https://smmtool.app.cloud.gov/api
 

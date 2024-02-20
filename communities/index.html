@@ -37,9 +37,10 @@
 
 <script type="text/javascript">
 if(typeof param=='undefined'){ var param={}; }
-param.show = "smart"; // Inserted into #datascape below
+
 if (param.startTitle == "Georgia.org" || location.host.indexOf("georgia") >= 0) {
   param.state = "GA";
+  param.show = "smart"; // Inserted into #datascape below
 }
 //param.latitude = 32.9;
 //param.longitude = -83.4;
@@ -59,6 +60,13 @@ param.name = "Smart Data Projects";
 
 
 loadMarkdown("Communities.md", "topicsDiv", "_parent");
+</script>
+
+<script type="text/javascript">
+let theRandomNumber = Math.floor(Math.random() * 100) + 1; // 1 to 100
+if (theRandomNumber > 50) {
+  //$(".twitter-timeline").attr("href", "https://twitter.com/EPA");
+}
 </script>
 
 <style>
@@ -169,7 +177,7 @@ h2 { font-size: 18px; }
 <div class="content contentpadding" style="overflow:auto; margin-bottom:0px; padding-bottom:0px;">
 
   <div class="topLinks">
-    <a href="../">Web Applications</a> |
+    <a href="../">Active Projects</a> |
     <b>For Communities</b> |
     <a href="../coders/" style="white-space:nowrap;">For Coders & Designers</a> |
     <span style="white-space:nowrap;"><a href="../learn/">For Research Projects</a> | 
@@ -179,7 +187,7 @@ h2 { font-size: 18px; }
 
 <h1>For Local Communities</h1>
 
-<div class="floatright" style="border:1px solid #ccc; margin-bottom:20px">
+<div class="floatright" style="border:1px solid #ccc; margin-bottom:20px; max-height: 600px;">
  
   <div style="padding:30px; padding-top:10px; padding-bottom:20px">
 
@@ -194,12 +202,37 @@ h2 { font-size: 18px; }
       <div style="font-weight:800; margin-top:15px">How are states using Life Cycle Tools?</div>
       -->
       Data on local industry input-output levels helps inform <a href="../../localsite/map/#show=recyclers&state=GA">B2B recycling</a>, reductions in greenhouse gas&nbsp;emissions, electric vehicle transitions, advanced biofuels and more.
-
-      <h4 style="margin-bottom:0px"><a href="../../community/challenge/" target="_parent">Project Areas</a></h4>
-      Contribute updates for your state
     </div>
 
   </div>
+
+    <!--
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Georgia earns Area Development&#39;s No. 1 State for Business for the 10th consecutive year, a national record. Additionally, Quick Start was named the nation’s top workforce development program for the 14th year in a row. Read more: <a href="https://t.co/DReO7Ncpyf">https://t.co/DReO7Ncpyf</a> <a href="https://t.co/Ti3Zen5mGf">pic.twitter.com/Ti3Zen5mGf</a></p>&mdash; Georgia, USA (@gdecd) <a href="https://twitter.com/gdecd/status/1709298825389539755?ref_src=twsrc%5Etfw">October 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    -->
+    
+    <!-- Twitter loads in an iFrame. CSS changes can not be applied.
+    In this case, images in hidden divs are not loaded until the divs are displayed.
+    -->
+
+    <!-- BUGBUG this is loading both.
+
+      To Do:
+      Create javascript to invoke only one. 
+      Exclude from localhost since no longer displays.
+      Avoid long space.
+    -->
+
+
+    <div style="display:none" class="georgia">
+      <a class="twitter-timeline" data-tweet-limit="3" href="https://twitter.com/gdecd"></a> 
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div style="display:none" class="local earth">
+      <a class="twitter-timeline" data-tweet-limit="4" href="https://twitter.com/epa"></a> 
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    
 </div>
 
 
@@ -670,8 +703,6 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
 </div><!-- /allsections -->
 </div><!-- /reveal -->
 
-<div id='footer' class='hideprint'></div>
-
 <div id="footerBox" class="padding" style="">
   <div class="content contentpadding" style="padding-top:0px;">
     <h2>Get Involved</h2>
@@ -698,5 +729,10 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
   </div>
 </div>
 
+<div id='footer' class='hideprint'></div>
+
+<!--
+<link rel="stylesheet" href="/localsite/css/fonts/materialicons/icon.css" id="/localsite/css/fonts/materialicons/icon.css" />
+-->
 </body>
 </html>

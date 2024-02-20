@@ -4,10 +4,10 @@ Pre-processed data for local industry levels (including employment, establishmen
 
 Files for Timelines and Observable: [industries/naics/US/counties](industries/naics/US/counties/)
 
-- [Process Industries by State and County](process/python/bea) - Gaurav
-- [Process Industries by Zip](process/naics/) - Gaurav
+- [Process Industries by State and County](/community-data/process/python/bea) - Gaurav
+- [Process Industries by Zip](/community-data/process/naics/) - Gaurav
 - [Build IO json for all states](/io/charts/) - Honglin<!-- Zhu -->
-- [Process Multi-County State Regions (ChatGPT)](us/edd/)
+- [Process Multi-County State Regions (ChatGPT)](/community-data/us/edd/)
 - [Process Product Impact Profiles by Zip](/io/template/feed/)
 - [Process US Census by Zip and International Postal Codes](/zip/io/#zip=10001) - Chen and Gary
 - [Process All the Places by Zip](/places) - Chen
@@ -41,9 +41,9 @@ Exploration areas
 - [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - We need help deploying to Github. [Like this.](https://niek.github.io/chatgpt-web/)
 - [Google Data Commons API](https://docs.datacommons.org/api/) - Pull International, Push impact data from US EPA
 - [CensusReporter.com](https://CensusReporter.com)
-- [Process Farm Fresh Data](process/python/farmfresh/)
+- [Process Farm Fresh Data](/community-data/process/python/farmfresh/)
 - [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)
-- [International Data Pipeline](../data-pipeline/international) - Imports and exports by country by year
+- [International Data Pipeline](/data-pipeline/international/) - Imports and exports by country by year
 
 <!--   
 [Zipcode files with employment levels](https://github.com/modelearth/community-data/tree/master/us/zipcodes/naics) - Includes nunber of Establishments and Employees 

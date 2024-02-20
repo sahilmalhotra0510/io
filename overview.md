@@ -4,7 +4,7 @@ The U.S. Environmental Protection Agency (EPA) is partnering with <span style="d
 
 ## Community Pages
 
-Starting points for creating a website with lifecycle tools.
+Starting points for updating your website with lifecycle tools.  
 [Let our team know](/io/team/) how we can facilitate data updates for your state!  
 
 <!--

@@ -8,6 +8,8 @@ For use during a future Web Challenge
 [WebStorm Notes](https://docs.google.com/document/d/1BKxx5Q5rtNgZ9cD-Hsgdi_nEL1YPCfPhKjbnIqMgCRI/edit?usp=sharing) - Add info on using [GitHub Copilot by OpenAI](https://github.com/features/copilot) or other AI codex.
 -->
 
+View our [Active Projects](../) and find your areas of interest.
+
 Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) twice weekly (Eastern Time)
 - [Thursdays, Noon to 1 PM ET](https://meet.google.com/pcv-xrdh-bat)
 - [Sundays, 11 PM to Midnight ET](https://meet.google.com/pcv-xrdh-bat)

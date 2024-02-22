@@ -5,7 +5,7 @@ The U.S. Environmental Protection Agency (EPA) is partnering with <span style="d
 ## Community Pages
 
 Starting points for updating your website with lifecycle tools.  
-[Let our team know](/io/team/) how we can facilitate data updates for your state!  
+[Let our team know](/io/team/) how we can facilitate data updates for your state.  
 
 <!--
 [Carbon Cycle](carbon/) - Combining Wikipedia, Bloomberg and EPA data  

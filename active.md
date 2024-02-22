@@ -5,9 +5,10 @@ Pre-processed data for local industry levels (including employment, establishmen
 
 Local Industry and Places Timelines
 
-- [Tabulator for Timeline Data](/data-pipeline/timelines/tabulator/)
+- [Tabulator for Timeline Data](/data-pipeline/timelines/tabulator/) - Honglin and everyone
 - [Process Industries by State and County](/community-data/process/python/bea) - Gaurav
 - [Process Industries by Zip](/community-data/process/naics/) - Gaurav
+- [SQLite in Browser for Timelines](/data-pipeline/timelines/sqlite/) - [Example](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Kayode and everyone
 - [Timeline Data Prep, Random Forest ML](/data-pipeline/timelines/prep/all/) - Sijia
 - [NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin
 - [Build IO json for all states](/io/charts/) - Honglin<!-- Zhu -->
@@ -15,7 +16,6 @@ Local Industry and Places Timelines
 - [Process Product Impact Profiles by Zip](/io/template/feed/) - Fanyi
 - [Process US Census by Zip and International Postal Codes](/zip/io/#zip=10001) - Gary
 - [Process All the Places by Zip](/places) - Chen
-- [SQLite in Browser for Timelines](/data-pipeline/timelines/sqlite/) - [Example](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Kayode
 
 <!--
 
@@ -46,9 +46,9 @@ Observable Framework
 
 API and AI areas
 
+- [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - [Example](https://niek.github.io/chatgpt-web/) - Mahimna and everyone
 - [International Google Data Commons API](/data-pipeline/international/) - Irean (Yixing)
 - [Replicate API Streamlit for Image Generation](/data-pipeline/research/stream) - Kishor
-- [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - [Example](https://niek.github.io/chatgpt-web/) - Mahimna
 - [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
 - [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)
 - [Google Data Commons API](https://docs.datacommons.org/api/) - Push impact data from US EPA

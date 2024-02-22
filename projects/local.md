@@ -21,10 +21,6 @@ for insights on regional value chains.
 
 	[LCA tool ecosystem](https://bitbucket.org/epalca/lca_tool_ecosystem/src/master/figures/LCA%20Tool%20Ecosystem.drawio)
 
-
-	Clean looking Flow Overview chart for app dev
-	https://github.com/Path-Check/covid-safe-paths/blob/develop/docs/Private_Kit_Diagram.png
-
 	Nice Value Added (VADD) charts:
 	https://www.du.edu/ifs/help/understand/economics/flowcharts/index.html
 	https://www.du.edu/ifs/help/understand/economics/flowcharts/value.html

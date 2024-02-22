@@ -10,12 +10,13 @@ Local Industry and Places Timelines
 - [Process Industries by Zip](/community-data/process/naics/) - Gaurav
 - [SQLite in Browser for Timelines](/data-pipeline/timelines/sqlite/) - [Example](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Kayode and everyone
 - [Timeline Data Prep, Random Forest ML](/data-pipeline/timelines/prep/all/) - Sijia
-- [NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin
-- [Build IO json for all states](/io/charts/) - Honglin<!-- Zhu -->
-- [State Regions using Sets of Counties](/community-data/us/edd/)
-- [Process Product Impact Profiles by Zip](/io/template/feed/) - Fanyi
+- [Process All the Places by State and Zip](/places) - Carolyn (Chen)
+- [Process BuildingTransparency.org Product Impact Profiles by Zip](/io/template/feed/) - Fanyi
 - [Process US Census by Zip and International Postal Codes](/zip/io/#zip=10001) - Gary
-- [Process All the Places by Zip](/places) - Carolyn (Chen)
+- [NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin
+- [Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)<!-- Zhu -->
+- [State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/)
+
 
 <!--
 

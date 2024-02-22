@@ -1,8 +1,9 @@
 # Active Projects
 
+Files for Timelines, Observable and AI at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
 Pre-processed data for local industry levels (including employment, establishments and payroll).
 
-Files for Timelines and Observable: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
+Local Industry and Places Timelines
 
 - [Tabulator for Timeline Data](/data-pipeline/timelines/tabulator/)
 - [Process Industries by State and County](/community-data/process/python/bea) - Gaurav
@@ -38,17 +39,20 @@ Files for Timelines and Observable: [industries/naics/US/counties](https://githu
 
 <!-- [Imputation for NAICS Using Machine Learning](/machine-learning/)-->
 
-Exploration areas
+Observable Framework
 
-- [Streamlit for Image Generation with Replicate API](/data-pipeline/research/stream) - Kishor
 - [Observable Framework for Open Data Visualization](/data-pipeline/timelines/observable) - Alison
 - [Observable Data Table and Industry Timelines](/data-pipeline/timelines/observable) - Kargil
+
+API and AI areas
+
+- [International Google Data Commons API](/data-pipeline/international/) - Irean (Yixing)
+- [Replicate API Streamlit for Image Generation](/data-pipeline/research/stream) - Kishor
 - [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - [Example](https://niek.github.io/chatgpt-web/) - Mahimna
-- [Google Data Commons API](https://docs.datacommons.org/api/) - Pull International, Push impact data from US EPA
-- [Process Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
+- [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
 - [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)
-- [International Data Pipeline](/data-pipeline/international/) - Imports and exports by country by year
-- [State map filter](#geoview=country) with colors for [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) with Wes Ingwersen.
+- [Google Data Commons API](https://docs.datacommons.org/api/) - Push impact data from US EPA
+- [State map filter](#geoview=country) with colors for [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) - ML with Wes Ingwersen - Honglin
 
 <!-- [CensusReporter.com](https://CensusReporter.com)-->
 <!--   

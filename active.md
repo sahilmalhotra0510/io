@@ -1,3 +1,6 @@
+Upcoming meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
+ML on Monday with Sijia, Wang, Irean and others
+
 # Active Projects
 
 Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
@@ -11,11 +14,11 @@ Local Industry and Places Timelines
 - [SQLite in Browser for Timelines](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Kayode and everyone
 - [Timeline Data Prep and Samples, Random Forest ML](/data-pipeline/timelines/prep/all/) - Sijia
 - [Process All the Places by State and Zip](/places) - Carolyn (Chen)
-- [Process BuildingTransparency.org Product Impact Profiles by Zip](/io/template/feed/) - Fanyi
+- [Process BuildingTransparency.org Product Impact Profiles by Zip](/io/template/feed/) - Fanyi, Ronan, Luwei
 - [Process US Census by Zip and International Postal Codes](/zip/io/#zip=10001) - Gary
 - [NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin
 - [Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)<!-- Zhu -->
-- [State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/)
+- [State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/) - Luwei
 
 
 <!--
@@ -46,7 +49,7 @@ Goal: Create an easy way for non-coders to setup visualizations
 API and AI areas
 
 - [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - [Example uses OpenAi API](https://niek.github.io/chatgpt-web/) - Mahimna and everyone
-- [Replicate API Streamlit for Image Generation](/data-pipeline/research/stream) - [Python App Gallery](https://streamlit.io/gallery)- Kishor
+- [Replicate API Streamlit for Image Generation](/data-pipeline/research/stream) - [Python App Gallery](https://streamlit.io/gallery)- Kishor, Luwei (product prompts)
 - [Machine Learning](https://github.com/ModelEarth/machine-learning) - Irean (Yixing)
 - [International Google Data Commons API](/data-pipeline/international/) 
 - [Google Data Commons API](https://docs.datacommons.org/api/) - Push in US EPA [impact data](/community/tools/)

@@ -54,10 +54,7 @@ API and AI areas
 - [Google Data Commons API](https://docs.datacommons.org/api/) - Push impact data from US EPA
 - [State map filter](#geoview=country) with colors for [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) - ML with Wes Ingwersen - Honglin
 
-<!-- [CensusReporter.com](https://CensusReporter.com)-->
-<!--   
-[Zipcode files with employment levels](https://github.com/modelearth/community-data/tree/master/us/zipcodes/naics) - Includes nunber of Establishments and Employees 
--->
+
 
 ---
 <br>Feb 2024 - from Wes Ingwersen, US EPA Engineer:
@@ -86,6 +83,16 @@ US Environmental Protection Agency
 
 [Contact Model.Earth Team](../io/team/)
 
+---
+<br>
+
+Additional Exploration
+- [CensusReporter.com](https://CensusReporter.com)
+- [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/)
+
+<!--   
+[Zipcode files with employment levels](https://github.com/modelearth/community-data/tree/master/us/zipcodes/naics) - Includes nunber of Establishments and Employees 
+-->
 
 <!--
 Frome several years ago: 

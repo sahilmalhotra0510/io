@@ -15,7 +15,7 @@ Local Industry and Places Timelines
 - [State Regions using Sets of Counties](/community-data/us/edd/)
 - [Process Product Impact Profiles by Zip](/io/template/feed/) - Fanyi
 - [Process US Census by Zip and International Postal Codes](/zip/io/#zip=10001) - Gary
-- [Process All the Places by Zip](/places) - Chen
+- [Process All the Places by Zip](/places) - Carolyn (Chen)
 
 <!--
 

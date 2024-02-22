@@ -1,7 +1,7 @@
 # Active Projects
 
-Files for Timelines, Observable and AI at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
-Pre-processed data for local industry levels (including employment, establishments and payroll).
+Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
+Pre-processed data for county industry levels, based on employment, establishments and payroll.
 
 Local Industry and Places Timelines
 

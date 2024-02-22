@@ -7,13 +7,15 @@ Files for Timelines and Observable: [industries/naics/US/counties](https://githu
 - [Tabulator for Timeline Data](/data-pipeline/timelines/tabulator/)
 - [Process Industries by State and County](/community-data/process/python/bea) - Gaurav
 - [Process Industries by Zip](/community-data/process/naics/) - Gaurav
+- [Timeline Data Prep, Random Forest ML](/data-pipeline/timelines/prep/all/) - Sijia
+- [NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin
 - [Build IO json for all states](/io/charts/) - Honglin<!-- Zhu -->
-- [Process Multi-County State Regions (ChatGPT)](/community-data/us/edd/)
-- [Process Product Impact Profiles by Zip](/io/template/feed/)
-- [Process US Census by Zip and International Postal Codes](/zip/io/#zip=10001) - Chen and Gary
+- [State Regions using Sets of Counties](/community-data/us/edd/)
+- [Process Product Impact Profiles by Zip](/io/template/feed/) - Fanyi
+- [Process US Census by Zip and International Postal Codes](/zip/io/#zip=10001) - Gary
 - [Process All the Places by Zip](/places) - Chen
-- [SQLite in Browser for Timelines](/data-pipeline/timelines/sqlite/) - We need help deploying to Github. [Like this.](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/)
-- [Timeline Data Prep, Random Forest](/data-pipeline/timelines/prep/all/) - Sijia
+- [SQLite in Browser for Timelines](/data-pipeline/timelines/sqlite/) - [Example](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Kayode
+
 <!--
 
 	mark huang - deep learning
@@ -38,25 +40,23 @@ Files for Timelines and Observable: [industries/naics/US/counties](https://githu
 
 Exploration areas
 
-- [Observable Framework Notes](/data-pipeline/timelines/observable)
-- [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - We need help deploying to Github. [Like this.](https://niek.github.io/chatgpt-web/)
+- [Streamlit for Image Generation with Replicate API](/data-pipeline/research/stream) - Kishor
+- [Observable Framework for Open Data Visualization](/data-pipeline/timelines/observable) - Alison
+- [Observable Data Table and Industry Timelines](/data-pipeline/timelines/observable) - Kargil
+- [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - [Example](https://niek.github.io/chatgpt-web/) - Mahimna
 - [Google Data Commons API](https://docs.datacommons.org/api/) - Pull International, Push impact data from US EPA
-- [CensusReporter.com](https://CensusReporter.com)
-- [Process Farm Fresh Data](/community-data/process/python/farmfresh/)
+- [Process Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
 - [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)
 - [International Data Pipeline](/data-pipeline/international/) - Imports and exports by country by year
+- [State map filter](#geoview=country) with colors for [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) with Wes Ingwersen.
 
+<!-- [CensusReporter.com](https://CensusReporter.com)-->
 <!--   
 [Zipcode files with employment levels](https://github.com/modelearth/community-data/tree/master/us/zipcodes/naics) - Includes nunber of Establishments and Employees 
 -->
 
 ---
-<br>
-
-TO DO: [Update our state map filter](#geoview=country) with color levels like the [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) from US EPA engineer Wes Ingwersen.
-<br>
-
-Feb 2024
+<br>Feb 2024 - from Wes Ingwersen, US EPA Engineer:
 
 Hi State Partners,
 

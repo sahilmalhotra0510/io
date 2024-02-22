@@ -14,14 +14,19 @@ Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) twice week
 - [Thursdays, Noon to 1 PM ET](https://meet.google.com/pcv-xrdh-bat)
 - [Sundays, 11 PM to Midnight ET](https://meet.google.com/pcv-xrdh-bat)
 
-Collaborate on decentralized, real-time modeling using API mashups for job creation, impact tracking and reward gamification.  
+We also meet on a Monday or Tuesday morning each week.
 
-- [Join our ModelEarth Facebook group](https://www.facebook.com/groups/modelearth) for the latest updates.
-- [Collaborate with us at Democracy Lab](https://www.democracylab.org/projects/834)
+Collaborate on open source modeling tools using API mashups for environmental impacts, local job levels, industry timelines and [sustainable product profiles](../../io/template/).  
+
+- [Connect with us at Democracy Lab](https://www.democracylab.org/projects/834)
+- [Join our ModelEarth Facebook group for additional updates](https://www.facebook.com/groups/modelearth)
+- [Get Started by installing our localsite repos](../../community/start/)
+<br>
+
+<!--
 - [Join our ModelEarth Slack in Democracy Lab](https://democracylab-org.slack.com/archives/C06F73YKEQN)
 - [Deploy Apache ECharts 3D Globes and Lines for Input-Output](https://echarts.apache.org/examples/en/index.html#chart-type-lines3D)
-- [Starter Samples](../../community/start/)
-<br>
+-->
 
 
 ### Earthathon 2024 - Online with DemocracyLab

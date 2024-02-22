@@ -41,6 +41,7 @@ Goal: Create an easy way for non-coders to setup visualizations
 
 - [Observable Framework for Open Data Visualization](/data-pipeline/timelines/observable) - Alison
 - [Observable Data Grid Table and Industry Timelines](/data-pipeline/timelines/observable) - Kargil
+- [Embedded Turn-key Visualizations and Search Filtering using SQLite](/community/projects/) - Sai Sri Harsha
 
 API and AI areas
 

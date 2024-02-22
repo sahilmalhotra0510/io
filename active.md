@@ -35,10 +35,6 @@ Local Industry and Places Timelines
 	We need to figure out a crosswalk from the Naics6 department of labor data we pull for levels of employment, as it relates to the new 72 sectors the EPA now uses. Previously they used 389 sectors.  The sectors are a fairly close match to the naics values.
 -->
 
-
-
-<!-- [Imputation for NAICS Using Machine Learning](/machine-learning/)-->
-
 Observable Framework
 
 - [Observable Framework for Open Data Visualization](/data-pipeline/timelines/observable) - Alison
@@ -47,11 +43,12 @@ Observable Framework
 API and AI areas
 
 - [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - [Example](https://niek.github.io/chatgpt-web/) - Mahimna and everyone
-- [International Google Data Commons API](/data-pipeline/international/) - Irean (Yixing)
-- [Replicate API Streamlit for Image Generation](/data-pipeline/research/stream) - Kishor
+- [Replicate API Streamlit for Image Generation](/data-pipeline/research/stream) - [Python App Gallery](https://streamlit.io/gallery)- Kishor
+- [Machine Learning](https://github.com/ModelEarth/machine-learning) - Irean (Yixing)
+- [International Google Data Commons API](/data-pipeline/international/) 
+- [Google Data Commons API](https://docs.datacommons.org/api/) - Push in US EPA [impact data](/community/tools/)
 - [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
 - [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)
-- [Google Data Commons API](https://docs.datacommons.org/api/) - Push impact data from US EPA
 - [State map filter](#geoview=country) with colors for [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) - ML with Wes Ingwersen - Honglin
 
 

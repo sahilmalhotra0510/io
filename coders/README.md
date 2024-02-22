@@ -10,17 +10,18 @@ For use during a future Web Challenge
 
 View our [Active Projects](../) and find your areas of interest.
 
-Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) twice weekly (Eastern Time)
+Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) 3-days weekly (Eastern Time, NY)
 - [Thursdays, Noon to 1 PM ET](https://meet.google.com/pcv-xrdh-bat)
 - [Sundays, 11 PM to Midnight ET](https://meet.google.com/pcv-xrdh-bat)
+- [Monday or Tuesday, mornings](https://meet.google.com/pcv-xrdh-bat)
 
-We also meet on a Monday or Tuesday morning each week.
+The Google Meetup link above remains the same for all meetings.
 
 Collaborate on open source modeling tools using API mashups for environmental impacts, local job levels, industry timelines and [sustainable product profiles](../../io/template/).  
 
 - [Connect with us at Democracy Lab](https://www.democracylab.org/projects/834)
 - [Join our ModelEarth Facebook group for additional updates](https://www.facebook.com/groups/modelearth)
-- [Get Started by installing our localsite repos](../../community/start/)
+- [Get Started by installing our Localsite repos](../../localsite/start/steps/)
 <br>
 
 <!--
@@ -39,9 +40,9 @@ We'll add more details as DemocracyLab sets times.
 
 ### Upcoming Hackathons at DevPost.com
 
-Many hackthons have money prizes. Would be great to have someone register us and spearhead our involvement. Check out [Devpost.com/hackathons](https://devpost.com/hackathons)
+Many hackthons have money prizes. Register the team in one you'd like to manage and spearhead our involvement! &nbsp;Check out [Devpost.com/hackathons](https://devpost.com/hackathons)
 
-For example, the [DLT Climate Hackathon](https://dlt-climate-hackathon.devpost.com/details/dates) focuses on integration with their carbon reporting tool - so we'd need someone interested in becoming an expert and sharing with us ways to extend the DLT tool. Perhaps we could intergrate with BuildingTransparency.org product [impact profiles](/io/template/).<br>
+For example, the [DLT Climate Hackathon](https://dlt-climate-hackathon.devpost.com/details/dates) focuses on integration with their carbon reporting tool - so we'd need someone interested in becoming an expert and sharing with us ways to extend the DLT tool. We could intergrate with BuildingTransparency.org product [impact profiles](/io/template/).<br>
 
 [Cesium Grants (Gifts)](https://cesium.com/cesium-ecosystem-grants/) - 3D Map Ecosystem Grants re-open April 1, 2024
 

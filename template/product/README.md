@@ -6,11 +6,10 @@ STEP 1: Create an account at [buildingtransparency.org](https://www.buildingtran
 
 STEP 2: Use your name and password to get your bearer "key" here in Swagger: [openepd.buildingtransparency.org](https://openepd.buildingtransparency.org) - Click Authorize.
 
+STEP 3: Open a command terminal, and get the "Bearer" secret key for your username
 
-### In your command terminal, get the "Bearer" secret key for your username
-~~~
 curl -X POST "https://etl-api.cqd.io/api/rest-auth/login" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"username\":\"YOUR_USERNAME_EMAIL\",\"password\":\"YOUR PASSWORD\"}"
-~~~
+
 
 RETURNS
 

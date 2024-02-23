@@ -23,6 +23,24 @@ Local Industry and Places Timelines
 
 <!--
 
+Hi,
+
+We're meeting on Sunday at 11PM EST, and again on Monday and Thursday at Noon EST.
+https://model.earth/io/coders
+
+I'm enthused to hear you have React, Javascript and D3 experience.
+Most of our team members are Python focused.
+
+I'll send more info about React projects. Do you have a favorite app for viewing images and video?
+
+Here's our active projects:
+https://model.earth/io
+
+Here's a cmd for pulling down our 4 main repos:
+https://model.earth/localsite/start/steps
+
+
+
 	mark huang - deep learning
 
 	Overview video

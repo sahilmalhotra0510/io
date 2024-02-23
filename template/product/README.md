@@ -2,11 +2,9 @@ The [Central Concrete EPD data](https://github.com/modelearth/io/blob/master/tem
 
 [How to use Curl with Postman](https://www.google.com/search?q=how+to+use+Curl+with+Postman&oq=how+to+use+Curl+with+Postman&aqs=chrome..69i57.18359j0j9&sourceid=chrome&ie=UTF-8)
 
+STEP 1: Create an account at [buildingtransparency.org](https://www.buildingtransparency.org/)
 
-STEP 1: Get your password at [buildingtransparency.org/](https://www.buildingtransparency.org/)
-
-
-STEP 2: Get your bearer "key" here: [https://openepd.buildingtransparency.org](https://openepd.buildingtransparency.org)  
+STEP 2: Use your name and password to get your bearer "key" here in Swagger: [openepd.buildingtransparency.org](https://openepd.buildingtransparency.org) - Click Authorize.
 
 
 ### In your command terminal, get the "Bearer" secret key for your username

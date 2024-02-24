@@ -1,8 +1,7 @@
-EXPLORE IMPACTS: Select a location (state and/or counties) above and click GO.<br><br>
+[Select states and counties](#geoview=country) to explore local industry impacts.<br>
 
-**Applied Sciences - LCA Edition - Article Draft**
-
-## International Impact Labels for Communities and Individuals using Environmental Product Declarations (EPD) with YAML
+<div>Applied Sciences - LCA Edition - Article Draft</div>
+<h2 style="margin-top:0px;padding-top:0px;">International Impact Labels for Communities and Individuals using Environmental Product Declarations (EPD) with YAML</h2>
 
 Environmental Impact Profiles published using JSON and the easily-readable [YMAL syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html) allow scenarios and entity profiles to be easily shared and compared for communities, companies and individuals when combined with international standards created for Environmental Product Declarations (EPDs) by organizations like the Smart Built Environment Innovation Program in Europe and <a href="https://buildingtransparency.org" target="_blank">Building&nbsp;Transparency</a> in the United States.
 

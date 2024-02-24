@@ -5,7 +5,7 @@ topics:
  - Compliments use of PDF files for product profiles
 ---
 
-# HeaderAdded.md with parameters above.
+### HeaderAdded.md with parameters
 
 This HeaderAdded.md file contains additional YAML in the header.  
 It might not work on GitHub Pages.

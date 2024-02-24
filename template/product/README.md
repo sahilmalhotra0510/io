@@ -1,4 +1,4 @@
-The [Central Concrete EPD data](https://github.com/modelearth/io/blob/master/template/product/product-concrete.yaml) was pulled from the BuildingTransparency.org API using:  
+The [Central Concrete EPD data](https://github.com/modelearth/io/blob/master/template/product/product-concrete.yaml) was pulled from the BuildingTransparency.org API using the following steps:  
 
 [How to use Curl with Postman](https://www.google.com/search?q=how+to+use+Curl+with+Postman&oq=how+to+use+Curl+with+Postman&aqs=chrome..69i57.18359j0j9&sourceid=chrome&ie=UTF-8)
 
@@ -37,12 +37,7 @@ Tip: Use the [EC3 frontend](https://buildingtransparency.org/ec3/material-search
 
 Georgia Mass Timber:
 
-~~~
 https://buildingtransparency.org/api/materials?page_number=1&page_size=25&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=US-FL&epd__date_validity_ends__gt=2021-08-24
-~~~
-
-
-
 
 
 ~~~
@@ -52,12 +47,13 @@ curl -X 'GET' \
   -H "Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ~~~
 
-
+<div id="postman"></div>
 
 To convert to yaml, the json can be pasted in either: [json2yaml.com](https://www.json2yaml.com/) or [editor.swagger.io](https://editor.swagger.io)
 
+<br>
 
-# For Postman
+# View API in Postman
 
 1. Click on "import" tab on the upper left side.
 2. Select the Raw Text option and paste your cURL command.
@@ -65,12 +61,18 @@ To convert to yaml, the json can be pasted in either: [json2yaml.com](https://ww
 4. Click Send to post the command.
 
 [How to use Curl with Postman](https://www.google.com/search?q=how+to+use+Curl+with+Postman&oq=how+to+use+Curl+with+Postman&aqs=chrome..69i57.18359j0j9&sourceid=chrome&ie=UTF-8) - [YouTube](https://www.google.com/search?q=how+to+use+Curl+with+Postman&sxsrf=APq-WBtPCQSW52ZIvoJZxIvspDVdEJ_G0g:1648670885549&source=lnms&tbm=vid&sa=X&ved=2ahUKEwio-u_T0e72AhXWmGoFHSTLB6sQ_AUoAXoECAEQAw&biw=1513&bih=819&dpr=1)
-## For io/template OpenEPD swagger
+<br>
 
-https://etl-api.cqd.io/
+# Get YAML for IO Template
 
-https://openepd.buildingtransparency.org/#/epds/get_epds_id  
+[For IO Template](../) - Use OpenEPD swagger
 
-Inside Postman, you can load the YAML file https://etl-api.cqd.io/swagger.yaml which will import all the schemas.
+<!-- https://etl-api.cqd.io/ No longer works -->
+
+BuildingTransparency OpenEPD API
+[https://openepd.buildingtransparency.org/#/epds/get_epds_id](openepd.buildingtransparency.org/#/epds/get_epds_id)
+
+
+Inside Postman, you can load the swagger.yaml file [exported from Swagger](https://stackoverflow.com/questions/48525546/how-to-export-swagger-json-or-yaml) which will import the schemas into Postman.
 
 

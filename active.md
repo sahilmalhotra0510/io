@@ -1,9 +1,12 @@
-Upcoming meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
-ML on Monday with Sijia, Wang, Irean and others
+Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
+Machine Learning on Monday at Noon ET with Sijia, Wang, Irean and others.
+Overview Session on Tuesday at Noon ET for new team members.
+
+TO DO: Display actual totals in [Jobs Reports](/localsite/info/#indicators=JOBS) by updating [React Input-Output Chart](/localsite/info/data/totals/).
 
 # Active Projects
 
-Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
+.CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
 Pre-processed data for county industry levels, based on employment, establishments and payroll.
 
 Local Industry and Places Timelines

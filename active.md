@@ -2,8 +2,6 @@ Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
 Machine Learning on Monday at Noon ET with Sijia, Wang, Irean and others.
 Overview Session on Tuesday at Noon ET for new team members.
 
-TO DO: Display actual totals in [Jobs Reports](/localsite/info/#indicators=JOBS) by updating [React Input-Output Chart](/localsite/info/data/totals/).
-
 # Active Projects
 
 .CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
@@ -12,9 +10,11 @@ Pre-processed data for county industry levels, based on employment, establishmen
 ML in Javascript
 
 - [Tensorflow.org Demos](https://www.tensorflow.org/js/demos)
+- [Our Python data prep for ML](../data-pipeline/timelines/)
 
 Local Industry and Places Timelines
 - [React - Isolate the Indicators List from IO Chart for side nav](/io/charts)
+- [React - Display totals in Jobs Reports](/localsite/info/#indicators=JOBS) by updating [IO Chart](/localsite/info/data/totals/)
 - [Tabulator - Merge in industry years using Javascript](/data-pipeline/timelines/tabulator/) - Fanyi
 - [Process Industries by State and County](/community-data/process/python/bea) - Gaurav
 - [Process Industries by Zip](/community-data/process/naics/) - Gaurav

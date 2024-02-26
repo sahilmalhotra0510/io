@@ -9,20 +9,26 @@ TO DO: Display actual totals in [Jobs Reports](/localsite/info/#indicators=JOBS)
 .CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
 Pre-processed data for county industry levels, based on employment, establishments and payroll.
 
-Local Industry and Places Timelines
+ML in Javascript
 
-- [Tabulator for Timeline Data](/data-pipeline/timelines/tabulator/) - Honglin and everyone
+- [Tensorflow.org Demos](https://www.tensorflow.org/js/demos)
+
+Local Industry and Places Timelines
+- [Tabulator - Merge in industry years using Javascript](/data-pipeline/timelines/tabulator/) - Fanyi
 - [Process Industries by State and County](/community-data/process/python/bea) - Gaurav
 - [Process Industries by Zip](/community-data/process/naics/) - Gaurav
-- [SQLite in Browser for Timelines](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Kayode and everyone
-- [Timeline Data Prep and Samples, Random Forest ML](/data-pipeline/timelines/prep/all/) - Sijia
+- [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/)
+- [Random Forest Machine Learning](/data-pipeline/timelines/prep/all/) - Sijia
+- [Python Timeline Data Prep](/data-pipeline/timelines/prep/industries/) - Ronan
 - [Process All the Places by State and Zip](/places) - Carolyn (Chen)
-- [Process BuildingTransparency.org Product Impact Profiles by Zip](/io/template/feed/) - Fanyi, Ronan, Luwei
-- [Process US Census by Zip and International Postal Codes](/zip/io/#zip=10001) - Gary
+- [BuildingTransparency.org API - Aggregates of States and Countries](/io/template/product/) - Luwei and Harsha
+- [BuildingTransparency.org API - Product Impact Profiles by Zip](/io/template/feed/)
+- [Process Census by Zip and International Postal Codes](/zip/io/#zip=10001) - Gary
 - [NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin
 - [Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)<!-- Zhu -->
 - [State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/) - Luwei
 
+- Create a netwok diagram [like this RAG image](https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a) with 12 naics2 hubs and 72 naics4 nodes
 
 <!--
 
@@ -78,7 +84,10 @@ API and AI areas
 - [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)
 - [Use our state map filter](#geoview=country) with colors for [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) - ML with 24 EPA impacts - Honglin and Irean
 
-
+<!--
+Industry2vec: an Implementation for Industry Code Vector Representation
+https://medium.com/wbaa/industry2vec-an-implementation-for-industry-code-vector-representation-68ec5f5de9a4
+-->
 
 ---
 <br>Feb 2024 - from Wes Ingwersen, US EPA Engineer:

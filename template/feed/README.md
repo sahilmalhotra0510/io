@@ -20,7 +20,7 @@ Loren has a desktop swagger file which might compliment the YAML notes. Coordina
 
 Check out how faster the EPD product list displays when <a href="../../../community/resources/diffbot/#feed=epd">loaded from a static json file</a>. 
 
-Feb 2024 - The BuildingTransparency.org API or our Javascript is displaying a 401 (Unauthorized) error below.
+The API Key may expire after a day. The 401 error went away after we entered a new key.
 
  
 <!--

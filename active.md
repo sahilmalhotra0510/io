@@ -14,6 +14,7 @@ ML in Javascript
 - [Tensorflow.org Demos](https://www.tensorflow.org/js/demos)
 
 Local Industry and Places Timelines
+- [React - Isolate the Indicators List from IO Chart for side nav](/io/charts)
 - [Tabulator - Merge in industry years using Javascript](/data-pipeline/timelines/tabulator/) - Fanyi
 - [Process Industries by State and County](/community-data/process/python/bea) - Gaurav
 - [Process Industries by Zip](/community-data/process/naics/) - Gaurav

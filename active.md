@@ -29,7 +29,7 @@ Local Industry and Places Timelines
 - [Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)<!-- Zhu -->
 - [State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/) - Luwei
 
-- Create a netwok diagram [like this RAG image](https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a) with 12 naics2 hubs and 72 naics4 nodes
+- Create a netwok diagram [like this RAG image](https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a) with 12 naics level-2 hubs and 72 naics level-4 nodes
 
 <!--
 

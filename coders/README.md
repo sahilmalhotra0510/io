@@ -20,7 +20,7 @@ The Google Meetup link above remains the same for all meetings.
 Collaborate on open source modeling tools using API mashups for environmental impacts, local job levels, industry timelines and [sustainable product profiles](../../io/template/).  
 
 - [Connect with us at Democracy Lab if you haven't already](https://www.democracylab.org/projects/834)
-- [Get Started by installing our four Localsite repos](../../localsite/start/steps/)
+- [Get Started by installing our 5 Localsite repos (with one cmd)](../../localsite/start/steps/)
 - [Join our ModelEarth Facebook group for additional updates](https://www.facebook.com/groups/modelearth)
 
 <br>

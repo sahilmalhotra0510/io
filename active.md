@@ -1,5 +1,4 @@
 Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
-Machine Learning on Monday at Noon ET with Sijia, Wang, Irean and others.
 Overview Session on Tuesday at Noon ET for new team members.
 
 # Active Projects
@@ -15,7 +14,8 @@ ML in Javascript
 Local Industry and Places Timelines
 - [React - Isolate the Indicators List from IO Chart for side nav](/io/charts)
 - [React - Display totals in Jobs Reports](/localsite/info/#indicators=JOBS) by updating [IO Chart](/localsite/info/data/totals/)
-- [Tabulator - Merge in industry years using Javascript](/data-pipeline/timelines/tabulator/) - Fanyi
+- [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - Vadlamudi
+- [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Fanyi
 - [Process Industries by State and County](/community-data/process/python/bea) - Gaurav
 - [Process Industries by Zip](/community-data/process/naics/) - Gaurav
 - [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/)

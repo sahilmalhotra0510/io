@@ -1,5 +1,5 @@
 Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
-Overview Session on Tuesday at Noon ET for new team members.
+<!--Overview Session on Tuesday at Noon ET for new team members.-->
 
 # Active Projects
 

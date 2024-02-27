@@ -22,8 +22,9 @@ Local Industry and Places Timelines
 - [ZCTA Random Forest Machine Learning](/data-pipeline/timelines/prep/all/) - Sijia
 - [Python - Timeline Data Prep](/data-pipeline/timelines/prep/industries/) - Ronan
 - [Python - Process All the Places by State and Zip](/places) - Carolyn (Chen)
-- [BuildingTransparency - API Aggregates of States and Countries](/io/template/product/) - Luwei and Harsha<!-- Later display with SQLite -->
-- [BuildingTransparency - API Product Impact Profiles by Zip](/io/template/feed/)
+- [BuildingTransparency - API Aggregates of States and Countries](/io/template/product/) - Luwei
+- [BuildingTransparency - JSON file pull for impact templates](/io/template/product/) - Harsha<!-- Later display with SQLite -->
+- [BuildingTransparency - Product Impact Profiles by State and Zip](/io/template/feed/)
 - [Python - Census Zip Code and International Postal Code Data Files](/zip/io/#zip=10001) - Gary
 - [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin
 - [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)<!-- Zhu -->

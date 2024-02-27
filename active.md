@@ -6,7 +6,7 @@ Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
 .CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
 <!--Pre-processed data for county industry levels, based on employment, establishments and payroll.-->
 
-ML with Python and JavaScript (TensorFlow)
+ML with Python and JavaScript (Observable and TensorFlow)
 
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Sijia, Kargil, Alison, Irene, Ronan, Lily, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) 
@@ -19,16 +19,16 @@ Local Industry and Places Timelines
 - [Annual NAICS - Process Industries by State and County](/community-data/process/python/bea) - Gaurav
 - [Annual NAICS - Process Industries by Zip](/community-data/process/naics/) - Gaurav
 - [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Aashish
-- [Random Forest Machine Learning](/data-pipeline/timelines/prep/all/) - Sijia
-- [Python Timeline Data Prep](/data-pipeline/timelines/prep/industries/) - Ronan
-- [Process All the Places by State and Zip](/places) - Carolyn (Chen)
-- [BuildingTransparency.org API - Aggregates of States and Countries](/io/template/product/) - Luwei and Harsha
-- [BuildingTransparency.org API - Product Impact Profiles by Zip](/io/template/feed/)
-- [Process Census by Zip and International Postal Codes](/zip/io/#zip=10001) - Gary
-- [NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin
-- [Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)<!-- Zhu -->
-- [State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/) - Luwei
-- [Create a netwok diagram like this RAG image](https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a) with 12 naics level-2 hubs and 72 naics level-4 nodes
+- [ZCTA Random Forest Machine Learning](/data-pipeline/timelines/prep/all/) - Sijia
+- [Python - Timeline Data Prep](/data-pipeline/timelines/prep/industries/) - Ronan
+- [Python - Process All the Places by State and Zip](/places) - Carolyn (Chen)
+- [BuildingTransparency - API Aggregates of States and Countries](/io/template/product/) - Luwei and Harsha<!-- Later display with SQLite -->
+- [BuildingTransparency - API Product Impact Profiles by Zip](/io/template/feed/)
+- [Python - Census Zip Code and International Postal Code Data Files](/zip/io/#zip=10001) - Gary
+- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin
+- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)<!-- Zhu -->
+- [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/) - Luwei
+- [Observable - Create Industry diagram like RAG network](https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a) - 12 hubs and 72 nodes (NAICS levels 2 and 4)
 
 <!--
 
@@ -65,13 +65,6 @@ https://model.earth/localsite/start/steps
 
 	We need to figure out a crosswalk from the Naics6 department of labor data we pull for levels of employment, as it relates to the new 72 sectors the EPA now uses. Previously they used 389 sectors.  The sectors are a fairly close match to the naics values.
 -->
-
-Observable Framework
-Goal: Create an easy way for non-coders to setup visualizations
-
-- [Observable Framework for Open Data Visualization](/data-pipeline/timelines/observable) - Alison
-- [Observable Data Grid Table and Industry Timelines](/data-pipeline/timelines/observable) - Kargil
-- [Embedded Turn-key Visualizations and Search Filtering using SQLite](/community/projects/) - Sai Sri Harsha
 
 API and AI areas
 

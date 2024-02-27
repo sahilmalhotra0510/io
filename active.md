@@ -4,20 +4,21 @@ Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
 # Active Projects
 
 .CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
-Pre-processed data for county industry levels, based on employment, establishments and payroll.
+<!--Pre-processed data for county industry levels, based on employment, establishments and payroll.-->
 
-ML with Python and Javascript
+ML with Python and JavaScript (TensorFlow)
 
-- [ML - Our Python data prep for ML Community Forecasting](../data-pipeline/timelines/training/naics/)
+- [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Sijia, Kargil, Alison, Irene, Ronan, Lily, Luwei, Wenxi, Magie
+- [International Google Data Commons API](/data-pipeline/international/) 
 
 Local Industry and Places Timelines
 - [React - Isolate the Indicators List from IO Chart for side nav](/io/charts)
 - [React - Display totals in Jobs Reports](/localsite/info/#indicators=JOBS) by updating [IO Chart](/localsite/info/data/totals/)
 - [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - Vadlamudi
 - [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Fanyi
-- [Process Industries by State and County](/community-data/process/python/bea) - Gaurav
-- [Process Industries by Zip](/community-data/process/naics/) - Gaurav
-- [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/)
+- [Annual NAICS - Process Industries by State and County](/community-data/process/python/bea) - Gaurav
+- [Annual NAICS - Process Industries by Zip](/community-data/process/naics/) - Gaurav
+- [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Aashish
 - [Random Forest Machine Learning](/data-pipeline/timelines/prep/all/) - Sijia
 - [Python Timeline Data Prep](/data-pipeline/timelines/prep/industries/) - Ronan
 - [Process All the Places by State and Zip](/places) - Carolyn (Chen)
@@ -27,8 +28,7 @@ Local Industry and Places Timelines
 - [NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin
 - [Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)<!-- Zhu -->
 - [State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/) - Luwei
-
-- Create a netwok diagram [like this RAG image](https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a) with 12 naics level-2 hubs and 72 naics level-4 nodes
+- [Create a netwok diagram like this RAG image](https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a) with 12 naics level-2 hubs and 72 naics level-4 nodes
 
 <!--
 
@@ -77,8 +77,6 @@ API and AI areas
 
 - [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - [Example uses OpenAi API](https://niek.github.io/chatgpt-web/) - Mahimna and everyone
 - [Replicate API Streamlit for Image Generation](/data-pipeline/research/stream) - [Python App Gallery](https://streamlit.io/gallery)- Kishor, Luwei (product prompts)
-- [Machine Learning](https://github.com/ModelEarth/machine-learning) - Irean (Yixing)
-- [International Google Data Commons API](/data-pipeline/international/) 
 - [Google Data Commons API](https://docs.datacommons.org/api/) - Push in US EPA [impact data](/community/tools/)
 - [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
 - [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)

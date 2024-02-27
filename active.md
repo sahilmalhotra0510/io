@@ -6,10 +6,9 @@ Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
 .CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
 Pre-processed data for county industry levels, based on employment, establishments and payroll.
 
-ML in Javascript
+ML with Python and Javascript
 
-- [Tensorflow.org Demos](https://www.tensorflow.org/js/demos)
-- [Our Python data prep for ML](../data-pipeline/timelines/)
+- [ML - Our Python data prep for ML Community Forecasting](../data-pipeline/timelines/training/naics/)
 
 Local Industry and Places Timelines
 - [React - Isolate the Indicators List from IO Chart for side nav](/io/charts)

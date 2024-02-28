@@ -21,15 +21,16 @@ Local Industry and Places Timelines
 - [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Aashish
 - [ZCTA Random Forest Machine Learning](/data-pipeline/timelines/prep/all/) - Sijia
 - [Python - Timeline Data Prep](/data-pipeline/timelines/prep/industries/) - Ronan
-- [Python - Process All the Places by State and Zip](/places) - Carolyn (Chen)
+- [Python - Process All the Places by State and Zip](/places) - Carolyn
 - [BuildingTransparency - API Aggregates of States and Countries](/io/template/product/) - Luwei
 - [BuildingTransparency - JSON file pull for impact templates](/io/template/product/) - Harsha<!-- Later display with SQLite -->
 - [BuildingTransparency - Product Impact Profiles by State and Zip](/io/template/feed/)
 - [Python - Census Zip Code and International Postal Code Data Files](/zip/io/#zip=10001) - Gary
-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin
-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)<!-- Zhu -->
 - [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/) - Luwei
 - [Observable - Create Industry diagram like RAG network](https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a) - 12 hubs and 72 nodes (NAICS levels 2 and 4)
+
+<!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin-->
+<!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->
 
 <!--
 

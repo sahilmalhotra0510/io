@@ -12,8 +12,8 @@ ML with Python and JavaScript (Observable and TensorFlow)
 - [International Google Data Commons API](/data-pipeline/international/) 
 
 Local Industry and Places Timelines
-- [React - Isolate the Indicators List from IO Chart for side nav](/io/charts)
-- [React - Display totals in Jobs Reports](/localsite/info/#indicators=JOBS) by updating [IO Chart](/localsite/info/data/totals/)
+- [React - Navigation using Indicators List from IO Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS)
+- [React - Display totals in Jobs Reports](/localsite/info/#indicators=JOBS) by updating the [Input-Output Total Display](/localsite/info/data/totals/)
 - [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - Vadlamudi
 - [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Fanyi
 - [Annual NAICS - Process Industries by State and County](/community-data/process/python/bea) - Gaurav

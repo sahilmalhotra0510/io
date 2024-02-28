@@ -8,7 +8,7 @@ Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
 
 ML with Python and JavaScript (Observable and TensorFlow)
 
-- [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Sijia, Kargil, Alison, Irene, Ronan, Lily, Luwei, Wenxi, Magie
+- [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Sijia, Kargil, Alison, Irene, Honglin, Ronan, Lily, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) 
 
 Local Industry and Places Timelines

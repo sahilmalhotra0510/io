@@ -7,12 +7,15 @@
 [About OpenEPD](https://www.buildingtransparency.org/programs/openepd/)
 [Material Search](https://buildingtransparency.org/ec3/material-search) - Google Login works
 [OpenEPD API](https://openepd.buildingtransparency.org/) - Swagger UI
+<a href="https://docs.google.com/spreadsheets/d/1q2TW0GlLlK7yH3k5TSsWGmXyL94KPI9VUWWv9vid63A/edit">OpenEPD spreadsheet</a> - Are these variable also accessible in the API?
+<a href="https://buildingtransparency.org/ec3/creator-contacts/epds">How to Get an EPD</a> - Includes  “nutrition label” image
+<a href="https://www.oneclicklca.com/simple-epd-guide/" target="epdGuide">EPD Guide</a> - One Click LCA<br>
 
 The API key expires every 72 hours.
-The 401 error is replaced by a list when you update the key.
+The 401 error below is replaced by a list when you update the key.
 (Currently you have to [download our repos](../../../localsite/start/steps/) to edit the key)
 
-<b>TO DO:</b> Allow site users to enter their BuildingTransparency key here. Use [javascript sample on starter page](../../../localsite/start/steps/).
+<b>TO DO:</b> Allow site users to enter their own BuildingTransparency key here. Use [javascript sample on starter page](../../../localsite/start/steps/).
 
 *Your API Key (Not yet activated):*
 <input type="text" id="btKey" class="textInput" style="width:210px" placeholder="Your API Key"  autofocus onfocus="this.select()" oninputX="updateKey()"><br><br>
@@ -46,11 +49,6 @@ Get your bearer token from logging into the <a href="https://openepd.buildingtra
 	-H 'Authorization: Bearer [Your Bearer Token]'
 
 We recomend saving your own private desktop swagger file with your API commands. Coordinate updates with Loren.
-
-Field documentation:
-<a href="https://docs.google.com/spreadsheets/d/1q2TW0GlLlK7yH3k5TSsWGmXyL94KPI9VUWWv9vid63A/edit">OpenEPD spreadsheet</a> - Are these variable also accessible in the API?
-<a href="https://buildingtransparency.org/ec3/creator-contacts/epds">How to Get an EPD</a> - Includes  “nutrition label” image
-<a href="https://www.oneclicklca.com/simple-epd-guide/" target="epdGuide">EPD Guide</a> - One Click LCA<br>
 
 <b>TO DO:</b> Modify the API URL used in this page to return only the interesting fields, including the company and product names. Add a toggle to load all values.
 

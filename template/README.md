@@ -1,5 +1,8 @@
-[Select states and counties](#geoview=country) to explore local industry impacts.<br>
+[Select states and counties](#geoview=country) to explore local industry impacts.
+[Open Footprint Coding Projects - API to YAML](product/)
 
+---
+<br>
 <div>Applied Sciences - LCA Edition - Article Draft</div>
 <h2 style="margin-top:0px;padding-top:0px;">International Impact Labels for Communities and Individuals using Environmental Product Declarations (EPD) with YAML</h2>
 

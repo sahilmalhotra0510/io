@@ -3,7 +3,7 @@ Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
 
 # Active Projects
 
-.CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
+CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
 <!--Pre-processed data for county industry levels, based on employment, establishments and payroll.-->
 
 ML with Python and JavaScript (Observable and TensorFlow)
@@ -27,12 +27,17 @@ Local Industry and Places Timelines
 - [BuildingTransparency - Product Impact Profiles by State and Zip](/io/template/feed/)
 - [Python - Census Zip Code and International Postal Code Data Files](/zip/io/#zip=10001) - Gary
 - [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/) - Luwei
+- [Observable - Install notes for Data Loaders](/data-pipeline/timelines/observable) - Kargil
 - [Observable - Create Industry diagram like RAG network](https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a) - 12 hubs and 72 nodes (NAICS levels 2 and 4)
 
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin-->
 <!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->
 
 <!--
+
+K-Means - clustering project
+A prediction model here? y=1 neural network based
+https://www.censusreporter.org/data/map/?table=B06011&geo_ids=040|01000US
 
 Hi,
 

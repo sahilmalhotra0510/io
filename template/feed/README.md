@@ -48,8 +48,8 @@ Get your bearer token from logging into the <a href="https://openepd.buildingtra
 We recomend saving your own private desktop swagger file with your API commands. Coordinate updates with Loren.
 
 Field documentation:
-<a href="https://docs.google.com/spreadsheets/d/1q2TW0GlLlK7yH3k5TSsWGmXyL94KPI9VUWWv9vid63A/edit">OpenEPD spreadsheet</a> - How can we pull similar info from the API?
-<a href="https://buildingtransparency.org/ec3/creator-contacts/epds">How to Get an EPD</a> - Includes label image
+<a href="https://docs.google.com/spreadsheets/d/1q2TW0GlLlK7yH3k5TSsWGmXyL94KPI9VUWWv9vid63A/edit">OpenEPD spreadsheet</a> - Are these variable also accessible in the API?
+<a href="https://buildingtransparency.org/ec3/creator-contacts/epds">How to Get an EPD</a> - Includes  “nutrition label” image
 <a href="https://www.oneclicklca.com/simple-epd-guide/" target="epdGuide">EPD Guide</a> - One Click LCA<br>
 
 <b>TO DO:</b> Modify the API URL used in this page to return only the interesting fields, including the company and product names. Add a toggle to load all values.

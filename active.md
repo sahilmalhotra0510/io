@@ -10,11 +10,12 @@ ML with Python and JavaScript (Observable and TensorFlow)
 
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Sijia, Kargil, Alison, Irene, Honglin, Ronan, Lily, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) 
+- [PyTorch ML and Data Visualization](/community/start/charts/) - Network Graphs, Sankey and Chord - Honling, Rupesh
 
 Local Industry and Places Timelines
 - [React - Navigation using Indicators List from IO Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS)
 - [React - Display totals in Jobs Reports](/localsite/info/#indicators=JOBS) by updating the [Input-Output Total Display](/localsite/info/data/totals/)
-- [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - Vadlamudi
+- [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - Rupesh<!--Vadlamudi-->
 - [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Fanyi
 - [Annual NAICS - Process Industries by Zip Code](/data-pipeline/industries/naics) - Gaurav
 - [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Aashish

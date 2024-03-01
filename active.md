@@ -8,15 +8,16 @@ CSV Files to use for Timelines, Observable, and AI Training at: [industries/naic
 
 ML with Python and JavaScript (Observable and TensorFlow)
 
-- [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Sijia, Kargil, Alison, Irene, Honglin, Ronan, Lily, Luwei, Wenxi, Magie
-- [International Google Data Commons API](/data-pipeline/international/) 
+- [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Sijia, Alison, Irene, Honglin, Ronan, Lily, Luwei, Wenxi, Magie
+- [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders) - Kargil, Parth
 - [PyTorch ML and Data Visualization](/community/start/charts/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
+- [Bee the Predictor](../data-pipeline/research/bees) - with [TensorFlow Javascript](https://www.tensorflow.org/js/demos)
 
 Local Industry and Places Timelines
 - [React - Navigation using Indicators List from IO Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS)
 - [React - Display totals in Jobs Reports](/localsite/info/#indicators=JOBS) by updating the [Input-Output Total Display](/localsite/info/data/totals/)
 - [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - Rupesh<!--Vadlamudi-->
-- [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Fanyi
+- [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Vadlamudi, Fanyi, Rupesh
 - [Annual NAICS - Process Industries by Zip Code](/data-pipeline/industries/naics) - Gaurav
 - [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Aashish
 - [ZCTA Random Forest Machine Learning](/data-pipeline/timelines/prep/all/) - Sijia
@@ -34,11 +35,6 @@ Local Industry and Places Timelines
 <!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->
 
 <!--
-
-K-Means - clustering project
-A prediction model here? y=1 neural network based
-https://www.censusreporter.org/data/map/?table=B06011&geo_ids=040|01000US
-
 Hi,
 
 We're meeting on Sunday at 11PM EST, and again on Monday and Thursday at Noon EST.

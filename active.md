@@ -10,7 +10,7 @@ ML with Python and JavaScript (Observable and TensorFlow)
 
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Sijia, Kargil, Alison, Irene, Honglin, Ronan, Lily, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) 
-- [PyTorch ML and Data Visualization](/community/start/charts/) - Network Graphs, Sankey and Chord - Honling, Rupesh
+- [PyTorch ML and Data Visualization](/community/start/charts/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
 
 Local Industry and Places Timelines
 - [React - Navigation using Indicators List from IO Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS)

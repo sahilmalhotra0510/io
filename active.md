@@ -3,6 +3,8 @@ Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
 
 # Active Projects
 
+What's New! [API Key Local Storage](../localsite/tools/storage/api/) - By Loren and [ChatGPT 3.5](https://chat.openai.com)
+
 CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
 <!--Pre-processed data for county industry levels, based on employment, establishments and payroll.-->
 

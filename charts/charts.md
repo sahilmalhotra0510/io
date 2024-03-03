@@ -55,7 +55,7 @@ The io repo includes additional code for integrating widgets.
 - [NAICS Industry List](../../localsite/info/naics/) - JQuery with Python Machine Learning Pre-processing
 - [Impact Bubble Chart](bubble/) - D3 and JQuery  
 - [Sankey Chart](sankey/) - D3 with Python prep  
-
+- [Chord Chart](chord/) - Upcoming
 
 <!--
 If your local widgets reference the "useeio" folder, they may need to be updated occasionally as parameters change. For stability, point your local widgets at one of the [numbered backups](https://model.earth/eeio/build.2020.002) or copy the useeio folder into your project.

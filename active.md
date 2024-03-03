@@ -10,12 +10,13 @@ CSV Files to use for Timelines, Observable, and AI Training at: [industries/naic
 
 ML with Python and JavaScript (Observable and TensorFlow)
 
-- [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Sijia, Alison, Irene, Honglin, Ronan, Lily, Luwei, Wenxi, Magie
+- [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders) - Kargil, Parth
 - [PyTorch ML and Data Visualization](/machine-learning/pytorch/cluster/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
 - [Sankey Industry Chart](/io/charts/sankey/)
 - [Chord Chart Data Prep](/io/charts/chord/)
-- [Bee the Predictor](../data-pipeline/research/bees) - with [TensorFlow Javascript](https://www.tensorflow.org/js/demos)
+- [Bee the Predictor](../data-pipeline/research/bees/) - with [TensorFlow Javascript](https://www.tensorflow.org/js/demos) - Irene
+- [Tree Canopy Data](../data-pipeline/research/canopy/)
 
 Local Industry and Places Timelines
 - [React - Navigation using Indicators List from IO Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS)

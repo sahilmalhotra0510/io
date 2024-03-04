@@ -12,11 +12,6 @@ ML with Python and JavaScript (Observable and TensorFlow)
 
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders) - Kargil, Parth
-- [PyTorch ML and Data Visualization](/machine-learning/pytorch/cluster/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
-- [Sankey Industry Chart](/io/charts/sankey/)
-- [Chord Chart Data Prep](/io/charts/chord/)
-- [Bee the Predictor](../data-pipeline/research/bees/) - with [TensorFlow Javascript](https://www.tensorflow.org/js/demos) - Irene
-- [Tree Canopy Data](../data-pipeline/research/canopy/)
 
 Local Industry and Places Timelines
 - [React - Navigation using Indicators List from IO Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS)
@@ -77,7 +72,7 @@ https://model.earth/localsite/start/steps
 API and AI areas
 
 - [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - [Example uses OpenAi API](https://niek.github.io/chatgpt-web/) - Mahimna and everyone
-- [Replicate API Streamlit for Image Generation](/data-pipeline/research/stream) - [Python App Gallery](https://streamlit.io/gallery)- Kishor, Luwei (product prompts)
+- [Streamlit AI Images](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor, Luwei (product prompts)
 - [Google Data Commons API](https://docs.datacommons.org/api/) - Push in US EPA [impact data](/community/tools/)
 - [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
 - [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)

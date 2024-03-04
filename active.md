@@ -22,7 +22,7 @@ Local Industry and Places Timelines
 - [React - Navigation using Indicators List from IO Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS)
 - [React - Display totals in Jobs Reports](/localsite/info/#indicators=JOBS) by updating the [Input-Output Total Display](/localsite/info/data/totals/)
 - [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - Rupesh<!--Vadlamudi-->
-- [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Vadlamudi, Fanyi, Rupesh
+- [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Dinesh, Fanyi, Rupesh
 - [Annual NAICS - Process Industries by Zip Code](/data-pipeline/industries/naics) - Gaurav
 - [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Aashish
 - [ZCTA Random Forest Machine Learning](/data-pipeline/timelines/prep/all/) - Sijia

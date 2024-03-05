@@ -20,7 +20,7 @@ Local Industry and Places Timelines
 - [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Dinesh, Fanyi, Rupesh
 - [Annual NAICS - Process Industries by Zip Code](/data-pipeline/industries/naics) - Gaurav
 - [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Aashish
-- [ZCTA Random Forest Machine Learning](/data-pipeline/timelines/prep/all/) - Sijia
+- [Impact Label Pipeline](/apps/impact) - Too optimize and change inputs
 - [Python - Timeline Data Prep](/data-pipeline/timelines/prep/industries/) - Ronan
 - [Python - Process All the Places by State and Zip](/places) - Carolyn
 - [BuildingTransparency - API Aggregates of States and Countries](/io/template/product/) - Luwei

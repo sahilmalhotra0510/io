@@ -184,39 +184,42 @@ Or use <code>cd useeio-widgets</code> if you are just using the source repo.
 
 The following will add a node_modules folder containing javascript source libraries (dependencies) that will be used to output code for the widgets.  
 
-	cd useeio-widgets
-	npm install
+	cd useeio-widgets &&
+	npm ci
+
+Use `npm ci` instead of `npm install` to avoid updating package-lock.json. [Why? npm ci](https://stackoverflow.com/questions/48524417/should-the-package-lock-json-file-be-added-to-gitignore)
 
 <!--
+OLD - Did not occur with React update from EPA when running in March 2024
 You can ignore errors (about 11), including "Error: `gyp` failed with exit code: 1".  
-
 If you receive a "high severity vulnerabilities" warning, run the following as advised:  
-
 	npm audit fix
 -->
-<!--
-pre-React and with React, ignored:
-	`gyp` failed with exit code: 1
--->
-Then build the widget libraries. If you are using the "io" repo you'll already have a pre-built "build" folder.
+
+Then build the widget libraries.
+Note: the "io" repo already has the pre-built "[build](../build/)" folder.
 
 <!--
+This no longer occurs
 <span style="background:red; padding:3px; color:#fff">NOTE:</span> We recommend avoiding running the following build command. The code in the useeio-widgets repo currently causes a runaway processor in the browser when used with the "localsite" repo. To avoid, the "localsite/build" folder contains the recent code from [Recent build 2](https://thetisiboth.github.io/useeio-widget-builds/).
 -->
 
+<!--
+No longer necessary
 We switched from recent node-v20.10.0 to older 12.22.6 to avoid this error:
 error:0308010C:digital envelope routines::unsupported
 
-```
 nvm install 12.22.6
 nvm use 12.22.6
+-->
 
+```
 npm run build
 ```
 
 This will create or update the `build` folder and a `lib` sub-folder containing small JavaScript libraries used by the USEEIO widgets.  
 
-Once built, the `build` folder contains [example HTML files](https://model.earth/io/build/) that demonstrate the usage of these widgets.  
+The `build` folder contains [example HTML files](../build/) demonstrating usage of the widgets.  
 <!--
 Note: After building, remove   a { color: #555; } in widget.css.
 
@@ -226,31 +229,30 @@ To Do: Surround all USEEIO widgets with a class called .ioWidget and update widg
 
 # JSON files from API
 
-You can skip this step since we've already populated the **io/build/api folder** for you.
+You can skip this step. We've already populated the **io/build/api folder** for you.
 
-We generated static .json files from the USEEIO API so pages load faster, and you can work locally when not online, like on an airplane.
-
-<span class="local-block" style="display:none;">
-The production API requires an API key which we store in a [private Google Doc](https://docs.google.com/document/d/1FsIATg3XS-ZlyrNabZBIR9mdhSTWv22-yp0ZCyF80rg/edit?pli=1)
-</span>
+The generated .json files output from the USEEIO API load faster and you can work locally on an airplane.
 
 There is also a staging instance of the [USEEIO API](https://github.com/USEPA/USEEIO_API). However this server is often shutdown and will return a 404 error at <a href="https://smmtool.app.cloud.gov/" target="_blank">endpoint overview</a>. Every 90 days the staging server requires a reboot. You can email the [contact person](https://github.com/USEPA/USEEIO_API/wiki/People#Contact) to restart.
 
 Again, you don't need to run this since we're using a json instance of the API.
 
-If you do run it, run in the "io" folder.
+This one include 5 state files and will soon include all 50.
 
 	npm run download -- --endpoint https://smmtool.app.cloud.gov/api
 
 Running the above mirrors API data into the static json files in the `build/api` folder. 
 
-You may optionally [request the key](https://github.com/USEPA/USEEIO_API/wiki/Use-the-API) to the production API to run the following (Interns may use the key in our Google Sheet):  
+You may optionally [request the key](https://github.com/USEPA/USEEIO_API/wiki/Use-the-API) to the production API to run the following (Interns may use the key in our Google Doc).
+<span class="local-block" style="display:none;">
+The production API requires an API key which we store in a [private Google Doc](https://docs.google.com/document/d/1FsIATg3XS-ZlyrNabZBIR9mdhSTWv22-yp0ZCyF80rg/edit?pli=1)
+</span>
 
+As of March 2024, this one does not yet contain any state folders, nor the GHG folder.
 ```
 npm run download -- --endpoint https://api.edap-cluster.com/useeio/api --apikey [Add API key here]
 ```
-
-Important: We copied and renamed the folder USEEIOv2.0.1-411 to USEEIOv2.0 when placing in io/build/api so existing paths to USEEIOv2.0 in code do not need to be changed.
+Replace USEEIOv2.0.1-411 in the "io" repo if a newer version is generated.
 
 <!--
 1. Duplicate USEEIOv1.2 to USEEIO for existing script in non-React widgets.  
@@ -286,13 +288,9 @@ Use the up-arrow to run the build line after making a change.
 
 	npm run build
 
-
-
-View the output of your build at [http://localhost:8887/io/build](http://localhost:8887/io/build) 
-
 Learn more in the VS Code [Node.js Tutorial](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial). 
 
-### You may also contribute to the USEEIO-widget repo directly
+### You may contribute to the USEEIO-widget repo directly
 
 To make updates in the NodeJS source code, fork the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets/) repo and save in your local webroot (where you've [pointed](../../localsite/start/) http://localhost:8887/)  
 

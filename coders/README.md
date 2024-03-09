@@ -33,9 +33,10 @@ Collaborate on open source modeling tools using API mashups for environmental im
 
 ### Earthathon 2024 - Online with DemocracyLab
 #### Saturday, April 20, 2024
+9 AM - 5 PM PDT  
+6 AM - 2 PM EDT
 
-Mark your calendar for this likely event on Saturday, April 20, 2024.
-We'll add more details as DemocracyLab sets times.
+Mark your calendar and join in our [Earth Day AI projects](../)
 <br>
 
 

@@ -3,24 +3,29 @@ Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
 
 # Active Projects
 
-What's New! [API Key Local Storage](../localsite/tools/storage/api/) - By Loren and [ChatGPT 3.5](https://chat.openai.com)
+[Mike Bostock provides an assist](https://github.com/observablehq/framework/discussions/1030)!
 
-CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
-<!--Pre-processed data for county industry levels, based on employment, establishments and payroll.-->
+What's New! [API Key Local Storage](../localsite/tools/storage/api/) - By Loren and [ChatGPT](https://chat.openai.com)  
+Fork our new repos: [Earthscape Chatbot UI](https://github.com/ModelEarth/earthscape) and [Observable DataCommons](https://github.com/ModelEarth/data-commons).
 
-ML with Python and JavaScript (Observable and TensorFlow)
+<!--
+CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)  
+Pre-processed data for county industry levels, based on employment, establishments and payroll.-->
+
+**ML with Python and JavaScript (Observable and TensorFlow)**
 
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders) - Kargil, Parth
 - [Observable - Install notes for Data Loaders](/data-pipeline/timelines/observable) - [View Kargil's How To](https://github.com/kargilthakur/Observables-DataLoader/tree/master/docs) - Kargil
 
-Local Industry and Places Timelines
+**Local Industry and Places Timelines**
+
 - [React - Navigation using Indicators List from IO Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS)
 - [React - Display totals in Jobs Reports](/localsite/info/#indicators=JOBS) by updating the [Input-Output Total Display](/localsite/info/data/totals/)
 - [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - Rupesh<!--Vadlamudi-->
 - [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Dinesh, Fanyi, Rupesh
 - [Annual NAICS - Process Industries by Zip Code](/data-pipeline/industries/naics) - Gaurav
-- [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Aashish
+- [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/phiresky/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Aashish
 - [Impact Label Pipeline](/apps/impact) - Too optimize and change inputs
 - [Python - Timeline Data Prep](/data-pipeline/timelines/prep/industries/) - Ronan
 - [Python - Process All the Places by State and Zip](/places) - Carolyn
@@ -35,21 +40,25 @@ Local Industry and Places Timelines
 <!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->
 
 <!--
-Hi,
+Hi, thanks for registering with our ModelEarth team!
 
-We're meeting on Sunday at 11PM EST, and again on Monday and Thursday at Noon EST.
+We're meeting on Sunday at 11PM EDT, and again on Thursday at Noon EDT.
+
+The meetup link is always the same:
 https://model.earth/io/coders
 
-I'm enthused to hear you have React, Javascript and D3 experience.
-Most of our team members are Python focused.
+Please let me know if Sunday works for you, and let me know which of the following you are interested in: Javascript, React, D3, Leaflet, Python, Forecasting with ML
 
-I'll send more info about React projects. Do you have a favorite app for viewing images and video?
-
-Here's our active projects:
+Here are our active projects:
 https://model.earth/io
 
-Here's a cmd for pulling down our 4 main repos:
+Here's a cmd for pulling down our main repos:
 https://model.earth/localsite/start/steps
+
+Please make a fork of data-pipeline and data-commons before pulling down.
+
+Looking forward to working with you!
+Let me know if you need a welcome letter for the OPT program.
 
 
 
@@ -69,7 +78,7 @@ https://model.earth/localsite/start/steps
 	We need to figure out a crosswalk from the Naics6 department of labor data we pull for levels of employment, as it relates to the new 72 sectors the EPA now uses. Previously they used 389 sectors.  The sectors are a fairly close match to the naics values.
 -->
 
-API and AI areas
+**API and AI areas**
 
 - [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - [Example uses OpenAi API](https://niek.github.io/chatgpt-web/) - Mahimna and everyone
 - [Streamlit AI Images](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor, Luwei (product prompts)

@@ -40,25 +40,32 @@ Pre-processed data for county industry levels, based on employment, establishmen
 <!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->
 
 <!--
+Welcome! - Model.earth meetup tonight at 11 PM EDT
+
 Hi, thanks for registering with our ModelEarth team!
 
-We're meeting on Sunday at 11PM EDT, and again on Thursday at Noon EDT.
+We're meeting tonight (Sunday) at 11PM EDT, and again on Thursday at Noon EDT.
+(We also do focused meetups Mondays and Tuesdays in the afternoon.)
 
-The meetup link here is always the same:
+Let me know which of the following areas you're interested in:
+Javascript, React, D3, Leaflet, Python, Forecasting with ML
+
+Our meetup link is here. (It's always the same)
 https://model.earth/io/coders
-
-Let me know if Sunday evening works for you, and also let me know which of the following you are interested in: Javascript, React, D3, Leaflet, Python, Forecasting with ML
 
 Here are our active projects:
 https://model.earth/io
 
 Here's a cmd for pulling down our main repos:
+Make a fork of the data-pipeline and data-commons repos.
+Then select those 2 checkboxes on the page above and run the cmd.
 https://model.earth/localsite/start/steps
 
-Make a fork of data-pipeline and data-commons before running the cmd.
+Let me know if you need a welcome letter for the OPT program.
 
 Looking forward to working with you!
-Let me know if you need a welcome letter for the OPT program.
+
+Loren Heyns
 
 
 

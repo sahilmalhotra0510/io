@@ -6,7 +6,7 @@ Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
 [Mike Bostock provides an assist](https://github.com/observablehq/framework/discussions/1030)!
 
 What's New! [API Key Local Storage](../localsite/tools/storage/api/) - By Loren and [ChatGPT](https://chat.openai.com)  
-Fork our new repos: [Earthscape Chatbot UI](https://github.com/ModelEarth/earthscape) and [Observable DataCommons](https://github.com/ModelEarth/data-commons).
+Fork our new repos: [Earthscape Chatbot UI](../localsite/start/earthscape) and [Observable DataCommons](https://github.com/ModelEarth/data-commons).
 
 <!--
 CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)  

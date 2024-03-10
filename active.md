@@ -33,7 +33,7 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [BuildingTransparency - JSON file pull for impact templates](/io/template/product/) - Harsha<!-- Later display with SQLite -->
 - [BuildingTransparency - Product Impact Profiles by State and Zip](/io/template/feed/)
 - [Python - Census Zip Code and International Postal Code Data Files](/zip/io/#zip=10001) - Gary
-- [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/) - Luwei
+- [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/) - Fanyi
 
 
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin-->
@@ -56,9 +56,7 @@ https://model.earth/io/coders
 Here are our active projects:
 https://model.earth/io
 
-Here's a cmd for pulling down our main repos:
-Make a fork of the data-pipeline and data-commons repos.
-Then select those 2 checkboxes on the page above and run the cmd.
+You can pull down our main repos with a single cmd. First make a fork of the data-pipeline and data-commons repos in GitHub.com. Then select  checkboxes here for those 2 repos and run the cmd in a local webroot folder.
 https://model.earth/localsite/start/steps
 
 Let me know if you need a welcome letter for the OPT program.
@@ -88,7 +86,7 @@ Loren Heyns
 **API and AI areas**
 
 - [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - [Example uses OpenAi API](https://niek.github.io/chatgpt-web/) - Mahimna and everyone
-- [Streamlit AI Images](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor, Luwei (product prompts)
+- [Streamlit AI Images](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
 - [Google Data Commons API](https://docs.datacommons.org/api/) - Push in US EPA [impact data](/community/tools/)
 - [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
 - [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)

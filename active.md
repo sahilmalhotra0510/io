@@ -44,10 +44,10 @@ Hi, thanks for registering with our ModelEarth team!
 
 We're meeting on Sunday at 11PM EDT, and again on Thursday at Noon EDT.
 
-The meetup link is always the same:
+The meetup link here is always the same:
 https://model.earth/io/coders
 
-Please let me know if Sunday works for you, and let me know which of the following you are interested in: Javascript, React, D3, Leaflet, Python, Forecasting with ML
+Let me know if Sunday evening works for you, and also let me know which of the following you are interested in: Javascript, React, D3, Leaflet, Python, Forecasting with ML
 
 Here are our active projects:
 https://model.earth/io
@@ -55,7 +55,7 @@ https://model.earth/io
 Here's a cmd for pulling down our main repos:
 https://model.earth/localsite/start/steps
 
-Please make a fork of data-pipeline and data-commons before pulling down.
+Make a fork of data-pipeline and data-commons before running the cmd.
 
 Looking forward to working with you!
 Let me know if you need a welcome letter for the OPT program.

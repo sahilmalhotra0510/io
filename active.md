@@ -16,7 +16,7 @@ Pre-processed data for county industry levels, based on employment, establishmen
 
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders) - Kargil, Parth
-- [Observable - Install notes for Data Loaders](/data-pipeline/timelines/observable) - [View Kargil's How To](https://github.com/kargilthakur/Observables-DataLoader/tree/master/docs) - Kargil
+- [Observable with Data Commons](/data-pipeline/timelines/observable) - [Data Loaders How-To](https://github.com/kargilthakur/Observables-DataLoader/tree/master/docs) - Kargil
 
 **Local Industry and Places Timelines**
 

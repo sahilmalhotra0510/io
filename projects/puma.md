@@ -15,10 +15,5 @@ Focus: Tools combining [NAICS industry groups (284)](https://datausa.io/search/?
 Python server-side: [Flask to Google Cloud with Docker/Kubernetes](https://medium.com/honeybadger-ai/how-to-deploy-machine-learning-models-using-flask-docker-and-google-cloud-platform-gcp-6e7bf1b339d5)  
 Websocket API: [Amazon API Gateway and AWS Lambda with DynamoDB](https://www.youtube.com/watch?v=DzpGfyB0iKk)  
 
-3. Update and Integrate US EPA Environmentally-Extended [Input Output widgets](../charts/).  
-
-Lead Intern: John A Taylor  
-Collaborators: Loren Heyns, Costas Simoglou  
-Focus: West Central Georgia and Southeast Coastal Georgia   
 
 

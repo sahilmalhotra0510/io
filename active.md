@@ -18,6 +18,13 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders) - Kargil, Parth
 - [Observable with Data Commons](/data-pipeline/timelines/observable) - [Data Loaders How-To](https://github.com/kargilthakur/Observables-DataLoader/tree/master/docs) - Kargil
 
+**Observable Visualization Projects**
+
+- [PyTorch ML and Data Visualization](/machine-learning/pytorch/cluster/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
+- [Sankey Industry Chart](/io/charts/sankey/)
+- [Chord Chart Data Prep](/io/charts/chord/)
+- [Earthscape Chatbot Charts](../localsite/start/earthscape) 
+
 **Local Industry and Places Timelines**
 
 - [React - Navigation using Indicators List from IO Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS)

@@ -1,4 +1,4 @@
-Regular meetings: [Sunday 11PM EST and Monday Noon EST](/io/coders/)
+Regular meetings: [Sunday 10PM EST and Monday Noon EST](/io/coders/)
 <!--Overview Session on Tuesday at Noon ET for new team members.-->
 
 # Active Projects
@@ -48,11 +48,11 @@ Pre-processed data for county industry levels, based on employment, establishmen
 <!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->
 
 <!--
-Welcome! - Model.earth meetup tonight at 11 PM EDT
+Welcome! - Our next Model.earth meetup is Thursday at Noon EDT
 
 Hi, thanks for registering with our ModelEarth team!
 
-We're meeting tonight (Sunday) at 11PM EDT, and again on Thursday at Noon EDT.
+We're meeting tonight (Sunday) at 10PM EDT, and again on Thursday at Noon EDT.
 (We also do focused meetups Mondays and Tuesdays in the afternoon.)
 
 Let me know which of the following areas you're interested in:
@@ -64,7 +64,8 @@ https://model.earth/io/coders
 Here are our active projects:
 https://model.earth/io
 
-You can pull down our main repos with a single cmd. First make a fork of the data-pipeline and data-commons repos in GitHub.com. Then select  checkboxes here for those 2 repos and run the cmd in a local webroot folder.
+You can pull down our main repos with a single cmd. First make a fork of the data-pipeline and data-commons repos in GitHub.com/modelearth. Then select the checkboxes for those 2 repos here:
+
 https://model.earth/localsite/start/steps
 
 Let me know if you need a welcome letter for the OPT program.

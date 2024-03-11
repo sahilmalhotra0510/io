@@ -11,8 +11,8 @@ For use during a future Web Challenge
 View our [Active Projects](../) and find your areas of interest.
 
 Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) 3-days weekly (Eastern Time, NY and Atlanta)
-- [Thursdays, Noon to 1 PM ET](https://meet.google.com/pcv-xrdh-bat)
-- [Sundays, 11 PM to Midnight ET](https://meet.google.com/pcv-xrdh-bat)
+- [Thursdays, Noon ET](https://meet.google.com/pcv-xrdh-bat)
+- [Sundays, 10 PM ET](https://meet.google.com/pcv-xrdh-bat)
 - [Monday or Tuesday, mornings](https://meet.google.com/pcv-xrdh-bat)
 
 The Google Meetup link above remains the same for all meetings.

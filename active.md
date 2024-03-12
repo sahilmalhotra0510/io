@@ -94,8 +94,8 @@ Loren Heyns
 
 **API and AI areas**
 
-- [ChatGPT Web Assistant Repo](https://github.com/Niek/chatgpt-web) - [Example uses OpenAi API](https://niek.github.io/chatgpt-web/) - Mahimna and everyone
-- [Streamlit AI Images](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
+- NEW: [Earthscape for Chatbot AI](/earthscape) - NextJS and Supabase 
+- [AI Community Visualizations](/data-pipeline/research/) - [Streamlit](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
 - [Google Data Commons API](https://docs.datacommons.org/api/) - Push in US EPA [impact data](/community/tools/)
 - [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
 - [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)

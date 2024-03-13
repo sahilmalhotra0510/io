@@ -1,13 +1,13 @@
-Regular meetings: [Sunday 10PM EST and Monday Noon EST](/io/coders/)
+Regular meetings: [Sunday 10 PM EST and Thursday Noon EST](/io/coders/)
 <!--Overview Session on Tuesday at Noon ET for new team members.-->
+---
+<br>
 
 # Active Projects
 
-[Mike Bostock provides an assist](https://github.com/observablehq/framework/discussions/1030)!
+Fork our primary repos: [Observable DataCommons](/data-commons/) and [Data Pipelink](/data-pipeline/). - [Local Site Install](../localsite/start/steps/)
 
-What's New! [API Key Local Storage](../localsite/tools/storage/api/) - By Loren and [ChatGPT](https://chat.openai.com)  
-Fork our new repos: [Earthscape Chatbot UI](../localsite/start/earthscape) 
-and [Observable DataCommons](/data-pipeline/timelines/observable/).
+What's new: [Earthscape Chatbot UI](/earthscape) and [AI Community Visualizations](/data-pipeline/research).
 
 <!--
 CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)  
@@ -52,7 +52,7 @@ Welcome! - Our next Model.earth meetup is Thursday at Noon EDT
 
 Hi, thanks for registering with our ModelEarth team!
 
-We're meeting tonight (Sunday) at 10PM EDT, and again on Thursday at Noon EDT.
+We're meeting tonight (Sunday) at 10 PM EDT, and again on Thursday at Noon EDT.
 (We also do focused meetups Mondays and Tuesdays in the afternoon.)
 
 Let me know which of the following areas you're interested in:
@@ -100,6 +100,9 @@ Loren Heyns
 - [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
 - [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)
 - [Use our state map filter](#geoview=country) with colors for [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) - ML with 24 EPA impacts - Honglin and Irean
+
+[Mike Bostock provides an assist](https://github.com/observablehq/framework/discussions/1030) - deploy.yml files
+[API Key Local Storage](../localsite/tools/storage/api/) - Javascript repeater with localStorage
 
 <!--
 Industry2vec: an Implementation for Industry Code Vector Representation

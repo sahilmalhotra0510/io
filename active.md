@@ -5,9 +5,9 @@ Regular meetings: [Sunday 10 PM EST and Thursday Noon EST](/io/coders/)
 
 # Active Projects
 
-Fork our primary repos: [Observable DataCommons](/data-commons/) and [Data Pipelink](/data-pipeline/). - [Local Site Install](../localsite/start/steps/)
+Fork our primary repos: [Observable DataCommons](/data-commons/) and [Data Pipeline](/data-pipeline/). - [Update Repos](../localsite/start/steps/)
 
-What's new: [Earthscape Chatbot UI](/earthscape) and [AI Community Visualizations](/data-pipeline/research).
+What's new: [Earthscape Chatbot UI](/earthscape/app/) and [AI Community Visualizations](/data-pipeline/research).
 
 <!--
 CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)  
@@ -15,6 +15,7 @@ Pre-processed data for county industry levels, based on employment, establishmen
 
 **ML with Python and JavaScript (Observable and TensorFlow)**
 
+- [Earthscape Chatbot Quick Install](/earthscape/app/) - Let's complete these steps before Sunday evening
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders) - Kargil, Parth
 - [Observable with Data Commons](/data-pipeline/timelines/observable) - [Data Loaders How-To](https://github.com/kargilthakur/Observables-DataLoader/tree/master/docs) - Kargil
@@ -24,7 +25,6 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [PyTorch ML and Data Visualization](/machine-learning/python/cluster/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
 - [Sankey Industry Chart](/io/charts/sankey/)
 - [Chord Chart Data Prep](/io/charts/chord/)
-- [Earthscape Chatbot Charts](../localsite/start/earthscape) 
 
 **Local Industry and Places Timelines**
 

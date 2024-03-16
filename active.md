@@ -98,8 +98,7 @@ Our LLM chat work will be taking place in this fork of Chatbot UI which will all
 What's your favorite LLM currently? ChatGPT, Claude, Perplexity, MJ or another? I've been using chat.openai.com 3.5 a lot to create code snippets.
 
 Go ahead and fork our Earthscape Chatbot UI instance:
-https://model.earth/earthscape
-https://github.com/modelearth/earthscape
+https://model.earth/earthscape/app
 
 And finally, let me know your area of interest in our Data Commons repo:
 
@@ -129,7 +128,7 @@ Looking forward to Sunday, thanks for getting involved!
 
 **API and AI areas**
 
-- NEW: [Earthscape for Chatbot AI](/earthscape) - NextJS and Supabase 
+- NEW: [Earthscape for Chatbot AI](/earthscape/app/) - NextJS and Supabase 
 - [AI Community Visualizations](/data-pipeline/research/) - [Streamlit](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
 - [Google Data Commons API](https://docs.datacommons.org/api/) - Push in US EPA [impact data](/community/tools/)
 - [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts

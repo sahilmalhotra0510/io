@@ -5,9 +5,7 @@ Regular meetings: [Sunday 10 PM EST and Thursday Noon EST](/io/coders/)
 
 # Active Projects
 
-Fork our primary repos: [Observable DataCommons](/data-commons/) and [Data Pipeline](/data-pipeline/). - [Update Repos](../localsite/start/steps/)
-
-What's new: [Earthscape Chatbot UI](/earthscape/app/) and [AI Community Visualizations](/data-pipeline/research).
+[Start Page](../localsite/start/steps/) - [Observable DataCommons](/data-commons/dist/) - [Earthscape Chatbot UI](/earthscape/app/) - [AI Community Visualizations](/data-pipeline/research)
 
 <!--
 CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)  
@@ -15,10 +13,10 @@ Pre-processed data for county industry levels, based on employment, establishmen
 
 **ML with Python and JavaScript (Observable and TensorFlow)**
 
-- [Earthscape Chatbot Quick Install](/earthscape/app/) - Let's complete these steps before Sunday evening
+- [Earthscape Chatbot Quick Install](/earthscape/app/) - 100+ LLMs in a Web Interface you can host yourself - Srujana
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
-- [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders) - Kargil, Parth
-- [Observable with Data Commons](/data-pipeline/timelines/observable) - [Data Loaders How-To](https://github.com/kargilthakur/Observables-DataLoader/tree/master/docs) - Kargil
+- [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders)
+- [Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/) - [Kargil's Notes](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
 
 **Observable Visualization Projects**
 
@@ -64,7 +62,7 @@ Welcome! - Our next Model.earth meetup is Sunday at 10 PM EDT
 
 Hi, thanks for registering with our ModelEarth team!
 
-We meet next on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
+We're meeting on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
 (We also do focused meetups Mondays and Tuesdays in the afternoon.)
 
 Let me know which of the following areas you're interested in:

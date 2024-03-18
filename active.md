@@ -41,7 +41,7 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [Python - Census Zip Code and International Postal Code Data Files](/zip/io/#zip=10001) - Gary
 - [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/) - Fanyi
 
-
+- [Deep Learning Economy](/data-pipeline/research/economy/) - Honglin
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin-->
 <!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->
 

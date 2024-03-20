@@ -167,9 +167,6 @@ https://retool.com/component-library
 
 Industry2vec: an Implementation for Industry Code Vector Representation
 https://medium.com/wbaa/industry2vec-an-implementation-for-industry-code-vector-representation-68ec5f5de9a4
--->
-
----
 
 # Deep Dive TO DOs
 
@@ -177,15 +174,9 @@ Here’s a page about our Farm Fresh API pull project.
 Please coordinate with Obiechina Iyi as you update the Python script.
 https://model.earth/community-data/process/python/farmfresh/
 
-Loren will request a new API key for the Farm Fresh data pull.
-<!--
-Wed Jan 24, 2024 and will post a note here when it is available.
+Loren will request a new API key for the Farm Fresh data pull, to folow up from prior request Wed Jan 24, 2024.
+
 -->
-
-https://datacommons.org/faq
-
-
-Add note: Please include your GitHub account.
 
 
 ---

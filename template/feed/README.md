@@ -11,10 +11,6 @@
 <a href="https://buildingtransparency.org/ec3/creator-contacts/epds">How to Get an EPD</a> - Includes  “nutrition label” image
 <a href="https://www.oneclicklca.com/simple-epd-guide/" target="epdGuide">EPD Guide</a> - One Click LCA<br>
 
-The API key expires every 72 hours.
-The 401 error below is replaced by a list when you update the key.
-(Currently you have to [download our repos](../../../localsite/start/steps/) to edit the key)
-
 <b>TO DO:</b> Allow site users to enter their own BuildingTransparency key here. Use [javascript sample on starter page](../../../localsite/start/steps/).
 
 *Your API Key (Not yet activated):*
@@ -66,6 +62,10 @@ Abrie's work could be formatted to match our [HTML template](../../io/template/)
 Check out [React with Blitz.js](https://blitzjs.com) for data layer abstraction that eliminates the need for REST/GraphQL.
 
 Output Display:
-<div id="urlDisplay" style="overflow-wrap: break-word;"></div>
+<div id="urlDisplay" style="overflow-wrap: break-word;">
+The API key here in javascript expires every 72 hours.<br>
+The 401 error below is replaced by a list when you update the key.<br>
+You can <a href="../../../localsite/start/steps/">setup our repos locally</a> to update the key.<br><br>
+</div>
 
 <div id="clickToExpand" style="display:none">Click bars to expand</div>

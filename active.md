@@ -46,6 +46,9 @@ Pre-processed data for county industry levels, based on employment, establishmen
 <!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->
 
 <!--
+
+Use dashes rather than underscores in file names and parameters for readability in links and for compatibility with markdown. Otherwise a back-slash \_ is needed when documenting.
+
 Hi, if you'd like to join the Model.earth team again, please re-register in DemocracyLab.org. We have a lot of exciting projects with a very active team: https://model.earth/io
 
 

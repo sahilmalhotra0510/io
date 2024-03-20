@@ -9,7 +9,7 @@
 Join us in developing label widgets based on [Environmental Impact Profiles](../../io/template/) to display 24 impact areas for products and industries, states and counties, plus organizations and individuals.  
 
 Side navigation is not yet active.  
-Here's our [stand-alone version](../../localsite/info/page/) for developers.
+Here's our [stand-alone sidenav](../../localsite/info/page/) for developers.
 
 <!--
 <a href="https://www.figma.com/file/mVZUSQCMBsIMu9bp7Y8qsS/Impact-Footprint?node-id=0%3A1" target="fig">Our Figma Mockup</a>

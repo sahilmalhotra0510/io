@@ -10,12 +10,15 @@ For use during a future Web Challenge
 
 View our [Active Projects](../) and find your areas of interest.
 
-Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) 3-days weekly (Eastern Time, NY and Atlanta)
+Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) (Eastern Time, NY and Atlanta)
 - [Thursdays, Noon ET](https://meet.google.com/pcv-xrdh-bat)
 - [Sundays, 10 PM ET](https://meet.google.com/pcv-xrdh-bat)
-- [Monday or Tuesday, mornings](https://meet.google.com/pcv-xrdh-bat)
+- [Other evenings plus Monday and Tuesday afternoons](https://meet.google.com/pcv-xrdh-bat)
 
-The Google Meetup link above remains the same for all meetings.
+The Google Meetup link above remains the same for all meetings.<!--
+Zoom link to try reusing
+	https://us04web.zoom.us/j/75934593071?pwd=pYEk771K5EaAa2Ud13izrckaDxUsIn.1
+-->
 
 Collaborate on open source modeling tools using API mashups for environmental impacts, local job levels, industry timelines and [sustainable product profiles](../../io/template/).  
 

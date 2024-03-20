@@ -26,8 +26,8 @@ Pre-processed data for county industry levels, based on employment, establishmen
 
 **Local Industry and Places Timelines**
 
-- [React - Navigation using Indicators List from IO Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS)
-- [React - Display totals in Jobs Reports](/localsite/info/#indicators=JOBS) by updating the [Input-Output Total Display](/localsite/info/data/totals/)
+- [React Team - Impact Side Navigation](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) - Meeting Wednesday at [10 PM EDT](coders)
+- [React Team - Commodity Totals](/localsite/info/data/totals/) in [Jobs Reports](/localsite/info/#indicators=JOBS)
 - [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - Rupesh<!--Vadlamudi-->
 - [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Dinesh, Fanyi, Rupesh
 - [Annual NAICS - Process Industries by Zip Code](/data-pipeline/industries/naics) - Gaurav
@@ -46,24 +46,52 @@ Pre-processed data for county industry levels, based on employment, establishmen
 <!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->
 
 <!--
+Hi, if you'd like to join the Model.earth team again, please re-register in DemocracyLab.org. We have a lot of exciting projects with a very active team: https://model.earth/io
+
+
+Our next Model.earth team meeting is Thursday at Noon EDT
+
+Hi, I saw your registration in our Democracy Lab team and thought you might be interested in working with us on our new Earthscape app. We're automating ML data visualizations within our fork of Chatbot UI, which integrates over 100 LLMs:
+
+https://model.earth/earthscape
+
+We meet on Thursday at Noon EDT, and again on Sunday at 10 PM EDT.
+We also do focused meetups evenings, and Mondays & Tuesdays afternoons.
+
+Our meetup link is here. (It's always the same)
+https://model.earth/io/coders
+
+Here are our active projects:
+https://model.earth/io
+
+You can pull down our repos with a single cmd after forking our main repos:
+https://model.earth/localsite/start/steps
+
+Looking forward to having you join us!
+
+Loren Heyns
+
+
+
 We're meeting today (Thursday) at Noon EDT, and again on Sunday at 10 PM EDT.
 (We also do focused meetups Mondays and Tuesdays in the afternoon.)
 
 We're meeting tonight (Sunday) at 10 PM EDT, and again on Thursday at Noon EDT.
 (We also do focused meetups Mondays and Tuesdays in the afternoon.)
 
-Welcome! - Our next Model.earth meetup is Thursday at Noon EDT
-
-
-
+We're meeting on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
+(We also do focused meetups Mondays and Tuesdays in the afternoon.)
 
 Welcome! - Our next Model.earth meetup is Sunday at 10 PM EDT
 
 
+
+Welcome! - Our next Model.earth meetup is Thursday at Noon EDT
+
 Hi, thanks for registering with our ModelEarth team!
 
-We're meeting on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
-(We also do focused meetups Mondays and Tuesdays in the afternoon.)
+We're meeting Thursday at Noon EDT, and again on Sunday at 10 PM EDT.
+(We also do focused meetups other evenings, and on Mondays and Tuesdays.)
 
 Let me know which of the following areas you're interested in:
 Javascript, React, D3, Leaflet, Python, Forecasting with ML, LLM Chat JSON
@@ -74,7 +102,7 @@ https://model.earth/io/coders
 Here are our active projects:
 https://model.earth/io
 
-You can pull down our main repos with a single cmd after forking our three:
+You can pull down our repos with a single cmd after forking our main repos:
 https://model.earth/localsite/start/steps
 
 Let me know if you'd like a welcome letter for the OPT program.
@@ -88,40 +116,36 @@ Loren Heyns
 Here's the template for the OPT letter.
 Please adjust anything to fit your needs - update the start, job title, etc.
 
-Here's a page with our current python ML to-do's:
+
+
+Hi again, we currently have 25 active team members.
+
+Pick one of the 12 ML to-do and I'll loop you in with others involved in that area.
+
 https://model.earth/data-pipeline/timelines/training/naics
 
-Our LLM chat work will be taking place in this fork of Chatbot UI which will allow us to use NLP while interacting with 100+ LLM APIs! 
+Our LLM chat work will be taking place in this fork of Chatbot UI which will allow us to use NLP while interacting with 100 LLM APIs.
 
-What's your favorite LLM currently? ChatGPT, Claude, Perplexity, MJ or another? I've been using chat.openai.com 3.5 a lot to create code snippets.
-
-Go ahead and fork our Earthscape Chatbot UI instance:
+You can fork our Earthscape Chatbot UI instance:
 https://model.earth/earthscape/app
 
-And finally, let me know your area of interest in our Data Commons repo:
+And let me know your area of interest in our Data Commons repo:
 
 https://model.earth/data-commons/dist
 
-Looking forward to Sunday, thanks for getting involved!
+Looking forward to Thursday, thanks for getting involved!
 
 
 
-
-
-	mark huang - deep learning
-
-	Overview video
-	https://platform.openai.com/docs/actions/introduction
-
-	https://retool.com/component-library
-
-	- 
-
-	[Google Places API]() - Hours of Operation, All The Places Recyclers, BuildingTransparency Manufacturers
+What's your favorite LLM currently? ChatGPT, Claude, Perplexity, MJ or another? I've been using chat.openai.com 3.5 a lot to create code snippets.
 
 
 
-	We need to figure out a crosswalk from the Naics6 department of labor data we pull for levels of employment, as it relates to the new 72 sectors the EPA now uses. Previously they used 389 sectors.  The sectors are a fairly close match to the naics values.
+Overview video
+https://platform.openai.com/docs/actions/introduction
+
+https://retool.com/component-library
+
 -->
 
 **API and AI areas**
@@ -130,16 +154,36 @@ Looking forward to Sunday, thanks for getting involved!
 - [AI Community Visualizations](/data-pipeline/research/) - [Streamlit](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
 - [Google Data Commons API](https://docs.datacommons.org/api/) - Push in US EPA [impact data](/community/tools/)
 - [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
-- [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)
 - [Use our state map filter](#geoview=country) with colors for [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) - ML with 24 EPA impacts - Honglin and Irean
 
 [Mike Bostock provides an assist](https://github.com/observablehq/framework/discussions/1030) - deploy.yml files
 [API Key Local Storage](../localsite/tools/storage/api/) - Javascript repeater with localStorage
 
 <!--
+- [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)
+
 Industry2vec: an Implementation for Industry Code Vector Representation
 https://medium.com/wbaa/industry2vec-an-implementation-for-industry-code-vector-representation-68ec5f5de9a4
 -->
+
+---
+
+# Deep Dive TO DOs
+
+Here’s a page about our Farm Fresh API pull project.
+Please coordinate with Obiechina Iyi as you update the Python script.
+https://model.earth/community-data/process/python/farmfresh/
+
+Loren will request a new API key for the Farm Fresh data pull.
+<!--
+Wed Jan 24, 2024 and will post a note here when it is available.
+-->
+
+https://datacommons.org/faq
+
+
+Add note: Please include your GitHub account.
+
 
 ---
 <br>Feb 2024 - from Wes Ingwersen, US EPA Engineer:

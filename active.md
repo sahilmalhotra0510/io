@@ -16,22 +16,36 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [Earthscape Chatbot Quick Install](/earthscape/app/) - 100+ LLMs in a Web Interface you can host yourself - Srujana
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders)
-- [Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/) - [Kargil's Notes](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
+- [Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/)
+- [Python - Census Zip Code and International Postal Code Data Files](/zip/io/#zip=10001)
+- [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/)
 
 **Observable Visualization Projects**
 
-- Build Observable chart selection tools locally
+- Build Observable chart selection tools locally<!-- [Kargil's Notes](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)-->
 - [PyTorch ML and Data Visualization](/machine-learning/python/cluster/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
-- Apply eye blink data in RealityStream
+- Apply eye blink data in RealityStream - Ruchika
 - [Sankey Industry Chart](/io/charts/sankey/)
 - [Chord Chart Data Prep](/io/charts/chord/) from Kargil
 
-**Local Industry and Places Timelines**
 
-- Instal LLM from Google Data Commons
-- [React Team - Impact Side Navigation](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) - Ziyao - We meet Wednesdays at [10 PM EDT](coders)
+**API and AI areas**
+
+- [Earthscape for Chatbot AI - NextJS Hosting](/earthscape/app/) - Anthony
+- [Earthscape for Chatbot AI - Supabase Demo](/earthscape/app/)
+- [AI Community Visualizations](/data-pipeline/research/) - [Streamlit](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
+- [Google Data Commons API](https://docs.datacommons.org/api/) - Push in US EPA <!--[OpenFootprint impact data](/OpenFootprint)-->
+- [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
+- [Use our state map filter](#geoview=country) with colors for [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) - ML with 24 EPA impacts - Honglin and Irean
+
+
+**React, Tabulator, Industry Timelines**
+
+Our React Team meets Wednesdays at [10 PM EDT](coders)
+- [React Team - Impact Side Navigation](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) - Ziyao
 - [React Team - Mosic column checkboxes](/io/charts) - Fanyi
 - [React Team - Commodity Totals](/localsite/info/data/totals/) in [Jobs Reports](/localsite/info/#indicators=JOBS)
+- [NPM - Install LLM from Google Data Commons](/localsite/info/data/datacommons/), Integrate with Earthscape
 - [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - Rupesh<!--Vadlamudi-->
 - [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Dinesh, Fanyi, Rupesh
 - [Annual NAICS - Process Industries by Zip Code](/data-pipeline/industries/naics) - Gaurav
@@ -42,10 +56,13 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [BuildingTransparency - API Aggregates of States and Countries](/io/template/product/) - Luwei
 - [BuildingTransparency - JSON file pull for impact templates](/io/template/product/) - Harsha<!-- Later display with SQLite -->
 - [BuildingTransparency - Product Impact Profiles by State and Zip](/io/template/feed/)
-- [Python - Census Zip Code and International Postal Code Data Files](/zip/io/#zip=10001) - Gary
-- [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/)
+- [Deep Learning Economy - Commodity Totals](/data-pipeline/research/economy/) - Honglin
 
-- [Deep Learning Economy](/data-pipeline/research/economy/) - Honglin
+[Mike Bostock provides an assist](https://github.com/observablehq/framework/discussions/1030) - deploy.yml files
+[API Key Local Storage](../localsite/tools/storage/api/) - Javascript repeater with localStorage
+
+
+
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin-->
 <!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->
 
@@ -155,21 +172,8 @@ https://platform.openai.com/docs/actions/introduction
 
 https://retool.com/component-library
 
--->
 
-**API and AI areas**
 
-- [Earthscape for Chatbot AI - NextJS Hosting](/earthscape/app/)
-- [Earthscape for Chatbot AI - Supabase Demo](/earthscape/app/)
-- [AI Community Visualizations](/data-pipeline/research/) - [Streamlit](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
-- [Google Data Commons API](https://docs.datacommons.org/api/) - Push in US EPA [impact data](/community/tools/)
-- [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
-- [Use our state map filter](#geoview=country) with colors for [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) - ML with 24 EPA impacts - Honglin and Irean
-
-[Mike Bostock provides an assist](https://github.com/observablehq/framework/discussions/1030) - deploy.yml files
-[API Key Local Storage](../localsite/tools/storage/api/) - Javascript repeater with localStorage
-
-<!--
 - [Commodity Flow Survey for Counties](https://github.com/modelearth/commodity-flow-survey)
 
 Industry2vec: an Implementation for Industry Code Vector Representation

@@ -16,8 +16,8 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [Earthscape Chatbot Quick Install](/earthscape/app/) - 100+ LLMs in a Web Interface you can host yourself - Srujana
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders)
-- [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/)
-- [PyTorch ML and Data Visualization](/machine-learning/python/cluster/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
+- [Python - State Regions using Sets of Counties](/community-data/us/edd/)
+- [USEEIO matrix files](/machine-learning/python/cluster/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
 
 **Observable + GDC Visualization Projects**
 

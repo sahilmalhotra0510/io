@@ -16,18 +16,18 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [Earthscape Chatbot Quick Install](/earthscape/app/) - 100+ LLMs in a Web Interface you can host yourself - Srujana
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders)
-- [Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/)
 - [Python - Census Zip Code and International Postal Code Data Files](/zip/io/#zip=10001)
 - [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/)
-
-**Observable Visualization Projects**
-
-- Build Observable chart selection tools locally<!-- [Kargil's Notes](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)-->
 - [PyTorch ML and Data Visualization](/machine-learning/python/cluster/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
+
+**Observable + GDC Visualization Projects**
+
+- [Python CoLabs for API calls](/data-commons/docs/) - Paul and Anna
+- [Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/)
 - Apply eye blink data in RealityStream - Ruchika
 - [Sankey Industry Chart](/io/charts/sankey/)
-- [Chord Chart Data Prep](/io/charts/chord/) from Kargil
-
+- [Chord Chart Data Prep](/io/charts/chord/) - [ask Kargil for location](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
+- [Find and build Observable chart selection tools locally](https://github.com/observablehq) - like Tableau
 
 **API and AI areas**
 

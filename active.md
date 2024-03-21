@@ -20,13 +20,17 @@ Pre-processed data for county industry levels, based on employment, establishmen
 
 **Observable Visualization Projects**
 
+- Build Observable chart selection tools locally
 - [PyTorch ML and Data Visualization](/machine-learning/python/cluster/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
+- Apply eye blink data in RealityStream
 - [Sankey Industry Chart](/io/charts/sankey/)
-- [Chord Chart Data Prep](/io/charts/chord/)
+- [Chord Chart Data Prep](/io/charts/chord/) from Kargil
 
 **Local Industry and Places Timelines**
 
-- [React Team - Impact Side Navigation](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) - Meeting Wednesday at [10 PM EDT](coders)
+- Instal LLM from Google Data Commons
+- [React Team - Impact Side Navigation](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) - Ziyao - We meet Wednesdays at [10 PM EDT](coders)
+- [React Team - Mosic column checkboxes](/io/charts) - Fanyi
 - [React Team - Commodity Totals](/localsite/info/data/totals/) in [Jobs Reports](/localsite/info/#indicators=JOBS)
 - [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - Rupesh<!--Vadlamudi-->
 - [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Dinesh, Fanyi, Rupesh
@@ -39,7 +43,7 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [BuildingTransparency - JSON file pull for impact templates](/io/template/product/) - Harsha<!-- Later display with SQLite -->
 - [BuildingTransparency - Product Impact Profiles by State and Zip](/io/template/feed/)
 - [Python - Census Zip Code and International Postal Code Data Files](/zip/io/#zip=10001) - Gary
-- [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/) - Fanyi
+- [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/)
 
 - [Deep Learning Economy](/data-pipeline/research/economy/) - Honglin
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin-->
@@ -74,10 +78,11 @@ Looking forward to having you join us!
 
 Loren Heyns
 
-
+We're meeting Thursday at Noon EDT, and again on Sunday at 10 PM EDT.
+(We also do focused meetups other evenings, and on Mondays and Tuesdays.)
 
 We're meeting today (Thursday) at Noon EDT, and again on Sunday at 10 PM EDT.
-(We also do focused meetups Mondays and Tuesdays in the afternoon.)
+(We also do focused meetups Monday and Tuesday afternoons, and evenings at 10 PM.)
 
 We're meeting tonight (Sunday) at 10 PM EDT, and again on Thursday at Noon EDT.
 (We also do focused meetups Mondays and Tuesdays in the afternoon.)
@@ -88,13 +93,14 @@ We're meeting on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
 Welcome! - Our next Model.earth meetup is Sunday at 10 PM EDT
 
 
+Welcome! - We're meeting today (Thursday) at Noon EDT, then Sunday at 10 PM
 
 Welcome! - Our next Model.earth meetup is Thursday at Noon EDT
 
 Hi, thanks for registering with our ModelEarth team!
 
-We're meeting Thursday at Noon EDT, and again on Sunday at 10 PM EDT.
-(We also do focused meetups other evenings, and on Mondays and Tuesdays.)
+We're meeting today (Thursday) at Noon EDT, and again on Sunday at 10 PM EDT.
+(We also do focused meetups Monday and Tuesday afternoons, and evenings at 10 PM.)
 
 Let me know which of the following areas you're interested in:
 Javascript, React, D3, Leaflet, Python, Forecasting with ML, LLM Chat JSON
@@ -153,7 +159,8 @@ https://retool.com/component-library
 
 **API and AI areas**
 
-- NEW: [Earthscape for Chatbot AI](/earthscape/app/) - NextJS and Supabase 
+- [Earthscape for Chatbot AI - NextJS Hosting](/earthscape/app/)
+- [Earthscape for Chatbot AI - Supabase Demo](/earthscape/app/)
 - [AI Community Visualizations](/data-pipeline/research/) - [Streamlit](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
 - [Google Data Commons API](https://docs.datacommons.org/api/) - Push in US EPA [impact data](/community/tools/)
 - [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts

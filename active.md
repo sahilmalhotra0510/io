@@ -16,7 +16,6 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [Earthscape Chatbot Quick Install](/earthscape/app/) - 100+ LLMs in a Web Interface you can host yourself - Srujana
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders)
-- [Python - Census Zip Code and International Postal Code Data Files](/zip/io/#zip=10001)
 - [Python - State Regions using Sets of Counties (and ChatGPT)](/community-data/us/edd/)
 - [PyTorch ML and Data Visualization](/machine-learning/python/cluster/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
 
@@ -57,6 +56,12 @@ Our React Team meets Wednesdays at [10 PM EDT](coders)
 - [BuildingTransparency - JSON file pull for impact templates](/io/template/product/) - Harsha<!-- Later display with SQLite -->
 - [BuildingTransparency - Product Impact Profiles by State and Zip](/io/template/feed/)
 - [Deep Learning Economy - Commodity Totals](/data-pipeline/research/economy/) - Honglin
+
+<!--
+For Footprint
+- [Python - Census Zipcode Profiles](/zip/io/#zip=10001) - setup Github Action (Loren: Update 49501)
+-->
+
 
 [Mike Bostock provides an assist](https://github.com/observablehq/framework/discussions/1030) - deploy.yml files
 [API Key Local Storage](../localsite/tools/storage/api/) - Javascript repeater with localStorage

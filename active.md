@@ -11,22 +11,23 @@ Regular meetings: [Sunday 10 PM EST and Thursday Noon EST](/io/coders/)
 CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)  
 Pre-processed data for county industry levels, based on employment, establishments and payroll.-->
 
-**ML with Python and JavaScript (Observable and TensorFlow)**
+**Machine Learning with Python and GDC**
 
 - [Earthscape Chatbot Quick Install](/earthscape/app/) - 100+ LLMs in a Web Interface you can host yourself - Srujana
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders)
 - [Python - State Regions using Sets of Counties](/community-data/us/edd/)
 - [USEEIO matrix files](/machine-learning/python/cluster/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
+- [PyTorch](/machine-learning/python/cluster/)
 
 **Observable + GDC Visualization Projects**
 
 - [Python CoLabs for API calls](/data-commons/docs/) - Paul and Anna
 - [Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/)
-- Apply eye blink data in RealityStream - Ruchika
+- [Apply eye blink data](/RealityStream/models/random-bits-forest) in RealityStream - Ruchika
 - [Sankey Industry Chart](/io/charts/sankey/)
 - [Chord Chart Data Prep](/io/charts/chord/) - [ask Kargil for location](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
-- [Find and build Observable chart selection tools locally](https://github.com/observablehq) - like Tableau
+- [Find and build Observable chart selection tools locally](https://github.com/observablehq) - like Tableau  <!-- Ruchika -->
 
 **API and AI areas**
 
@@ -109,19 +110,23 @@ We're meeting today (Thursday) at Noon EDT, and again on Sunday at 10 PM EDT.
 We're meeting tonight (Sunday) at 10 PM EDT, and again on Thursday at Noon EDT.
 (We also do focused meetups Mondays and Tuesdays in the afternoon.)
 
-We're meeting on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
-(We also do focused meetups Mondays and Tuesdays in the afternoon.)
+We're meeting today (Thursday) at Noon EDT, and again on Sunday at 10 PM EDT.
+(We also do focused meetups Monday and Tuesday afternoons, and evenings at 10 PM.)
 
-Welcome! - Our next Model.earth meetup is Sunday at 10 PM EDT
+
+
 
 
 Welcome! - We're meeting today (Thursday) at Noon EDT, then Sunday at 10 PM
 
 Welcome! - Our next Model.earth meetup is Thursday at Noon EDT
 
+
+Welcome! - Our next Model.earth meetup is Sunday at 10 PM EDT
+
 Hi, thanks for registering with our ModelEarth team!
 
-We're meeting today (Thursday) at Noon EDT, and again on Sunday at 10 PM EDT.
+We're meeting on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
 (We also do focused meetups Monday and Tuesday afternoons, and evenings at 10 PM.)
 
 Let me know which of the following areas you're interested in:

@@ -34,7 +34,9 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [Earthscape for Chatbot AI - NextJS Hosting](/earthscape/app/) - Anthony
 - [Earthscape for Chatbot AI - Supabase Demo](/earthscape/app/)
 - [AI Community Visualizations](/data-pipeline/research/) - [Streamlit](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
-- [Google Data Commons API](https://docs.datacommons.org/api/) - Push in US EPA <!--[OpenFootprint impact data](/OpenFootprint)-->
+- [Image Gallery](/data-pipeline/research/stream/) - Anthony
+- [Push EPA date to Google Data Commons API](https://docs.datacommons.org/api/)
+- [OpenFootprint impact data](/OpenFootprint)
 - [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
 - [Use our state map filter](#geoview=country) with colors for [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) - ML with 24 EPA impacts - Honglin and Irean
 

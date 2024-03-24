@@ -7,6 +7,15 @@ Check out more [App Samples](../../io/) and [get started creating a site](https:
 Add a page to the [apps repo](../../apps/) and participate in our [Sustainable Communities Web Challenge](../../community/challenge/).  
 
 <!--
+OLD NOTE:
+
+1. Duplicate USEEIOv1.2 to USEEIO for existing script in non-React widgets.  
+2. Duplicate USEEIOv1.2 to GAUSEEIO since GA data currently only resides on the staging server.  
+
+Manually copy the GAUSEEIO to a new folder called USEEIOv1.2 for Inflow-Outflow Chart  
+-->
+
+<!--
 ## Environmentally-Extended <span style="white-space:nowrap">Input-Output Model</span>
 
 In RStudio
@@ -36,6 +45,7 @@ Here are [old model files](https://www.dropbox.com/sh/af48m0jsusgr3jg/AACzBSJwuj
 [View documentation and functions](https://msrocka.github.io/useeio-widget-builds/apidoc/) generated using [TypeDoc](https://typedoc.org/).  Learn about [USEEIO API Industry Data](../about/api/)  
 
 The React widgets in the [io repo](https://github.com/modelearth/io/) originate from the EPA's [USEEIO-widgets repo](https://github.com/USEPA/useeio-widgets/).   
+Note: EPA downgraded reactjs from ^18.2.0 to ^17.0.2 to solve compability issue with MAC. (Jan 2024)
 [The build folder](../build) is copied from USEEIO-widgets into the io repo to provide a static copy of the API's json files.  
 The io repo includes additional code for integrating widgets.   
 
@@ -229,6 +239,9 @@ To Do: Surround all USEEIO widgets with a class called .ioWidget and update widg
 
 # JSON files from API
 
+The JSON files have been pre-generated for you using the JSON dump cmd in the [useeio.js repo](https://github.com/modelearth/useeio.js/).
+
+<!--
 You can skip this step. We've already populated the **io/build/api folder** for you.
 
 The generated .json files output from the USEEIO API load faster and you can work locally on an airplane.
@@ -254,16 +267,8 @@ npm run download -- --endpoint https://api.edap-cluster.com/useeio/api --apikey 
 ```
 Replace USEEIOv2.0.1-411 in the "io" repo if a newer version is generated.
 
-<!--
-1. Duplicate USEEIOv1.2 to USEEIO for existing script in non-React widgets.  
-2. Duplicate USEEIOv1.2 to GAUSEEIO since GA data currently only resides on the staging server.  
-
-Manually copy the GAUSEEIO to a new folder called USEEIOv1.2 for Inflow-Outflow Chart  
--->
-
-
-
 Learn more about [using the USEEIO API](https://github.com/USEPA/USEEIO_API/wiki/Use-the-API)
+-->
 
 
 # View widgets

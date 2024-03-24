@@ -27,7 +27,6 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [Apply eye blink data](/RealityStream/models/random-bits-forest) in RealityStream - Ruchika
 - [Sankey Industry Chart](/io/charts/sankey/)
 - [Chord Chart Data Prep](/io/charts/chord/) - [ask Kargil for location](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
-- [Find and build Observable chart selection tools locally](https://github.com/observablehq) - like Tableau  <!-- Ruchika -->
 
 **API and AI areas**
 
@@ -47,7 +46,6 @@ Our React Team meets Wednesdays at [10 PM EDT](coders)
 - [React Team - Impact Side Navigation](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) - Ziyao
 - [React Team - Mosic column checkboxes](/io/charts) - Fanyi
 - [React Team - Commodity Totals](/localsite/info/data/totals/) in [Jobs Reports](/localsite/info/#indicators=JOBS)
-- [NPM - Install LLM from Google Data Commons](/localsite/info/data/datacommons/), Integrate with Earthscape
 - [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - Rupesh<!--Vadlamudi-->
 - [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - Dinesh, Fanyi, Rupesh
 - [Annual NAICS - Process Industries by Zip Code](/data-pipeline/industries/naics) - Gaurav
@@ -65,10 +63,31 @@ For Footprint
 - [Python - Census Zipcode Profiles](/zip/io/#zip=10001) - setup Github Action (Loren: Update 49501)
 -->
 
+<hr style="margin-bottom: 20px;">
+# LunarOlympic Level Challenges
 
-[Mike Bostock provides an assist](https://github.com/observablehq/framework/discussions/1030) - deploy.yml files
+Not your average modeling tasks, but worth the effort.
+
+**[Find ObservableHQ Interface for selecting charts](https://github.com/observablehq)**
+Deploy to GitHub pages to create an easy-to-use alternative to Tableau.
+[Mike Bostock provided an assist](https://github.com/observablehq/framework/discussions/1030) - deploy.yml files
+
+**[Enhance API Key Storage in Earthscape and push to Chatbot UI](/earthscape)**
 [API Key Local Storage](../localsite/tools/storage/api/) - Javascript repeater with localStorage
 
+**[Install LLM from Google Data Commons](/localsite/info/data/datacommons/)**
+Install LLM from Google Data Commons, Integrate within Earthscape
+
+**[Push EPA Data to Google Data Commons](/localsite/info/data/datacommons/)**
+Push EPA data assempled in our [OpenFootprint](/OpenFootprint) impacts folder into Google Data Commons.
+Add USEEIO data to [Data Commons Sustainability Section](https://www.datacommons.org/explore/sustainability)
+
+**[Integrate with Census Reporting Sites](/community/resources/censusreporter/)**
+Integrate with [CensusReporter.com](https://CensusReporter.com) and [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/)
+
+**[Create a See-Click-Fix-Pay Rewards Program](https://seeclickfix.com)**
+Integrate data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using 
+[Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/openfootprint/).
 
 
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin-->
@@ -177,39 +196,31 @@ Loren will request a new API key for the Farm Fresh data pull, to folow up from 
 -->
 
 
----
-<br>Feb 2024 - from Wes Ingwersen, US EPA Engineer:
+<hr style="margin-bottom: 20px;">
 
-Hi State Partners,
+<h1>State Data Services</h1>
 
-I’m happy to share that our report, supporting figures and all the data files for v1.0 of the USEEIO State Models are now published. [View Report](https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=360453&Lab=CESER)
+In Feb 2024, US EPA Engineer Wes Ingwersen shared with the state partners that all data files for v1.0 of the USEEIO State Models are now published. [View Report](https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=360453&Lab=CESER) which includes [Excel versions of 2020 models](http://doi.org/10.23719/1530076) for all states.
 
-[Excel version of 2020 models](http://doi.org/10.23719/1530076) for all states:
+Wes wrote: We have files with models for all states for a given year in a native useeior Model format on a public server as well.
 
-We have files with models for all states for a given year in a native useeior Model format on a public server as well.
+TO DO: Locate the annual files Wes mentioned. How far back do they go? We recently placed 2020 matrix json in the [Open Footprint](/openfootprint/) "impacts/2020" folder.
 
-We have 100’s of supporting figures [including maps of the U.S.](https://doi.org/10.6084/m9.figshare.c.7041473) showing environmental pressure intensity grouped by indicator and commodity for all states and rankings of sectors by consumption by environmental pressure for 2020.
+TO DO: Create interactive version of the supporting figures [including maps of the U.S.](https://doi.org/10.6084/m9.figshare.c.7041473) showing environmental pressure intensity grouped by indicator and commodity for all states and rankings of sectors by consumption by environmental pressure for 2020.
 
-Please review the materials and let Wes know if you have any questions.
- 
-[The industry comparisons](../localsite/info/) draw on our EPA data prepared and presented using useeior (R Language),  useeio.js and the [useeio-widgets](../io/charts/) (Javascript and HTML using the USEEIO-API). Let us know if you have priorities and interests there and could provide us with some interactive feedback (testing) as we put that together.
+The matrix JSON API that drives our [industry comparisons](../localsite/info/) use EPA data prepared and presented using useeior (R Language),  useeio.js and the [useeio-widgets](../io/charts/) (Javascript and HTML using the USEEIO-API).
 
-As a reminder (and mentioned in the report) we’re working on Consumption-based GHG inventories (CBEI) for Maine and other Northeast states as an application of these models but the functionalities we develop and describe will be available for all States. We anticipate that being completed by early summer. 
- 
+Wes wrote: As a reminder (and mentioned in the report) we’re working on Consumption-based GHG inventories (CBEI) for Maine and other Northeast states as an application of these models but the functionalities we develop and describe will be available for all States. We anticipate that being completed by early summer. 
 
 Wesley W. Ingwersen, Ph.D.
 Center for Environmental Solutions and Emergency Response (CESER)
 Office of Research and Development
 US Environmental Protection Agency
 
-[Contact Model.Earth Team](../io/team/)
+[Contact our Model.earth Team](../io/team/) - We have talented coders seeking paid positions to help states and communities.
 
 ---
 <br>
-
-Additional Exploration
-- [CensusReporter.com](https://CensusReporter.com)
-- [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/)
 
 <!--   
 [Zipcode files with employment levels](https://github.com/modelearth/community-data/tree/master/us/zipcodes/naics) - Includes nunber of Establishments and Employees 

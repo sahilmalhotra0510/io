@@ -1,8 +1,9 @@
 # Open Footprint Coding Projects
 
-## BuildingTransparency.org API for Product Profile YAML
+## API for Product Profile YAML
 
-<a href="#postman">View API in Postman</a>
+[OpenFootprint Repo](/OpenFootprint/) - Files pulled from APIs, including EPA USEEIO
+<a href="#postman">View BuildingTransparency.org API in Postman</a>
 <a href="../parser/">View parsed YAML-TO-JSON-TO-HTML</a>
 <a href="product-concrete.html">View as Markdown</a>
 

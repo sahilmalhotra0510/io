@@ -78,30 +78,6 @@ For Footprint
 
 Use dashes rather than underscores in file names and parameters for readability in links and for compatibility with markdown. Otherwise a back-slash \_ is needed when documenting.
 
-Hi, if you'd like to join the Model.earth team again, please re-register in DemocracyLab.org. We have a lot of exciting projects with a very active team: https://model.earth/io
-
-
-Our next Model.earth team meeting is Thursday at Noon EDT
-
-Hi, I saw your registration in our Democracy Lab team and thought you might be interested in working with us on our new Earthscape app. We're automating ML data visualizations within our fork of Chatbot UI, which integrates over 100 LLMs:
-
-https://model.earth/earthscape
-
-We meet on Thursday at Noon EDT, and again on Sunday at 10 PM EDT.
-We also do focused meetups evenings, and Mondays & Tuesdays afternoons.
-
-Our meetup link is here. (It's always the same)
-https://model.earth/io/coders
-
-Here are our active projects:
-https://model.earth/io
-
-You can pull down our repos with a single cmd after forking our main repos:
-https://model.earth/localsite/start/steps
-
-Looking forward to having you join us!
-
-Loren Heyns
 
 We're meeting Thursday at Noon EDT, and again on Sunday at 10 PM EDT.
 (We also do focused meetups other evenings, and on Mondays and Tuesdays.)
@@ -116,12 +92,10 @@ We're meeting today (Thursday) at Noon EDT, and again on Sunday at 10 PM EDT.
 (We also do focused meetups Monday and Tuesday afternoons, and evenings at 10 PM.)
 
 
-
-
-
 Welcome! - We're meeting today (Thursday) at Noon EDT, then Sunday at 10 PM
 
 Welcome! - Our next Model.earth meetup is Thursday at Noon EDT
+
 
 
 Welcome! - Our next Model.earth meetup is Sunday at 10 PM EDT
@@ -132,13 +106,17 @@ We're meeting on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
 (We also do focused meetups Monday and Tuesday afternoons, and evenings at 10 PM.)
 
 Let me know which of the following areas you're interested in:
-Javascript, React, D3, Leaflet, Python, Forecasting with ML, LLM Chat JSON
+Javascript, React, D3, Leaflet, Python, Forecasting with ML, LLM Chat
 
 Our meetup link is here. (It's always the same)
 https://model.earth/io/coders
 
 Here are our active projects:
 https://model.earth/io
+
+ML Projects
+https://model.earth/data-pipeline/timelines/training/naics
+https://model.earth/RealityStream
 
 You can pull down our repos with a single cmd after forking our main repos:
 https://model.earth/localsite/start/steps
@@ -156,22 +134,19 @@ Please adjust anything to fit your needs - update the start, job title, etc.
 
 
 
-Hi again, we currently have 25 active team members.
 
-Pick one of the 12 ML to-do and I'll loop you in with others involved in that area.
+You can pick one of our Python to-do's and I'll loop you in with others involved in that area:
 
 https://model.earth/data-pipeline/timelines/training/naics
 
-Our LLM chat work will be taking place in this fork of Chatbot UI which will allow us to use NLP while interacting with 100 LLM APIs.
-
-You can fork our Earthscape Chatbot UI instance:
+Also fork our Earthscape Chatbot UI instance:
 https://model.earth/earthscape/app
 
 And let me know your area of interest in our Data Commons repo:
 
 https://model.earth/data-commons/dist
 
-Looking forward to Thursday, thanks for getting involved!
+Looking forward to working with you!
 
 
 

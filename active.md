@@ -32,6 +32,7 @@ Pre-processed data for county industry levels, based on employment, establishmen
 
 - [Earthscape for Chatbot AI - NextJS Hosting](/earthscape/app/) - Anthony
 - [Earthscape for Chatbot AI - Supabase Demo](/earthscape/app/)
+- [Earthscape for Chatbot AI - Verses AI key](/earthscape/app/)
 - [AI Community Visualizations](/data-pipeline/research/) - [Streamlit](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
 - [Image Gallery](/data-pipeline/research/stream/) - Anthony
 - [Push EPA date to Google Data Commons API](https://docs.datacommons.org/api/)

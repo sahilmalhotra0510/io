@@ -17,12 +17,12 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders)
 - [Python - State Regions using Sets of Counties](/community-data/us/edd/)
-- [USEEIO matrix files](/machine-learning/python/cluster/) - Network Graphs, Sankey and Chord - Honglin, Rupesh
-- [PyTorch](/machine-learning/python/cluster/)
+- [USEEIO matrix files](/machine-learning/python/cluster/) - [Network Graphs](https://github.com/vasturiano/3d-force-graph) - Honglin, Rupesh
+<!-- [PyTorch](/machine-learning/python/cluster/)-->
 
 **Observable + GDC Visualization Projects**
 
-- [Python CoLabs for API calls](/data-commons/docs/) - Paul and Anna
+- [Python CoLabs for GDC API calls](/data-commons/docs/) - Paul and Anna
 - [Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/)
 - [Apply eye blink data](/RealityStream/models/random-bits-forest) in RealityStream - Ruchika
 - [Sankey Industry Chart](/io/charts/sankey/)

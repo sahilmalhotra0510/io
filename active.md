@@ -88,7 +88,7 @@ Integrate with [CensusReporter.com](https://CensusReporter.com) and [Microsoft P
 
 **[Create a See-Click-Fix-Pay Rewards Program](https://seeclickfix.com)**
 Integrate data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using 
-[Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/openfootprint/).
+[Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/).
 
 
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin-->
@@ -205,7 +205,7 @@ In Feb 2024, US EPA Engineer Wes Ingwersen shared with the state partners that a
 
 Wes wrote: We have files with models for all states for a given year in a native useeior Model format on a public server as well.
 
-TO DO: Locate the annual files Wes mentioned. How far back do they go? We recently placed 2020 matrix json in the [Open Footprint](/openfootprint/) "impacts/2020" folder.
+TO DO: Locate the annual files Wes mentioned. How far back do they go? We recently placed 2020 matrix json in the [Open Footprint](/OpenFootprint/) "impacts/2020" folder.
 
 TO DO: Create interactive version of the supporting figures [including maps of the U.S.](https://doi.org/10.6084/m9.figshare.c.7041473) showing environmental pressure intensity grouped by indicator and commodity for all states and rankings of sectors by consumption by environmental pressure for 2020.
 

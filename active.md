@@ -65,7 +65,7 @@ For Footprint
 -->
 
 <hr style="margin-bottom: 20px;">
-# LunarOlympic Level Challenges
+# MoonShot Challenges
 
 Not your average modeling tasks, but worth the effort.
 
@@ -90,6 +90,8 @@ Integrate with [CensusReporter.com](https://CensusReporter.com) and [Microsoft P
 Integrate data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using 
 [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/).
 
+**Our fantasy modeling: Lunar Olympics and LunarSphere Supply Lander**
+Join us Monday evenings at 10pm - Our work is on the same model.earth interfaces.
 
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin-->
 <!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->

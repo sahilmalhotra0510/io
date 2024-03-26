@@ -69,7 +69,7 @@ For Footprint
 
 Not your average modeling tasks, but worth the effort.
 
-**[Find ObservableHQ Interface for selecting charts](https://github.com/observablehq)**
+**[Find ObservableHQ Interface for selecting charts](https://github.com/observablehq)** - Zhiyuan
 Deploy to GitHub pages to create an easy-to-use alternative to Tableau.
 [Mike Bostock provided an assist](https://github.com/observablehq/framework/discussions/1030) - deploy.yml files
 

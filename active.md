@@ -74,7 +74,7 @@ Deploy to GitHub pages to create an easy-to-use alternative to Tableau.
 [Mike Bostock provided an assist](https://github.com/observablehq/framework/discussions/1030) - deploy.yml files
 
 **[Enhance API Key Storage in Earthscape and push to Chatbot UI](/earthscape)**
-[API Key Local Storage](../localsite/tools/storage/api/) - Javascript repeater with localStorage
+[API Key Local Storage mockup](../localsite/tools/storage/api/) - Javascript repeater with localStorage
 
 **[Install LLM from Google Data Commons](/localsite/info/data/datacommons/)**
 Install LLM from Google Data Commons, Integrate within Earthscape
@@ -88,10 +88,10 @@ Integrate with [CensusReporter.com](https://CensusReporter.com) and [Microsoft P
 
 **[Create a See-Click-Fix-Pay Rewards Program](https://seeclickfix.com)**
 Integrate data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using 
-[Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/).
+[Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) integrating [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo](Weibo).
 
-**Our fantasy modeling: Lunar Olympics and LunarSphere Supply Lander**
-Join us Monday evenings at 10pm - Our work is on the same model.earth interfaces.
+**[AI Prompt Storyboarding: Lunar Olympics and LunarSphere Supply Lander](/replicate/)**
+Join us Monday evenings at 11pm as we create future-forward interfaces.
 
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin-->
 <!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->
@@ -101,10 +101,11 @@ Join us Monday evenings at 10pm - Our work is on the same model.earth interfaces
 Use dashes rather than underscores in file names and parameters for readability in links and for compatibility with markdown. Otherwise a back-slash \_ is needed when documenting.
 
 
-We're meeting Thursday at Noon EDT, and again on Sunday at 10 PM EDT.
-(We also do focused meetups other evenings, and on Mondays and Tuesdays.)
 
 We're meeting today (Thursday) at Noon EDT, and again on Sunday at 10 PM EDT.
+(We also do focused meetups Monday and Tuesday afternoons, and evenings at 10 PM.)
+
+We're meeting on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
 (We also do focused meetups Monday and Tuesday afternoons, and evenings at 10 PM.)
 
 We're meeting tonight (Sunday) at 10 PM EDT, and again on Thursday at Noon EDT.
@@ -118,14 +119,14 @@ Welcome! - We're meeting today (Thursday) at Noon EDT, then Sunday at 10 PM
 
 Welcome! - Our next Model.earth meetup is Thursday at Noon EDT
 
-
-
 Welcome! - Our next Model.earth meetup is Sunday at 10 PM EDT
+
+Welcome! - Our next Model.earth React meetup is Wednesday at 10PM EDT
 
 Hi, thanks for registering with our ModelEarth team!
 
-We're meeting on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
-(We also do focused meetups Monday and Tuesday afternoons, and evenings at 10 PM.)
+We're meeting Thursday at Noon EDT, and again on Sunday at 10 PM EDT.
+(We also do focused meetups other evenings, and on Mondays and Tuesdays.)
 
 Let me know which of the following areas you're interested in:
 Javascript, React, D3, Leaflet, Python, Forecasting with ML, LLM Chat

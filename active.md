@@ -90,7 +90,7 @@ Integrate with [CensusReporter.com](https://CensusReporter.com) and [Microsoft P
 Integrate data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using 
 [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) integrating [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo](Weibo).
 
-**[AI Prompt Storyboarding: Lunar Olympics and LunarSphere Supply Lander](/replicate/)**
+**[AI Training Repos: Lunar Olympics and LunarSphere Supply Lander](/replicate/)**
 Join us Monday evenings at 11pm as we create future-forward interfaces.
 
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin-->

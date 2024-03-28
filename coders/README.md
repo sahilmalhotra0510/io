@@ -11,9 +11,12 @@ For use during a future Web Challenge
 View our [Active Projects](../) and find your areas of interest.
 
 Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) (Eastern Time, NY and Atlanta)
-- [Thursdays, Noon ET](https://meet.google.com/pcv-xrdh-bat)
-- [Sundays, 10 PM ET](https://meet.google.com/pcv-xrdh-bat)
-- [Other evenings plus Monday and Tuesday afternoons](https://meet.google.com/pcv-xrdh-bat)
+- [Moonshot Mondays, 10 PM EDT](https://meet.google.com/pcv-xrdh-bat) - [UN Goals](/data-commons/dist/), Lunar Olympics AI
+- [React Wednesdays, 10 PM EDT](https://meet.google.com/pcv-xrdh-bat) - [International EEIO](https://eeiomodel.com), [State Impacts](/localsite/info/#geoview=country)
+- [Thursdays, Noon EDT](https://meet.google.com/pcv-xrdh-bat) - [Overview and focus areas](/io/)
+- [Sundays, 10 PM EDT](https://meet.google.com/pcv-xrdh-bat) - [RealityStream working meeting](/RealityStream/), [ML Data Projects](/data-pipeline/timelines/training/naics/)
+<!--
+- [Other evenings plus Monday and Tuesday afternoons](https://meet.google.com/pcv-xrdh-bat)-->
 
 The Google Meetup link above remains the same for all meetings.<!--
 Zoom link to try reusing
@@ -24,7 +27,7 @@ Collaborate on open source modeling tools using API mashups for environmental im
 
 - [Connect with us at Democracy Lab if you haven't already](https://www.democracylab.org/projects/834)
 - [Get Started by installing our Localsite repos (with one cmd)](../../localsite/start/steps/)
-- [Join our Facebook group for additional updates](https://www.facebook.com/groups/modelearth)
+- [Join our Facebook group](https://www.facebook.com/groups/modelearth) and [Discord](https://discord.gg/9U9Y6dJz)
 - [Join our ModelEarth Slack in Democracy Lab](https://democracylab-org.slack.com/archives/C06F73YKEQN)
 <br>
 

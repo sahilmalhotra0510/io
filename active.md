@@ -28,18 +28,28 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [Sankey Industry Chart](/io/charts/sankey/)
 - [Chord Chart Data Prep](/io/charts/chord/) - [ask Kargil for location](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
 
-**API and AI areas**
 
-- [Earthscape for Chatbot AI - NextJS Hosting](/earthscape/app/) - Anthony
-- [Earthscape for Chatbot AI - Supabase Demo](/earthscape/app/)
-- [Earthscape for Chatbot AI - Verses AI key](/earthscape/app/)
-- [AI Community Visualizations](/data-pipeline/research/) - [Streamlit](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
-- [Image Gallery](/data-pipeline/research/stream/) - Anthony
-- [Push EPA date to Google Data Commons API](https://docs.datacommons.org/api/)
+**Footprint Impacts and State Region Maps**
+
 - [OpenFootprint impact data](/OpenFootprint)
-- [AI Process for Farm Fresh Data](/community-data/process/python/farmfresh/) - Apply ML to assist Food Deserts
-- [Use our state map filter](#geoview=country) with colors for [new report maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473) - ML with 24 EPA impacts - Honglin and Irean
+- [Python - 50 state data with commodity totals](/data-pipeline/timelines/prep/industries/) - Ronan
+- [Use our state map filter](#geoview=country) with colors for [new USEEIO reporting maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473)
+- [Python - Process All the Places by State and Zip](/places) - Carolyn
+- [BuildingTransparency - API Aggregates of States and Countries](/io/template/product/) - Luwei
+- [BuildingTransparency - JSON file pull for impact templates](/io/template/product/) - Harsha<!-- Later display with SQLite -->
+- [BuildingTransparency - Product Impact Profiles by State and Zip](/io/template/feed/)
+- [AI Process for Farm Fresh Data and Food Deserts ML](/community-data/process/python/farmfresh/)
+- [Push EPA date to Google Data Commons API](https://docs.datacommons.org/api/)
 
+
+**AI Chatbots LLM**
+
+- [Earthscape for Chatbot AI - NextJS Hosting](/earthscape/app/)
+- [ChatAll - Share simultaneous AI Chats with Chatbot UI](https://github.com/sunner/ChatALL)
+
+**Image Generation**
+- [AI Community Visualizations](/data-pipeline/research/) - [Streamlit](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
+- [Image Gallery](/data-pipeline/research/stream/) - Anthony and Kishor
 
 **React, Tabulator, Industry Timelines**
 
@@ -52,11 +62,6 @@ Our React Team meets Wednesdays at [10 PM EDT](coders)
 - [Annual NAICS - Process Industries by Zip Code](/data-pipeline/industries/naics) - Gaurav
 - [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/phiresky/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) - Aashish
 - [Impact Label Pipeline](/apps/impact) - Too optimize and change inputs
-- [Python - Timeline Data Prep](/data-pipeline/timelines/prep/industries/) - Ronan
-- [Python - Process All the Places by State and Zip](/places) - Carolyn
-- [BuildingTransparency - API Aggregates of States and Countries](/io/template/product/) - Luwei
-- [BuildingTransparency - JSON file pull for impact templates](/io/template/product/) - Harsha<!-- Later display with SQLite -->
-- [BuildingTransparency - Product Impact Profiles by State and Zip](/io/template/feed/)
 - [Deep Learning Economy - Commodity Totals](/data-pipeline/research/economy/) - Honglin
 
 <!--
@@ -91,7 +96,7 @@ Integrate data, maps and machine learning with [social safety net programs](http
 [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) integrating [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo](Weibo).
 
 **[AI Training Repos: Lunar Olympics and LunarSphere Supply Lander](/replicate/)**
-Join us Monday evenings at 11pm as we create future-forward interfaces.
+Join us [Monday evenings at 10pm EDT](/io/coders/) as we create future-forward interfaces.
 
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) - Honglin-->
 <!-- [CMD - Build IO .json files from EPA API for all 50 states](/io/charts/) - Honglin (next week)--><!-- Zhu -->

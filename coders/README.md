@@ -14,7 +14,7 @@ Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) (Eastern T
 - [Moonshot Mondays, 10 PM EDT](https://meet.google.com/pcv-xrdh-bat) - [UN Goals](/data-commons/dist/), Lunar Olympics AI
 - [React Wednesdays, 10 PM EDT](https://meet.google.com/pcv-xrdh-bat) - [International EEIO](https://eeiomodel.com), [State Impacts](/localsite/info/#geoview=country)
 - [Thursdays, Noon EDT](https://meet.google.com/pcv-xrdh-bat) - [Overview and focus areas](/io/)
-- [Sundays, 10 PM EDT](https://meet.google.com/pcv-xrdh-bat) - [RealityStream working meeting](/RealityStream/), [ML Data Projects](/data-pipeline/timelines/training/naics/)
+- [Sundays, 10 PM EDT](https://meet.google.com/pcv-xrdh-bat) - [RealityStream Workshop](/RealityStream/), [ML Data Projects](/data-pipeline/timelines/training/naics/)
 <!--
 - [Other evenings plus Monday and Tuesday afternoons](https://meet.google.com/pcv-xrdh-bat)-->
 

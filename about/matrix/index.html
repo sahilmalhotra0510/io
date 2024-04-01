@@ -203,14 +203,18 @@ The amount of a flow (in the reference units of the respective flow) per $1 outp
 The characterization factor matrix for a given model<br>
 <img src="img/C.png"></td>
 </tr>
+
 <tr>
-<td>\(D\)</td>
+<td>\(D\)<br>\(q\)</td>
 <td>component</td>
 <td>
 <div style="float:right">
-<a href="../../build/api/USEEIOv2.0.1-411/matrix/D.json">View data</a>
+<a href="../../build/api/USEEIOv2.0.1-411/matrix/D.json">View data</a><br>
+<a href="../../../data-pipeline/research/economy/">View table</a>
 </div>
-The direct impact matrix for a given model</td>
+The direct impact matrix for a given model.<br>
+Totals for commodities and jobs.
+</td>
 </tr>
 
 
@@ -235,6 +239,15 @@ No F in API
 The Leontief inverse matrix for a given model</td>
 </tr>
 
+<tr>
+<td>\(M\)</td>
+<td>component</td>
+<td>
+<div style="float:right">
+<a href=""></a>
+</div>
+Imports of commodities. “Import Factors” can be applied to any single-region IO or MRIO (multi-region) models, as well as the embodied GHG Factors derived from <a href="https://exiobase.eu">EXIOBASE</a>.</td>
+</tr>
 
 <tr>
 <td>\(U\)</td>
@@ -510,12 +523,14 @@ The national totals of the Greenhouse Gas (GHG) Emissions by industry must be tr
 </div>
 <div id="data-quality-scores-for-emission-factors" class="section level2">
 <h2>Data quality scores for emission factors</h2>
-<p>Data quality scores of 1-5 are assigned based on the US EPA LCA Data Quality system to values in <span class="math inline">\(B\)</span> for each of five indicators. These be represented in a matrix of the form of <span class="math inline">\(B\)</span> called <span class="math inline">\(B_{dqi,i}\)</span> created for each indicator <span class="math inline">\(i\)</span>. To scale these scores to put them to create scores for the supply chain emission factors in , this is multiplied by <span class="math inline">\(L\)</span>. <span class="math display">
+<p>Data quality scores of 1-5 are assigned based on the US EPA LCA Data Quality system to values in <span class="math inline">\(B\)</span> for each of five indicators. These are represented in a matrix of the form <span class="math inline">\(B\)</span> called <span class="math inline">\(B_{dqi,i}\)</span> for each indicator <span class="math inline">\(i\)</span>. To scale these scores for the supply chain emission factors, this is multiplied by <span class="math inline">\(L\)</span>.<br><br>
 
-<br><br><span class="equ">
+<span class="math display">
+<span class="equ">
   $$M_{dqi,i} = B_{dqi,i} * L$$
 </span>
 </span></p>
+
 <p>where <span class="math inline">\(B\)</span> and <span class="math inline">\(L\)</span> may be either both for industry, <span class="math inline">\(B_I\)</span> and <span class="math inline">\(L_I\)</span> or commodity, <span class="math inline">\(B_C\)</span> or <span class="math inline">\(B_I\)</span> models.</p>
 </div>
 <div id="model-validation" class="section level2">

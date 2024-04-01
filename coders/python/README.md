@@ -11,6 +11,15 @@ If so, upgrade your python versions in pyenv to 3.12 or later.
 
 If an old version of python is blocking the install.
 
+## Python
+
+Install the latest Python.
+
+	brew install python
+
+List all Python versions installed on your system.
+
+	ls -l /usr/local/bin/python*
 
 ## Conda
 

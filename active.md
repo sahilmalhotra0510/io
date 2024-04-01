@@ -13,12 +13,15 @@ Pre-processed data for county industry levels, based on employment, establishmen
 
 **Machine Learning with Python and GDC**
 
+- [RealityStream](/RealityStream/) - Machine Learning Classification Models
+- [USEEIO Commodities for Deep Learning](/data-pipeline/research/economy) - New data for all 50 states
+- [OpenFootprint](/useeio.js/footprint) - Javascript Label Development
 - [Earthscape Chatbot UI Install](/earthscape/app/) - 100+ LLMs in a Web Interface you can host yourself - Srujana
 - [ML for Community Forecasting](../data-pipeline/timelines/training/naics/) - Lily, Sijia, Alison, Irene, Honglin, Ronan, Luwei, Wenxi, Magie
 - [International Google Data Commons API](/data-pipeline/international/) - with [Observable Data Loaders](https://observablehq.com/framework/loaders)
 - [Python - State Regions using Sets of Counties](/community-data/us/edd/)
 - [USEEIO matrix files with clustering](/machine-learning/python/cluster/) - Honglin, Rupesh
-- [USEEIO matrix state files with commodities](/data-pipeline/research/economy)
+
 - [3D Force Graph](https://github.com/vasturiano/3d-force-graph) - Rakesh
 
 **Observable + GDC Visualization Projects**
@@ -128,6 +131,9 @@ Welcome - Our next Model.earth React meetup is Wednesday at 10PM EDT
 
 
 Welcome - Our next Model.earth meetup is Sunday at 10 PM EDT
+
+
+Welcome - Our next Model.earth meetup is tonight at 10 PM EDT
 
 Hi, thanks for registering with our ModelEarth team!
 

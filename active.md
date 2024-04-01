@@ -32,10 +32,9 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [Chord Chart Data Prep](/io/charts/chord/) - [ask Kargil for location](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
 
 
-**Footprint Impacts and State Region Maps**
+**BuildingTransparency and State Region Maps**
 
-- [OpenFootprint impact data](/OpenFootprint)
-- [Python - 50 state data with commodity totals](/data-pipeline/timelines/prep/industries/) - Ronan
+- [BuildingTransparency with OpenFootprint impact data](/OpenFootprint)
 - [Use our state map filter](#geoview=country) with colors for [new USEEIO reporting maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473)
 - [Python - Process All the Places by State and Zip](/places) - Carolyn
 - [BuildingTransparency - API Aggregates of States and Countries](/io/template/product/) - Luwei

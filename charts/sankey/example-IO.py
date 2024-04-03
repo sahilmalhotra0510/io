@@ -1,4 +1,3 @@
-
 """
 To run:
 python example-IO.py
@@ -6,10 +5,10 @@ python example-IO.py
 If you've been using virtual environments, you may get: No module named 'requests'  No module named 'pandas'
 If so, install requests and pandas in a virtual environment using these four lines:
 
-python3 -m venv .venv
-source .venv/bin/activate
-pip3 install requests
-pip3 install pandas
+python3 -m venv env
+source env/bin/activate
+pip install requests
+pip install pandas
 """
 
 import json, os, requests

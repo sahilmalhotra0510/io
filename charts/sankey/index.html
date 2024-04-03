@@ -22,17 +22,21 @@
 </head>
 
 <body>
-<div class="content contentpadding">
-	<h1>Input-Output Sankey Diagram</h1>
+<div class="content contentpadding" style="padding-top:25px;padding-bottom:0px">
+	<h1>Input-Output Diagram</h1>
+	The data in this dynamic chart was prepared using example-I0.py in the current folder. &nbsp; <a href="data/IO.js">View json dataset</a>
+</div>
 
-	The data in this dynamic chart was prepared using example-I0.py in the current folder. 
-	<a href="data/IO.js">View json dataset</a><br><br>
+<div class="content contentpadding contentwide" style="padding-top:00px; padding-bottom:0px">
+	<div id="chart"></div>
+</div>
 
-	The json for generating the Sankey will use the React process used for the <a href="../../charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS&sectors=333613,335912,336111">IO Chart</a>.<br>
-	We previously experimented (below) by using these <a href="https://github.com/USEPA/USEEIO_API/blob/master/examples/example_use.ipynb">Python USEEIO queries</a> within <a href="https://jupyter.org/install">Jupyter</a>.<br>
-	<br>
+<div class="content contentpadding" style="padding-top:10px">
 
-	The following sectors are used below:<br>
+	<h3>About Sankey Chart</h3>
+	The data is similar to the <a href="../../charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS&sectors=333613,335912,336111">React IO Chart</a>.<br><br>
+
+	The following sectors are used above:<br>
 	sectors=333613,335912,336111<br><br>
 
 	<b>Goals:</b><br>
@@ -44,13 +48,17 @@
 	Make the chart scale as browser is resized<br>
 	<br>
 
-	<b>For later:</b><br>
+	<b>To do:</b><br>
 	Add column on far left for environmental impact areas of inflow<br>
-	Add column on far right for environmental impact areas of outflow
+	Add column on far right for environmental impact areas of outflow<br><br>
+
+	We also experimented (below) by using these <a href="https://github.com/USEPA/USEEIO_API/blob/master/examples/example_use.ipynb">Python USEEIO queries</a> within <a href="https://jupyter.org/install">Jupyter</a>.<br>
+	<br>
+
+	To run the API from json on your local machine's port 8080, see the <a href="http://model.earth/useeio.js">useeio.js</a> repo.
+
 </div>
-<div class="content contentpadding contentwide">
-	<div id="chart"></div>
-</div>
+
 
 
 	<style>
@@ -96,6 +104,6 @@
 
 		//objSankey.updateData(new_dataJson); // From data_energyjson_new.js
 	</script>
-<link rel="stylesheet" href="/localsite/css/fonts/materialicons/icon.css" id="/localsite/css/fonts/materialicons/icon.css" />
+
 </body>
 </html>

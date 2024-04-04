@@ -27,7 +27,7 @@ Collaborate on open source modeling tools using API mashups for environmental im
 
 - [Connect with us at Democracy Lab if you haven't already](https://www.democracylab.org/projects/834)
 - [Get Started by installing our Localsite repos (with one cmd)](../../localsite/start/steps/)
-- [Join our Facebook group](https://www.facebook.com/groups/modelearth) and [Discord](https://discord.gg/9U9Y6dJz)
+- [Join our Facebook group](https://www.facebook.com/groups/modelearth) and [Discord](https://discord.gg/w3SQtAb6)
 - [Join our ModelEarth Slack in Democracy Lab](https://democracylab-org.slack.com/archives/C06F73YKEQN)
 <br>
 

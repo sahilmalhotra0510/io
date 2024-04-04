@@ -26,10 +26,11 @@ Pre-processed data for county industry levels, based on employment, establishmen
 
 **Observable + GDC Visualization Projects**
 
-- [Python CoLabs for GDC API calls](/data-commons/docs/) - Paul and Anna
+- [Python CoLabs for GDC API calls](/data-commons/docs/) - [Air and CLimate](/data-commons/dist/air) - Paul and Anna
 - [Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/)
-- [Sankey Industry Chart](/io/charts/sankey/)
-- [Chord Chart Data Prep](/io/charts/chord/) - [ask Kargil for location](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
+- [Sankey Industry Chart](/io/charts/sankey/) - Chenbohan
+- [Balanced Food](/balanced/) - [World Nutrition](/data-commons/dist/food) - Kargil, Meiru
+- [Chord Chart Data Prep](/io/charts/chord/) - [ask Kargil for location](https://github.com/modelearth/Observables-DataLoader/tree/master/docs) - Parth
 
 
 **BuildingTransparency and State Region Maps**

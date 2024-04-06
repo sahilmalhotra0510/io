@@ -5,7 +5,7 @@ Regular meetings: [Sunday 10 PM EST and Thursday Noon EST](/io/coders/)
 
 # Active Projects
 
-[Start Page](../localsite/start/steps/) - [Observable DataCommons](/data-commons/dist/) - [Earthscape Chatbot UI](/earthscape/app/) - [AI Community Visualizations](/data-pipeline/research)
+[Localsite Install](../localsite/start/steps/) - [Observable DataCommons](/data-commons/dist/) - [Earthscape Chatbot UI](/earthscape/app/) - [AI Community Visualizations](/data-pipeline/research)
 
 <!--
 CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)  

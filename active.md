@@ -50,12 +50,11 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [Earthscape for Chatbot AI - NextJS Hosting](/earthscape/app/)
 - [ChatAll - Share simultaneous AI Chats with Chatbot UI](https://github.com/sunner/ChatALL)
 
-**Image Generation**
+**Storyboard Team - Image and Video Generation**
 - [AI Community Visualizations](/data-pipeline/research/) - [Streamlit](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
 - [Image Gallery](/data-pipeline/research/stream/) - Anthony and Kishor
 
 **React, Tabulator, Industry Timelines**
-
 Our React Team meets Wednesdays at [10 PM EDT](coders)
 - [React Team - Impact Side Navigation](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) - Ziyao
 - [React Team - Mosic column checkboxes](/io/charts) - Fanyi

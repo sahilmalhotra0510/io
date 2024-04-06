@@ -124,38 +124,34 @@ We're meeting Thursday at Noon EDT, and again on Sunday at 10 PM EDT.
 
 
 Welcome - We're meeting today (Thursday) at Noon EDT, then Sunday at 10 PM
-
 Welcome - Our next Model.earth meetup is Thursday at Noon EDT
-
 Welcome - Our next Model.earth React meetup is Wednesday at 10PM EDT
+Welcome - Our next Model.earth meetup is tonight at 10 PM EDT
 
 
 Welcome - Our next Model.earth meetup is Sunday at 10 PM EDT
 
-
-Welcome - Our next Model.earth meetup is tonight at 10 PM EDT
-
 Hi, thanks for registering with our ModelEarth team!
 
-We're meeting on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
+We meet next on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
 (We also do focused meetups Monday and Wednesday evenings at 10 PM.)
 
 Let me know which of the following areas you're interested in:
 Javascript, React, D3, Leaflet, Python, Forecasting with ML, LLM Chat
 
-Our meetup link is here. (It's always the same)
-https://model.earth/io/coders
-
 Here are our active projects:
 https://model.earth/io
 
-You can pull down our repos with a single cmd after forking our main repos:
+Please pull down our repos with the cmd here after forking our main repos:
 https://model.earth/localsite/start/steps
 
-Please choose a topic of interest in our Observable Data Commons repo:
+Also choose a topic of interest in our Observable Data Commons repo:
 https://model.earth/data-commons/dist
 
 Let me know if you'd like a welcome letter for the OPT program.
+
+Our meetup link is here - it's always the same Google Meet:
+https://model.earth/io/coders
 
 Looking forward to working with you!
 

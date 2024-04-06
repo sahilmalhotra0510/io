@@ -2,11 +2,12 @@
 
 ### Environmental Profiles for Individuals, Organizations, Products and Communities
 
+[Environmental Impact Profiles](../../io/template/) 
 [USEEIO widget development](../../io/charts/)  
 [Open Footprint Forum](https://www.opengroup.org/openfootprint-forum)  
 [US EPA Carbon Footprint Calculator](https://www3.epa.gov/carbon-footprint-calculator/)
 
-Join us in developing label widgets based on [Environmental Impact Profiles](../../io/template/) to display 24 impact areas for products and industries, states and counties, plus organizations and individuals.  
+Join us in developing label widgets based on Environmental Impact Profiles to display 24 impact areas for products and industries, states and counties, organizations, individuals and [foods](../../balance/).  
 
 Side navigation is not yet active.  
 Here's our [stand-alone sidenav](../../localsite/info/page/) for developers.

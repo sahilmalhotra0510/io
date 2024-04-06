@@ -51,8 +51,9 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [ChatAll - Share simultaneous AI Chats with Chatbot UI](https://github.com/sunner/ChatALL)
 
 **Storyboard Team - Image and Video Generation**
-- [AI Community Visualizations](/data-pipeline/research/) - [Streamlit](/data-pipeline/research/stream) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
-- [Image Gallery](/data-pipeline/research/stream/) - Anthony and Kishor
+- [AI Community Visualizations](/data-pipeline/research/) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) and [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
+- [Image Gallery (React)](/replicate/gallery/view/) - Anthony
+- [Image Gallery (JQuery) and Video (Leonardo)](/data-pipeline/research/stream) - Loren
 
 **React, Tabulator, Industry Timelines**
 Our React Team meets Wednesdays at [10 PM EDT](coders)

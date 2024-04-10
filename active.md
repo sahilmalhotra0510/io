@@ -47,7 +47,7 @@ Pre-processed data for county industry levels, based on employment, establishmen
 
 **AI Chatbots LLM/SLM**
 
-- [Retrieval Augmented Generation (RAG) with Open WebUI](https://docs.openwebui.com/tutorial/rag/)
+- [Open WebUI](https://docs.openwebui.com) with [Retrieval Augmented Generation (RAG)](https://docs.openwebui.com/tutorial/rag/)
 - [Earthscape for Chatbot AI - Supabase and NextJS Hosting](/earthscape/app/)
 <!--
 - [ChatAll - Share simultaneous AI Chats with Chatbot UI](https://github.com/sunner/ChatALL)

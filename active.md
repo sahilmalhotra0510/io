@@ -45,10 +45,13 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [Push EPA date to Google Data Commons API](https://docs.datacommons.org/api/)
 
 
-**AI Chatbots LLM**
+**AI Chatbots LLM/SLM**
 
-- [Earthscape for Chatbot AI - NextJS Hosting](/earthscape/app/)
+- [Retrieval Augmented Generation (RAG) with Open WebUI](https://docs.openwebui.com/tutorial/rag/)
+- [Earthscape for Chatbot AI - Supabase and NextJS Hosting](/earthscape/app/)
+<!--
 - [ChatAll - Share simultaneous AI Chats with Chatbot UI](https://github.com/sunner/ChatALL)
+-->
 
 **Storyboard Team - Image and Video Generation**
 - [AI Community Visualizations](/data-pipeline/research/) - [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app) and [Our Fork](https://github.com/ModelEarth/replicate) - Kishor
@@ -133,8 +136,7 @@ Welcome - Our next Model.earth meetup is Sunday at 10 PM EDT
 
 Hi, thanks for registering with our ModelEarth team!
 
-We meet next on Sunday at 10 PM EDT, and again on Thursday at Noon EDT.
-(We also do focused meetups Monday and Wednesday evenings at 10 PM.)
+We meet next on Sunday at 10 PM EDT, and again on Thursday at Noon EDT. (We also do focused meetups Monday and Wednesday evenings at 10 PM.)
 
 Let me know which of the following areas you're interested in:
 Javascript, React, D3, Leaflet, Python, Forecasting with ML, LLM Chat

@@ -17,11 +17,11 @@ A Ready Mix USA cement PDF example is downloadable at <a href="https://www.nrmca
 
 An opportunity exists to improve entity data sharing by extending machine readable Environmental Product Declaration (EPD) formats to also describe community impacts and individual footprints.  Using YAML, an easy-to-read superset of JSON, entity reports can be compared visually or formatted as summaries for a variety of entities, with layouts similar to nutritional labels. (Figure 1)
 
-Expanding research by the Carbon Leadership Forum to align analysis methods around a common standard for conveying estimates of embodied carbon in construction from extracting, manufacturing and installing materials<sup>5</sup> strategies are being developed to document sources and overcome uncertainty.
-
 An EPD file is a short version of an entity's Life Cycle Assessment (LCA) report. The LCA report can be stored privately to protect sensitive data. The EPD format allows a public-facing summary to shared without exposing company secrets.  
 
 Storing editable scenario configuration files as YAML allows for faster editing by humans since YAML uses a simple outline format. Subsequently there are fewer opportunities for errors. YAML is also less intimidating than JSON to new editors. 
+
+The Carbon Leadership Forum has aligned analysis methods around a common standard for conveying estimates of embodied carbon from extracting, manufacturing and installing construction materials.<sup>5</sup> 
 
 To automate the exchange of impact files, Building Transparency has extended the popular ILCD+EPD standard<sup>6</sup> to include guarantees for the uniqueness of agents, dated version control and precise Product Category Rules (PCR).  In the [OpenEPD Interchange Format](https://docs.google.com/document/d/1rvWl0W2nmCohaaHXG1P-uX5cDKHv_vD9zfTV5A6qM7A/edit#), each sector's classifications are defined independently by industry groups extending base properties.<sup>7</sup>  
 

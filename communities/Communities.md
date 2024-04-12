@@ -44,19 +44,16 @@ Samples of tools you can add to your website:
 
 ## Opportunities for Innovation
 
-- Create an economic development page for community decision-making that includes environmental aspects.
+- Create an economic development page for weighing outcomes during community decision-making that includes environmental aspects, job creation, land and water use, health impacts and value-added contributions to the state and county tax base.
 
-- Look in depth at your state and community's total footprint.
-
-- Evaluate prospective industries and the potential jobs they could directly 
- and indirectly create, and look at their potential environmental performance.
+- Look in depth at your state and community's total footprint while evaluating prospective industries and the potential jobs they could directly and indirectly create, while looking at their potential environmental performance.
  
-- Determine how technological improvements in your community's industries, utilities, or consumption patterns could transform local outcomes.
+- Determine how technological improvements in your community's industries, utilities, or consumption patterns could transform local outcomes in favor of cleaner air, water, land conservation and biodiversity.
 
 
 ## Other Resources Include
 
-- [Teaching Tools&nbsp;and&nbsp;Student Research Framework](../learn) may use the applications to learn about the connections between industries, households, and the environment in communities.  
+- [Teaching Tools&nbsp;and&nbsp;Student Research Framework](../learn) - Use and create applications to learn about the connections between industries, households, and the environment in local communities.
 
 - [The Innovation Economy](https://hbr.org/podcast/2019/04/the-innovation-economy) - Economist Mariana Mazzucato talks about Entrepreneurial Ecosystems.
 

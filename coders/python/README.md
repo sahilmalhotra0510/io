@@ -1,16 +1,5 @@
 # Python and Conda Notes
 
-Check if you are running pyenv.
-
-	pyenv --version
-
-If so, upgrade your python versions in pyenv to 3.12 or later.
-
-	pyenv install 3.12
-	pyenv global 3.12
-
-If an old version of python is blocking the install.
-
 ## Python
 
 Install the latest Python.
@@ -21,6 +10,17 @@ List all Python versions installed on your system.
 
 	ls -l /usr/local/bin/python*
 
+If an old version of python is still appearing as the current version,
+check if you are running the pyenv python environment.
+
+	pyenv --version
+
+If so, upgrade your python versions in pyenv to 3.12 or later.
+
+	pyenv install 3.12
+	pyenv global 3.12
+
+
 ## Conda
 
 You can try using a cmd to upgrade, but you may need to download.
@@ -30,6 +30,9 @@ You can try using a cmd to upgrade, but you may need to download.
 [Download Anaconda](https://www.anaconda.com/download)
 
 
+## Docker
+
+On a Mac, if the `docker` cmd is not recognized, add the path `$HOME/.docker/bin` in the config file corresponding to your command terminal instance:  In the **Users\\[username]** folder, edit one of these hidden files: .zshrc, .bash_profile, .bashrc or .profile.
 
 <!--
 Probably not needed:

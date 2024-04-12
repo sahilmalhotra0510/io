@@ -22,8 +22,8 @@ Learn about our [Lifecycle Tools](/community/tools/)
 - Fall 2021: [Sustainable Communities Web Challenge](../../community/challenge/)
 - Spring 2022: [Environmental Impact Profiles](../../io/template/)
 - Fall 2022: [B2B Recycling Directory](../../localsite/map/#show=recyclers&state=GA)
-- 2023: Updates to [Data Pipeline](../..//data-pipeline/)
-- 2024: Additions to [Community Data](../../community-data/) from census NAICS industry API
+- 2023: Updates to [Data Pipeline](https://model.earth/data-pipeline/)
+- 2024: Additions to [Community Data](https://model.earth/community-data/) for industry timelines
 <br>
 
 [USEEIO Versions](https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-technical-content) - [Project Areas](../../community/projects/) - [Intern Projects](../../io/projects/) - [Starter Samples](../../community/start/)  

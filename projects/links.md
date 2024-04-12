@@ -1,6 +1,6 @@
 #Overview
 
-[Active Projects](../../io/) - For the Sustainable Community Web Challenge    
+[Active Projects](../../../projects/) - For the Sustainable Community Web Challenge    
 [View Starter Samples](../../apps/) - Roll up your sleeves and get coding  
 
 [Industry Evaluator](../../localsite/info/) - Top Industries by County  

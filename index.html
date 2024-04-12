@@ -1,14 +1,14 @@
 <html><head>
 <script type="text/javascript">
-  window.location="../projects";
-
-  // To do: Still show overview.md somewhere despite redirect.
+  //if(location.host.indexOf('localsite') < 0 && location.host.indexOf('model.georgia') < 0) {
+    window.location="communities";
+  //}
 </script>
 
 
 <meta charset='UTF-8'>
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-<title>Active Projects - Community Impact Apps</title>
+<title>Input-Output Models for Community Planning</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,10 +36,7 @@ https://github.com/WesIngwersen/USEEIO_team
 <meta name="twitter:description" content="Join us to work on Lifecycle Tools using US EPA data with Democracy Lab and Code for America projects." />
 <meta name="twitter:image" content="https://model.earth/io/img/side/model-earth-impacts.jpg" />
 
-  <script type="text/javascript">
-  loadMarkdown("active.md", "activeDiv", "_parent");
-  loadMarkdown("overview.md", "topicsDiv", "_parent");
-  </script>
+
 
   <style>
     body {
@@ -55,24 +52,12 @@ https://github.com/WesIngwersen/USEEIO_team
 
 <body>
 
-<div class="content contentpadding">
-
-<!--
-<div id="rightcolumn" class="hideMobileSooner" style="float:right; margin-left:40px; padding-right:30px; max-width: 500px; width:100%; max-height:1400px; overflow:scroll;">
-</div>
--->
-
-  <div id="activeDiv"></div>
-  <div id="topicsDiv"></div>
-
-  <h2>Add to your website</h2>
-
-  Embedding input-output maps and charts is easy. Here's a sample to try:
-
-  <pre><code>&lt;script type="text/javascript" src="https://model.earth/localsite/js/localsite.js?display=everything&show=farmfresh&showheader=false&state=GA"&gt;&lt;/script&gt;</code></pre>
-
-  Samples of <a href="../io/charts/">Embeddable IO Widgets</a>
-  <br><br>
+<div class="content contentpadding toplinks" style="max-width:none;padding-bottom:0px">
+  <a href="../projects/">Active Projects</a>  | 
+  <a href="communities/">For Communities</a> |
+  <a href="coders/" style="white-space:nowrap;">For Coders & Designers</a> |
+  <span style="white-space:nowrap;"><a href="learn/">For Research Projects</a> | 
+  <a href="about/">About the Model</a></span>
 </div>
 
 </body>

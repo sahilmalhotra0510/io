@@ -21,7 +21,7 @@ We're meeting Thursday at Noon EDT, and again on Sunday at 10 PM EDT.
 Welcome - We're meeting today (Thursday) at Noon EDT, then Sunday at 10 PM
 Welcome - Our next Model.earth meetup is Thursday at Noon EDT
 Welcome - Our next Model.earth React meetup is Wednesday at 10PM EDT
-Welcome - Our next Model.earth meetup is tonight at 10 PM EDT
+Welcome - Our next Model.earth meetup is Sunday at 10 PM EDT
 
 
 Welcome - Our next Model.earth meetup is Sunday at 10 PM EDT

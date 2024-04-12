@@ -147,7 +147,6 @@ h2 { font-size: 18px; }
   left: 0;
   right: 0;
 }
-
 </style>
 
 <link rel="stylesheet" href="../../localsite/css/map.css" id="/localsite/css/map.css" />
@@ -177,7 +176,7 @@ h2 { font-size: 18px; }
 <div class="content contentpadding" style="overflow:auto; margin-bottom:0px; padding-bottom:0px;">
 
   <div class="topLinks">
-    <a href="../">Active Projects</a> |
+    <a href="../../projects/">Active Projects</a> |
     <b>For Communities</b> |
     <a href="../coders/" style="white-space:nowrap;">For Coders & Designers</a> |
     <span style="white-space:nowrap;"><a href="../learn/">For Research & Teaching</a> | 
@@ -185,45 +184,77 @@ h2 { font-size: 18px; }
   </div>
   <br>
 
-<h1>For Local Communities</h1>
+  <div class="floatright" style="border:1px solid #ccc; margin-bottom:20px; max-height:350px; overflow: hidden;">
+   
+    <div style="padding:30px; padding-top:10px; padding-bottom:20px">
 
-<div class="floatright" style="border:1px solid #ccc; margin-bottom:20px; max-height: 600px; overflow: hidden;">
- 
-  <div style="padding:30px; padding-top:10px; padding-bottom:20px">
+      <div style="text-align: center;">
+        <br>
+        <img class="logoImg" src="../../community/img/logo/epa.png" style="width:180px;">
+        <br>
+      </div>
 
-    <div style="text-align: center;">
-      <br>
-      <img class="logoImg" src="../../community/img/logo/epa.png" style="width:180px;">
-      <br>
+      <div>
+        <!--
+        <div style="font-weight:800; margin-top:15px">How are states using Life Cycle Tools?</div>
+        -->
+        Data on local industry input-output levels helps inform <a href="../../localsite/map/#show=recyclers&state=GA">B2B recycling</a>, reductions in greenhouse gas&nbsp;emissions, electric vehicle transitions, advanced biofuels and more.
+      </div>
+
     </div>
 
-    <div>
       <!--
-      <div style="font-weight:800; margin-top:15px">How are states using Life Cycle Tools?</div>
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Georgia earns Area Development&#39;s No. 1 State for Business for the 10th consecutive year, a national record. Additionally, Quick Start was named the nation’s top workforce development program for the 14th year in a row. Read more: <a href="https://t.co/DReO7Ncpyf">https://t.co/DReO7Ncpyf</a> <a href="https://t.co/Ti3Zen5mGf">pic.twitter.com/Ti3Zen5mGf</a></p>&mdash; Georgia, USA (@gdecd) <a href="https://twitter.com/gdecd/status/1709298825389539755?ref_src=twsrc%5Etfw">October 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       -->
-      Data on local industry input-output levels helps inform <a href="../../localsite/map/#show=recyclers&state=GA">B2B recycling</a>, reductions in greenhouse gas&nbsp;emissions, electric vehicle transitions, advanced biofuels and more.
-    </div>
+      
+      <!-- Twitter loads in an iFrame. CSS changes can not be applied.
+      In this case, images in hidden divs are not loaded until the divs are displayed.
+      -->
 
+      <!-- BUGBUG this is loading both.
+
+        To Do:
+        Create javascript to invoke only one. 
+        Exclude from localhost since no longer displays.
+        Avoid long space.
+      -->
+
+
+      <div style="display:none" class="georgia">
+        <a class="twitter-timeline" data-tweet-limit="3" href="https://twitter.com/gdecd"></a> 
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div style="display:none" class="local earth">
+        <a class="twitter-timeline" data-tweet-limit="4" href="https://twitter.com/epa"></a> 
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+
+      
   </div>
+  <!-- /floatRight -->
 
-    <!--
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Georgia earns Area Development&#39;s No. 1 State for Business for the 10th consecutive year, a national record. Additionally, Quick Start was named the nation’s top workforce development program for the 14th year in a row. Read more: <a href="https://t.co/DReO7Ncpyf">https://t.co/DReO7Ncpyf</a> <a href="https://t.co/Ti3Zen5mGf">pic.twitter.com/Ti3Zen5mGf</a></p>&mdash; Georgia, USA (@gdecd) <a href="https://twitter.com/gdecd/status/1709298825389539755?ref_src=twsrc%5Etfw">October 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    -->
+  <div id="topicsDiv" style="min-width:300px;padding-right:10px"></div>
+
+  <h2>Add to Your Website</h2>
+
+  Embedding input-output maps and charts is easy. Here's a sample to try:
+
+  <pre><code>&lt;script type="text/javascript" src="https://model.earth/localsite/js/localsite.js?display=everything&show=farmfresh&showheader=false&state=GA"&gt;&lt;/script&gt;</code></pre>
+
+  Samples of <a href="../charts/">Embeddable IO Widgets</a>
+  <br><br>
+
+
+</div>
+
+
+<!-- Twitter loads in an iFrame. CSS changes can not be applied.
+In this case, images in hidden divs are not loaded until the divs are displayed.
+-->
+<!--
+<div id="rightcolumn" class="hideMobileSooner" style="float:right; margin-left:40px; padding-right:30px; max-width: 500px; width:100%; max-height:1300px; overflow:scroll;">
     
-    <!-- Twitter loads in an iFrame. CSS changes can not be applied.
-    In this case, images in hidden divs are not loaded until the divs are displayed.
-    -->
-
-    <!-- BUGBUG this is loading both.
-
-      To Do:
-      Create javascript to invoke only one. 
-      Exclude from localhost since no longer displays.
-      Avoid long space.
-    -->
-
-
-    <div style="display:none" class="georgia">
+    <div classX="georgia">
       <a class="twitter-timeline" data-tweet-limit="3" href="https://twitter.com/gdecd"></a> 
       <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
@@ -231,56 +262,13 @@ h2 { font-size: 18px; }
       <a class="twitter-timeline" data-tweet-limit="4" href="https://twitter.com/epa"></a> 
       <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
-
+    <div style="display:none" class="dream">
+      <a class="twitter-timeline" data-tweet-limit="4" href="https://twitter.com/dreamstudiohq"></a> 
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
     
 </div>
-
-
-<div id="topicsDiv" style="min-width:300px;padding-right:10px"></div>
-
-<span style="display:none" class="georgia">
-
-<h2>Georgia Community Interest</h2>
-Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at 404.923.4033 or <a href="mailto:csimoglou@georgia.org">csimoglou@georgia.org</a> if you have a group interested in participating.
-
-</span>
-
-
-<p>
-<br>
-<a href="../../localsite/info/" target="_parent">Explore Industry Impacts</a> | 
-<a href="../../community/tools/" target="_parent">View Presentation</a> | 
-<a href="../../community/challenge/" target="_parent">Participate in our Web Challenge</a>  
-</p>
-<br>
-
-</div>
-
-
-
-<div style="display: none;position:fixed; right:0; bottom:0; margin:30px; z-index:100">
-  <!-- circle arrows -->
-  <div class="swiper-button-prev prev-buttonX swiper-button-circle">
-    <div class="nav-circle"></div>
-    <div class="circle-text">
-
-      <svg aria-hidden="true" role="presentation" focusable="false" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display: block; fill: none; height:32px; width:32px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;"><g fill="none"><path d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932"></path></g></svg>
-
-    </div>
-  </div>
-
-  <div class="swiper-button-next prev-buttonX swiper-button-circle">
-    <div class="nav-circle"></div>
-    <div class="circle-text">
-    
-       <svg aria-hidden="true" role="presentation" focusable="false" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display: block;fill: none;height:32px;width:32px;stroke: currentcolor;stroke-width: 5.33333;overflow: visible;"><g fill="none"><path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"></path></g></svg>
-
-    </div>
-  </div>
-
-</div>
-
-
+-->
 
 <div class="reveal" style="clear:both">
 
@@ -359,7 +347,7 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
 
   
   <section id="objectives">
-    <div class="content contentpadding">
+    <div class="content contentpadding" style="padding-bottom:0px;">
 
       <div style="font-size:18px">
         <a href="https://www.epa.gov/smm/epa-sustainable-materials-management-program-strategic-plan-fiscal-years-2017-2022">
@@ -396,14 +384,8 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
   </section>
   <div style="clear:both"></div>
 
-
-  <div id="datascape"></div>
-
-  <div id="disqus_thread"></div>
-
-
   <section id="modeling">
-    <div class="content contentpadding">
+    <div class="content contentpadding" style="padding-top:0px;">
       <h1>Statewide Input-Output Modeling</h1>
 
       View our new embeddable <a href="../../io/charts/">US Environmentally-Extended Input-Output charts</a><br>
@@ -704,6 +686,8 @@ Contact Costas Simoglou, Energy Director at the Georgia Center of Innovation, at
     </div>
   </div>
 </div>
+
+<div id="disqus_thread"></div>
 
 <div id='footer' class='hideprint'></div>
 

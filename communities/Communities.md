@@ -1,21 +1,88 @@
-The US EPA is creating [input-output tools](../../community/tools/) for communities pursuing projects involving waste-to-energy, bioproducts, green energy innovations, [farm fresh produce](../../localsite/info/#show=farmfresh&state=GA), and local environmental projects. Community participants can include a coalition of representatives of diverse interests such as:
+# For Local Communities
+
+<!--
+Innovative Web Applications for&nbsp;States&nbsp;and&nbsp;Communities 
+-->
+
+The U.S. Environmental Protection Agency (EPA), the Georgia Center for Innovation for Energy Technology, and DemocracyLab Volunteers are providing collaborative tools for visualizing [environmental and economic impacts](/localsite/info/) in local communities, state regions and the entire US using 24 indicators including job growth, value-added, air quality, energy use, water use, land use, biodiversity, local conservation projects and [global sustainablity goals](https://sdgs.un.org/goals). 
+
+<!--
+Using an economy-wide input-output model of industries, households and the environment, the impact tools help communities identify opportunities for economic growth and environmental improvements.  
+-->
+
+## Community Pages
+
+<!-- Starting points for updating your website with lifecycle tools.-->
+
+Samples of tools you can add to your website:
+
+<!--
+[Carbon Cycle](carbon/) - Combining Wikipedia, Bloomberg and EPA data  
+[Coastal Recycling](coastal/) - Southeast Georgia - Activated Carbon  
+[EV Manufacturing](ev/) - LaGrange Georgia - Automotive Industries 
+[Lifecycle Tools 3.0](smm/) - Concepts for upcoming USEEIO widgets
+-->
+
+- [Community Start Pages](../../apps/)
+- [Michigan Farmers Markets](../../localsite/map/#state=MI&show=farmfresh)  
+- [Georgia Recycling Directories](../../recycling/georgia/)  
+- [Robertson County Texas Land Use](../../localsite/info/#state=TX&geoview=state&geo=US48395&set=land&indicators=LAND,MNRL,PEST,METL,CRHW,CMSW,FMSW,CCDD)  
+- [Colorado Industry Impact Comparison](../../localsite/info/#state=CO)  
+<!--
+- [Georgia B2B Recyclers](../localsite/map/#show=recyclers&state=GA)  
+- [Georgia Wastewater Facilities](../localsite/map/#show=wastewater&state=GA)  
+- [Georgia Solid Waste Map](../localsite/map/#show=solidwaste&state=GA&cat=Operating)  
+- [Georgia Vehicle Parts Manufacturing](../apps/ev/)  
+-->
+
+
+<!--
+- [Environmental Impact Profile "Nutritional Labels"](../io/template/)  
+- [Mockup of SMM/LCA 3.0](../apps/smm/)  
+- [Coastal Recycling - Activated Carbon - Inflow Sources](../apps/coastal/) 
+-->
+
+## Opportunities for Innovation
+
+- Create an economic development page for community decision-making that includes environmental aspects.
+
+- Look in depth at your state and community's total footprint.
+
+- Evaluate prospective industries and the potential jobs they could directly 
+ and indirectly create, and look at their potential environmental performance.
+ 
+- Determine how technological improvements in your community's industries, utilities, or consumption patterns could reduce its footprint.
+
+
+## Other Resources Include
+
+- [Teaching Tools&nbsp;and&nbsp;Student Research Framework](../learn) may use the applications to learn about the connections between industries, households, and the environment in communities.  
+
+- [The Innovation Economy](https://hbr.org/podcast/2019/04/the-innovation-economy) - Economist Mariana Mazzucato talks about Entrepreneurial Ecosystems.
+
+- [Community Carbon Cycling](../../community/carbon-capture/) - How manufacturers and municipalities are reusing material to capture carbon and generate clean energy.  
+
+
+## Impact Visualizations
+
+[Our lifecycle tools](../../community/tools/) explore topics of biodiversity, energy innovation, [farm fresh produce](../../localsite/info/#show=farmfresh&state=GA), waste-to-energy, bioproducts and local product footprints. Community participants include collaborations across organizations, including:
 
 - local government
 - educational institutions
 - development authorities
 - regional commissions
+- religious organizations
 - local industry groups
-- local citizen groups
 - local non-profits   
-- local religious organizations
+
 
 ## Community Focused Apps
 
-The [Location Modeling Repo](../../apps/) contains starters for local topic pages:
+The [Location Apps Repo](../../apps/) contains starters for local topics including:
 - <a href="../../apps/carbon/">Carbon Cycle</a>
 - <a href="../../apps/coastal/">Coastal Recycling</a>
 - <a href="../../apps/ev/">EV Manufacturing</a>
-
+- <a href="../../recycling/">B2B Recycling</a>
 <!--
 [West Central Georgia](../../localsite/info/#state=GA&regiontitle=West+Central+Georgia&geo=US13045,US13077,US13143,US13145,US13149,US13199,US13223,US13233,US13263,US13285,US01111,US01017&lat=33.0362&lon=-85.0322&show=parts) - Automotive Parts Industry -  Transformations for Electric Vehicle Production  
 [Coastal Georgia](../../localsite/info/#state=GA&regiontitle=Coastal+Georgia&show=bioeconomy) - Waste to Energy Bioeconomy  

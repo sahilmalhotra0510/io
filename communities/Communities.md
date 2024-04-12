@@ -4,7 +4,7 @@
 Innovative Web Applications for&nbsp;States&nbsp;and&nbsp;Communities 
 -->
 
-The U.S. Environmental Protection Agency (EPA), the Georgia Center for Innovation for Energy Technology, and DemocracyLab Volunteers are providing collaborative tools for visualizing [environmental and economic impacts](/localsite/info/) in local communities, state regions and the entire US using 24 indicators including job growth, value-added, air quality, energy use, water use, land use, biodiversity, local conservation projects and [global sustainablity goals](https://sdgs.un.org/goals). 
+The U.S. Environmental Protection Agency (EPA) and the Georgia Center for Innovation for Energy Technology have teamed up with DemocracyLab Volunteers to provide collaborative tools for visualizing [environmental and economic impacts](/localsite/info/) in local communities, states and countries using 24 indicators - including job growth, value-added, air quality, energy use, water use, land use, biodiversity, local conservation projects and [global development goals](https://sdgs.un.org/goals). 
 
 <!--
 Using an economy-wide input-output model of industries, households and the environment, the impact tools help communities identify opportunities for economic growth and environmental improvements.  

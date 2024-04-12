@@ -34,6 +34,8 @@ You can try using a cmd to upgrade, but you may need to download.
 
 On a Mac, if the `docker` cmd is not recognized, add the path `$HOME/.docker/bin` in the config file corresponding to your command terminal instance:  In the **Users\\[username]** folder, edit one of these hidden files: .zshrc, .bash_profile, .bashrc or .profile.
 
+If you're transitioning from an old instance of [Docker](https://www.docker.com/products/docker-desktop/), you may need to reinstall or do a Docker reboot.
+
 <!--
 Probably not needed:
 

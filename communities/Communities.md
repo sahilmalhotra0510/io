@@ -51,7 +51,7 @@ Samples of tools you can add to your website:
 - Evaluate prospective industries and the potential jobs they could directly 
  and indirectly create, and look at their potential environmental performance.
  
-- Determine how technological improvements in your community's industries, utilities, or consumption patterns could reduce its footprint.
+- Determine how technological improvements in your community's industries, utilities, or consumption patterns could transform local outcomes.
 
 
 ## Other Resources Include

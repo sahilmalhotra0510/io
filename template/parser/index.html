@@ -42,16 +42,20 @@
   <body>
 
     
-    <div class="content">
+    <div class="content contentpadding">
       <div class="header">
         <br>
         <a href="../">Footprint Builder</a><br>
         <h1>YAML-to-JSON-to-HTML JavaScript parser</h1>
-        Scroll down to view Output as HTML. (Might require hitting reload. Make note here if it still does.)<br><br>
+        Scroll down to view nested hierarchy.<br><br>
       </div>
 
+<!-- removed dash in front of qty: 1 
+removed dash plants: - id
+-->
+
       <div class="src">
-        <h4 class="subheader"><a href="#" id="permalink" style="display:none">permalink</a> Edit/paste source here:</h4>
+        <h4 class="subheader"><a href="#" id="permalink" style="display:none">permalink</a> Edit YAML</h4>
         <textarea id="source">
 id: ec3yznau
 ref: https://openepd.buildingtransparency.org/api/epds/EC3YZNAU
@@ -117,7 +121,7 @@ manufacturer:
     - Monumental Concrete
     - Centre Concrete
 plants:
-  - id: 849W93CW+79.centralconcrete.com
+    id: 849W93CW+79.centralconcrete.com
     name: Queens Lane (wet)
     ref: https://openepd.buildingtransparency.org/api/plants/849W93CW+79.centralconcrete.com
     pluscode: 849W93CW+79
@@ -147,7 +151,7 @@ pcr:
   date_of_issue: '2013-12-04'
   valid_until: '2018-12-04'
   declared_units:
-    - qty: 1
+      qty: 1
       unit: m3
   doc: https://app.box.com/file/292552692203
 compliance: []
@@ -156,12 +160,12 @@ compliance: []
       </div>
 
       <div class="dst">
-        <h4 class="subheader">Convert to JSON:</h4>
+        <h4 class="subheader">Converted to JSON</h4>
         <textarea id="result"></textarea>
       </div>
 
       <div style="clear:both" class="format_table json_to_html_table">
-        <h4 class="subheader">Output as HTML:</h4>
+        <h4 class="subheader">Nested Hierarchy</h4>
         <div id="formatted"></div>
       </div><div style="clear:both;">
 

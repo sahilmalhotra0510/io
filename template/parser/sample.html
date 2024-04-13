@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environmental Profile</title>
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .envProfile {
+      width: 300px;
+      border: 4px solid #000;
+      font-family: helvetica;
+      font-weight: 100;
+      color: #000;
+      padding: 3px;
+      margin-bottom: 20px;
+    }
+    .envProfile div {
+      padding: 4px 6px 3px 6px;
+      font-size: 13px;
+      border-bottom: 1px solid #333;
+    }
+    .envProfile div span {
+      float: right;
+      font-weight: bold;
+    }
+    .envProfile div div {
+      margin-left: 20px;
+      border: 0px;
+      padding: 0px;
+    }
+    .envProfile div div span {
+      float: right;
+      font-weight: bold;
+    }
+    .envProfile .profileTitle {
+      font-size: 20px;
+      padding: 5px;
+      padding-top: 0px;
+      font-weight: 800;
+      font-family: 'Roboto', helvetica;
+      border-bottom: 6px solid #333;
+    }
+    .envProfile .profileType {
+      font-size: 12px;
+      padding: 5px;
+      padding-bottom: 0px;
+      border-bottom: 0px solid #333;
+    }
+    .text-highlight {
+      padding: 15px;
+      background-color: #ddd;
+      margin-bottom: 20px;
+    }
+    ol > li:before {
+        border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+<div id="profileContainer"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+<script>
+  const data = `id: ec3yznau
+ref: https://openepd.buildingtransparency.org/api/epds/EC3YZNAU
+doctype: OpenEPD
+version: null
+language: en
+private: false
+declaration_url: cqd.io/e/ec3yznau9d
+program_operator_doc_id: 9BD4F9CB-3584-4D34-90F8-B6E40B69653D
+program_operator_version: null
+third_party_verification_url: null
+date_of_issue: '2019-01-28T00:00:00Z'
+valid_until: '2024-01-28T00:00:00Z'
+declared_unit:
+  qty: 1
+  unit: m3
+kg_per_declared_unit:
+  qty: 2400
+  unit: kg
+kg_C_per_declared_unit: null
+product_name: DM0115CA
+product_sku: null
+product_description: DOT MINOR 3/4" 15FA 3-5SL AIR
+product_image_small: null
+product_image: null
+product_service_life_years: null
+product_classes:
+  io.cqd.ec3: Concrete >> ReadyMix
+applicable_in: null
+product_usage_description: null
+product_usage_image: null
+manufacturing_description: null
+manufacturing_image: null
+impacts: {}
+specs:
+  concrete:
+    strength_28d: 20.684271879505086 MPa
+    slump: 4.0 in
+    strength_other: null
+    strength_other_d: null
+    w_c_ratio: null
+    aci_exposure_classes: null
+    csa_exposure_classes: null
+    en_exposure_classes: null
+    options:
+      lightweight: false
+      scc: false
+      finishable: null
+      air: true
+      co2: false
+      white: false
+      plc: false
+      fiber_reinforced: null
+    cementitious:
+      fly_ash: 0.15
+      slag: 0
+manufacturer:
+  web_domain: centralconcrete.com
+  ref: https://openepd.buildingtransparency.org/api/orgs/centralconcrete.com
+  name: Central Concrete
+  alt_names:
+    - Central Concrete
+    - Monumental Concrete
+    - Centre Concrete
+plants:
+    id: 849W93CW+79.centralconcrete.com
+    name: Queens Lane (wet)
+    ref: https://openepd.buildingtransparency.org/api/plants/849W93CW+79.centralconcrete.com
+    pluscode: 849W93CW+79
+    address: 457 Queens Lane, San Jose, CA 95112
+program_operator:
+  web_domain: astm.org
+  ref: https://openepd.buildingtransparency.org/api/orgs/astm.org
+  name: ASTM International
+  alt_names:
+    - astm
+    - ASTMInternational
+third_party_verifier:
+  web_domain: iere.org
+  ref: https://openepd.buildingtransparency.org/api/orgs/iere.org
+  name: EarthSure
+  alt_names:
+    - Earthsure
+    - IERE
+    - Institute for Environmental Research and Education
+pcr:
+  id: ec37zjz1
+  name: North American PCR for Concrete
+  ref: https://openepd.buildingtransparency.org/api/pcrs/EC37ZJZ1
+  issuer_doc_id: null
+  short_name: Concrete
+  version: '1.1'
+  date_of_issue: '2013-12-04'
+  valid_until: '2018-12-04'
+  declared_units:
+      qty: 1
+      unit: m3
+  doc: https://app.box.com/file/292552692203
+compliance: []`;
+
+  const yamlData = jsyaml.load(data);
+
+  const profileContainer = document.getElementById('profileContainer');
+
+  const profileDiv = document.createElement('div');
+  profileDiv.classList.add('envProfile');
+
+  // Add profile type
+  const profileTypeDiv = document.createElement('div');
+  profileTypeDiv.classList.add('profileType');
+  profileTypeDiv.textContent = 'Product Profile';
+  profileDiv.appendChild(profileTypeDiv);
+
+  // Add profile title
+  const profileTitleDiv = document.createElement('div');
+  profileTitleDiv.classList.add('profileTitle');
+  profileTitleDiv.textContent = 'Product Title'; // Hardcoded for now
+  profileDiv.appendChild(profileTitleDiv);
+
+  // Helper function to format URLs
+  const formatUrl = (url) => {
+    return `<a href="${url}" target="_blank">${url.length > 30 ? url.substring(0, 30) + '...' : url}</a>`;
+  };
+  const formatDate = (dateStr) => {
+    return new Date(dateStr).toLocaleDateString('en-US');
+  };
+  function formatKey(str) {
+    const allCaps = ['id', 'url', 'lol']; // Words to capitalize entirely
+    const allLower = ['a', 'is', 'the', 'and', 'of', 'in', 'on', 'for', 'with']; // Words to keep all lowercase
+    
+    // Remove underscores and split the string into an array of words
+    let words = str.replace(/_/g, ' ').split(' ');
+
+    // Capitalize the first letter of each word
+    words = words.map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+
+    // Capitalize entire word if it's in the allCaps array
+    words = words.map(word => {
+        if (allCaps.includes(word.toLowerCase())) {
+            return word.toUpperCase();
+        }
+        return word;
+    });
+
+    // Convert certain words to lowercase if they are in the allLower array
+    words = words.map(word => {
+        if (allLower.includes(word.toLowerCase())) {
+            return word.toLowerCase();
+        }
+        return word;
+    });
+
+    // Join the words back into a string and return
+    return words.join(' ');
+  }
+  function isEmpty(obj) {
+    for (var prop in obj) {
+      if (Object.prototype.hasOwnProperty.call(obj, prop)) {
+        return false;
+      }
+    }
+    return true
+  }
+
+  // Loop through yamlData and create divs for each key-value pair
+  Object.entries(yamlData).forEach(([key, value]) => {
+    if (value !== null && typeof value !== 'object') {
+      const itemDiv = document.createElement('div');
+      const span = document.createElement('span');
+      if (key.includes('url') || key == 'ref') {
+        span.innerHTML = formatUrl(value);
+      } else if (key.includes('date')) {
+        span.textContent = formatDate(value);
+      } else {
+        span.textContent = value;
+      }
+      itemDiv.innerHTML = `<b>${formatKey(key)}</b> `;
+      itemDiv.appendChild(span);
+      profileDiv.appendChild(itemDiv);
+    } else if (typeof value === 'object' && value !== null && !isEmpty(value)) {
+      const itemDiv = document.createElement('div');
+      const keyDiv = document.createElement('div');
+      keyDiv.innerHTML = `<b>${formatKey(key)}</b> `;
+      itemDiv.appendChild(keyDiv);
+
+      // Loop through nested object
+      Object.entries(value).forEach(([subKey, subValue]) => {
+        if (subValue !== null && typeof subValue !== 'object') {
+          const subItemDiv = document.createElement('div');
+          const subSpan = document.createElement('span');
+          if (subKey.includes('url') || subKey == 'ref') {
+            subSpan.innerHTML = formatUrl(subValue);
+          } else if (subKey.includes('date')) {
+            subSpan.textContent = formatDate(subValue);
+          } else {
+            subSpan.textContent = subValue;
+          }
+          subItemDiv.innerHTML = `${formatKey(subKey)} `;
+          subItemDiv.appendChild(subSpan);
+          itemDiv.appendChild(subItemDiv);
+        } else if (typeof subValue === 'object' && subValue !== null)  {
+          const subItemDiv = document.createElement('div');
+          const subSpan = document.createElement('span');
+          subSpan.innerHTML = `<b>${formatKey(key)}</b> `;
+          subItemDiv.appendChild(keyDiv);
+          Object.entries(subValue).forEach(([subSubKey, subSubValue]) => {
+            if (subSubValue !== null) {
+
+              const subSubItemDiv = document.createElement('div');
+              const subSubSpan = document.createElement('span');
+              if (subSubKey.includes('url') || subSubKey == 'ref') {
+                subSubSpan.innerHTML = formatUrl(subSubValue);
+              } else if (subSubKey.includes('date')) {
+                subSubSpan.textContent = formatDate(subSubValue);
+              } else {
+                subSubSpan.textContent = subSubValue;
+              }
+              subSubItemDiv.innerHTML = `${formatKey(subSubKey)} `;
+              subSubItemDiv.appendChild(subSubSpan);
+              subItemDiv.appendChild(subSubItemDiv);
+            }
+          });
+        }
+      });
+
+      profileDiv.appendChild(itemDiv);
+    }
+  });
+
+  profileContainer.appendChild(profileDiv);
+</script>
+</body>
+</html>
+

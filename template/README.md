@@ -52,8 +52,8 @@ concrete:
 
 **Advantage of YAML for entity data sharing**  
 
-JSON is well suited for data interchange since the structure is rigid.  
-YAML based on JSON standards has the advantage of being both slim and easier to read/edit.  
+JSON is well suited for data interchange since the structure is rigid, however  
+YAML (based on JSON standards) has the added advantage of being slim and easier to read/edit.  
 
 - Machine-Readable - A significant advantage of both JSON and YAML over PDF files  
 - Human-Editable - Fewer errors likely when editing YAML compared to JSON scenario files   

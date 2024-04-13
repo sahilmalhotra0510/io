@@ -44,7 +44,7 @@ Samples of tools you can add to your website:
 
 ## Opportunities for Innovation
 
-- Create an economic development page for weighing outcomes during community decision-making that includes environmental aspects, job creation, land and water use, health impacts and value-added contributions to the state and county tax base.
+- Create an economic development page for weighing outcomes during community decision-making that includes environmental aspects, quality job creation, land and water use, health impacts and value-added contributions to the state and county tax base.
 
 - Look in depth at your state and community's total footprint while evaluating prospective industries and the potential jobs they could directly and indirectly create, while looking at their potential environmental performance.
  

@@ -26,11 +26,11 @@ Welcome - Our next Model.earth meetup is Sunday at 10 PM EDT
 
 Welcome - Our next Model.earth meetup is Sunday at 10 PM EDT
 
-Hi, thanks for registering with our ModelEarth team!
+Hi, thanks for registering with our ModelEarth team.
 
 We meet next on Sunday at 10 PM EDT, and again on Thursday at Noon EDT. (We also do focused meetups Monday and Wednesday evenings at 10 PM.)
 
-Let me know which of the following areas you're interested in:
+Let me know which of the following areas you're most interested in:
 Javascript, React, D3, Leaflet, Python, Forecasting with ML, LLM Chat
 
 Here are our active projects:

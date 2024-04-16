@@ -13812,7 +13812,7 @@ var demo = (function () {
 
     // If there are any bits left, the base64 string was corrupted
     if (leftbits) {
-      logger.error('Corrupted base64 string');
+      logger.error('Corrupted base64 string leftbits: ' + leftbits);
       return null;
     }
 

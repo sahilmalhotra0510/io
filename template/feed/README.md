@@ -13,7 +13,7 @@
 
 <b>TO DO:</b> Allow site users to enter their own BuildingTransparency key here. Use [javascript sample on starter page](../../../localsite/start/steps/).
 
-*Your API Key (Not yet activated):*
+*Your API Key (Not yet activated):* - [Get your API Key](../product/)
 <input type="text" id="btKey" class="textInput" style="width:210px" placeholder="Your API Key"  autofocus onfocus="this.select()" oninputX="updateKey()"><br><br>
 
 <b>TO DO:</b> Automate saving API as .json or .csv files using <code>npm run download</code> technique from <a href="../../charts/">EPA widgets</a>.<br>

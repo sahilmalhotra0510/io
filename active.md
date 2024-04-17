@@ -14,21 +14,21 @@ We're meeting tonight (Sunday) at 10 PM EDT, and again on Thursday at Noon EDT.
 We're meeting today (Thursday) at Noon EDT, and again on Sunday at 10 PM EDT.
 (We also do focused meetups Monday and Wednesday evenings at 10 PM.)
 
-We're meeting Thursday at Noon EDT, and again on Sunday at 10 PM EDT.
-(We also do focused meetups Monday and Wednesday evenings at 10 PM.)
-
+We meet next on Sunday at 10 PM EDT, and again on Thursday at Noon EDT. (We also do focused meetups Monday and Wednesday evenings at 10 PM.)
 
 Welcome - We're meeting today (Thursday) at Noon EDT, then Sunday at 10 PM
-Welcome - Our next Model.earth meetup is Thursday at Noon EDT
 Welcome - Our next Model.earth React meetup is Wednesday at 10PM EDT
 Welcome - Our next Model.earth meetup is Sunday at 10 PM EDT
-
-
 Welcome - Our next Model.earth meetup is Sunday at 10 PM EDT
+
+
+
+Welcome - Our next Model.earth meetup is Thursday at Noon EDT
 
 Hi, thanks for registering with our ModelEarth team.
 
-We meet next on Sunday at 10 PM EDT, and again on Thursday at Noon EDT. (We also do focused meetups Monday and Wednesday evenings at 10 PM.)
+We're meeting Thursday at Noon EDT, and again on Sunday at 10 PM EDT.
+(We also do focused meetups Monday and Wednesday evenings at 10 PM.)
 
 Let me know which of the following areas you're most interested in:
 Javascript, React, D3, Leaflet, Python, Forecasting with ML, LLM Chat
@@ -42,14 +42,18 @@ https://model.earth/localsite/start/steps
 Also choose a topic of interest in our Observable Data Commons repo:
 https://model.earth/data-commons/dist
 
-Let me know if you'd like a welcome letter for the OPT program.
+If you're participating in the masters student OPT program, 
+I've attached a welcome letter to fill out and send back for me to sign.
 
 Our meetup link is here - it's always the same Google Meet:
 https://model.earth/io/coders
 
-Looking forward to working with you!
+Looking forward to working with you!  
 
 Loren Heyns
+
+
+
 
 ----
 

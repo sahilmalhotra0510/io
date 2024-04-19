@@ -37,7 +37,7 @@ Collaborate on open source modeling tools using API mashups for environmental im
 #### Saturday, April 20, 2024
 ### Noon to 8 PM EDT Atlanta &nbsp;(9 AM to 5 PM PDT Seattle)
 
-Mark your calendar and join in our [Earth Day AI projects](../)
+Mark your calendar and join in our [Earth Day AI projects](/projects/)
 
 We'll use our Earthscape Chatbot UI fork to combine over 100 LLMs with Data Science visualizations. Real-time Natural language processing (NLP) processing of chats will pull locations, impact areas and UN goals for our chart output within cinematic page headers.
 <br>

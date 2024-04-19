@@ -38,13 +38,12 @@ Collaborate on open source modeling tools using API mashups for environmental im
 **Noon to 8 PM EDT East Coast<br>9 AM to 5 PM PDT West Coast**
 
 [Join our Google Meetup](https://meet.google.com/pcv-xrdh-bat) - We'll touchbase every two hours for 30+ minutes at Noon, 2pm, 4pm, 6pm, and then wrap-up with other teams from 7pm to 8pm EDT.
-
+<!--
 Mark your calendar and join in our [Earth Day AI projects](/projects/)
+-->
+We'll be creating visual food nutrition labels and environmental impact biodiversity storyboards with our new generative AI tools for images and video using python and Open WebUI.<!--We'll use our Earthscape Chatbot UI fork to combine over 100 LLMs with Data Science visualizations. Real-time Natural language processing (NLP) processing of chats will pull locations, impact areas and UN goals for our chart output within cinematic page headers.-->
 
-We'll use our Earthscape Chatbot UI fork to combine over 100 LLMs with Data Science visualizations. Real-time Natural language processing (NLP) processing of chats will pull locations, impact areas and UN goals for our chart output within cinematic page headers.
-<br>
-
-
+<!--
 ### Upcoming Hackathons at DevPost.com
 
 Many hackthons have money prizes. Register the team in one you'd like to manage and spearhead our involvement! &nbsp;Check out [Devpost.com/hackathons](https://devpost.com/hackathons)
@@ -52,6 +51,7 @@ Many hackthons have money prizes. Register the team in one you'd like to manage 
 For example, the [DLT Climate Hackathon](https://dlt-climate-hackathon.devpost.com/details/dates) focuses on integration with their carbon reporting tool - so we'd need someone interested in becoming an expert and sharing with us ways to extend the DLT tool. We could intergrate with BuildingTransparency.org product [impact profiles](/io/template/).<br>
 
 [Cesium Grants (Gifts)](https://cesium.com/cesium-ecosystem-grants/) - 3D Map Ecosystem Grants re-open April 1, 2024
+-->
 
 <!--Grant Proposal, Review and Recommendation-->
 <!--

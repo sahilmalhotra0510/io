@@ -35,7 +35,9 @@ Collaborate on open source modeling tools using API mashups for environmental im
 # Earthathon 2024
 ### Online with DemocracyLab
 #### Saturday, April 20, 2024
-### Noon to 8 PM EDT Atlanta &nbsp;(9 AM to 5 PM PDT Seattle)
+**Noon to 8 PM EDT East Coast<br>9 AM to 5 PM PDT West Coast**
+
+[Join our Google Meetup](https://meet.google.com/pcv-xrdh-bat) - We'll touchbase every two hours for 30+ minutes at Noon, 2pm, 4pm, 6pm, and then wrap-up with other teams from 7pm to 8pm EDT.
 
 Mark your calendar and join in our [Earth Day AI projects](/projects/)
 

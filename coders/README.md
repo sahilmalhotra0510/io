@@ -1,3 +1,18 @@
+<div class="floatright" style="margin-bottom:20px">
+    <a href="img/earthathon.png"><img src="img/earthathon.png" style="width:100%;max-width:500px"></a><br><br><a href="/community/tools/"><img src="../img/side/model-earth-impacts.jpg" style="width:100%;max-width:500px"></a><br>
+ </div>
+# Earthathon 2024
+### Online with DemocracyLab
+#### Saturday, April 20, 2024
+**Noon to 8 PM EDT East Coast<br>9 AM to 5 PM PDT West Coast**
+
+[Join our Google Meetup](https://meet.google.com/pcv-xrdh-bat) - We'll touchbase every two hours for 30+ minutes at Noon, 2pm, 4pm, 6pm, and then wrap-up with other teams from 7pm to 8pm EDT.
+<!--
+Mark your calendar and join in our [Earth Day AI projects](/projects/)
+-->
+We'll be creating visual food nutrition labels and environmental impact biodiversity storyboards with our new generative AI tools for images and video using python and Open WebUI.<!--We'll use our Earthscape Chatbot UI fork to combine over 100 LLMs with Data Science visualizations. Real-time Natural language processing (NLP) processing of chats will pull locations, impact areas and UN goals for our chart output within cinematic page headers.-->
+
+
 <!--
 <h1 style="margin-bottom:0px; font-size:38px">48 Hours of Earth Day!</h1>
 <h3 style="margin-top:4px; font-size:24px">Friday, April 22, 2022</h3>
@@ -7,6 +22,8 @@ Join us during Democracy Lab's 48 HOUR EARTH DAY on April 22nd. The event will b
 For use during a future Web Challenge
 [WebStorm Notes](https://docs.google.com/document/d/1BKxx5Q5rtNgZ9cD-Hsgdi_nEL1YPCfPhKjbnIqMgCRI/edit?usp=sharing) - Add info on using [GitHub Copilot by OpenAI](https://github.com/features/copilot) or other AI codex.
 -->
+
+<h1>For Coders & Designers</h1>
 
 View our [Active Projects](../../projects/) and find your areas of interest.
 
@@ -30,20 +47,9 @@ Collaborate on open source modeling tools using API mashups for environmental im
 - [Join our Democracy Lab Slack Group](https://democracylab-org.slack.com/archives/C06F73YKEQN)
 <!--
 	- [Join our Facebook group](https://www.facebook.com/groups/modelearth) and [Discord](https://discord.gg/w3SQtAb6)
---><br>
 
-# Earthathon 2024
-### Online with DemocracyLab
-#### Saturday, April 20, 2024
-**Noon to 8 PM EDT East Coast<br>9 AM to 5 PM PDT West Coast**
 
-[Join our Google Meetup](https://meet.google.com/pcv-xrdh-bat) - We'll touchbase every two hours for 30+ minutes at Noon, 2pm, 4pm, 6pm, and then wrap-up with other teams from 7pm to 8pm EDT.
-<!--
-Mark your calendar and join in our [Earth Day AI projects](/projects/)
--->
-We'll be creating visual food nutrition labels and environmental impact biodiversity storyboards with our new generative AI tools for images and video using python and Open WebUI.<!--We'll use our Earthscape Chatbot UI fork to combine over 100 LLMs with Data Science visualizations. Real-time Natural language processing (NLP) processing of chats will pull locations, impact areas and UN goals for our chart output within cinematic page headers.-->
 
-<!--
 ### Upcoming Hackathons at DevPost.com
 
 Many hackthons have money prizes. Register the team in one you'd like to manage and spearhead our involvement! &nbsp;Check out [Devpost.com/hackathons](https://devpost.com/hackathons)

@@ -77,3 +77,16 @@ Collaborate on open source modeling tools using API mashups for environmental im
 - [Get Started by installing our Localsite repos (with one cmd)](../../localsite/start/steps/)
 - [Join our Democracy Lab Slack Group](https://democracylab-org.slack.com/archives/C06F73YKEQN)
 
+
+# API for Workflow (Meal Prep and Local Requests)
+
+We're creating reusable, massively parallel processes, using the SeeClickFix open311 request system as our API syntax for requesting nutritious meal prep and other forms of local workforce mobilization.
+
+We'll display a list of requests by zip code from the [SeeClickFix open311 API](https://dev.seeclickfix.com)
+
+We'll assemble meal requests using [FDA API food profiles](https://model.earth/data-commons/dist/food) with our YAML/JSON [OpenFootprint](/OpenFootprint) label formatter using the [FDA API](https://fdc.nal.usda.gov/api-guide.html).
+
+We'll fund the meals sent to SeeClickFix using the [OpenCollective API GraphQL](https://graphql-docs-v2.opencollective.com/access) which is accessible via [altairgraphql.dev](https://altairgraphql.dev).
+
+TO DO:
+Send a meal funding request to our OpenFootprint account or another OpenCollective.com account.

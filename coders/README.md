@@ -2,6 +2,8 @@
 2PM, 4PM, 6PM - Hanging out in our [DemocracyLab Team Meetup](https://meet.google.com/aof-ehst-kpq)
 7PM to 8PM EDT - Closing review in [Main DemocracyLab Google Meetup](https://meet.google.com/eac-uada-szh).
 
+[Google Vertex AI Model Garden](https://www.youtube.com/watch?v=_AOA6M9Ta2I) - Over 130 Models
+
 # Modeling Environments, Predicting Outcomes
 
 | Inflow | Basket of Goods| Outflow | Predicted Results |

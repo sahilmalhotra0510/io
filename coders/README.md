@@ -9,7 +9,7 @@
 | Inflow | Basket of Goods| Outflow | Predicted Results |
 | ----------- | ----------- | ----------- | ----------- |
 | [Ingredients](/data-commons/docs/food/) | Healthy Meal | [Nutrients](/balance/) | [Impact on Body](/balance/label_checker.html) |
-| [Suppliers](/data-pipeline/research/economy/) | [Commodities](/localsite/info/) | Products | [Impact on Environment](/io/charts/) |
+| [Suppliers](/data-pipeline/research/economy/) | [Commodities](/localsite/info/) | [Products](https://github.com/ModelEarth/OpenFootprint/tree/main/products/US) | [Impact on Environment](/community/tools/) |
 | [Stimulus ML](/RealityStream/) | Brain Waves | [Brain Voxels Firing](/RealityStream/models/random-bits-forest/) | [Eye Blinks](/RealityStream/output/blinks/) |
 | [Local Industries](/localsite/info/) | Honey Bees | [Population Change](/data-pipeline/research/bees/) | [Healthy Bee Population](/RealityStream/output/bees) |
 | [Local Industries](/localsite/info/) | Tree Canopy | [Biodiversity Change](/data-commons/docs/biodivere/) | Healthy Forest Growth |

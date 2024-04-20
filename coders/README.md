@@ -1,7 +1,9 @@
 
+We're currently in the [DemocracyLab Google Meetup](https://meet.google.com/eac-uada-szh) until at least 12:45 pm EDT.
+
 # Modeling Environments, Predicting Outcomes
 
-| Inflow | Basket of Goods| Outflow | Results |
+| Inflow | Basket of Goods| Outflow | Predicted Results |
 | ----------- | ----------- | ----------- | ----------- |
 | [Ingredients](/data-commons/docs/food/) | Meal | [Nutrients](/balance/) | [Impact on Body](/balance/label_checker.html) |
 | Suppliers | [Commodities](/localsite/info/) | Products | [Impact on Environment](/io/charts/) |
@@ -10,9 +12,19 @@
 | [Local Industries](/localsite/info/) | Tree Canopy | [Biodiversity Change](/data-commons/docs/biodivere/) | Healthy Forest Growth |
 
 
-**Today's Earthathon Focus**
-[Visualizing FDA YAML ingredients](/data-commons/docs/food/) with [Meal  Request Storyboards](/requests) ([Github Fork](https://github.com/modelearth/requests)) in our [Open WebUI Projects Repo](/projects/src/) ([Github Fork](https://github.com/modelearth/projects))
+### Today's Earthathon Focus
+
+1.) Generating meal [images and video](/data-pipeline/research/stream/) from our Storyboard [.csv file prompts](https://github.com/modelearth/requests).
+2.) Using [Open WebUI](/projects/src/) to load from our healthy menu [.csv files](https://github.com/modelearth/requests) by
+
+[Visualizing meal ingredients](/data-commons/docs/food/) from [Meal  Request Storyboards](/requests) ([Github Fork](https://github.com/modelearth/requests)) in our [Open WebUI Projects Repo](/projects/src/) ([Github Fork](https://github.com/modelearth/projects))
+
+[Get Started](/localsite/start/steps/) - Fork and cloning (and update) after forking our main repos.
 <br>
+
+<!--
+ClimateTech Handbook - actions to take to address climate change
+-->
 
 <div class="floatright" style="margin-bottom:20px">
     <a href="img/earthathon.png"><img src="img/earthathon.png" style="width:100%;max-width:500px"></a><br><br><a href="/community/tools/"><img src="../img/side/model-earth-impacts.jpg" style="width:100%;max-width:500px"></a><br>

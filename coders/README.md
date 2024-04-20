@@ -1,5 +1,6 @@
 
-We're currently in the [DemocracyLab Google Meetup](https://meet.google.com/eac-uada-szh) until at least 12:45 pm EDT.
+2PM, 4PM, 6PM - Hanging out in our [DemocracyLab Team Meetup](https://meet.google.com/aof-ehst-kpq)
+7PM to 8PM EDT - Closing review in [Main DemocracyLab Google Meetup](https://meet.google.com/eac-uada-szh).
 
 # Modeling Environments, Predicting Outcomes
 

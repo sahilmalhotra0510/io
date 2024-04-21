@@ -1,47 +1,38 @@
-
-6PM EDT - Hanging out in our [DemocracyLab Team Meetup](https://meet.google.com/aof-ehst-kpq)
-7PM to 8PM EDT - Closing review in [Main DemocracyLab Google Meetup](https://meet.google.com/eac-uada-szh).
-
 [Google Vertex AI Model Garden](https://www.youtube.com/watch?v=_AOA6M9Ta2I) - Over 130 Models (Gemini, Claude)
 
-# Modeling Environments, Predicting Outcomes
+# Modeling Environments and Predicting Outcomes
 
 | Inflow | Basket of Goods| Outflow | Predicted Results |
 | ----------- | ----------- | ----------- | ----------- |
-| [Ingredients](/data-commons/docs/food/) | Healthy Meal | [Nutrients](/balance/) | [Impact on Body](/balance/label_checker.html) |
+| [Ingredients](/data-commons/docs/food/) | [Healthy Meal](/OpenFootprint) | [Nutrients](/balance/) | [Impact on Body](/balance/label_checker.html) |
 | [Suppliers](/data-pipeline/research/economy/) | [Commodities](/localsite/info/) | [Products](https://github.com/ModelEarth/OpenFootprint/tree/main/products/US) | [Impact on Environment](/community/tools/) |
 | [Stimulus ML](/RealityStream/) | Brain Waves | [Brain Voxels Firing](/RealityStream/models/random-bits-forest/) | [Eye Blinks](/RealityStream/output/blinks/) |
 | [Local Industries](/localsite/info/) | Honey Bees | [Population Change](/data-pipeline/research/bees/) | [Healthy Bee Population](/RealityStream/output/bees) |
-| [Local Industries](/localsite/info/) | Tree Canopy | [Biodiversity Change](/data-commons/docs/biodivere/) | Healthy Forest Growth |
+| [Local Industries](/localsite/info/) | Tree Canopy | [Biodiversity Change](/data-commons/docs/biodiversity/) | Healthy Forest Growth |
 
 
-### Today's Earthathon Focus
+<div class="floatright" style="margin-bottom:20px">
+    <a href="/community/tools/"><img src="../img/side/model-earth-impacts.jpg" style="width:100%;max-width:500px"></a><br>
+ </div>
 
-1.) Generating meal [images and video](/data-pipeline/research/stream/) from our Storyboard [.csv file prompts](https://github.com/modelearth/requests).
-2.) Using [Open WebUI](/projects/src/) to load from our healthy menu [.csv files](https://github.com/modelearth/requests) by
-
-[Visualizing meal ingredients](/data-commons/docs/food/) from [Meal  Request Storyboards](/requests) ([Github Fork](https://github.com/modelearth/requests)) in our [Open WebUI Projects Repo](/projects/src/) ([Github Fork](https://github.com/modelearth/projects))
-
-[Get Started](/localsite/start/steps/) - Fork and cloning (and update) after forking our main repos.
-<br>
 
 <!--
 ClimateTech Handbook - actions to take to address climate change
 -->
 
-<div class="floatright" style="margin-bottom:20px">
-    <a href="img/earthathon.png"><img src="img/earthathon.png" style="width:100%;max-width:500px"></a><br><br><a href="/community/tools/"><img src="../img/side/model-earth-impacts.jpg" style="width:100%;max-width:500px"></a><br>
- </div>
+<!--
+
 # Earthathon 2024
 ### Online with DemocracyLab
 #### Saturday, April 20, 2024
 **Noon to 8 PM EDT East Coast<br>9 AM to 5 PM PDT West Coast**
 
 [Join our Google Meetup](https://meet.google.com/pcv-xrdh-bat) - We'll touchbase every two hours for 30+ minutes at Noon, 2pm, 4pm, 6pm, and then wrap-up with other teams from 7pm to 8pm EDT.
-<!--
-Mark your calendar and join in our [Earth Day AI projects](/projects/)
+
+We'll be creating visual food nutrition labels and environmental impact biodiversity storyboards with our new generative AI tools for images and video using python and Open WebUI.
 -->
-We'll be creating visual food nutrition labels and environmental impact biodiversity storyboards with our new generative AI tools for images and video using python and Open WebUI.<!--We'll use our Earthscape Chatbot UI fork to combine over 100 LLMs with Data Science visualizations. Real-time Natural language processing (NLP) processing of chats will pull locations, impact areas and UN goals for our chart output within cinematic page headers.-->
+
+<!--We'll use our Earthscape Chatbot UI fork to combine over 100 LLMs with Data Science visualizations. Real-time Natural language processing (NLP) processing of chats will pull locations, impact areas and UN goals for our chart output within cinematic page headers.-->
 
 
 <!--
@@ -66,12 +57,14 @@ Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) (Eastern T
 <!--
 - [Other evenings plus Monday and Tuesday afternoons](https://meet.google.com/pcv-xrdh-bat)-->
 
-The Google Meetup link above remains the same for all meetings.<!--
+The Google Meetup link remains the same for all meetings.<!--
 Zoom link to try reusing
 	https://us04web.zoom.us/j/75934593071?pwd=pYEk771K5EaAa2Ud13izrckaDxUsIn.1
 -->
 
-Collaborate on open source modeling tools using API mashups for environmental impacts, local job levels, industry timelines and [sustainable product profiles](../../io/template/).  
+Collaborate on open source modeling tools.
+
+Create API mashups for environmental impacts, nutritional meals, local job levels, industry timelines and [sustainable product profiles](../../io/template/).  
 
 - [Connect with us at Democracy Lab if you haven't already](https://www.democracylab.org/projects/834)
 - [Get Started by installing our Localsite repos (with one cmd)](../../localsite/start/steps/)

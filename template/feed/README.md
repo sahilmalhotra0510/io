@@ -1,8 +1,3 @@
-<a href="https://www.buildingtransparency.org" target="bt"><img style="float:right" src="https://www.buildingtransparency.org/static/assets/svg/logo.svg"></a>
-
-<a href="../">Footprint Builder</a><br>
-<h1 id="pageTitle"><span class="ziptext"></span> Environmental Product Declarations (EPD)</h1>
-
 **From BuildingTransparency.org**
 [About OpenEPD](https://www.buildingtransparency.org/programs/openepd/)
 [Material Search](https://buildingtransparency.org/ec3/material-search) - Google Login works
@@ -13,10 +8,6 @@
 
 <b>TO DO:</b> Allow site users to enter their own BuildingTransparency key here. Use [javascript sample on starter page](../../../localsite/start/steps/).
 
-*Your API Key (Not yet activated):* - [Get your API Key](../product/)
-<input type="text" id="btKey" class="textInput" style="width:210px" placeholder="Your API Key"  autofocus onfocus="this.select()" oninputX="updateKey()"><br><br>
-
-<b>TO DO:</b> Automate saving API as .json or .csv files using <code>npm run download</code> technique from <a href="../../charts/">EPA widgets</a>.<br>
 
 View our [Product YAML notes](../product/) for steps on using Postman.  
 

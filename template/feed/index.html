@@ -168,6 +168,11 @@ function displayFeed() {
 
 	url = "https://buildingtransparency.org/api/epds?page_number=1&page_size=4&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=" + jurisdiction 
 
+	// See Click Fix
+	// Doesn't work without CORS pass through
+	//url = "https://test.seeclickfix.com/open311/v2/requests.json?lat=41.307153&long=-72.925791"
+	console.log("url: " + url)
+
 	//+ "&epd__date_validity_ends__gt=2021-08-24";
 
 
@@ -311,7 +316,33 @@ function displayFeed() {
 
 <div class="content contentpadding">
 
-	<div id="readmeDiv"></div>
+<a href="https://www.buildingtransparency.org" target="bt"><img style="float:right" src="https://www.buildingtransparency.org/static/assets/svg/logo.svg"></a>
+
+<a href="../">Footprint Builder</a><br>
+<h1 id="pageTitle"><span class="ziptext"></span> Products and Requests</h1>
+
+<h3>Environmental Product Declarations (EPD) and Local See-Click-Fix requests</h3>
+
+TO DO: Activate textbox fields for the bearer API and API URL input.<br><br>
+
+<b>Your API Key</b> (Not yet activated)<br>
+<input type="text" id="btKey" class="textInput" style="width:210px" placeholder="Your API Key"  autofocus onfocus="this.select()" oninputX="updateKey()"><br><br>
+
+<b>API URL</b> (Not yet activated)<br>
+<input type="text" id="btURL" class="textInput" style="width:600px" placeholder="Your API Key" value="https://openepd.buildingtransparency.org/api/epds?page_number=1&page_size=100" autofocus onfocus="this.select()"><br><br>
+
+Use <a href="/localsite/test-cors.html">Hiroku CORS passthrough</a> for SeeClickFix<br>
+Integrate with <a href="/localsite/test.html">user's Latitude and Longitude</a><br><br>
+
+<button id="requestList" class="button button-green">Submit</button> (Not yet activated)<br><br>
+
+<b>Get your API Key</b><br>
+<a href="../product/">Building Transparency</a><br>
+<a href="https://seeclickfix.com/open311/v2/docs">See-Click-Fix</a> - <a href="https://dev.seeclickfix.com/">API Overview</a> - Is an API Key available?<br>
+<a href="/localsite/tools/storage/api/">Save Keys in my Local Storage</a>
+<br><br>
+
+<div id="readmeDiv"></div>
 
 	<!--
 	Displays json hierarchy containing arrays and objects. &nbsp;Click to expand.<br><br>

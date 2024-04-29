@@ -1,4 +1,27 @@
-# Python and Conda Notes
+# Node, Python and Conda Notes
+
+## Node and npm
+
+Check your versions
+
+	node -v
+	npm -v
+
+
+To installing node if the version commands find nothing:
+
+[NPMjs.com](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) recommends installing a Node Version Manager like [nvm](https://github.com/nvm-sh/nvm) to avoid permission errors when you run npm packages globally.
+
+Or [Install node/npm](https://nodejs.org/en/download) locally. The installer includes the Node.js package manager (npm) within it, so you won't need to install npm separately.
+
+Or update to the latest stable version of NodeJS
+<!-- https://askubuntu.com/questions/426750/how-can-i-update-my-nodejs-to-the-latest-version-->
+
+	npm install -g n &&
+	sudo n stable
+
+
+
 
 ## Python
 
@@ -28,7 +51,6 @@ You can try using a cmd to upgrade, but you may need to download.
 	conda update -n base -c defaults conda
 
 [Download Anaconda](https://www.anaconda.com/download)
-
 
 ## Docker
 

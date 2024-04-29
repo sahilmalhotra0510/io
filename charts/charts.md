@@ -2,9 +2,11 @@
 <div class="floatright">
 <img src="../img/logo/epa.png" style="width:100%; max-width:200px; margin-left:30px">
 </div>
-Our [Local Industry Evaluator](../../localsite/info/) contains widgets using Leaflet maps, JQuery and React.  
+Our [Local Industry Evaluator](../../localsite/info/) contains widgets using Leaflet maps, JQuery and React. 
+<!-- 
 Check out more [App Samples](../../io/) and [get started creating a site](https://model.earth/localsite/start/).  
-Add a page to the [apps repo](../../apps/) and participate in our [Sustainable Communities Web Challenge](../../community/challenge/).  
+Add a page to the [apps repo](../../apps/)
+-->
 
 <!--
 OLD NOTE:
@@ -29,7 +31,7 @@ library(devtools)
 Rstudio has devtools intalled already, so maybe just library(devtools) to call in the package
 -->
 
-[The static json files](../build/api/note.txt) used here are generated from the EPA API which uses the US Environmentally-Extended Input-Output R-Language data&nbsp;pipeline [USEEIOR](https://github.com/USEPA/USEEIOR). 
+[The JSON API](../build/api/note.txt) used here is generated from the EPA API which uses the [USEEIOR](https://github.com/USEPA/USEEIOR) pipeline. 
 
 
 <!--(It replaces the use of [IOMB](https://github.com/USEPA/USEEIO_API/wiki/Build))-->
@@ -38,14 +40,15 @@ Rstudio has devtools intalled already, so maybe just library(devtools) to call i
 Here are [old model files](https://www.dropbox.com/sh/af48m0jsusgr3jg/AACzBSJwujR6LU0jZBhAzys6a?dl=0) for testing. (Better to use the newer data in the [static JSON files](https://github.com/modelearth/io/tree/main/build/api)) - [Build locally](../../charts/#build)
 -->
 
+Read [Lifecycle Tools Overview](https://model.earth//community/tools/).  
 
 
 ## USEEIO React Widgets
 
-[View documentation and functions](https://msrocka.github.io/useeio-widget-builds/apidoc/) generated using [TypeDoc](https://typedoc.org/).  Learn about [USEEIO API Industry Data](../about/api/)  
-
+[View documentation and functions](https://msrocka.github.io/useeio-widget-builds/apidoc/) generated using [TypeDoc](https://typedoc.org/).  
 The React widgets in the [io repo](https://github.com/modelearth/io/) originate from the EPA's [USEEIO-widgets repo](https://github.com/USEPA/useeio-widgets/).   
 Note: EPA downgraded reactjs from ^18.2.0 to ^17.0.2 to solve compability issue with MAC. (Jan 2024)
+
 [The build folder](../build) is copied from USEEIO-widgets into the io repo to provide a static copy of the API's json files.  
 The io repo includes additional code for integrating widgets.   
 
@@ -54,11 +57,13 @@ The io repo includes additional code for integrating widgets.
 - [Sector List - Mosaic Limit Sectors](../build/sector_list.html?naics=333613,335912,336111&view=mosaic&count=50)  
 - [Sector List - Display Values](../build/sector_list.html?view=mosaic&showvalues=true)  
 - [Sector List - Two positive indicators](../build/sector_list.html#view=mosaic&view_indicators=JOBS,VADD&showvalues=true)
+- [Industry Impact Bars with Configuration](../build/impact_chart_config.html)    
 <!--
 - [Sector List IO - Tire manufacturing (older version)](../build/iotables.html#sectors=326210&page=5)  
 -->
-- [Industry Impact Bars with Configuration](../build/impact_chart_config.html)    
-- [More React widgets](../build/) and <!-- ([Recent build 1](https://msrocka.github.io/useeio-widget-builds/)) --> [Recent developer build (thetisiboth)](https://thetisiboth.github.io/useeio-widget-builds/)  
+
+<!--[Developer build (thetisiboth)](https://thetisiboth.github.io/useeio-widget-builds/)  -->
+<!-- ([Recent build 1](https://msrocka.github.io/useeio-widget-builds/)) --> 
 
 ## JQuery Widgets 
 
@@ -77,13 +82,8 @@ If your local widgets reference the "useeio" folder, they may need to be updated
 ## Related Map Work
 
 - [Simple embedded map sample](/localsite/info/embed.html)
-- [Farm Fresh Produce Map (from CSV files on GitHub)](../../localsite/map/#show=farmfresh) - Leaflet and JQuery  
-<!-- 
-- [PPE Supplier Map (from Google Sheet)](../../localsite/map/#show=suppliers) - Leaflet and JQuery  
--->
----
+- [Farm Fresh Produce Map (from CSV files on GitHub)](../../localsite/map/#show=farmfresh) - Leaflet and JQuery
 <br>
-
 
 # Run Widgets locally for Development
 
@@ -95,55 +95,42 @@ If your local widgets reference the "useeio" folder, they may need to be updated
 3.) Open a new terminal and pull down these repos from Github. Hit return to run.
 
 	git clone https://github.com/ModelEarth/localsite localsite &&  
-	git clone https://github.com/ModelEarth/io io &&  
-	git clone https://github.com/ModelEarth/apps apps
+	git clone https://github.com/ModelEarth/io io
 
-Optional: This large 1.6 GB folder is linked to in the localsite side-navigation:
-
-	git clone https://github.com/ModelEarth/community community
+You can install additional model.earth repos with our [install cmd](/localsite/start/steps)
 
 If you'll be contributing changes, fork first the repo you're editing and clone from your fork. [Turn on GitHub Pages](/localsite/start/steps/#github-pages) so we can review your changes.
 
-Run the following occasionally to refresh your local clones:
+Run the following occasionally to refresh your local clones, or pull in Github Desktop:
 
 	cd localsite &&  
 	git pull https://github.com/ModelEarth/localsite main &&  
 	cd ../io &&  
-	git pull https://github.com/ModelEarth/io main &&  
-	cd ../apps &&  
-	git pull https://github.com/ModelEarth/apps main &&  
-	cd ../community &&  
-	git pull https://github.com/ModelEarth/community master &&  
-	cd ../
+	git pull https://github.com/ModelEarth/io main
 
-4.) View and update content at the following
+4.) View and update content locally at the following
 
-[http://localhost:8887/apps](http://localhost:8887/apps)
-[http://localhost:8887/localsite/info](http://localhost:8887/localsite/info)
+[http://localhost:8887/io/charts](http://localhost:8887/io/charts)
 <br>
 
 
 # About Local Folders
 
-The [localsite repo](../../localsite/) contains maps, navigation and impact visualization.  
+The [localsite repo](../../localsite/) contains maps, navigation and data visualization charts.  
 
-You can set parameters in the URL or javascript to control the display of the widgets.  [View examples in apps repo](../../apps/).
+You can set parameters in the URL or javascript to control the display of the widgets.  [View examples in the apps repo](../../apps/).
 
-The current [io folder](https://github.com/modelearth/io/) contains a built copy of the "[build](../build)" folder from [useeio-widgets](https://github.com/usepa/useeio-widgets), plus extra JQuery widgets.  
-
-You can create new pages in [our apps repo](/apps/). To share your work, [Fork the apps repo](https://github.com/modelearth/apps/) before you clone it.
-
-
-
+The current [io folder](https://github.com/modelearth/io/) contains a built copy of the "[build](../build)" folder from [useeio-widgets](https://github.com/usepa/useeio-widgets), plus extra JQuery widgets.
 <br>
 
-# Build a fresh instance of the model
+# Build useeio-widgets locally
 
 You can skip this section since [io/build](../build/) already contains a built instance.
 
 You'll use these step if you are editing the USEEIO React Widgets locally. 
 
-Fork and clone the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets/) repo into your webroot. The USEEIO-widgets repo contains only React widgets. It doesn't contain any JQuery.
+Fork and clone the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets/) repo into your webroot.
+The USEEIO-widgets repo contains only React widgets. It doesn't contain any JQuery.
 
 	git clone https://github.com/USEPA/useeio-widgets useeio-widgets
 
@@ -151,24 +138,9 @@ Fork and clone the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets/) re
 <span style="background:red; padding:3px; color:#fff">NOTE:</span> The code in the useeio-widgets repo currently causes a runaway processor in the browser when used with the "localsite" repo. To avoid, the "localsite/build" folder contains the recent code from [Recent build 2](https://thetisiboth.github.io/useeio-widget-builds/).
 -->
 
-#### Node Version Manager
+#### Node and Node Version Manager (NVM)
 
-You'll need a current version of [Node.js](https://nodejs.org) installed. 
-
-Check that the `node` and `npm` commands are available in your systems path.
-You can test this by running `node -v` and `npm -v` on the command line.
-
-Here are options for installing node if the version commands above find nothing.  
-
-[NPMjs.com](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) recommends installing a Node Version Manager like [nvm](https://github.com/nvm-sh/nvm) to avoid permission errors when you run npm packages globally.
-
-Or [Install node/npm](https://nodejs.org/en/download) locally. The installer includes the Node.js package manager (npm) within it, so you won't need to install npm separately.
-
-Or update to the latest stable version of NodeJS
-<!-- https://askubuntu.com/questions/426750/how-can-i-update-my-nodejs-to-the-latest-version-->
-
-	npm install -g n &&
-	sudo n stable
+You'll need a current version of [Node.js](https://nodejs.org) installed. View our [node and python install notes](/io/coders/python/)
 
 
 #### Open a terminal or use VS Code:     

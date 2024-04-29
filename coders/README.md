@@ -8,13 +8,12 @@
 | [Suppliers](/data-pipeline/research/economy/) | [Commodities](/localsite/info/) | [Products](https://github.com/ModelEarth/OpenFootprint/tree/main/products/US) | [Impact on Environment](/community/tools/) |
 | [Stimulus ML](/RealityStream/) | Brain Waves | [Brain Voxels Firing](/RealityStream/models/random-bits-forest/) | [Eye Blinks](/RealityStream/output/blinks/) |
 | [Local Industries](/localsite/info/) | Honey Bees | [Population Change](/data-pipeline/research/bees/) | [Healthy Bee Population](/RealityStream/output/bees) |
-| [Local Industries](/localsite/info/) | Tree Canopy | [Biodiversity Change](/data-commons/docs/biodiversity/) | Healthy Forest Growth |
+| [Local Industries](/localsite/info/) | [Tree Canopy](/data-commons/docs/conservation/) | Biodiversity Change | Healthy Forest Growth |
 
 
 <div class="floatright" style="margin-bottom:20px">
     <a href="/community/tools/"><img src="../img/side/model-earth-impacts.jpg" style="width:100%;max-width:500px"></a><br>
  </div>
-
 
 <!--
 ClimateTech Handbook - actions to take to address climate change
@@ -69,3 +68,4 @@ Create API mashups for environmental impacts, nutritional meals, local job level
 - [Connect with us at Democracy Lab if you haven't already](https://www.democracylab.org/projects/834)
 - [Get Started by installing our Localsite repos (with one cmd)](../../localsite/start/steps/)
 - [Join our Democracy Lab Slack Group](https://democracylab-org.slack.com/archives/C06F73YKEQN)
+- [Team Discussion](https://github.com/orgs/ModelEarthTeam/discussions) - [ModelEarth](https://opencollective.com/modelearth) - [OpenFootprint](https://opencollective.com/openfootprint)

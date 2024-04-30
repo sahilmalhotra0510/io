@@ -40,7 +40,7 @@ Rstudio has devtools intalled already, so maybe just library(devtools) to call i
 Here are [old model files](https://www.dropbox.com/sh/af48m0jsusgr3jg/AACzBSJwujR6LU0jZBhAzys6a?dl=0) for testing. (Better to use the newer data in the [static JSON files](https://github.com/modelearth/io/tree/main/build/api)) - [Build locally](../../charts/#build)
 -->
 
-Read [Lifecycle Tools Overview](https://model.earth//community/tools/).  
+Read our [Lifecycle Tools Overview](https://model.earth//community/tools/).  
 
 ## JQuery Widgets 
 
@@ -135,11 +135,13 @@ If you are collaborating through modelearth  on updates, clone [modelearth/useei
 You'll need a current version of [Node.js](https://nodejs.org) installed. View our [node and python install notes](/io/coders/python/)
 
 
-#### Open a terminal or use VS Code:     
+#### Open a terminal    
 
-A. You can right-click the useeio-widgets folder and choose "New Terminal at Folder" on a Mac. &nbsp; [Sublime Text](https://www.sublimetext.com/) is a nice simple code editor.
+You can right-click the useeio-widgets folder and choose "New Terminal at Folder" on a Mac. &nbsp; [Sublime Text](https://www.sublimetext.com/) is a nice simple code editor.
 
-B. Or you can open the folder from VS Code.  Shortcut for opening VS Code: Open a command prompt in the repo folder and type `code .` or `code `  This may be necessary if your build does not run when opening with File > Open in VS Code.
+#### Or open with VS Code: 
+
+You can open the folder from VS Code.  Shortcut for opening VS Code: Open a command prompt in the repo folder and type `code .` or `code `  This may be necessary if your build does not run when opening with File > Open in VS Code.
 
 You may need to [Configure your VS Code Editor](https://code.visualstudio.com/docs/setup/setup-overview) so running `code .` launches the editor.  Avoid running in the parent folder containing your repo(s) or your VS Code editor may not allow you to run subsequent commands inside its terminal.
 
@@ -156,12 +158,15 @@ Or use <code>cd useeio-widgets</code> if you are just using the source repo.
 
 #### Install Node.js node_modules  
 
-The following will add a node_modules folder containing javascript source libraries (dependencies) that will be used to output code for the widgets.  
+The following will add a node_modules folder containing javascript source libraries (dependencies) that will be used to output code for the widgets.  `npm ci` is an alternative to `npm install` which avoid modifying the . [Learn more](https://stackoverflow.com/questions/48524417/should-the-package-lock-json-file-be-added-to-gitignore)
 
 	cd useeio-widgets &&
 	npm ci
 
+<!--
+npm ci
 Use `npm ci` instead of `npm install` to avoid updating package-lock.json. [Why? npm ci](https://stackoverflow.com/questions/48524417/should-the-package-lock-json-file-be-added-to-gitignore)
+-->
 
 <!--
 OLD - Did not occur with React update from EPA when running in March 2024
@@ -194,18 +199,39 @@ npm run build
 
 This will create or update the `build` folder and a `lib` sub-folder containing small JavaScript libraries used by the USEEIO widgets.  
 
-The `build` folder contains [example HTML files](../build/) demonstrating usage of the widgets.  
+The build folder contains [example HTML files](../build/) demonstrating usage of the widgets, but you'll need the API files too...
+<br>  
+
 <!--
 Note: After building, remove   a { color: #555; } in widget.css.
 
 To Do: Surround all USEEIO widgets with a class called .ioWidget and update widget.css to limit to .ioWidget.
 -->
 
-# Add JSON files for API
+#### Manually add JSON files for API
+
+**Important:** Copy the io/build/api files into your useeio-widgets/build/api folder.
 
 The JSON files have been pre-generated for you using the JSON dump cmd in the [useeio.js repo](https://github.com/modelearth/useeio.js/).
+<br>
 
-Important: Copy the io/build/api files into your useeio-widgets/build/api folder.
+#### Now View in Brower
+
+You can view in your webroot if you use our [server setup cmd](../../localsite/start/steps)
+
+[http://localhost:8887/useeio-widgets/build](http://localhost:8887/useeio-widgets/build)  
+
+Or start a server pointed directly into your useeio-widgets folder. Then open the default port (8080) at http://localhost:8080 in your browser to see the widgets.  Your command window will become inoperable since it is running a server.  Open a new command window (by clicking plus) to issue further commands.  
+
+```
+npm run server
+```
+
+Or use this standard command (coming soon, Fanyi is adding)
+```
+npm run dev
+```
+<br>
 
 <!--
 You can skip this step. We've already populated the **io/build/api folder** for you.
@@ -237,39 +263,27 @@ Learn more about [using the USEEIO API](https://github.com/USEPA/USEEIO_API/wiki
 -->
 
 
-# View widgets when Editing Locally
-
-You now have two options for viewing the widgets locally.
-
-<b>Option 1:</b> View in your webroot - [server setup cmd](../../localsite/start/steps)
-
-[http://localhost:8887/useeio-widgets/build](http://localhost:8887/useeio-widgets/build)  
-
-<b>Option 2:</b> Start a server using the command <code>npm run server</code> in your local useeio-widgets folder.
-
-Then open the default port (8080) at http://localhost:8080 in your browser to see the widgets.  Your command window will become inoperable since it is running a server.  Open a new command window (by clicking plus) to issue further commands.  
-
-
-If you are working in a direct fork of the "useeio-widgets" repo, view here:  
-
-[http://localhost:8887/useeio-widgets/build](http://localhost:8887/useeio-widgets/build)  
+### View your Edits
 
 Use the up-arrow to run the build line after making a change.  
 
 	npm run build
 
 Learn more in the VS Code [Node.js Tutorial](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial). 
+<br>
 
-### You may contribute to the USEEIO-widget repo directly
+# Contribute Updates
 
 To work with us on updates, fork the [model.earth fork of useeio-widgets](https://github.com/modelearth/useeio-widgets/)
 
 Edit the React files that reside in useeio-widgets/src.
 Files in useeio-widgets/build are overwritten when you run the build.
 
+<!-- Fanyi says LiveReload didn't provide refresh
 Build when editing - [Amplify React App](../../aws/amplify/) uses `npm start` to build on-the-fly.  
 Another option: [LiveReload](https://www.logicbig.com/tutorials/misc/typescript/project-auto-refresh-with-live-reload.html) might refresh your browser as you edit.  
 Install using the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery)  (Please update our documentation, not yet confirmed). 
+-->
 
 [Python Samples](../../community/resources/useeio) and [Contributing using RStudio](../naics).
 
@@ -291,9 +305,11 @@ if you don't see it, be sure to right-click in the file folder when opening and 
 -->
 <br>
 
-# React Update Requests
+# React Projects
 
-Here are two items for the near-term React wishlist. These will allow positive jobs and value-added to be compared with negative impacts. Total Amounts would be displayed, with a toggle to Per-Dollar Spent.
+### Multi-sort for impact columns
+
+Sortable checkboxes will allow positive jobs and value-added to be compared with negative impacts. Total Amounts would be displayed, with a toggle to Per-Dollar Spent. Fanyi is working on this:
 
 1.) When clicking on the [Sector List](/io/build/sector_list.html?view=mosaic&count=100&indicators=ACID,ETOX,EUTR) column headers:
 
@@ -305,7 +321,9 @@ Here are two items for the near-term React wishlist. These will allow positive j
 
 <a href="inflow-outflow/img/mockup-checkboxes.png"><img src="inflow-outflow/img/mockup-checkboxes.png" style="width:100%"></a><br>
 
-2.) Add Total Amounts to the [Inflow-Outflow Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) and show total amounts by default. See [Total Amounts React example](/localsite/info/data/totals/).  Update values displayed when the hash value changes from vtype=total to vtype=perdollar and back. (Pre-calculate both, so the chart does not need to reload.)
+### Display of totals rather than per-dollar
+
+2.) Add total amounts to the [Inflow-Outflow Chart](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) and show total amounts by default. See [total amounts examples](/localsite/info/data/totals/) and our display of easy to read totals using [commodity data procesed with python](/data-pipeline/research/economy/).  Update values displayed when the hash value changes from vtype=total to vtype=perdollar and back. Use the formatCellEasy() function in localsite.js or the python version formatCell() in the data-pipeline repo.
 
 <br>
 

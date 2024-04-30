@@ -4,7 +4,7 @@ We're creating embedable workflow lists using the SeeClickFix open311 request sy
 
 We're displaying [local 311 requests](https://normansj.github.io/local-view-request/src/location/mylocation.html) from the [SeeClickFix open311 API](https://dev.seeclickfix.com)
 
-We'll be [visualizing nutritious meals](../../requests) using [FDA API food profiles](https://model.earth/data-commons/dist/food) with our YAML/JSON [OpenFootprint](../../OpenFootprint) label formatter using the [FDA API](https://fdc.nal.usda.gov/api-guide.html).
+We're be [visualizing nutritious meals](../../data-pipeline/research/stream/) using [FDA API food profiles](https://model.earth/data-commons/dist/food) with our YAML/JSON [OpenFootprint](../../OpenFootprint) label formatter using the [FDA API](https://fdc.nal.usda.gov/api-guide.html).
 
 We'll fund the meals sent to SeeClickFix using the [OpenCollective API GraphQL](https://graphql-docs-v2.opencollective.com/access) which is accessible via [altairgraphql.dev](https://altairgraphql.dev).
 

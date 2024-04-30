@@ -1,16 +1,5 @@
 [Google Vertex AI Model Garden](https://www.youtube.com/watch?v=_AOA6M9Ta2I) - Over 130 Models (Gemini, Claude)
 
-# Modeling Environments and Predicting Outcomes
-
-| Inflow | Basket of Goods| Outflow | Predicted Results |
-| ----------- | ----------- | ----------- | ----------- |
-| [Ingredients](/data-commons/docs/food/) | [Healthy Meals](/OpenFootprint) | [Nutrients](/balance/) | [Impact on Body](/balance/label_checker.html) |
-| [Suppliers](/data-pipeline/research/economy/) | [Commodities](/localsite/info/) | [Products](https://github.com/ModelEarth/OpenFootprint/tree/main/products/US) | [Impact on Environment](/community/tools/) |
-| [Stimulus ML](/RealityStream/) | Brain Waves | [Brain Voxels Firing](/RealityStream/models/random-bits-forest/) | [Eye Blinks](/RealityStream/output/blinks/) |
-| [Local Industries](/localsite/info/) | Honey Bees | [Population Change](/data-pipeline/research/bees/) | [Healthy Bee Population](/RealityStream/output/bees) |
-| [Local Industries](/localsite/info/) | [Tree Canopy](/data-commons/docs/conservation/) | Biodiversity Change | Healthy Forest Growth |
-
-
 <div class="floatright" style="margin-bottom:20px">
     <a href="/community/tools/"><img src="../img/side/model-earth-impacts.jpg" style="width:100%;max-width:500px"></a><br>
  </div>
@@ -49,10 +38,10 @@ For use during a future Web Challenge
 View our [Active Projects](../../projects/) and find your areas of interest.
 
 Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) (Eastern Time, NY and Atlanta)
-- [Moonshot Mondays, 10 PM EDT](https://meet.google.com/pcv-xrdh-bat) - [UN Goals](/data-commons/dist/), [Lunar Olympics AI](/projects/)
-- [React Wednesdays, 10 PM EDT](https://meet.google.com/pcv-xrdh-bat) - [International EEIO](https://eeiomodel.com), [State Impacts](/localsite/info/#geoview=country)
-- [Thursdays, Noon EDT](https://meet.google.com/pcv-xrdh-bat) - [Overview and focus areas](/io/)
-- [Sundays, 10 PM EDT](https://meet.google.com/pcv-xrdh-bat) - [RealityStream Workshop](/RealityStream/), [ML Data Projects](/data-pipeline/timelines/training/naics/)
+- Moonshot Mondays, 10 PM EDT - [UN Goals](/data-commons/dist/), [Lunar Olympics AI](/projects/)
+- Website Wednesdays, 10 PM EDT - [International EEIO](https://eeiomodel.com), [State Impacts](/localsite/info/#geoview=country)
+- ThursdayTeam, Noon EDT - [Projects overviews](/projects/), [Open WebUI](/projects/src/)
+- SundayStream, 10 PM EDT - [RealityStream](/RealityStream/), [React IO](/io/charts/), [ML Forecasting](/data-pipeline/timelines/)
 <!--
 - [Other evenings plus Monday and Tuesday afternoons](https://meet.google.com/pcv-xrdh-bat)-->
 
@@ -68,4 +57,4 @@ Create API mashups for environmental impacts, nutritional meals, local job level
 - [Connect with us at Democracy Lab if you haven't already](https://www.democracylab.org/projects/834)
 - [Get Started by installing our Localsite repos (with one cmd)](../../localsite/start/steps/)
 - [Join our Democracy Lab Slack Group](https://democracylab-org.slack.com/archives/C06F73YKEQN)
-- [Team Discussion](https://github.com/orgs/ModelEarthTeam/discussions) - [ModelEarth](https://opencollective.com/modelearth) - [OpenFootprint](https://opencollective.com/openfootprint)
+- [Team Discussion](https://github.com/orgs/ModelEarthTeam/discussions) - [OpenFootprint](https://opencollective.com/openfootprint)

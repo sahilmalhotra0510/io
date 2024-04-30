@@ -42,8 +42,21 @@ Here are [old model files](https://www.dropbox.com/sh/af48m0jsusgr3jg/AACzBSJwuj
 
 Read [Lifecycle Tools Overview](https://model.earth//community/tools/).  
 
+## JQuery Widgets 
 
-## USEEIO React Widgets
+- [NAICS Industry List](../../localsite/info/naics/) - JQuery with Python Machine Learning Pre-processing
+- [Impact Bubble Chart](bubble/) - D3 and JQuery  
+- [Sankey Chart](sankey/) - D3 with Python prep  
+- [Chord Chart](chord/) - Upcoming
+- [OpenFootprint](/useeio.js/footprint/)
+<!--
+If your local widgets reference the "useeio" folder, they may need to be updated occasionally as parameters change. For stability, point your local widgets at one of the [numbered backups](https://model.earth/eeio/build.2020.002) or copy the useeio folder into your project.
+
+
+([old version](https://model.earth/eeio/build.2020.001), [pre-React](https://model.earth/eeio/build.2020.003) and [new version](useeio)) 
+-->
+
+## React Widgets
 
 [View documentation and functions](https://msrocka.github.io/useeio-widget-builds/apidoc/) generated using [TypeDoc](https://typedoc.org/).  
 The React widgets in the [io repo](https://github.com/modelearth/io/) originate from the EPA's [USEEIO-widgets repo](https://github.com/USEPA/useeio-widgets/).   
@@ -65,27 +78,20 @@ The io repo includes additional code for integrating widgets.
 <!--[Developer build (thetisiboth)](https://thetisiboth.github.io/useeio-widget-builds/)  -->
 <!-- ([Recent build 1](https://msrocka.github.io/useeio-widget-builds/)) --> 
 
-## JQuery Widgets 
-
-- [NAICS Industry List](../../localsite/info/naics/) - JQuery with Python Machine Learning Pre-processing
-- [Impact Bubble Chart](bubble/) - D3 and JQuery  
-- [Sankey Chart](sankey/) - D3 with Python prep  
-- [Chord Chart](chord/) - Upcoming
-
-<!--
-If your local widgets reference the "useeio" folder, they may need to be updated occasionally as parameters change. For stability, point your local widgets at one of the [numbered backups](https://model.earth/eeio/build.2020.002) or copy the useeio folder into your project.
-
-
-([old version](https://model.earth/eeio/build.2020.001), [pre-React](https://model.earth/eeio/build.2020.003) and [new version](useeio)) 
--->
-
-## Related Map Work
+## Embedable Map Widgets
 
 - [Simple embedded map sample](/localsite/info/embed.html)
 - [Farm Fresh Produce Map (from CSV files on GitHub)](../../localsite/map/#show=farmfresh) - Leaflet and JQuery
 <br>
 
-# Run Widgets locally for Development
+# Host Widgets locally
+
+The [localsite repo](../../localsite/) contains maps, navigation and data visualization charts.  
+
+You can set parameters in the URL or javascript to control the display of the widgets.  [View examples in the apps repo](../../apps/).
+
+The [io folder](https://github.com/modelearth/io/) contains a built copy of the "[build](../build)" folder and json API from [useeio-widgets](https://github.com/usepa/useeio-widgets), plus extra JQuery widgets.
+<br>
 
 1.) Create a folder for your webroot at Documents/Web or wherever you prefer.
 2.) Start a local web server by right clicking your web folder and open a terminal command prompt.  Paste the following and hit return to run. This terminal will be locked from further commands since it is running your local server.
@@ -113,17 +119,7 @@ Run the following occasionally to refresh your local clones, or pull in Github D
 [http://localhost:8887/io/charts](http://localhost:8887/io/charts)
 <br>
 
-
-# About Local Folders
-
-The [localsite repo](../../localsite/) contains maps, navigation and data visualization charts.  
-
-You can set parameters in the URL or javascript to control the display of the widgets.  [View examples in the apps repo](../../apps/).
-
-The current [io folder](https://github.com/modelearth/io/) contains a built copy of the "[build](../build)" folder from [useeio-widgets](https://github.com/usepa/useeio-widgets), plus extra JQuery widgets.
-<br>
-
-# Build useeio-widgets locally
+# Build USEEIO-Widgets locally (React)
 
 You can skip this section since [io/build](../build/) already contains a built instance.
 

@@ -2,7 +2,7 @@
 <div class="floatright">
 <img src="../img/logo/epa.png" style="width:100%; max-width:200px; margin-left:30px">
 </div>
-Our [Local Industry Evaluator](../../localsite/info/) contains widgets using Leaflet maps, JQuery and React. 
+Our [Local Industry Evaluator](../../localsite/info/) contains widgets using Leaflet, JQuery and React. 
 <!-- 
 Check out more [App Samples](../../io/) and [get started creating a site](https://model.earth/localsite/start/).  
 Add a page to the [apps repo](../../apps/)
@@ -124,10 +124,7 @@ You can skip this section since [io/build](../build/) already contains a built i
 
 You'll use these step if you are editing the USEEIO React Widgets locally. 
 
-Fork and clone the [useeio-widgets](https://github.com/USEPA/useeio-widgets/) repo into your webroot.
-The USEEIO-widgets repo contains only React widgets. It doesn't contain any JQuery.
-
-	git clone https://github.com/USEPA/useeio-widgets useeio-widgets
+If you are collaborating through modelearth  on updates, clone [modelearth/useeio-widgets](https://github.com/modelearth/useeio-widgets/), otherwise clone [usepa/useeio-widgets](https://github.com/USEPA/useeio-widgets/).
 
 <!--
 <span style="background:red; padding:3px; color:#fff">NOTE:</span> The code in the useeio-widgets repo currently causes a runaway processor in the browser when used with the "localsite" repo. To avoid, the "localsite/build" folder contains the recent code from [Recent build 2](https://thetisiboth.github.io/useeio-widget-builds/).
@@ -157,7 +154,7 @@ cd io
 Or use <code>cd useeio-widgets</code> if you are just using the source repo.  
 -->
 
-#### Install Node.js Modules  
+#### Install Node.js node_modules  
 
 The following will add a node_modules folder containing javascript source libraries (dependencies) that will be used to output code for the widgets.  
 
@@ -203,9 +200,8 @@ Note: After building, remove   a { color: #555; } in widget.css.
 
 To Do: Surround all USEEIO widgets with a class called .ioWidget and update widget.css to limit to .ioWidget.
 -->
-<br>
 
-# JSON files from API
+# Add JSON files for API
 
 The JSON files have been pre-generated for you using the JSON dump cmd in the [useeio.js repo](https://github.com/modelearth/useeio.js/).
 
@@ -241,15 +237,15 @@ Learn more about [using the USEEIO API](https://github.com/USEPA/USEEIO_API/wiki
 -->
 
 
-# View widgets
+# View widgets when Editing Locally
 
 You now have two options for viewing the widgets locally.
 
-<b>Option 1:</b> View at the following URL if the "io" folder resides in your webroot. (Your port number may differ.) 
+<b>Option 1:</b> View in your webroot - [server setup cmd](../../localsite/start/steps)
 
-[http://localhost:8887/io/build](http://localhost:8887/io/build)  
+[http://localhost:8887/useeio-widgets/build](http://localhost:8887/useeio-widgets/build)  
 
-<b>Option 2:</b> Start a server using the command <code>npm run server</code>.
+<b>Option 2:</b> Start a server using the command <code>npm run server</code> in your local useeio-widgets folder.
 
 Then open the default port (8080) at http://localhost:8080 in your browser to see the widgets.  Your command window will become inoperable since it is running a server.  Open a new command window (by clicking plus) to issue further commands.  
 
@@ -266,7 +262,7 @@ Learn more in the VS Code [Node.js Tutorial](https://code.visualstudio.com/docs/
 
 ### You may contribute to the USEEIO-widget repo directly
 
-To work with us on updates, fork the [model.earth fork of USEEIO-widgets](https://github.com/modelearth/useeio-widgets/)
+To work with us on updates, fork the [model.earth fork of useeio-widgets](https://github.com/modelearth/useeio-widgets/)
 
 Edit the React files that reside in useeio-widgets/src.
 Files in useeio-widgets/build are overwritten when you run the build.
@@ -275,8 +271,7 @@ Build when editing - [Amplify React App](../../aws/amplify/) uses `npm start` to
 Another option: [LiveReload](https://www.logicbig.com/tutorials/misc/typescript/project-auto-refresh-with-live-reload.html) might refresh your browser as you edit.  
 Install using the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery)  (Please update our documentation, not yet confirmed). 
 
-Get under the hood! Mess with our [Python Samples](../../community/resources/useeio) and 
-[add a new technology to the matrix using RStudio](../naics).
+[Python Samples](../../community/resources/useeio) and [Contributing using RStudio](../naics).
 
 <!--
 From the following:

@@ -44,11 +44,14 @@ Read [Lifecycle Tools Overview](https://model.earth//community/tools/).
 
 ## JQuery Widgets 
 
-- [NAICS Industry List](../../localsite/info/naics/) - JQuery with Python Machine Learning Pre-processing
+- [NAICS Industry List](../../localsite/info/#state=ME)
 - [Impact Bubble Chart](bubble/) - D3 and JQuery  
 - [Sankey Chart](sankey/) - D3 with Python prep  
+<!--
 - [Chord Chart](chord/) - Upcoming
 - [OpenFootprint](/useeio.js/footprint/)
+-->
+
 <!--
 If your local widgets reference the "useeio" folder, they may need to be updated occasionally as parameters change. For stability, point your local widgets at one of the [numbered backups](https://model.earth/eeio/build.2020.002) or copy the useeio folder into your project.
 
@@ -206,7 +209,7 @@ To Do: Surround all USEEIO widgets with a class called .ioWidget and update widg
 
 The JSON files have been pre-generated for you using the JSON dump cmd in the [useeio.js repo](https://github.com/modelearth/useeio.js/).
 
-Copy the io/build/api files into your useeio-widgets/build/api folder.
+Important: Copy the io/build/api files into your useeio-widgets/build/api folder.
 
 <!--
 You can skip this step. We've already populated the **io/build/api folder** for you.
@@ -249,7 +252,6 @@ You now have two options for viewing the widgets locally.
 <b>Option 2:</b> Start a server using the command <code>npm run server</code>.
 
 Then open the default port (8080) at http://localhost:8080 in your browser to see the widgets.  Your command window will become inoperable since it is running a server.  Open a new command window (by clicking plus) to issue further commands.  
-
 
 
 If you are working in a direct fork of the "useeio-widgets" repo, view here:  

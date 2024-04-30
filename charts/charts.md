@@ -266,9 +266,10 @@ Learn more in the VS Code [Node.js Tutorial](https://code.visualstudio.com/docs/
 
 ### You may contribute to the USEEIO-widget repo directly
 
-To make updates in the NodeJS source code, fork the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets/) repo and save in your local webroot (where you've [pointed](../../localsite/start/) http://localhost:8887/)  
+To work with us on updates, fork the [model.earth fork of USEEIO-widgets](https://github.com/modelearth/useeio-widgets/)
 
-Edit the files that reside in useeio-widgets/src. (Avoid editing files in useeio-widgets/build, these will be overwritten when you run the build.) 
+Edit the React files that reside in useeio-widgets/src.
+Files in useeio-widgets/build are overwritten when you run the build.
 
 Build when editing - [Amplify React App](../../aws/amplify/) uses `npm start` to build on-the-fly.  
 Another option: [LiveReload](https://www.logicbig.com/tutorials/misc/typescript/project-auto-refresh-with-live-reload.html) might refresh your browser as you edit.  

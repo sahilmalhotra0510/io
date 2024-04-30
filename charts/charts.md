@@ -109,14 +109,10 @@ If you'll be contributing changes, fork first the repo you're editing and clone 
 
 Run the following occasionally to refresh your local clones, or pull in Github Desktop:
 
-	cd localsite &&  
-	git pull https://github.com/ModelEarth/localsite main &&  
-	cd ../io &&  
-	git pull https://github.com/ModelEarth/io main
+	cd localsite && git pull https://github.com/ModelEarth/localsite main &&  
+	cd ../io && git pull https://github.com/ModelEarth/io main
 
-4.) View and update content locally at the following
-
-[http://localhost:8887/io/charts](http://localhost:8887/io/charts)
+4.) View and update content locally at [http://localhost:8887/io/charts](http://localhost:8887/io/charts) and [http://localhost:8887/localsite/info](http://localhost:8887/localsite/info#state=ME)
 <br>
 
 # Build USEEIO-Widgets locally (React)
@@ -125,7 +121,7 @@ You can skip this section since [io/build](../build/) already contains a built i
 
 You'll use these step if you are editing the USEEIO React Widgets locally. 
 
-Fork and clone the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets/) repo into your webroot.
+Fork and clone the [useeio-widgets](https://github.com/USEPA/useeio-widgets/) repo into your webroot.
 The USEEIO-widgets repo contains only React widgets. It doesn't contain any JQuery.
 
 	git clone https://github.com/USEPA/useeio-widgets useeio-widgets
@@ -141,7 +137,7 @@ You'll need a current version of [Node.js](https://nodejs.org) installed. View o
 
 #### Open a terminal or use VS Code:     
 
-A. You can right-click the repo folder and choose "New Terminal at Folder" on a Mac. &nbsp; [Sublime Text](https://www.sublimetext.com/) is a nice simple code editor.
+A. You can right-click the useeio-widgets folder and choose "New Terminal at Folder" on a Mac. &nbsp; [Sublime Text](https://www.sublimetext.com/) is a nice simple code editor.
 
 B. Or you can open the folder from VS Code.  Shortcut for opening VS Code: Open a command prompt in the repo folder and type `code .` or `code `  This may be necessary if your build does not run when opening with File > Open in VS Code.
 
@@ -175,7 +171,8 @@ If you receive a "high severity vulnerabilities" warning, run the following as a
 -->
 
 Then build the widget libraries.
-Note: the "io" repo already has the pre-built "[build](../build/)" folder.
+
+Or your can copy the pre-built "[io/build](../build/)" folder which already contains the json API files.
 
 <!--
 This no longer occurs
@@ -208,6 +205,8 @@ To Do: Surround all USEEIO widgets with a class called .ioWidget and update widg
 # JSON files from API
 
 The JSON files have been pre-generated for you using the JSON dump cmd in the [useeio.js repo](https://github.com/modelearth/useeio.js/).
+
+Copy the io/build/api files into your useeio-widgets/build/api folder.
 
 <!--
 You can skip this step. We've already populated the **io/build/api folder** for you.

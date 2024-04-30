@@ -65,7 +65,7 @@ If your local widgets reference the "useeio" folder, they may need to be updated
 The React widgets in the [io repo](https://github.com/modelearth/io/) originate from the EPA's [USEEIO-widgets repo](https://github.com/USEPA/useeio-widgets/).   
 Note: EPA downgraded reactjs from ^18.2.0 to ^17.0.2 to solve compability issue with MAC. (Jan 2024)
 
-[The build folder](../build) is copied from USEEIO-widgets into the io repo to provide a static copy of the API's json files.  
+[The build folder](../build) is copied from USEEIO-widgets into the [io repo](https://github.com/modelearth/io/) to provide a static copy of the API's json files.  
 The io repo includes additional code for integrating widgets.   
 
 - [Inflow-Outflow Chart](inflow-outflow/#set=prosperity&indicators=VADD,JOBS) - [Tires](inflow-outflow/#sectors=326210&set=prosperity&indicators=JOBS,VADD) - (<a href="../build/iochart.html#indicators=ENRG,GHG,VADD&sectors=113000,327310,327400,333613,335912,336111,562111,562212">Widget only</a>)<!-- &page=1&count=10 --><!-- [imfast.io](https://useeiowidgets.imfast.io/iochart.html#sectors=322130,325520,327910,541200)-->  
@@ -339,4 +339,4 @@ In some cases there is no final demand for the respective commodity and the prod
 The `.editorconfig` file contains the formatting settings. Modern editors have plugins for checking EditorConfig settings. This maintains consistency so we can see in the diffs what changed. There is also a ESLint configuration in the project for other settings like semicolon rules, etc.
 
 
-[Project Areas](../../community/projects/) 
+[Active Projects](/projects/) 

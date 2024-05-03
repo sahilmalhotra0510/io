@@ -31,6 +31,8 @@ Join us during Democracy Lab's 48 HOUR EARTH DAY on April 22nd. The event will b
 
 For use during a future Web Challenge
 [WebStorm Notes](https://docs.google.com/document/d/1BKxx5Q5rtNgZ9cD-Hsgdi_nEL1YPCfPhKjbnIqMgCRI/edit?usp=sharing) - Add info on using [GitHub Copilot by OpenAI](https://github.com/features/copilot) or other AI codex.
+
+Collaborate on open source modeling tools.
 -->
 
 <h1>For Coders & Designers</h1>
@@ -45,12 +47,7 @@ Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) (Eastern T
 <!--
 - [Other evenings plus Monday and Tuesday afternoons](https://meet.google.com/pcv-xrdh-bat)-->
 
-The Google Meetup link remains the same for all meetings.<!--
-Zoom link to try reusing
-	https://us04web.zoom.us/j/75934593071?pwd=pYEk771K5EaAa2Ud13izrckaDxUsIn.1
--->
-
-Collaborate on open source modeling tools.
+[Our Google Meetup link](https://meet.google.com/pcv-xrdh-bat)  remains the same for all meetings.
 
 Create API mashups for environmental impacts, nutritional meals, local job levels, industry timelines and [sustainable product profiles](../../io/template/).  
 

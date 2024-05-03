@@ -16,18 +16,17 @@ View our [Product YAML notes](../product/) for steps on using Postman.
 
 Check out how faster the EPD product list displays when <a href="../../../community/resources/diffbot/#feed=epd">loaded from a static json file</a>. 
 
- 
 <!--
 <a href="../../products/#show=openepd">View Feed on Map</a> (allow 8 seconds) - also now 401 (Unauthorized) 
 -->
-
-
 
 <!--
 By using a static json file, we'll load 30,000+ records (775K) in a quarter of a second, similar to the <a href="https://publictreemap.org">Santa Monica tree inventory</a>.
 -->
 
-Get your bearer token from logging into the <a href="https://openepd.buildingtransparency.org/#/epds/get_epds_id">OpenEPD Swagger API</a>, then you can paste in in the following to run from a console:
+<a href="https://openepd.buildingtransparency.org/#/epds/get_epds_id">Login to the OpenEPD Swagger </a> to get your bearer token for the  API
+
+Paste the bearer token and run from a console:
 
 	curl -X 'GET' \
 	'https://openepd.buildingtransparency.org/api/epds?page_number=1&page_size=100' \
@@ -35,7 +34,9 @@ Get your bearer token from logging into the <a href="https://openepd.buildingtra
 	-H 'filter: {"epds.name":"ASTM International"}' \
 	-H 'Authorization: Bearer [Your Bearer Token]'
 
+<!--
 We recomend saving your own private desktop swagger file with your API commands. Coordinate updates with Loren.
+-->
 
 <b>TO DO:</b> Modify the API URL used in this page to return only the interesting fields, including the company and product names. Add a toggle to load all values.
 

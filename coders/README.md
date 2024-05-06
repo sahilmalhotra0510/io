@@ -39,10 +39,33 @@ Collaborate on open source modeling tools.
 
 View our [Active Projects](../../projects/) and find your areas of interest.
 
+<style>
+.blinking {
+
+    animation: opacity 2s ease-in-out infinite;
+    opacity: 1;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+**<span class="blinking">NOTICE</span>** This week (May 9, 2024) our Thursday meeting will 10 AM EDT
+
 Join us in our [Google Meetups](https://meet.google.com/pcv-xrdh-bat) (Eastern Time, NY and Atlanta)
 - Moonshot Mondays, 10 PM EDT - [UN Goals](/data-commons/dist/), [Lunar Olympics AI](/projects/)
 - Website Wednesdays, 10 PM EDT - [International EEIO](https://eeiomodel.com), [State Impacts](/localsite/info/#geoview=country)
-- ThursdayTeam, Noon EDT - [Projects overviews](/projects/), [Open WebUI](/projects/src/)
+- ThursdayTeam, 10AM <span style="text-decoration: line-through;">Noon</span> EDT - [Projects overviews](/projects/), [Open WebUI](/projects/src/)
 - SundayStream, 10 PM EDT - [RealityStream](/RealityStream/), [React IO](/io/charts/), [ML Forecasting](/data-pipeline/timelines/)
 <!--
 - [Other evenings plus Monday and Tuesday afternoons](https://meet.google.com/pcv-xrdh-bat)-->

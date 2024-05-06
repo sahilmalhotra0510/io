@@ -3,7 +3,7 @@
 
 TO DO: Pull from state [inflow-outflow data](https://github.com/ModelEarth/OpenFootprint/tree/main/impacts/2020). See examples of using javascript to pull input-output data on our [USEEIO.js Footprint page](https://model.earth/useeio.js/footprint/).
 
-[Related work using Python](/machine-learning/python/cluster/) to pull from state matrix files.
+[Related work using Python](/machine-learning/python/cluster/) to pull from state matrix files and for viewing [commodity dollar values](/data-pipeline/research/economy/).
 
 [Initial work on chord diagram](https://github.com/kargilthakur/Observables-WebComponent) - From Kargin
 "It's not working now, but the team can work on it."

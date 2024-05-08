@@ -1,9 +1,14 @@
 [Chart Starters](/community/start/charts/) | [Our IO Charts](../)
 # Chord Chart
 
-TO DO: Pull from state [inflow-outflow data](https://github.com/ModelEarth/OpenFootprint/tree/main/impacts/2020). See examples of using javascript to pull input-output data on our [USEEIO.js Footprint page](https://model.earth/useeio.js/footprint/).
+TO DO: See to-do's on our [D Matrix chart page](/useeio.js/charts/d3/chord-diagram/).
+
+We've started [D Matrix Chord Chart](/useeio.js/charts/d3/chord-diagram/) that pulls from state [inflow-outflow data](https://github.com/ModelEarth/OpenFootprint/tree/main/impacts/2020). 
+
+More examples of using javascript to pull input-output data on our [USEEIO.js Footprint page](https://model.earth/useeio.js/footprint/).
 
 [Related work using Python](/machine-learning/python/cluster/) to pull from state matrix files and for viewing [commodity dollar values](/data-pipeline/research/economy/).
+[Python for our Sankey chart](../sankey/) may also be a good starting point.
 
 [Initial work on chord diagram](https://github.com/kargilthakur/Observables-WebComponent) - From Kargin
 "It's not working now, but the team can work on it."

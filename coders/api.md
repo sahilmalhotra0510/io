@@ -18,4 +18,4 @@ TO DO: Send a meal funding request to our OpenFootprint account or another OpenC
 
 Visualize [meal ingredients](../../data-commons/docs/food/) using prompt [Storyboards](../../requests) ([Github Fork](https://github.com/modelearth/requests)) in our [Open WebUI Fork](../../projects/src/).
 
-[Get Started](../../localsite/start/steps/) - Fork and clonw (and update) our main repos.
+[Get Started](../../localsite/start/steps/) - Fork and clone (and update) our main repos.

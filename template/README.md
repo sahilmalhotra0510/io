@@ -1,5 +1,5 @@
 [Select states and counties](#geoview=country) to explore local industry impacts.
-[Open Footprint Coding Projects](product/) - [API YAML to JSON and HTML](parser/) - [Stand-alone&nbsp;Sample](parser/sample.html)
+[Product Footprints](/OpenFootprint/products/) - [API YAML to JSON and HTML](parser/) - [Stand-alone&nbsp;Sample](parser/sample.html)
 
 ---
 <br>

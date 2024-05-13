@@ -21,6 +21,13 @@ Or update to the latest stable version of NodeJS
 	sudo n stable
 
 
+## pip
+
+How to stop your virtual environment and update pip
+
+	ctrl-c
+	python -m pip install --upgrade pip
+	pip -V
 
 
 ## Python

@@ -3,7 +3,7 @@
 [Material Search](https://buildingtransparency.org/ec3/material-search) - Google Login works
 [OpenEPD API](https://openepd.buildingtransparency.org/) - Swagger UI
 <a href="https://docs.google.com/spreadsheets/d/1q2TW0GlLlK7yH3k5TSsWGmXyL94KPI9VUWWv9vid63A/edit">OpenEPD spreadsheet</a> - Are these variable also accessible in the API?
-<a href="https://buildingtransparency.org/ec3/creator-contacts/epds">How to Get an EPD</a> - Includes  “nutrition label” image
+<a href="https://buildingtransparency.org/ec3/creator-contacts/epds">How to Get an EPD</a> - Includes  “nutrition label”
 <a href="https://www.oneclicklca.com/simple-epd-guide/" target="epdGuide">EPD Guide</a> - One Click LCA<br>
 
 <b>TO DO:</b> Allow site users to enter their own BuildingTransparency key here. Use [javascript sample on starter page](../../../localsite/start/steps/).

@@ -325,11 +325,13 @@ function displayFeed() {
 
 <h4>Environmental Product Declarations (EPD)</h4>
 
-<a href="../product/">Get an API key for Building Transparency</a><br>
-<a href="/localsite/tools/storage/api/">Save key in localStorage</a>
-<br><br>
+<a href="/OpenFootprint/products/">Get an API key for BuildingTransparency.org</a><br>
+<!--
+<a href="/localsite/tools/storage/api/">Save key in localStorage</a><br>
+-->
+<br>
 
-TO DO: Activate textbox fields for the bearer API and API URL input.<br><br>
+TO DO: Activate textbox fields for the API Key (bearer) and API URL input.<br><br>
 
 <b>Your API Key</b> (Not yet activated)<br>
 <input type="text" id="btKey" class="textInput" style="width:210px" placeholder="Your API Key"  autofocus onfocus="this.select()" oninputX="updateKey()"><br><br>
@@ -337,7 +339,9 @@ TO DO: Activate textbox fields for the bearer API and API URL input.<br><br>
 <b>API URL</b> (Not yet activated)<br>
 <input type="text" id="btURL" class="textInput" style="width:100%;max-width:600px" placeholder="Your API Key" value="https://openepd.buildingtransparency.org/api/epds?page_number=1&page_size=100" autofocus onfocus="this.select()"><br><br>
 
+<!--
 See <a href="/local-view-request/src/location/mylocation.html">MyLocation SeeClickFix</a> (<a href="https://github.com/NormanSj/local-view-request/tree/main/src/location">Github</a>)<br><br>
+-->
 
 <button id="requestList" class="button button-green">Submit</button> (Not yet activated)<br><br>
 

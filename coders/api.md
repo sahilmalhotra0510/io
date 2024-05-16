@@ -1,21 +1,15 @@
-# API's for Workflow (Meal Prep and Local Requests)
+# API's for Workflow
 
-We're creating embedable workflow lists using the SeeClickFix open311 request system as our API syntax for requesting nutritious meal prep and other forms of local workforce mobilization.
+We're creating embedable [input-output apps](../../community/tools/) for product lifecycle analysis and workflow automation using [BlueSky Feeds](../../feed/view/#feed=bsky).
 
-We're displaying [local 311 requests](https://normansj.github.io/local-view-request/src/location/mylocation.html) from the [SeeClickFix open311 API](https://dev.seeclickfix.com)
+We're using [Open WebUI](../../projects/src/) to intereact with data and visualizations from our [Google Data Commons UN Goal Timelines](../../data-commons/)
 
-We're be [visualizing nutritious meals](../../data-pipeline/research/stream/) using [FDA API food profiles](https://model.earth/data-commons/dist/food) with our YAML/JSON [OpenFootprint](../../OpenFootprint) label formatter using the [FDA API](https://fdc.nal.usda.gov/api-guide.html).
+You can generate [images and video](../../data-pipeline/research/stream/) from our Requests Storyboard using [.csv file prompts](https://github.com/modelearth/requests).
 
-We'll fund the meals sent to SeeClickFix using the [OpenCollective API GraphQL](https://graphql-docs-v2.opencollective.com/access) which is accessible via [altairgraphql.dev](https://altairgraphql.dev).
+We're [visualizing nutritious meals](../../data-pipeline/research/stream/) using [USDA API food profiles](https://model.earth/data-commons/dist/food) within our [YAML/JSON label parser](../../io/template/parser/) pulled from the [USDA API](https://fdc.nal.usda.gov/api-guide.html).
 
-TO DO: Send a meal funding request to our OpenFootprint account or another OpenCollective.com account.
+We're displaying [local 311 requests](https://normansj.github.io/local-view-request/src/location/mylocation.html) in our [Feed Player](../../feed/view/#feed=311) from the [SeeClickFix open311 API](https://dev.seeclickfix.com)
 
+Project bounty funding can be managed using the [OpenCollective API GraphQL](https://graphql-docs-v2.opencollective.com/access) which is accessible via [altairgraphql.dev](https://altairgraphql.dev).
 
-### Data Visualization with Generative AI
-
-1.) Generating meal [images and video](../../data-pipeline/research/stream/) from our Storyboard [.csv file prompts](https://github.com/modelearth/requests).
-2.) Using [Open WebUI](../../projects/src/) to load from our healthy menu [.csv files](https://github.com/modelearth/requests) by
-
-Visualize [meal ingredients](../../data-commons/docs/food/) using prompt [Storyboards](../../requests) ([Github Fork](https://github.com/modelearth/requests)) in our [Open WebUI Fork](../../projects/src/).
-
-[Get Started](../../localsite/start/steps/) - Fork and clone (and update) our main repos.
+[Connect with us in Democracy Lab](../../io/coders/) and get started by [setting up your localsite](../../localsite/start/steps/) to contribute to [our repos](https://github.com/ModelEarth?tab=repositories) and [colabs](../../RealityStream/). 

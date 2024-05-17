@@ -79,4 +79,5 @@ Create API mashups for environmental impacts, nutritional meals, local job level
 - [Connect with us at Democracy Lab if you haven't already](https://www.democracylab.org/projects/834)
 - [Get Started by installing our Localsite repos (with one cmd)](../../localsite/start/steps/)
 - [Join our Democracy Lab Slack Group](https://democracylab-org.slack.com/archives/C06F73YKEQN)
-- [Team Discussion](https://github.com/orgs/ModelEarthTeam/discussions) - [OpenFootprint](https://opencollective.com/openfootprint)
+- [Team GitHub Discussion](https://github.com/orgs/ModelEarthTeam/discussions) - [OpenFootprint OC](https://opencollective.com/openfootprint) - [ModelEarth OC](https://opencollective.com/modelearth)
+- [BlueSky](https://bsky.app/profile/modelearth.bsky.social)

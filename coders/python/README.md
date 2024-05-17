@@ -10,11 +10,15 @@ Check your versions
 
 To installing node if the version commands find nothing:
 
-[NPMjs.com](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) recommends installing a Node Version Manager like [nvm](https://github.com/nvm-sh/nvm) to avoid permission errors when you run npm packages globally.
+[NPMjs.com](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) recommends installing a Node Version Manager like [nvm](https://github.com/nvm-sh/nvm) to avoid permission errors when you run npm packages globally. Then run `nvm ls` to see all the node versions you have installed. Update nvm and install the latest version of node:
+
+	nvm install --lts --reinstall-packages-from=current
+	nvm install node
+	nvm alias default node
 
 Or [Install node/npm](https://nodejs.org/en/download) locally. The installer includes the Node.js package manager (npm) within it, so you won't need to install npm separately.
 
-Or update to the latest stable version of NodeJS
+Or directly update to the latest stable version of NodeJS if you are not using nvm.
 <!-- https://askubuntu.com/questions/426750/how-can-i-update-my-nodejs-to-the-latest-version-->
 
 	npm install -g n &&

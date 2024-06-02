@@ -40,7 +40,7 @@ Rstudio has devtools intalled already, so maybe just library(devtools) to call i
 Here are [old model files](https://www.dropbox.com/sh/af48m0jsusgr3jg/AACzBSJwujR6LU0jZBhAzys6a?dl=0) for testing. (Better to use the newer data in the [static JSON files](https://github.com/modelearth/io/tree/main/build/api)) - [Build locally](../../charts/#build)
 -->
 
-Read our [Lifecycle Tools Overview](https://model.earth//community/tools/).  
+Read our [Lifecycle Tools Overview](https://model.earth//community/tools/) and contribute to our [SQL Data setup](/useeio.js/footprint/)
 
 ## JQuery Widgets 
 

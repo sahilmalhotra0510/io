@@ -1,7 +1,12 @@
 [Google Vertex AI Model Garden](https://www.youtube.com/watch?v=_AOA6M9Ta2I) - Over 130 Models (Gemini, Claude)
 
+<style>
+.floatright img {
+    border-radius: 25px;
+}
+</style>
 <div class="floatright" style="margin-bottom:20px">
-    <a href="/community/tools/"><img src="../img/side/model-earth-impacts.jpg" style="width:100%;max-width:500px"></a><br>
+    <a href="/community/tools/"><img src="/io/img/side/model-earth-impacts.jpg" style="width:100%;max-width:500px"></a><br>
  </div>
 
 <!--
